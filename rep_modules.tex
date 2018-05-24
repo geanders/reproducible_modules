@@ -1,0 +1,226 @@
+\documentclass[pdftex,english,12pt,parskip=half]{scrartcl}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[labelfont=bf,font=small,format=plain]{caption}
+\usepackage{doi}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+\usepackage{url,hyperref,color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\fixme}[1]{{\color{red} #1}}
+\renewcommand\thesection{\Alph{section}}
+\begin{document}
+\addtokomafont{section}{\large}
+\def\bf{\normalfont\bfseries}
+\pagestyle{empty}
+
+
+{\large \textbf{Project Title:}}
+%% 1. Project title – do not exceed 200 characters, including the spaces between words  and punctuation
+
+Training modules for improving the reproducibility of experimental data recording and pre-processing with examples from microbiology and immunology
+
+\clearpage
+
+
+{\large \textbf{Cover Letter:}}
+
+Please accept the attached grant ``Training modules for improving the reproducibility of experimental data recording and pre-processing with examples from microbiology and immunology'' by Drs. Brooke Anderson and collaborators. 
+
+Best, 
+
+Brooke Anderson 
+
+\clearpage
+
+
+\textbf{Budget justification} \ \\
+\noindent \textbf{First thing we need}, more about why we need it.
+
+\noindent \textbf{Second thing we need}, more about why we need it.
+
+
+\newpage
+
+{\large \textbf{Project Abstract:}}
+
+Summary of our proposed project.
+
+\clearpage
+
+{\large \textbf{Project Narrative:}}
+
+Even shorter summary of our proposed project.
+
+
+\clearpage
+
+\section*{Specific Aims}
+\begingroup
+    \fontsize{11pt}{12pt}\selectfont 
+
+
+\endgroup
+
+\clearpage
+
+
+\section{Significance}
+\vspace{-0.1in}
+
+\begin{quotation}
+``Does the proposed program address a key audience and an important aspect or important need in training in rigor and reproducibility? Is there convincing evidence in the application that the proposed program will significantly advance the stated goal of the program?"
+\end{quotation}
+
+\section{Innovation}
+\vspace{-0.1in}
+
+\begin{quotation}
+``Taking into consideration the nature of the proposed research education program, does the applicant make a strong case for this program effectively reaching an audience in need of the program's offerings? Where appropriate, is the proposed program developing or utilizing innovative approaches and latest best practices to improve the knowledge and/or skills of the intended audience?"
+\end{quotation}
+
+\section{Approach}
+
+\begin{quotation}
+``Does the proposed program clearly state its goals and objectives, including the audience to be reached, the content to be conveyed, and the intended outcome?  Is there evidence that the program is based on a sound rationale, as well as sound educational concepts and principles? Is the plan for evaluation sound and likely to provide information on the effectiveness of the program?"
+\end{quotation}
+
+\subsection{Proposed Research Education Program Plan}
+
+\begin{quotation}
+``While the proposed research education program may complement ongoing research training and education occurring at the applicant institution, the proposed educational experiences must be distinct from those research training and research education programs currently receiving federal support. When research training programs are on-going in the same department, the applicant organization should clearly distinguish between the activities in the proposed research education program and the research training supported by the training program. The research education proposed must be \textbf{targeted to trainees and investigators at any level}. State the \textbf{goals for education} and \textbf{justify the area of training} selected for module development in terms of its \textbf{relevance and potential impact} on improving the development of skills and knowledge important for conducting rigorous and reproducible research. Describe the \textbf{subject material} to be covered.  Describe the \textbf{format} for the training module proposed and \textbf{justify it in terms of the education goals}.  The \textbf{length} of the proposed training module should be explained in terms of \textbf{scope and depth of coverage} of the subject matter.  In addition, \textbf{how the research education will be utilized by trainees or investigators} should be described---for example, a module on how to avoid confirmation bias to be taken by all beginning laboratory workers, or a module on appropriate design of animal studies to be taken immediately prior to beginning such work.  Describe the \textbf{plans for piloting and evaluating the effectiveness} of the training module. Describe \textbf{plans for making the proposed training module section 508 compliant of the Rehabilitation Act} (29 U.S.C. '794 d), as amended by the Workforce Investment Act of 1998 (P.L. 105 – 220; see http://www.section508.gov/ for additional information). Provide a \textbf{timeline for module development, piloting and refinement, dissemination, evaluation, and maintenance}.  This timeline must propose \textbf{making the training publicly available within two years} of the award date."
+\end{quotation}
+
+\subsubsection{Educational goals of the modules}
+
+\subsubsection{Module subject material}
+
+We propose to develop two collections of modules, \textbf{Improving the Reproducibility of Experimental Data Recording} and \textbf{Improving the Reproducibility of Experimental Data Pre-Processing}. 
+
+The \textbf{Improving the Reproducibility of Experimental Data Recording} collection will include the following modules:
+
+\begin{enumerate}
+\item The principals of ``tidy" data
+\item Creating spreadsheet templates for experimental data collection
+\item Example spreadsheet template: A template for collecting CPU data for a tuberculosis study [make more specific]
+\item Choosing a spreadshet program for reproducible data collection: Excel, Google Sheets, and RStudio 
+\item Organizing data recording and meta-data recording through RStudio ``Projects"  
+\item Creating ``Project Templates" for consistency across projects
+\item Example of creating a ``Project Template": A project template for a lab group studying tuberculosis [make more specific]
+\item Harnessing version control (git and GitLab) to improve transparency in data recording
+\item Using git from RStudio
+\item Using GitLab for version controlled collaborations
+\end{enumerate}
+
+The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} collection will include the following modules:
+
+\begin{enumerate}
+\item An introduction to R code scripts
+\item The benefits of scripts for data pre-processing
+\item Getting started with RMarkdown 
+\item The relationship between R code scripts and RMarkdown documents
+\item Creating reproducible data pre-processing protocols using Rmarkdown
+\item Example of a reproducible data pre-processing protocol: Automated gating for flow cytometry data
+\item Example of a reproducible data pre-processing protocol: Measuring metabolite feature intensities for metabolomics LC/MS data
+\item Complex data types in R and their use in Bioconductor packages
+\item Converting from complex data types to ``tidy" formats for data analysis and visualization with R's ``tidy" data tools
+\end{enumerate}
+
+\subsubsection{Format for the training modules}
+
+\begin{itemize}
+\item Online book created through the ``bookdown" format, with each module as a book chapter. We can use Git Pages to host this (CSU options for web hosting?).
+\item Training videos embedded for each module, each 5--30 minutes. Videos will be similar to online course lectures and will be hosted using YouTube. Embedding in the book will allow users to watch videos without leaving the book's webpage. 
+\item Each chapter will end with exercise questions (around 10 questions, combination of discussion questions and applied exercises), as well as an embedded video with discussion of the discussion questions and a detailed walk-through of answers to applied exercises. 
+\item Possibly host this through an online course platform like DataCamp?
+\end{itemize}
+
+\subsubsection{Piloting and evaluating effectiveness of training modules}
+
+\subsubsection{Insuring compliance with Rehabilitation Act}
+
+\subsection{Team}
+
+\subsubsection{Program Director/Principal Investigator}
+
+\begin{quotation}
+``Is the PD/PI capable of providing both administrative and scientific leadership to the development and implementation of the proposed program? Is there evidence that an appropriate level of effort will be devoted by the program leadership to ensure the program's intended goal is accomplished? If the project is collaborative or multi-PD/PI, do the investigators have complementary and integrated expertise; are their leadership approach, governance and organizational structure appropriate for the project?"
+\end{quotation}
+
+\begin{quotation}
+``Describe \textbf{arrangements for administration} of the program.  Provide evidence that the Program Director/Principal Investigator is actively engaged in research and/or teaching in an area related to the mission of NIH, and can \textbf{organize, administer, monitor, and evaluate the research education program}. For programs proposing multiple PDs/PIs, describe the complementary and integrated expertise of the PDs/PIs; their leadership approach, and governance appropriate for the planned project."
+\end{quotation}
+
+\subsubsection{Other members of the team}
+
+\subsection{Institutional Environment and Commitment}
+
+\begin{quotation}
+``Describe the institutional environment, reiterating the \textbf{availability of facilities and educational resources} (described separately under Facilities \& Other Resources), that can contribute to the planned Research Education Program. Evidence of institutional commitment to the research educational program is required. A \textbf{letter of institutional commitment} must be attached as part of Letters of Support (see below). Appropriate institutional commitment should include the provision of adequate staff, facilities, and educational resources that can contribute to the planned research education program."
+\end{quotation}
+
+\subsection{Evaluation Plan}
+
+\begin{quotation}
+``Applications must include a plan for evaluating the activities supported by the award in terms of their \textbf{frequency of use} and their \textbf{usefulness}. The use of \textbf{multiple evaluation approaches} is highly encouraged as is \textbf{testing several groups with different characteristics}. The application must specify \textbf{baseline metrics (e.g., numbers, educational levels, and demographic characteristics of test group)} in a structured format, as well as \textbf{measures to gauge the short and long-term success of the research education award in achieving its objectives}. Applicants are expected to \textbf{obtain feedback from test group} to help identify weaknesses and to provide suggestions for improvements, and \textbf{make the evaluation and feedback data} available to NIGMS staff."
+\end{quotation}
+
+\textbf{Pilot / text group evaluation}:
+
+\begin{itemize}
+\item Work with GAUSSI to use some students as pilot testers?
+\item Recruit researchers / faculty as pilot testers?
+\item Work with CSU's Research Ethics group to figure out ways to pilot?
+\end{itemize}
+
+\textbf{Long-term evaluation}:
+
+\begin{itemize}
+\item Google Analytics for online book. How often are people accessing the book? How long are they spending on the book website? Where are the people accessing the book?
+\item YouTube analytics for the embedded videos. How often are people accessing the book? How long are they spending on the book website? Where are the people accessing the book?
+\item Quiz for each chapter of the book? Use to evaluate how well they've mastered the material? (Possibly could use embedded Shiny apps for this? Other ways to do this?)
+\item Rating options for each chapter of the online book? Usefulness? What they learned?
+\item Survey within each chapter of the online book? Educational level, demographic characteristics.
+\end{itemize}
+
+\subsection{Dissemination Plan}
+
+\begin{quotation}
+``A specific plan must be provided to disseminate the finished training modules \textbf{nationally} and make them \textbf{freely accessible}. In addition, links to these modules will be posted and maintained on the NIGMS web site."
+\end{quotation}
+    
+\subsection{Timeline}
+
+\begin{quotation}
+``Provide a timeline for \textbf{module development}, \textbf{piloting and refinement}, \textbf{dissemination}, \textbf{evaluation}, and \textbf{maintenance}.  This timeline must propose making the training publicly available within two years of the award date."
+\end{quotation}
+
+
+\clearpage
+
+\section{Works cited}
+
+\bibliographystyle{unsrtnat}
+\bibliography{tb_hfs_proposal}
+
+\clearpage
+
+\section{Environment}
+
+\begin{quotation}
+``Will the scientific and educational environment of the proposed program contribute to its intended goals? Is there a plan to take advantage of this environment to enhance the educational value of the program? Is there tangible evidence of institutional commitment? Where appropriate, is there evidence of collaboration and buy-in among participating programs, departments, and institutions?"
+\end{quotation}
+
+\end{document}
