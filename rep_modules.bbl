@@ -1,0 +1,259 @@
+\begin{thebibliography}{41}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[List et~al.(2017)List, Ebert, and Albrecht]{list2017ten}
+Markus List, Peter Ebert, and Felipe Albrecht.
+\newblock Ten simple rules for developing usable software in computational
+  biology.
+\newblock \emph{PLoS computational biology}, 13\penalty0 (1):\penalty0
+  e1005265, 2017.
+
+\bibitem[Baumer(2017)]{baumer2017lessons}
+Benjamin~S Baumer.
+\newblock Lessons from between the white lines for isolated data scientists.
+\newblock Technical report, PeerJ Preprints, 2017.
+
+\bibitem[Altschul et~al.(2013)Altschul, Demchak, Durbin, Gentleman, Krzywinski,
+  Li, Nekrutenko, Robinson, Rasband, Taylor, et~al.]{altschul2013anatomy}
+Stephen Altschul, Barry Demchak, Richard Durbin, Robert Gentleman, Martin
+  Krzywinski, Heng Li, Anton Nekrutenko, James Robinson, Wayne Rasband, James
+  Taylor, et~al.
+\newblock The anatomy of successful computational biology software.
+\newblock \emph{Nature biotechnology}, 31\penalty0 (10):\penalty0 894--897,
+  2013.
+
+\bibitem[Wickham(2015)]{wickham2015r}
+Hadley Wickham.
+\newblock \emph{R packages: organize, test, document, and share your code}.
+\newblock " O'Reilly Media, Inc.", 2015.
+
+\bibitem[Xie(2015)]{xie2015dynamic}
+Yihui Xie.
+\newblock \emph{Dynamic Documents with R and knitr}, volume~29.
+\newblock CRC Press, 2015.
+
+\bibitem[Xie(2016)]{xie2016bookdown}
+Yihui Xie.
+\newblock \emph{Bookdown: Authoring Books and Technical Documents with R
+  Markdown}.
+\newblock CRC Press, 2016.
+
+\bibitem[Pathak and Bannard(2014)]{pathak2014rhadoop}
+Akshay Mittal~Sharvanath Pathak and Trevor Bannard.
+\newblock Rhadoop: an improved execution environment for restricted map reduce
+  programs.
+\newblock \emph{R package}, 2014.
+
+\bibitem[Luraschi et~al.(2017)Luraschi, Ushey, Allaire, and {The Apache
+  Software Foundation}]{sparklyr}
+Javier Luraschi, Kevin Ushey, JJ~Allaire, and {The Apache Software Foundation}.
+\newblock \emph{sparklyr: R Interface to Apache Spark}, 2017.
+\newblock URL \url{https://CRAN.R-project.org/package=sparklyr}.
+\newblock R package version 0.6.3.
+
+\bibitem[Goecks et~al.(2010)Goecks, Nekrutenko, and Taylor]{goecks2010galaxy}
+Jeremy Goecks, Anton Nekrutenko, and James Taylor.
+\newblock Galaxy: a comprehensive approach for supporting accessible,
+  reproducible, and transparent computational research in the life sciences.
+\newblock \emph{Genome biology}, 11\penalty0 (8):\penalty0 R86, 2010.
+
+\bibitem[Walker et~al.(2016)Walker, Madduri, Rodriguez, Greenstein, and
+  Winslow]{walker2016models}
+Mark~A Walker, Ravi Madduri, Alex Rodriguez, Joseph~L Greenstein, and Raimond~L
+  Winslow.
+\newblock Models and simulations as a service: Exploring the use of galaxy for
+  delivering computational models.
+\newblock \emph{Biophysical journal}, 110\penalty0 (5):\penalty0 1038--1043,
+  2016.
+
+\bibitem[Ellis and Leek(2017)]{ellis2017share}
+Shannon~E Ellis and Jeffrey~T Leek.
+\newblock How to share data for collaboration.
+\newblock Technical report, PeerJ Preprints, 2017.
+
+\bibitem[Ram(2013)]{ram2013git}
+Karthik Ram.
+\newblock Git can facilitate greater reproducibility and increased transparency
+  in science.
+\newblock \emph{Source code for biology and medicine}, 8\penalty0 (1):\penalty0
+  7, 2013.
+
+\bibitem[Ross et~al.(2017)Ross, Wickham, and Robinson]{ross2017declutter}
+Zev Ross, Hadley Wickham, and David Robinson.
+\newblock Declutter your r workflow with tidy tools.
+\newblock \emph{PeerJ Preprints}, 5:\penalty0 e3180v1, 2017.
+
+\bibitem[Silge and Robinson(2016)]{silge2016tidytext}
+Julia Silge and David Robinson.
+\newblock tidytext: Text mining and analysis using tidy data principles in r,
+  2016.
+
+\bibitem[Wickham(2016)]{wickham2016ggplot2}
+Hadley Wickham.
+\newblock \emph{ggplot2: Elegant Graphics for Data Analysis}.
+\newblock Springer, 2nd edition, 2016.
+
+\bibitem[Wickham and Grolemund(2016)]{wickham2016r}
+Hadley Wickham and Garrett Grolemund.
+\newblock \emph{R for Data Science: Import, Tidy, Transform, Visualize, and
+  Model Data}.
+\newblock " O'Reilly Media, Inc.", 2016.
+
+\bibitem[Bryan(2017)]{bryan2017excuse}
+Jennifer Bryan.
+\newblock Excuse me, do you have a moment to talk about version control?
+\newblock Technical report, PeerJ Preprints, 2017.
+
+\bibitem[Lowndes et~al.(2017)Lowndes, Best, Scarborough, Afflerbach, Frazier,
+  O'Hara, Jiang, and Halpern]{lowndes2017our}
+Julia S~Stewart Lowndes, Benjamin~D Best, Courtney Scarborough, Jamie~C
+  Afflerbach, Melanie~R Frazier, Casey~C O'Hara, Ning Jiang, and Benjamin~S
+  Halpern.
+\newblock Our path to better science in less time using open data science
+  tools.
+\newblock \emph{Nature ecology \& evolution}, 1\penalty0 (6):\penalty0 160,
+  2017.
+
+\bibitem[Reviewer-Miller(2017)]{reviewer2017review}
+Allan~M Reviewer-Miller.
+\newblock Review of r for data science: Import, tidy, transform, visualize, and
+  model data by hadley wickham and garrett grolemund.
+\newblock \emph{ACM SIGACT News}, 48\penalty0 (3):\penalty0 14--19, 2017.
+
+\bibitem[McNamara(2016)]{mcnamara2016state}
+Amelia McNamara.
+\newblock On the state of computing in statistics education: Tools for learning
+  and for doing.
+\newblock \emph{arXiv preprint arXiv:1610.00984}, 2016.
+
+\bibitem[Hicks and Irizarry(2017)]{hicks2017guide}
+Stephanie~C Hicks and Rafael~A Irizarry.
+\newblock A guide to teaching data science.
+\newblock \emph{The American Statistician}, \penalty0 (just-accepted):\penalty0
+  00--00, 2017.
+
+\bibitem[Baumer(2015)]{baumer2015data}
+Ben Baumer.
+\newblock A data science course for undergraduates: Thinking with data.
+\newblock \emph{The American Statistician}, 69\penalty0 (4):\penalty0 334--342,
+  2015.
+
+\bibitem[Kaplan(2017)]{kaplan2017teaching}
+Daniel~T Kaplan.
+\newblock Teaching stats for data science.
+\newblock \emph{PeerJ Preprints}, 5:\penalty0 e3205v1, 2017.
+
+\bibitem[Stander and Dalla~Valle(2017)]{stander2017enthusing}
+Julian Stander and Luciana Dalla~Valle.
+\newblock On enthusing students about big data and social media visualization
+  and analysis using r, rstudio, and rmarkdown.
+\newblock \emph{Journal of Statistics Education}, 25\penalty0 (2):\penalty0
+  60--67, 2017.
+
+\bibitem[Baumer et~al.(2017)Baumer, Kaplan, and Horton]{baumer2017modern}
+Benjamin~S Baumer, Daniel~T Kaplan, and Nicholas~J Horton.
+\newblock \emph{Modern Data Science with R}.
+\newblock CRC Press, 2017.
+
+\bibitem[Irizarry and Love(2016)]{lifesciencesR}
+Rafael~A. Irizarry and Michael~I. Love.
+\newblock \emph{Data Analysis for the Life Sciences with R}.
+\newblock Chapman and Hall / CRC, 2016.
+
+\bibitem[Wilson(2014)]{wilson2014software}
+Greg Wilson.
+\newblock Software carpentry: lessons learned.
+\newblock \emph{F1000Research}, 3, 2014.
+
+\bibitem[Pawlik et~al.(2017)Pawlik, van Gelder, Nenadic, Palagi, Korpelainen,
+  Lijnzaad, Marek, Sansone, Hancock, and Goble]{pawlik2017developing}
+Aleksandra Pawlik, Celia~WG van Gelder, Aleksandra Nenadic, Patricia~M Palagi,
+  Eija Korpelainen, Philip Lijnzaad, Diana Marek, Susanna-Assunta Sansone, John
+  Hancock, and Carole Goble.
+\newblock Developing a strategy for computational lab skills training through
+  software and data carpentry: Experiences from the elixir pilot action.
+\newblock \emph{F1000Research}, 6, 2017.
+
+\bibitem[Silge and Robinson(2017)]{silge2017text}
+Julia Silge and David Robinson.
+\newblock \emph{Text Mining with R: A Tidy Approach}.
+\newblock " O'Reilly Media, Inc.", 2017.
+
+\bibitem[McMurdie and Holmes(2013)]{mcmurdie2013phyloseq}
+Paul~J McMurdie and Susan Holmes.
+\newblock phyloseq: an r package for reproducible interactive analysis and
+  graphics of microbiome census data.
+\newblock \emph{PloS one}, 8\penalty0 (4):\penalty0 e61217, 2013.
+
+\bibitem[Arnold(2017)]{RJ-2017-035}
+Taylor Arnold.
+\newblock {A Tidy Data Model for Natural Language Processing using cleanNLP}.
+\newblock \emph{{The R Journal}}, 2017.
+\newblock URL
+  \url{https://journal.r-project.org/archive/2017/RJ-2017-035/index.html}.
+
+\bibitem[Tyner et~al.(2017)Tyner, Briatte, and Hofmann]{RJ-2017-023}
+Sam Tyner, Fran{\c c}ois Briatte, and Heike Hofmann.
+\newblock {Network Visualization with ggplot2}.
+\newblock \emph{{The R Journal}}, 9\penalty0 (1):\penalty0 27--59, 2017.
+\newblock URL
+  \url{https://journal.r-project.org/archive/2017/RJ-2017-023/index.html}.
+
+\bibitem[Hsieh et~al.(2016)Hsieh, Ma, and Chao]{hsieh2016inext}
+TC~Hsieh, KH~Ma, and Anne Chao.
+\newblock inext: an r package for rarefaction and extrapolation of species
+  diversity (hill numbers).
+\newblock \emph{Methods in Ecology and Evolution}, 7\penalty0 (12):\penalty0
+  1451--1456, 2016.
+
+\bibitem[Yin et~al.(2012)Yin, Cook, and Lawrence]{yin2012ggbio}
+Tengfei Yin, Dianne Cook, and Michael Lawrence.
+\newblock ggbio: an r package for extending the grammar of graphics for genomic
+  data.
+\newblock \emph{Genome Biology}, 13\penalty0 (8):\penalty0 R77, 2012.
+
+\bibitem[rst()]{rstudioprojecttemplate}
+URL
+  \url{https://rstudio.github.io/rstudio-extensions/rstudio_project_templates.html}.
+
+\bibitem[Marwick et~al.(2017)Marwick, Boettiger, and
+  Mullen]{marwick2017packaging}
+Ben Marwick, Carl Boettiger, and Lincoln Mullen.
+\newblock Packaging data analytical work reproducibly using r (and friends).
+\newblock \emph{The American Statistician}, \penalty0 (just-accepted), 2017.
+
+\bibitem[Parker(2017)]{parker2017opinionated}
+Hilary Parker.
+\newblock Opinionated analysis development.
+\newblock \emph{PeerJ Preprints}, 5:\penalty0 e3210v1, 2017.
+
+\bibitem[Piccolo and Frampton(2016)]{piccolo2016tools}
+Stephen~R Piccolo and Michael~B Frampton.
+\newblock Tools and techniques for computational reproducibility.
+\newblock \emph{GigaScience}, 5\penalty0 (1):\penalty0 30, 2016.
+
+\bibitem[Cetinkaya-Rundel and Rundel(2017)]{cetinkaya2017infrastructure}
+Mine Cetinkaya-Rundel and Colin~W Rundel.
+\newblock Infrastructure and tools for teaching computing throughout the
+  statistical curriculum.
+\newblock Technical report, PeerJ Preprints, 2017.
+
+\bibitem[Huber et~al.(2015)Huber, Carey, Gentleman, Anders, Carlson, Carvalho,
+  Bravo, Davis, Gatto, Girke, et~al.]{huber2015orchestrating}
+Wolfgang Huber, Vincent~J Carey, Robert Gentleman, Simon Anders, Marc Carlson,
+  Benilton~S Carvalho, Hector~Corrada Bravo, Sean Davis, Laurent Gatto, Thomas
+  Girke, et~al.
+\newblock Orchestrating high-throughput genomic analysis with bioconductor.
+\newblock \emph{Nature methods}, 12\penalty0 (2):\penalty0 115--121, 2015.
+
+\bibitem[Preeyanon et~al.(2014)Preeyanon, Pyrkosz, and
+  Brown]{preeyanon2014reproducible}
+Likit Preeyanon, Alexis~Black Pyrkosz, and C~Titus Brown.
+\newblock Reproducible bioinformatics research for biologists.
+\newblock \emph{Implementing Reproducible Research}, page 185, 2014.
+
+\end{thebibliography}

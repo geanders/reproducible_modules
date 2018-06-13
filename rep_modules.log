@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 MAY 2018 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JUN 2018 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,44 +452,195 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip62
-\bibsep=\skip63
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count118
+(/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen145
+\lightrulewidth=\dimen146
+\cmidrulewidth=\dimen147
+\belowrulesep=\dimen148
+\belowbottomsep=\dimen149
+\aboverulesep=\dimen150
+\abovetopsep=\dimen151
+\cmidrulesep=\dimen152
+\cmidrulekern=\dimen153
+\defaultaddspace=\dimen154
+\@cmidla=\count118
+\@cmidlb=\count119
+\@aboverulesep=\dimen155
+\@belowrulesep=\dimen156
+\@thisruleclass=\count120
+\@lastruleclass=\count121
+\@thisrulewidth=\dimen157
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count122
+\LTcapwidth=\dimen158
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count123
+\LT@rows=\count124
+\c@LT@tables=\count125
+\c@LT@chunks=\count126
+\LT@p@ftn=\toks23
+)
+Class scrartcl Info: longtable captions redefined on input line 17.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen159
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 144.
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
-Package hyperref Info: Option `breaklinks' set `true' on input line 21.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(./rep_modules.aux)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen160
+\extrarowheight=\dimen161
+\NC@list=\toks24
+\extratabsurround=\skip66
+\backup@length=\skip67
+)
+\everycr=\toks25
+\minrowclearance=\skip68
+)
+\rownum=\count127
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box36
+\sift@deathcycles=\count128
+\@vwid@loff=\dimen162
+\@vwid@roff=\dimen163
+)
+\c@taburow=\count129
+\tabu@nbcols=\count130
+\tabu@cnt=\count131
+\tabu@Xcol=\count132
+\tabu@alloc=\count133
+\tabu@nested=\count134
+\tabu@target=\dimen164
+\tabu@spreadtarget=\dimen165
+\tabu@naturalX=\dimen166
+\tabucolX=\dimen167
+\tabu@Xsum=\dimen168
+\extrarowdepth=\dimen169
+\abovetabulinesep=\dimen170
+\belowtabulinesep=\dimen171
+\tabustrutrule=\dimen172
+\tabu@thebody=\toks26
+\tabu@footnotes=\toks27
+\tabu@box=\box37
+\tabu@arstrutbox=\box38
+\tabu@hleads=\box39
+\tabu@vleads=\box40
+\tabu@cellskip=\skip69
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box41
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/threeparttablex/threeparttablex.s
+ty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip70
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box42
+\UL@hyphenbox=\box43
+\UL@skip=\skip71
+\UL@hook=\toks28
+\UL@height=\dimen173
+\UL@pe=\count135
+\UL@pixel=\dimen174
+\ULC@box=\box44
+Package: ulem 2012/05/18
+\ULdepth=\dimen175
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen176
+\c@nlinenum=\count136
+\TeXr@lab=\toks29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count137
+\float@exts=\toks30
+\float@box=\box45
+\@float@everytoks=\toks31
+\@floatcapt=\box46
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip72
+\bibsep=\skip73
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count138
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `breaklinks' set `true' on input line 34.
+
+(./rep_modules.aux
+
+LaTeX Warning: Label `tab:' multiply defined.
+
+)
 \openout1 = `rep_modules.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 24.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 38.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 *geometry* detected driver: pdftex
@@ -527,17 +678,17 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen145
-\scratchbox=\box32
-\nofMPsegments=\count120
-\nofMParguments=\count121
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen146
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count139
+\scratchdimen=\dimen177
+\scratchbox=\box47
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen178
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -554,10 +705,17 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring ON on input line 24.
+\AtBeginShipoutBox=\box48
+Package hyperref Info: Link coloring ON on input line 38.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -565,73 +723,73 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./rep_modules.out) (./rep_modules.out)
 \@outlinefile=\write3
 \openout3 = `rep_modules.out'.
 
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 44.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 54.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 66.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 68.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 68.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--78
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Overfull \hbox (2.82797pt too wide) in paragraph at lines 89--90
+Overfull \hbox (2.82797pt too wide) in paragraph at lines 104--105
 \OT1/ppl/b/n/12 Brooke An-der-son, \OT1/ppl/m/it/12 Ph.D., Prin-ci-pal In-ves-t
 i-ga-tor, x aca-demic person-months, x sum-mer person-months
  []
 
 
-Overfull \hbox (6.3085pt too wide) in paragraph at lines 93--94
+Overfull \hbox (6.3085pt too wide) in paragraph at lines 108--109
 \OT1/ppl/b/n/12 Marcela Henao-Tamayo, \OT1/ppl/m/it/12 Ph.D., Co-Investigator, 
 x aca-demic person-months, x sum-mer person-months
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 116.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
@@ -641,38 +799,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 149.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 149.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 153.
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Overfull \hbox (1.2503pt too wide) in paragraph at lines 161--162
-\OT1/ppl/m/n/11 aca-demic re-searchers in Mi-cro-bi-ol-ogy and Im-munol-ogy (Co
--Is Henao-Tamayo, Gonzalez-Juarrero) who
- []
-
-[7
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 169.
+ [7
 
 ]
 Missing character: There is no â in font pplr7t!
@@ -680,47 +812,161 @@ Missing character: There is no € in font pplr7t!
 Missing character: There is no “ in font pplr7t!
  [8
 
-] [9]
-Overfull \hbox (8.19061pt too wide) in paragraph at lines 259--260
+]
+Overfull \hbox (8.3245pt too wide) in paragraph at lines 219--220
+\OT1/ppl/m/n/12 ini-tially recorded in a for-mat amenable to later data pre-pro
+cessing, anal-y-sis, and visualization---
+ []
+
+[9] (./tables/module_content_data_recording.tex [10]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 9.
+
+Overfull \hbox (1.35962pt too wide) in paragraph at lines 9--9
+\OT1/ppl/m/n/10 Length|  
+ []
+
+
+Overfull \hbox (1.35962pt too wide) in paragraph at lines 14--14
+\OT1/ppl/m/n/10 Length|  
+ []
+
+[11
+
+] [12] [13] [14] [15]) (./tables/module_content_data_preprocessing.tex
+Overfull \hbox (1.35962pt too wide) in paragraph at lines 9--9
+\OT1/ppl/m/n/10 Length|  
+ []
+
+
+Overfull \hbox (1.35962pt too wide) in paragraph at lines 14--14
+\OT1/ppl/m/n/10 Length|  
+ []
+
+[16
+
+
+] [17] [18] [19] [20]) [21
+
+]
+Overfull \hbox (8.19061pt too wide) in paragraph at lines 283--284
 \OT1/ppl/b/n/12 and ed-u-ca-tional re-sources \OT1/ppl/m/n/12 (de-scribed sep-a
 -rately un-der Fa-cil-i-ties & Other Re-sources),
  []
 
-[10] [11]
-No file rep_modules.bbl.
-[12
+[22]
+
+Package natbib Warning: Citation `futureheatwaves' on page 23 undefined on inpu
+t line 302.
+
+
+Package natbib Warning: Citation `countyweather' on page 23 undefined on input 
+line 302.
+
+
+Package natbib Warning: Citation `countyfloods' on page 23 undefined on input l
+ine 302.
+
+
+Package natbib Warning: Citation `noaastormevents' on page 23 undefined on inpu
+t line 302.
+
+<figures/csu_hackathon.png, id=288, 332.9238pt x 316.0608pt>
+File: figures/csu_hackathon.png Graphic file (type png)
+
+<use figures/csu_hackathon.png>
+Package pdftex.def Info: figures/csu_hackathon.png used on input line 306.
+(pdftex.def)             Requested size: 248.16519pt x 235.59338pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] [24 <./figures/csu_hackathon.png>] (./rep_modules.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 55.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 55.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 55.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 55.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 55.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 55.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 55.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 55.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 55.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 55.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 55.
+ [25
+
+] [26])
+[27]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
+[28
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
- [13
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
  (./rep_modules.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
 Package rerunfilecheck Info: File `rep_modules.out' has not changed.
 (rerunfilecheck)             Checksum: 3E75D867D5E06AA642EAF4D8E85BDFE0;1318.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
  ) 
 Here is how much of TeX's memory you used:
- 10661 strings out of 493014
- 167052 string characters out of 6133351
- 354170 words of memory out of 5000000
- 14025 multiletter control sequences out of 15000+600000
- 15266 words of font info for 35 fonts, out of 8000000 for 9000
+ 12856 strings out of 493014
+ 199676 string characters out of 6133351
+ 431876 words of memory out of 5000000
+ 16066 multiletter control sequences out of 15000+600000
+ 28666 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,6n,56p,8511b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,10n,56p,8511b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on rep_modules.pdf (13 pages, 103630 bytes).
+xlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on rep_modules.pdf (28 pages, 960656 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

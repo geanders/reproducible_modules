@@ -12,6 +12,19 @@
 \usepackage{subfig}
 \usepackage[labelfont=bf,font=small,format=plain]{caption}
 \usepackage{doi}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{float}
 %\usepackage[authoryear]{natbib}
 \usepackage[numbers]{natbib}
 \usepackage{url,hyperref,color}
@@ -21,6 +34,7 @@
             anchorcolor=darkblue,citecolor=darkblue}
 \newcommand{\fixme}[1]{{\color{red} #1}}
 \renewcommand\thesection{\Alph{section}}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \begin{document}
 \addtokomafont{section}{\large}
 \def\bf{\normalfont\bfseries}
@@ -80,19 +94,20 @@ Email: brooke.anderson@colostate.edu \\
 
 
 \textbf{Budget justification} \ \\
-% Total direct costs over the three years of the project: $x
+% Total direct costs over the three years of the project: $250,000
+% May want to distribute as: $112,500 Year 01, $112,500 Year 02, $25,000 Year 03
 % Modules should be published by the end of the second year. The third year 
 % can be used for futher evaluation and refining of these modules.
 
 {\large \textbf{Personnel}} \\
 
-\noindent \textbf{Brooke Anderson,} \textit{Ph.D., Principal Investigator, x academic person-months, x summer person-months (x\% effort) in Years 01 through 02, x academic person-months, x summer person-months (x\% effort) in Year 03.} Dr. Anderson is an assistant professor of Epidemiology in the Department of Environmental \& Radiological Health Sciences at Colorado State University, with an affiliate position at the Department of Statistics. She is an expert in R programming and has created and published several open-source R packages, in particular to facilitate environmental epidemiological research. She has experience creating R programs to work with large data, including climate model output and large weather datasets, as well as programs that interface with open web-based datasets. She is the co-instructor of a series of Massive Open Online Courses on \textit{Mastering Software Development in R} through Coursera and an associated open online book. Dr. Anderson will lead the development of all training modules developed through this grant, including through supervising the development and integration of training materials from co-investigators. She will also lead user testing and other evaluation of all developed modules to ensure the developed modules are clear, effective, and well-matched to meet the needs of biological researchers from a variety of scientific backgrounds, including those new to programming. 
+\noindent \textbf{Brooke Anderson,} \textit{Ph.D., Principal Investigator, x academic person-months, x summer person-months (20\% effort) in Years 01 through 02, x academic person-months, x summer person-months (5\% effort) in Year 03.} Dr. Anderson is an assistant professor of Epidemiology in the Department of Environmental \& Radiological Health Sciences at Colorado State University, with an affiliate position at the Department of Statistics. She is an expert in R programming and has created and published several open-source R packages, in particular to facilitate environmental epidemiological research. She has experience creating R programs to work with large data, including climate model output and large weather datasets, as well as programs that interface with open web-based datasets. She is the co-instructor of a series of Massive Open Online Courses on \textit{Mastering Software Development in R} through Coursera and an associated open online book. Dr. Anderson will lead the development of all training modules developed through this grant, including through supervising the development and integration of training materials from co-investigators. She will also lead user testing and other evaluation of all developed modules to ensure the developed modules are clear, effective, and well-matched to meet the needs of biological researchers from a variety of scientific backgrounds, including those new to programming. 
 
-\noindent \textbf{Mike Lyons,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (x\% effort) in Years 01 through 02, x academic person-months, x summer person-months (x\% effort) in Year 03.}
+\noindent \textbf{Mike Lyons,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02, x academic person-months.}
 
-\noindent \textbf{Marcela Henao-Tamayo,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (x\% effort) in Years 01 through 02, x academic person-months, x summer person-months (x\% effort) in Year 03.}
+\noindent \textbf{Marcela Henao-Tamayo,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02.}
 
-\noindent \textbf{Mercedes Gonzalez-Juarrero,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (x\% effort) in Years 01 through 02, x academic person-months, x summer person-months (x\% effort) in Year 03.}
+\noindent \textbf{Mercedes Gonzalez-Juarrero,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02.}
 
 {\large \textbf{Travel}} \\
 
@@ -129,7 +144,8 @@ Email: brooke.anderson@colostate.edu \\
 % Snacks for 15 x 3; Coffee for 15 x 3
 % Total hospitality budget for each shorter user testing (round up): $75 
 
-\noindent \textbf{Consulting?} For evaluation of the completed modules. Also, for recording demographics, etc., for evaluation purposes. Check the requirements in the grant call for this.
+\noindent \textbf{Consulting?} For evaluation of the completed modules. Also, for recording demographics, etc., for evaluation purposes. Check the requirements in the grant call for this. \textit{Check STEM contact for this.}
+% Maximum budget for evaluation costs: $3,000 over the project period
 
 \newpage
 
@@ -150,20 +166,23 @@ We will develop training modules for improving the reproducibility of experiment
 \begingroup
     \fontsize{11pt}{12pt}\selectfont 
 
-\textbf{Significance and educational aims of proposed modules.} \\
+\textbf{Significance and educational aims of proposed modules.} Among the steps in conducting experimental research, the collection and pre-processing of experimental data are steps where it is critical to ensure good practices to ensure research reproducibility. However, much of the training available for computational reproducibility focuses on later steps of the research process, such as the analysis of processed experimental data. Here, we aim to develop training modules that focus on principals and techniques of improving the reproducibility of research at these stages of the research process. We will focus on making these modules accessible and useful to laboratory-based researchers by including examples of improving reproducibility at these stages of microbiology and immunology research projects and will evaluate the training modules through user testing among laboratory-based researchers.
 
-\textbf{Proposed content of training modules.} \\
+\textbf{Proposed content of training modules.} We will develop two sequences of modules to train researchers in how and why to improve reproducibility in the collection and pre-processing of experimental data, including training on implementing these approaches using open source R software tools. Working with laboratory-based co-investigators on our team, we will ensure that these modules and the examples used in them are approachable and useful to researchers without extensive computational training, helping the modules address an audience beyond those of existing training materials on R programming tools for reproducible research. Further, the training modules will focus on reproducibility in the data collection and pre-processing stages of projects, rather than in experimental design or data analysis.
 
-\textbf{Format of training modules.} \\
+The first sequence will be ``Improving the Reproducibility of Experimental Data Recording", and it will include modules on the principals of the tidy data format, creating and using spreadsheet templates for data collection, developing project templates for organized and consistent data and meta-data collection, harnessing version control to improve transparency in data collection, and using GitLab for version-controlled collaborations. The second sequence will be ``Improving the Reproducibility of Experimental Data Pre-Processing", with modules on how and why to use code scripts for data pre-processing, creating reproducible data pre-processing protocols using \textit{rmarkdown}, examples of developing reproducible data pre-processing protocols, and converting from complex Bioconductor data types to tidy data formats to allow use of R's ``tidy" data tools. 
 
-\textbf{Evaluation of training modules.} \\
+\textbf{Format of training modules.} Each module within each of these sequences will focus on a video lecture of 5--30 minutes. These videos will be collected together in an online book, where each module will form a chapter with an embedded video, and text and applied exercises or discussion questions will accompany each video. This book will be freely and openly published online under the Creative Commons license, to ensure it is available to any U.S. researcher. To ensure compliance with x, we will include in the online book transcripts for each training video.
 
-\textbf{Project team.}  This project will bring together experts in R programming (Anderson, Lyons), including its use to improve the computational reproducibility of health-related research, with laboratory-based academic researchers in Microbiology and Immunology (Co-Is Henao-Tamayo, Gonzalez-Juarrero) who are attuned to the needs of and barriers to improving the reproducibility of experimental data collection and pre-processing. Our team will allow us to develop training modules that both present state-of-the-art approaches and tools to reproducibility, but do so in a way that is prioritized to be most useful and accessible to health researchers whose training has focused on laboratory-related, rather than computational, methods, and for whom existing training materials on computational reproducibility might be hard to understand or apply to their own research projects. 
+\textbf{Evaluation of training modules.} We will conduct two-day user testing sessions each year of the grant. \textbf{These will be focused on scientists at a variety of levels (undergraduate to faculty) and will determine the usefulness, clarity, and relevance of the developed modules to these researchers.} These evaluation sessions will include live presentations of the lectures to be taped as modules, as well as directed work-throughs of the practical exercises included in the online book for each module. We will focus these testings on members of Colorado State University's Department of Microbiology, Immunology, \& Pathology. Following the user testing (e.g., six months--one year after), we will survey the lab head to determine which practices taught in the modules have been adapted.
+
+\textbf{Project team.}  This project will bring together experts in R programming (Anderson, Lyons), including its use to improve the computational reproducibility of health-related research, with laboratory-based academic researchers in Microbiology and Immunology (Henao-Tamayo, Gonzalez-Juarrero) who are \textbf{attuned to the needs of and barriers to improving the reproducibility of experimental data collection and pre-processing}. Our team will allow us to develop training modules that both present state-of-the-art approaches and tools to reproducibility, but do so in a way that is prioritized to be most useful and accessible to health researchers whose training has focused on laboratory-related, rather than computational, methods, and for whom existing training materials on computational reproducibility might be hard to understand or apply to their own research projects. 
 
 \endgroup
 
 \clearpage
 
+\section*{Research Education Program Plan}
 
 \section{Significance}
 \vspace{-0.1in}
@@ -179,6 +198,8 @@ We will develop training modules for improving the reproducibility of experiment
 ``Taking into consideration the nature of the proposed research education program, does the applicant make a strong case for this program effectively reaching an audience in need of the program's offerings? Where appropriate, is the proposed program developing or utilizing innovative approaches and latest best practices to improve the knowledge and/or skills of the intended audience?"
 \end{quotation}
 
+These modules will teach the principals of reproducibility as well as introduce researchers to tools for implementing reproducible research workflows. The implementation portion of these modules will focus on tools from the open-source R programming language. R can be freely, quickly, and easily downloaded and installed to a user's computer, allowing new users to get started quickly, a critical consideration for usable scientific software \cite{list2017ten}. R has been maintained for over a decade by the R Development Core Team and works with all major computing platforms, ensuring  widespread access, stability, and compatability, also critical for ease-of-use \cite{baumer2017lessons, altschul2013anatomy}. R offers a well-developed environment for creating new tools that extend the core language \cite{wickham2015r} and includes ample tools for documenting research workflows \cite{xie2015dynamic, xie2016bookdown}. R's status as the \textit{lingua franca} of statisticians and biostatisticians means that its use in early stages of experimental data recording and pre-processing can help foster closer collaborations between laboratory-based scientists and statisticians throughout the research process. R can be scaled as the volume of data in projects grows \cite{list2017ten}, as it includes tools to interface with distributed computing platforms (e.g., \textit{Hadoop} \cite{pathak2014rhadoop}, \textit{Spark} \cite{sparklyr}), and its scripts can be integrated within workflow management systems (e.g., \textit{Galaxy} \cite{goecks2010galaxy, walker2016models}). 
+
 \section{Approach}
 
 \begin{quotation}
@@ -193,24 +214,25 @@ We will develop training modules for improving the reproducibility of experiment
 
 \subsubsection{Educational goals of the modules}
 
+The importance of computational reproducibility of scientific research is increasingly recognized by scientists, journals, and funding agencies, with such ``computationally reproducible" research requiring that all data and code for a research project be available and that this data and code can be used to regenerate study findings either by the original researcher or by other researchers \cite{ellis2017share, ram2013git}.
+
+Every extra step of data formatting is another chance to introduce an error in the data. Therefore, by keeping research data pipelines simple---which can be more easily achieved if data is initially recorded in a format amenable to later data pre-processing, analysis, and visualization---researchers can decrease the potential for errors in the data and therefore improve the rigor and reproducibility of their research.
+
+\textbf{Improving the Reproducibility of Experimental Data Recording} One key concept for improving the reproducibility of experimental data collection is understanding how to create and use the ``tidy" data format, which enables later data analysis using R's \textit{tidyverse} framework. The \textit{tidyverse} framework enables powerful and user-friendly data management, processing, and analysis by combining simple tools to solve complex, multi-step problems, and this framework is enabled by ensuring those simple tools share a common interface: a ``tidy" data format \cite{ross2017declutter, silge2016tidytext, wickham2016ggplot2, wickham2016r}. Working within the R framework facilitates research that adheres to standards of reproducibility through scriptable data analysis that can easily be placed under version control \cite{bryan2017excuse}. Since the tools are simple and share a common interface, they are easier to learn, use, and combine than tools created in the classical R framework \cite{ross2017declutter, lowndes2017our, reviewer2017review, mcnamara2016state}. This \textit{tidyverse} framework is quickly becoming the standard taught in introductory R courses and books \cite{hicks2017guide, baumer2015data, kaplan2017teaching, stander2017enthusing, reviewer2017review, mcnamara2016state} (see also Letters of Support [LOS], Kimmel, Peng), ensuring ample training resources for researchers new to programming, including books (e.g., \cite{baumer2017modern, lifesciencesR}, some freely available online, e.g., \cite{wickham2016r}), massive open online courses (MOOCs), onsite university courses \cite{baumer2015data, kaplan2017teaching, stander2017enthusing}, and Software Carpentry workshops \cite{wilson2014software, pawlik2017developing}. Further, tools that extend the tidyverse have been created to enable high-quality data analysis and visualization in several domains, including text mining \cite{silge2017text}, microbiome studies \cite{mcmurdie2013phyloseq}, natural language processing \cite{RJ-2017-035}, network analysis \cite{RJ-2017-023}, ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}.
+
+RStudio allows users to create their own custom ``Project" template, suited to a specific type of data analysis or software development, which can then be registered and accessed by other users \cite{rstudioprojecttemplate}. While a ``Project" can have any internal structure, a common structure can be enforced for a certain type of project through the creation of a new ``Project" template, which defines the required subdirectories, structure, and file names of common elements that must exist in the project \cite{rstudioprojecttemplate}. This template, when selected by a future user, will create a new directory with a ``skeleton" structure, potentially including templated files (e.g., for metadata). Projects saved in this format can be easily put under \textit{Git} version control in \textit{RStudio}, which includes a pane that allows users to work under version control without learning command-line version control language and, if desired, easily connect the project with an online version of the project hosted on \textit{GitHub}. This ``project" framework has recently been encouraged by a number of researchers as a way to enable computationally reproducible research, especially for research conducted by teams \cite{marwick2017packaging, parker2017opinionated, lowndes2017our}, and the use of \textit{Git} and \textit{GitHub} has also been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2017excuse, lowndes2017our, cetinkaya2017infrastructure}.  
+
+\textbf{Improving the Reproducibility of Experimental Data Pre-Processing.} Scriptable software tools bring key advantages compared to GUI software in terms of data pre-processing \cite{cetinkaya2017infrastructure, huber2015orchestrating, preeyanon2014reproducible, piccolo2016tools}, but it is critical to provide some training on the use of these tools for researchers new to programming. Expertise with a scripting language is not universal across the biomedical community, although literacy in programming is increasing in the sciences \cite{ram2013git}, and many now recommend programming as a critical skill for all biology Ph.D. students \cite{list2017ten}. 
+
+\textit{Contrast the lack of guidance on experimental data recording for academic research with the guidelines from industry, including ``Good laboratory practice").}
+
 \subsubsection{Module subject material}
 
 We propose to develop two collections of modules, \textbf{Improving the Reproducibility of Experimental Data Recording} and \textbf{Improving the Reproducibility of Experimental Data Pre-Processing}. 
 
-The \textbf{Improving the Reproducibility of Experimental Data Recording} collection will include the following modules:
+\input{tables/module_content_data_recording.tex}
 
-\begin{enumerate}
-\item The principals of ``tidy" data
-\item Creating spreadsheet templates for experimental data collection
-\item Example spreadsheet template: A template for collecting CPU data for a tuberculosis study [make more specific]
-\item Choosing a spreadshet program for reproducible data collection: Excel, Google Sheets, and RStudio 
-\item Organizing data recording and meta-data recording through RStudio ``Projects"  
-\item Creating ``Project Templates" for consistency across projects
-\item Example of creating a ``Project Template": A project template for a lab group studying tuberculosis [make more specific]
-\item Harnessing version control (git and GitLab) to improve transparency in data recording
-\item Using git from RStudio
-\item Using GitLab for version controlled collaborations
-\end{enumerate}
+\input{tables/module_content_data_preprocessing.tex}
 
 The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} collection will include the following modules:
 
@@ -234,6 +256,8 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \item Each chapter will end with exercise questions (around 10 questions, combination of discussion questions and applied exercises), as well as an embedded video with discussion of the discussion questions and a detailed walk-through of answers to applied exercises. 
 \item Possibly host this through an online course platform like DataCamp?
 \end{itemize}
+
+\textbf{Online book.} To ensure that these training modules are easy for researchers to access, use, and reference, we will provide all training materials through an online book created with the \textit{bookdown} framework \cite{xie2016bookdown} (see LOS, Xie). Through this new framework, we will be able to create a searchable online book that weaves R code into the text and that can include embedded tutorial videos, active weblinks to online references, and computationally reproducible practice examples and exercises. Further, by including R code examples as executable code, we will be able to use this online book to frequently check tutorial code examples to quickly identify and fix any broken tutorial code \cite{xie2016bookdown}.  Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}.  
 
 \subsubsection{Piloting and evaluating effectiveness of training modules}
 
@@ -265,6 +289,8 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 ``Applications must include a plan for evaluating the activities supported by the award in terms of their \textbf{frequency of use} and their \textbf{usefulness}. The use of \textbf{multiple evaluation approaches} is highly encouraged as is \textbf{testing several groups with different characteristics}. The application must specify \textbf{baseline metrics (e.g., numbers, educational levels, and demographic characteristics of test group)} in a structured format, as well as \textbf{measures to gauge the short and long-term success of the research education award in achieving its objectives}. Applicants are expected to \textbf{obtain feedback from test group} to help identify weaknesses and to provide suggestions for improvements, and \textbf{make the evaluation and feedback data} available to NIGMS staff."
 \end{quotation}
 
+\textbf{Learning objectives} These are what we're trying to determine were achieved by the training modules.
+
 \textbf{Pilot / text group evaluation}:
 
 \begin{itemize}
@@ -272,6 +298,15 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \item Recruit researchers / faculty as pilot testers?
 \item Work with CSU's Research Ethics group to figure out ways to pilot?
 \end{itemize}
+
+The key goal of this project is to develop tools that are easy to use by a broad range of applied metabolomics researchers. We will therefore conduct regular short (two hours) user testings several times per year and one long (two days) user testing session per year. The user testing groups will consist primarily of student trainees involved in applied metabolomics research from a range of departments at Colorado State University (see LOS, Clark, De Long, Heuberger). The shorter testing sessions will be used to test stable versions of the developed R packages immediately before they are published to the Comprehensive R Archive Network (CRAN). These testing sessions will ask participants to work through package tutorial vignettes and other test cases and will focus on identifying aspects of the package that cause unwanted behavior on certain computer systems or when users provide unexpected input. Further, these shorter testing sessions will be used to identify sections of vignette tutorials or help files that are unclear to targeted users. The longer, two-day testing sessions will be more open and will provide participants with open-ended metabolomics data analysis challenges, using data from \textit{Metabolomics Workbench} and the \textit{National Metabolomics Data Repository} that differ from the data used to develop the tools. Participants will be scheduled into groups, allowing them to participate during the two days while meeting outside obligations like classes and meetings. Participants will be encouraged to use both the tools we develop here, as well as any other available R tools, to complete these challenges in groups in a ``hackathon"-style structure. Participants will be given guidance on how to use GitHub to work in groups and share final results from the challenge, a framework Dr. Anderson has successfully used in a previous similar event at Colorado State University (Figure \ref{csu-r-hackathon}). This longer testing will help us identify limitations in the usability of the tools we will develop here, validate the tools using separate data, scope future development aims by identifying analysis tools that users would have liked to have to help with these open-ended challenges but that were not yet available in the R environment, and compare the tools we develop to existing metabolomics data analysis and visualization tools. Dr. Anderson (PI) has run several two-hour user testing sessions with students from various departments of Colorado State University prior to releasing R software packages \cite{futureheatwaves, countyweather}. Further, in April 2016, she led a longer, two-day user testing session through a Weather Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}). Around 15 people participated, including undergraduate students, graduate students, postdoctoral fellows, and professors from CSU's Departments of Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and Statistics. Some of the ideas and code developed during this Hackathon have since led to development and publication of open source software \cite{countyfloods, noaastormevents}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/csu_hackathon.png}
+\end{center}
+\caption{\label{csu-r-hackathon} Some of the approximately 15 undergraduate students, graduate students, postdoctoral fellows, and professors who participated in a two-day Weather Data Hackathon at Colorado State University in April 2016.}
+\end{figure}
 
 \textbf{Long-term evaluation}:
 
@@ -288,6 +323,10 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \begin{quotation}
 ``A specific plan must be provided to disseminate the finished training modules \textbf{nationally} and make them \textbf{freely accessible}. In addition, links to these modules will be posted and maintained on the NIGMS web site."
 \end{quotation}
+
+We will create an online tutorial book, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten}. We will use GitHub's free ``Pages" web publishing framework to publish the book freely online, and we will also submit it to the \textit{bookdown.org} website under a Creative Commons license. Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}. Both are publicly and freely available online under the Creative Commons license (see LOS, Xie). 
+
+We will publish the video lectures using the YouTube platform and embed these videos within the online book. The videos, like the book, will be published under a Creative Commons license.
     
 \subsection{Timeline}
 
@@ -301,7 +340,7 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \section{Works cited}
 
 \bibliographystyle{unsrtnat}
-\bibliography{tb_hfs_proposal}
+\bibliography{rep_modules}
 
 \clearpage
 
@@ -312,12 +351,16 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \end{quotation}
 
 \begin{itemize}
-\item Computers. Access to needed software.
+\item Computers. Access to needed software. Computer services (IT).
 \item Library. Access to many recent books online.
-\item Recording equipment / studio?
 \item Teaching expertise?
 \item Research Rigor \& Ethics center / training?
 \item Tech Transfer
+\item Participating departments (and their commitment)
 \end{itemize}
+
+\textbf{Video Studio and Editing Bays.} CSU's Morgan Library has a video studio and editing bays that can be used by anyone affiliated with CSU to record and edit video content (\url{https://lib.colostate.edu/technology/video-studio-editing-bays/}). These can be reserved and used for free for up to three hours at a time. This facility includes microphones, video lights, video recording equipment, and video editing software.
+
+\textbf{Computer Assisted Teaching Support (CATS) Laboratory.} Staff and facilities for professional video recording and editing. \textit{If we need a cost share for this proposal, their contribution could potentially be in-kind.}
 
 \end{document}
