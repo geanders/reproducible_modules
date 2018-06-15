@@ -1,4 +1,4 @@
-\documentclass[pdftex,english,12pt,parskip=half]{scrartcl}
+\documentclass[pdftex,english,11pt,parskip=half]{scrartcl}
 \usepackage{palatino}
 \usepackage{mathpazo}
 \usepackage[margin=0.7in]{geometry}
@@ -22,6 +22,7 @@
 \usepackage{tabu}
 \usepackage{threeparttable}
 \usepackage{threeparttablex}
+\usepackage{array}
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{float}
@@ -34,6 +35,7 @@
             anchorcolor=darkblue,citecolor=darkblue}
 \newcommand{\fixme}[1]{{\color{red} #1}}
 \renewcommand\thesection{\Alph{section}}
+\renewcommand{\familydefault}{\sfdefault}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \begin{document}
 \addtokomafont{section}{\large}
@@ -82,8 +84,7 @@ Regards,
 Brooke Anderson (PI) \\
 Mike Lyons (Co-I) \\
 Marcela (Co-I) \\
-Mercedes (Co-I) \\
-Others?
+Mercedes (Co-I) 
 
 1681 Campus Delivery \\
 Fort Collins, Colorado 80523-1681 \\
@@ -101,35 +102,35 @@ Email: brooke.anderson@colostate.edu \\
 
 {\large \textbf{Personnel}} \\
 
-\noindent \textbf{Brooke Anderson,} \textit{Ph.D., Principal Investigator, x academic person-months, x summer person-months (20\% effort) in Years 01 through 02, x academic person-months, x summer person-months (5\% effort) in Year 03.} Dr. Anderson is an assistant professor of Epidemiology in the Department of Environmental \& Radiological Health Sciences at Colorado State University, with an affiliate position at the Department of Statistics. She is an expert in R programming and has created and published several open-source R packages, in particular to facilitate environmental epidemiological research. She has experience creating R programs to work with large data, including climate model output and large weather datasets, as well as programs that interface with open web-based datasets. She is the co-instructor of a series of Massive Open Online Courses on \textit{Mastering Software Development in R} through Coursera and an associated open online book. Dr. Anderson will lead the development of all training modules developed through this grant, including through supervising the development and integration of training materials from co-investigators. She will also lead user testing and other evaluation of all developed modules to ensure the developed modules are clear, effective, and well-matched to meet the needs of biological researchers from a variety of scientific backgrounds, including those new to programming. 
+\noindent \textbf{Brooke Anderson,} \textit{Ph.D., Principal Investigator, x academic person-months, x summer person-months (25\% effort) in Years 01 through 02, x academic person-months, x summer person-months (10\% effort) in Year 03.} Dr. Anderson is an assistant professor of Epidemiology in the Department of Environmental \& Radiological Health Sciences at Colorado State University, with an affiliate position at the Department of Statistics. She is an expert in R programming and has created and published several open-source R packages, in particular to facilitate environmental epidemiological research. She has experience creating R programs to work with large data, including climate model output and large weather datasets, as well as programs that interface with open web-based datasets. She is the co-instructor of a series of Massive Open Online Courses on \textit{Mastering Software Development in R} through Coursera and an associated open online book. Dr. Anderson will lead the development of all training modules developed through this grant, including through supervising the development and integration of training materials from co-investigators. She will also lead user testing and other evaluation of all developed modules to ensure the developed modules are clear, effective, and well-matched to meet the needs of biological researchers from a variety of scientific backgrounds, including those new to programming. 
 
-\noindent \textbf{Mike Lyons,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02, x academic person-months.}
+\noindent \textbf{Mike Lyons,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03, x academic person-months.}
 
-\noindent \textbf{Marcela Henao-Tamayo,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02.}
+\noindent \textbf{Marcela Henao-Tamayo,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03.}
 
-\noindent \textbf{Mercedes Gonzalez-Juarrero,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01 through 02.}
+\noindent \textbf{Mercedes Gonzalez-Juarrero,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03.}
 
 {\large \textbf{Travel}} \\
 
-\noindent \textbf{Domestic travel.} Funds for PI (Dr. Anderson) to travel to one domestic conferences (\$1,500 per conference) to learn about cutting edge reproducible research techniques. Potential conferences to be attended include the International R Users' Conference (UseR) on the years it is in the U.S. (typically every other year) or the Annual RStudio Conference. This domestic travel budget also includes funds (\$900 per trip) for Dr. Anderson (PI) to travel to up to two Program Meetings over the course of the project. No travel is anticipated in Year 3 of the project, when the focus will be on final evaluation and refining of the training developed and published in Years 01 and 02.
+\noindent \textbf{Domestic travel.} Domestric travel funds are requested for three travel expenses: (1) Travel for PI and one co-I to travel to the American Society for Microbiology Conference in Chicago, IL, in June 2020 (Year 02 of project period) to lead a workshop based on the developed training materials and to present a poster on the project results to help disseminate these results to laboratory-based biomedical researchers; (2) Travel for PI to attend either the UseR or RStudio Conference in Year 01, to ensure cutting-edge implementation methods for improving computational reproducibility of research is included in the training materials and to learn the latest techniques for using R's \textit{bookdown} interface to create and disseminate free and open training materials; and (3) Travel for PI to attend a Program Meeting in Year 03 of the project. 
 \begin{itemize}
-\item Year 01: \$2,400
-\item Year 02: \$2,400
-\item Year 03: \$0
+\item Year 01: \$1,400
+\item Year 02: \$2,800
+\item Year 03: \$1,000
 \end{itemize}
 % The conference travel budget estimates $400 per flight, $175 per night at a hotel for four nights, and $75 per day for food for five days, then rounds up. 
 % The SC meeting travel budget estimates $300 for flight, $175 per night at a hotel for 2.5 nights, and $75 per day for food for three days, then rounds down (presumably some meals would be covered).
 
-{\large \textbf{Materials and Supplies}} \\ Annual funds (\$1,000 / year) are also  requested for recording equipment (e.g., microphone), screen-capture software (e.g., \textit{Camtasia}), other software, and books to facilitate the proposed training module development. \\
+{\large \textbf{Materials and Supplies}} \\ Annual funds (\$300/year) are requested for screen-capture software (e.g., \textit{Camtasia}), other software, and books to facilitate the proposed training module development. \\
 
-\noindent \textbf{Conference Registrations.} Funds are budgeted for Years 01 and 02 for Dr. Anderson to register for a yearly domestic conference on cutting-edge tools and principals for conducting computationally reproducible research (e.g., UseR or RStudio Conferences). Attending a conference each year will help us include the most up-to-date tools and approaches in the developed training modules.
+\noindent \textbf{Conference Registrations.} Funds are budgeted for (1) Registration for PI and one co-I to for the American Society for Microbiology Conference in Chicago, IL, in June 2020 (Year 02 of project period), for which they will apply to lead a workshop based on the developed training materials and to present a poster on the project results to help disseminate these results to laboratory-based biomedical researchers; (2) Registration for PI to attend either the UseR or RStudio Conferences in Year 01, to ensure cutting-edge implementation methods for improving computational reproducibility of research is included in the training materials and to learn the latest techniques for using R's \textit{bookdown} interface to create and disseminate free and open training materials
 \begin{itemize}
-\item Year 01: \$500
-\item Year 02: \$500
+\item Year 01: \$800
+\item Year 02: \$1600
 \item Year 03: \$0
 \end{itemize}
 
-\noindent \textbf{Hospitality.} Funds are budgeted each year to provide breakfast, lunch, coffee, and snacks for two days to 20 people (for the proposed annual extended user testing meetings at Colorado State University; budgeted at \$850 / year). Colorado State University provides room reservations free to faculty for similar events, and so funds to rent a space are not required (See Letter of Support, Dr. Jac Nickoloff).
+\noindent \textbf{Hospitality.} Funds are budgeted each year to provide breakfast, lunch, coffee, and snacks for two days per project year to 20 people (budgeted at \$425/day) for biannual user testing days with faculty, research associates, postdoctoral fellows, graduate students, and undergraduate students from Colorado State University. Colorado State University provides room reservations free to faculty for similar events, and so funds to rent a space are not required (See Letter of Support, Dr. Jac Nickoloff).
 \begin{itemize}
 \item Year 01: \$850
 \item Year 02: \$850
@@ -144,7 +145,12 @@ Email: brooke.anderson@colostate.edu \\
 % Snacks for 15 x 3; Coffee for 15 x 3
 % Total hospitality budget for each shorter user testing (round up): $75 
 
-\noindent \textbf{Consulting?} For evaluation of the completed modules. Also, for recording demographics, etc., for evaluation purposes. Check the requirements in the grant call for this. \textit{Check STEM contact for this.}
+\noindent \textbf{Consulting through CSU's STEM center for project evaluation.} Julie Maertens will assist in the design and implementation of project evaluation each year of this project.
+\begin{itemize}
+\item Year 01: \$1,000
+\item Year 02: \$1,000
+\item Year 03: \$1,000
+\end{itemize}
 % Maximum budget for evaluation costs: $3,000 over the project period
 
 \newpage
@@ -165,18 +171,21 @@ We will develop training modules for improving the reproducibility of experiment
 \section*{Specific Aims}
 \begingroup
     \fontsize{11pt}{12pt}\selectfont 
+    
+Many excellent free training resources exist to improve the computational reproducibility of biomedical research. However, most of these materials target researchers at the stage of \textit{data analysis}, and provide much less guidance principals and techniques to improve the reproducibility of the earlier steps of \textbf{experimental data recording} and \textbf{experimental data pre-processing}. In this project, we will create training modules to fill this gap. A key aim is to make these modules \textbf{accessible and useful to laboratory-based researchers} by including examples from real microbiology and immunology research projects and by piloting the training modules among laboratory-based biomedical researchers.
 
-\textbf{Significance and educational aims of proposed modules.} Among the steps in conducting experimental research, the collection and pre-processing of experimental data are steps where it is critical to ensure good practices to ensure research reproducibility. However, much of the training available for computational reproducibility focuses on later steps of the research process, such as the analysis of processed experimental data. Here, we aim to develop training modules that focus on principals and techniques of improving the reproducibility of research at these stages of the research process. We will focus on making these modules accessible and useful to laboratory-based researchers by including examples of improving reproducibility at these stages of microbiology and immunology research projects and will evaluate the training modules through user testing among laboratory-based researchers.
+% \textbf{Significance and educational aims of proposed modules.} Among the steps in conducting experimental research, the collection and pre-processing of experimental data are steps where it is critical to ensure good practices to ensure research reproducibility. However, much of the training available for computational reproducibility focuses on later steps of the research process, such as the analysis of processed experimental data. Here, we aim to develop training modules that focus on principals and techniques of improving the reproducibility of research at these stages of the research process. 
 
-\textbf{Proposed content of training modules.} We will develop two sequences of modules to train researchers in how and why to improve reproducibility in the collection and pre-processing of experimental data, including training on implementing these approaches using open source R software tools. Working with laboratory-based co-investigators on our team, we will ensure that these modules and the examples used in them are approachable and useful to researchers without extensive computational training, helping the modules address an audience beyond those of existing training materials on R programming tools for reproducible research. Further, the training modules will focus on reproducibility in the data collection and pre-processing stages of projects, rather than in experimental design or data analysis.
+\textbf{Content of training modules.} We will develop two sequences of modules. The first sequence, \textbf{``Improving the Reproducibility of Experimental Data Recording"}, will explore the pitfalls of combining experimental data recording and analysis through the use of macro-enabled spreadsheets, explain the power of recording data in structured data formats, present the 'tidy' data format as one implementation of structured data, explain how reproducibility can be improved by using consistently-structured 'Project' directories to store all research project files, and demonstrate the use of \textit{git} and \textit{GitLab} to maintain single, current versions of all files while tracking the evolution of those files. The second sequence, \textbf{``Improving the Reproducibility of Experimental Data Pre-Processing"}, will focus on improving the reproducibility of experimental data pre-processing steps, like gating for flow cytometry data and peak finding / quantifying for mass spectrometry data. Training materials will explain how the use of code scripts for these steps dramatically improve reproducibility compared to using vendor-supplied point-and-click software and will introduce trainees to some of the popular R software extensions for this pre-processing. This sequence will also include advice on how to use literate programming tools (\textit{Rmarkdown}) to create well-documented data pre-processing protocols that a research group can re-use to consistently and reproducibly pre-process the experimental data they collect. Each module will fall into one of three categories for teaching reproducibility: (1) principals; (2) implementation; and (3) case study examples. Implementation modules will focus on tools available through the popular open source R software and its RStudio interface. Working with laboratory-based co-investigators on our team, we will ensure that these modules and the examples used in them are approachable and useful to researchers without extensive computational training.  
 
-The first sequence will be ``Improving the Reproducibility of Experimental Data Recording", and it will include modules on the principals of the tidy data format, creating and using spreadsheet templates for data collection, developing project templates for organized and consistent data and meta-data collection, harnessing version control to improve transparency in data collection, and using GitLab for version-controlled collaborations. The second sequence will be ``Improving the Reproducibility of Experimental Data Pre-Processing", with modules on how and why to use code scripts for data pre-processing, creating reproducible data pre-processing protocols using \textit{rmarkdown}, examples of developing reproducible data pre-processing protocols, and converting from complex Bioconductor data types to tidy data formats to allow use of R's ``tidy" data tools. 
+\textbf{Format and dissemination of training modules.} All training modules will be collected together in an online book, with each chapter covering one module. The chapter will center on an embedded YouTube video with a recorded lecture of 10--25 minutes, recorded in Colorado State University's professional-grade video recording facilities. The chapter will include written text to supplement the video lecture and to be used as a later reference by trainees. Each chapter will end with additional educational materials crafted to reinforce the video lecture, including discussion questions, applied exercises, and multiple choice quizzes. We will create this book using R's \textit{bookdown} framework and will publish it freely and openly online---under the Creative Commons 3.0 license---using Git Pages, with Google Analytics enabled to aid in evaluation. 
 
-\textbf{Format of training modules.} Each module within each of these sequences will focus on a video lecture of 5--30 minutes. These videos will be collected together in an online book, where each module will form a chapter with an embedded video, and text and applied exercises or discussion questions will accompany each video. This book will be freely and openly published online under the Creative Commons license, to ensure it is available to any U.S. researcher. To ensure compliance with x, we will include in the online book transcripts for each training video.
+%To comply with x, we will include in the online book transcripts for each training video.
+\textbf{Evaluation of training modules.} Our evaluations of the training modules developed under this grant will be assisted by an expert in program evaluation from Colorado State University's Science, Technology, Education, and Mathematics (STEM) Center (Maertens). \textbf{These evaluations will be focused on scientists at a variety of levels (undergraduate to faculty) and will determine the usefulness, clarity, and relevance of the developed modules to these researchers.} We will conduct project evaluations of: (1) on-campus pilot testers; (2) off-campus pilot testers; (3) workshop participants at a national microbiology meeting; and (4) online users of the final online book. We will collect evaluation resultsthrough website analytics, quantitative survey questions, open-ended survey questions, and focus-group-style feedback generated through biannual full-day pilot testing sessions at Colorado State University and at a workshop at the American Association for Microbiology's annual meeting. Results on the long-term benefits of the training modules will be collected by one-year follow-up surveys to the pilot testers and workshop participants.
 
-\textbf{Evaluation of training modules.} We will conduct two-day user testing sessions each year of the grant. \textbf{These will be focused on scientists at a variety of levels (undergraduate to faculty) and will determine the usefulness, clarity, and relevance of the developed modules to these researchers.} These evaluation sessions will include live presentations of the lectures to be taped as modules, as well as directed work-throughs of the practical exercises included in the online book for each module. We will focus these testings on members of Colorado State University's Department of Microbiology, Immunology, \& Pathology. Following the user testing (e.g., six months--one year after), we will survey the lab head to determine which practices taught in the modules have been adapted.
+% These evaluation sessions will include live presentations of the lectures to be taped as modules, as well as directed work-throughs of the practical exercises included in the online book for each module. We will focus these testings on members of Colorado State University's Department of Microbiology, Immunology, \& Pathology. Following the user testing (e.g., six months--one year after), we will survey the lab head to determine which practices taught in the modules have been adapted. 
 
-\textbf{Project team.}  This project will bring together experts in R programming (Anderson, Lyons), including its use to improve the computational reproducibility of health-related research, with laboratory-based academic researchers in Microbiology and Immunology (Henao-Tamayo, Gonzalez-Juarrero) who are \textbf{attuned to the needs of and barriers to improving the reproducibility of experimental data collection and pre-processing}. Our team will allow us to develop training modules that both present state-of-the-art approaches and tools to reproducibility, but do so in a way that is prioritized to be most useful and accessible to health researchers whose training has focused on laboratory-related, rather than computational, methods, and for whom existing training materials on computational reproducibility might be hard to understand or apply to their own research projects. 
+\textbf{Project team.}  This project will bring together experts in R programming (Anderson, Lyons), including its use to improve the computational reproducibility of health-related research, with laboratory-based academic researchers in Microbiology and Immunology (Henao-Tamayo, Gonzalez-Juarrero) who are \textbf{attuned to the needs of and barriers to improving the reproducibility of experimental data collection and pre-processing among laboratory-based biomedical researchers}. Our team will allow us to develop training modules that present state-of-the-art approaches and tools to reproducibility, but do so in a way that is prioritized to be most useful and accessible to health researchers whose training has focused on laboratory-related, rather than computational, methods, and for whom existing training materials on computational reproducibility might be hard to understand or apply to their own research projects. 
 
 \endgroup
 
@@ -234,20 +243,6 @@ We propose to develop two collections of modules, \textbf{Improving the Reproduc
 
 \input{tables/module_content_data_preprocessing.tex}
 
-The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} collection will include the following modules:
-
-\begin{enumerate}
-\item An introduction to R code scripts
-\item The benefits of scripts for data pre-processing
-\item Getting started with RMarkdown 
-\item The relationship between R code scripts and RMarkdown documents
-\item Creating reproducible data pre-processing protocols using Rmarkdown
-\item Example of a reproducible data pre-processing protocol: Automated gating for flow cytometry data
-\item Example of a reproducible data pre-processing protocol: Measuring metabolite feature intensities for metabolomics LC/MS data
-\item Complex data types in R and their use in Bioconductor packages
-\item Converting from complex data types to ``tidy" formats for data analysis and visualization with R's ``tidy" data tools
-\end{enumerate}
-
 \subsubsection{Format for the training modules}
 
 \begin{itemize}
@@ -258,6 +253,8 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 \end{itemize}
 
 \textbf{Online book.} To ensure that these training modules are easy for researchers to access, use, and reference, we will provide all training materials through an online book created with the \textit{bookdown} framework \cite{xie2016bookdown} (see LOS, Xie). Through this new framework, we will be able to create a searchable online book that weaves R code into the text and that can include embedded tutorial videos, active weblinks to online references, and computationally reproducible practice examples and exercises. Further, by including R code examples as executable code, we will be able to use this online book to frequently check tutorial code examples to quickly identify and fix any broken tutorial code \cite{xie2016bookdown}.  Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}.  
+
+\input{tables/module_tracks.tex}
 
 \subsubsection{Piloting and evaluating effectiveness of training modules}
 
@@ -289,6 +286,8 @@ The \textbf{Improving the Reproducibility of Experimental Data Pre-Processing} c
 ``Applications must include a plan for evaluating the activities supported by the award in terms of their \textbf{frequency of use} and their \textbf{usefulness}. The use of \textbf{multiple evaluation approaches} is highly encouraged as is \textbf{testing several groups with different characteristics}. The application must specify \textbf{baseline metrics (e.g., numbers, educational levels, and demographic characteristics of test group)} in a structured format, as well as \textbf{measures to gauge the short and long-term success of the research education award in achieving its objectives}. Applicants are expected to \textbf{obtain feedback from test group} to help identify weaknesses and to provide suggestions for improvements, and \textbf{make the evaluation and feedback data} available to NIGMS staff."
 \end{quotation}
 
+\input{tables/evaluation.tex}
+
 \textbf{Learning objectives} These are what we're trying to determine were achieved by the training modules.
 
 \textbf{Pilot / text group evaluation}:
@@ -318,6 +317,56 @@ The key goal of this project is to develop tools that are easy to use by a broad
 \item Survey within each chapter of the online book? Educational level, demographic characteristics.
 \end{itemize}
 
+\textbf{Things we want to know about the final training materials:}
+
+\textit{Quantitative:}
+
+\begin{itemize}
+\item How many people have accessed the online book?
+\item How are book users distributed across the U.S.? Are there many international users accessing the book?
+\item When someone accesses the online book, how long on average do they spend reading or exploring the book? How many users are spending more than 10 minutes on the book per visit (about the minimum time for a module)?
+\item How many people have downloaded the entire book?
+\item How many people have commented on or made suggestions for the book through its ``Issues" page?
+\item How many people have viewed each of the tutorial videos?
+\item What percent of people who begin to watch each video finish it? 
+\item For each video, are there common locations in the video where many people turn it off?
+\item For online quizzes, how many people take each quiz?
+\item For each quiz question, what percent of people answer it correctly? Are there some questions that many trainees struggle with after going through the training material?
+\item For audio files of Co-Is answering discussion questions, how often do people listen to those? How many people listen to the complete file?
+\item For applied exercise that include data or files to download, how many people have downloaded the files?
+\item What is the demographic profile of users (age, gender, race, ...)?
+\item What is the educational profile of users (highest degree, area of research)?
+\item What is the professional profile of users (current position, typical research tasks for which the trainee is responsible)?
+\item For each module, which elements did a trainee use (online book text, video tutorial, additional content like discussion questions and quizzes)? How useful did the trainee find each of the elements he or she used (on a Likert scale)?
+\item For each module, did the user feel that he or she had adequate prior knowledge to follow the material in the module, or were there unstated prerequisites that the trainee lacked and felt limited their ability to learn from the training module?
+\item For each module, does the trainee anticipate making any changes to his / her research practice based on having taken this module?
+\item For each module, what percent of the material was new to the trainee (versus things he or she had already learned or heard about outside of the module)?
+\end{itemize}
+
+\textit{Qualitative:}
+
+\begin{itemize}
+\item What types of suggestions and comments have people made about the book through its ``Issues" page? Are these mostly to fix typos, or are there substantive questions? Have users helped to identify areas with which they struggled?
+\item What are the users' goals in taking the training modules?
+\item How did the user decide which modules to take?
+\item For each module, what are elements that the trainee wished had been covered but were not?
+\item For each module, were there elements that the trainee did not find useful that could have been excluded?
+\item For each module, how did the trainee use any additional materials (discussion questions, quiz questions, applied exercises) that came with the module?
+\item For each module, how does the trainee plan to change his or her research practice based on having taken the module?
+\item Did the trainee consider using other training materials to learn this material (e.g., on-campus courses, online MOOCs, other books or video series)? If so, what aspects of our training materials led to the decision to pick them?
+\item Why did the trainee decide to use these training modules (e.g., requirement for a course, PI told them to, self-motivated to improve their research practices, interested in learning new technology)?
+\end{itemize}
+
+\textbf{Levels of evaluation:}
+
+\begin{itemize}
+\item \textbf{Final users of the online book and videos.} These could potentially be from anywhere in the world, and for many we won't have great ways to contact them. 
+\item \textbf{Workshop attendees for the workshops we plan to propose and do at national microbiology / immunology conferences.} For these people, we could definitely do a survey before to get information on demographics, education level, interest in the training materials, etc. We could also do a post survey to find out what they learned, how helpful it was, what they found confusing, etc. Finally, we could get their email addresses to ask some longer-term evaluation questions (e.g., How are they using what they learned 1--2 years after taking the workshop? How much did they retain in terms of principals, implementation, and examples?). We can also use questions that are asked during the workshops and areas where additional materials (applied exercises, quizzes, discussion questions) are problematic to help us hone our training materials.
+\item \textbf{Early online users.} We will plan to develop and post the text and some of the additional educational materials (e.g., quizzes, discussion questions) online through GitHub \textit{as we write the book and develop the materials}. We will use social media to invite people to try out the book as we develop it. Based on previous work developing online books, we have found that this open development process can help attract users very early in the process, and that these users are often very helpful in providing feedback as the book is developed. We will elicit their feedback through GitHub (``Issues" page will be the main forum for them to post comments and suggestions).
+\item \textbf{CSU pilot users.} We can ask these pilot users many questions, both before and after the pilot testing. Further, we will have access to ask them longer-term outcomes, as well as to ask at the department level how the use of these training materials by a number of people in the department has changed research practices and what is considered ``best practice" for research in the department (i.e., a `bubble up" effect).
+\item \textbf{Pilot users from other institutions.} Similar to CSU pilot users, although we'll have a bit less access for determining longer-term and department-wide outcomes.
+\end{itemize}
+
 \subsection{Dissemination Plan}
 
 \begin{quotation}
@@ -327,6 +376,12 @@ The key goal of this project is to develop tools that are easy to use by a broad
 We will create an online tutorial book, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten}. We will use GitHub's free ``Pages" web publishing framework to publish the book freely online, and we will also submit it to the \textit{bookdown.org} website under a Creative Commons license. Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}. Both are publicly and freely available online under the Creative Commons license (see LOS, Xie). 
 
 We will publish the video lectures using the YouTube platform and embed these videos within the online book. The videos, like the book, will be published under a Creative Commons license.
+
+For many online training materials on the principals and implementation of computationally reproducible research, the target audience is statisticians and other researchers who focus on data analysis. This audience now has access to many excellent resources for improving research reproducibility at the data analysis stage. Our target audience is instead researchers who focus on conducting experimental, laboratory-based biomedical research and whose research tasks are more focused on the earlier research steps of running experiments, recording experimental data, and pre-processing that data, prior to data analysis steps. We are focusing our dissemination plans on this target audience, for whom training materials on improving the reproducibility of later data analysis steps might be of limited relevance.
+
+We will also take steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials. We will travel in Years 02 and 03 to one national microbiology ([conference]) and one national immunology ([conference]) conference. We will submit proposals to these conferences to present half-day (student?) workshops covering why and how to improve reproducibility in experimental data recording and pre-processing for biomedical microbiology and immunology research. We will also submit poster abstracts to present and discuss the training materials as part of each conference's poster sessions. We have budgeted for two members of our team (the PI and one co-I) to attend each of these conferences to help disseminate the training materials produced by the project. [CSU's microbiology seminar series? Conferences on-campus at CSU? Are there ones that are repeated every year?]
+
+The PI has previously had substantial success in disseminating online training materials. She is the co-instructor of a five-course specialization on \textit{Mastering Software Development in R} through the Massive Open Online Course platform Coursera. The first course in this series has had over 25,000 participants since it was opened in fall 2016. An accompanying online book on the LeanPub platform has been accessed by [x] people. The PI, however, does not have a presence in the microbiology and immunology community, and so the co-investigators, who are heavily involved in this community, will form a key bridge in making sure our target audience is aware that these training materials are available.
     
 \subsection{Timeline}
 
