@@ -80,3 +80,6 @@ tables/module_tracks.tex: R/table_module_tracks.R
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
 	
+clean: 
+	rm pdf/*.pdf
+	
