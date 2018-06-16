@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: research_approach.aux
+The style file: unsrtnat.bst
+Database file #1: rep_modules.bib
+Warning--entry type for "rstudioprojecttemplate" isn't style-file defined
+--line 303 of file rep_modules.bib
+Warning--I didn't find a database entry for "futureheatwaves"
+Warning--I didn't find a database entry for "countyweather"
+Warning--I didn't find a database entry for "countyfloods"
+Warning--I didn't find a database entry for "noaastormevents"
+Warning--there's a number but no volume in hicks2017guide
+Warning--empty year in rstudioprojecttemplate
+Warning--there's a number but no volume in marwick2017packaging
+You've used 41 entries,
+            2481 wiz_defined-function locations,
+            757 strings with 10904 characters,
+and the built_in function-call counts, 14145 in all, are:
+= -- 1129
+> -- 764
+< -- 27
++ -- 306
+- -- 224
+* -- 1056
+:= -- 2338
+add.period$ -- 123
+call.type$ -- 41
+change.case$ -- 77
+chr.to.int$ -- 41
+cite$ -- 45
+duplicate$ -- 747
+empty$ -- 1305
+format.name$ -- 286
+if$ -- 2956
+int.to.chr$ -- 1
+int.to.str$ -- 42
+missing$ -- 42
+newline$ -- 213
+num.names$ -- 120
+pop$ -- 340
+preamble$ -- 1
+purify$ -- 41
+quote$ -- 0
+skip$ -- 446
+stack$ -- 0
+substring$ -- 443
+swap$ -- 87
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 263
+warning$ -- 3
+while$ -- 109
+width$ -- 0
+write$ -- 527
+(There were 8 warnings)
