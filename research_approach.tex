@@ -1,0 +1,251 @@
+\documentclass[pdftex,english,11pt,parskip=half]{scrartcl}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[labelfont=bf,font=small,format=plain]{caption}
+\usepackage{doi}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{float}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+\usepackage{url,hyperref,color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\fixme}[1]{{\color{red} #1}}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\begin{document}
+\addtokomafont{section}{\large}
+\def\bf{\normalfont\bfseries}
+\pagestyle{empty}
+
+\section*{Research Education Program Plan}
+
+\section{Significance}
+\vspace{-0.1in}
+
+\begin{quotation}
+``Does the proposed program address a key audience and an important aspect or important need in training in rigor and reproducibility? Is there convincing evidence in the application that the proposed program will significantly advance the stated goal of the program?"
+\end{quotation}
+
+\section{Innovation}
+\vspace{-0.1in}
+
+\begin{quotation}
+``Taking into consideration the nature of the proposed research education program, does the applicant make a strong case for this program effectively reaching an audience in need of the program's offerings? Where appropriate, is the proposed program developing or utilizing innovative approaches and latest best practices to improve the knowledge and/or skills of the intended audience?"
+\end{quotation}
+
+These modules will teach the principals of reproducibility as well as introduce researchers to tools for implementing reproducible research workflows. The implementation portion of these modules will focus on tools from the open-source R programming language. R can be freely, quickly, and easily downloaded and installed to a user's computer, allowing new users to get started quickly, a critical consideration for usable scientific software \cite{list2017ten}. R has been maintained for over a decade by the R Development Core Team and works with all major computing platforms, ensuring  widespread access, stability, and compatability, also critical for ease-of-use \cite{baumer2017lessons, altschul2013anatomy}. R offers a well-developed environment for creating new tools that extend the core language \cite{wickham2015r} and includes ample tools for documenting research workflows \cite{xie2015dynamic, xie2016bookdown}. R's status as the \textit{lingua franca} of statisticians and biostatisticians means that its use in early stages of experimental data recording and pre-processing can help foster closer collaborations between laboratory-based scientists and statisticians throughout the research process. R can be scaled as the volume of data in projects grows \cite{list2017ten}, as it includes tools to interface with distributed computing platforms (e.g., \textit{Hadoop} \cite{pathak2014rhadoop}, \textit{Spark} \cite{sparklyr}), and its scripts can be integrated within workflow management systems (e.g., \textit{Galaxy} \cite{goecks2010galaxy, walker2016models}). 
+
+\section{Approach}
+
+\begin{quotation}
+``Does the proposed program clearly state its goals and objectives, including the audience to be reached, the content to be conveyed, and the intended outcome?  Is there evidence that the program is based on a sound rationale, as well as sound educational concepts and principles? Is the plan for evaluation sound and likely to provide information on the effectiveness of the program?"
+\end{quotation}
+
+\subsection{Proposed Research Education Program Plan}
+
+\begin{quotation}
+``While the proposed research education program may complement ongoing research training and education occurring at the applicant institution, the proposed educational experiences must be distinct from those research training and research education programs currently receiving federal support. When research training programs are on-going in the same department, the applicant organization should clearly distinguish between the activities in the proposed research education program and the research training supported by the training program. The research education proposed must be \textbf{targeted to trainees and investigators at any level}. State the \textbf{goals for education} and \textbf{justify the area of training} selected for module development in terms of its \textbf{relevance and potential impact} on improving the development of skills and knowledge important for conducting rigorous and reproducible research. Describe the \textbf{subject material} to be covered.  Describe the \textbf{format} for the training module proposed and \textbf{justify it in terms of the education goals}.  The \textbf{length} of the proposed training module should be explained in terms of \textbf{scope and depth of coverage} of the subject matter.  In addition, \textbf{how the research education will be utilized by trainees or investigators} should be described---for example, a module on how to avoid confirmation bias to be taken by all beginning laboratory workers, or a module on appropriate design of animal studies to be taken immediately prior to beginning such work.  Describe the \textbf{plans for piloting and evaluating the effectiveness} of the training module. Describe \textbf{plans for making the proposed training module section 508 compliant of the Rehabilitation Act} (29 U.S.C. '794 d), as amended by the Workforce Investment Act of 1998 (P.L. 105 – 220; see http://www.section508.gov/ for additional information). Provide a \textbf{timeline for module development, piloting and refinement, dissemination, evaluation, and maintenance}.  This timeline must propose \textbf{making the training publicly available within two years} of the award date."
+\end{quotation}
+
+\subsubsection{Educational goals of the modules}
+
+The importance of computational reproducibility of scientific research is increasingly recognized by scientists, journals, and funding agencies, with such ``computationally reproducible" research requiring that all data and code for a research project be available and that this data and code can be used to regenerate study findings either by the original researcher or by other researchers \cite{ellis2017share, ram2013git}.
+
+Every extra step of data formatting is another chance to introduce an error in the data. Therefore, by keeping research data pipelines simple---which can be more easily achieved if data is initially recorded in a format amenable to later data pre-processing, analysis, and visualization---researchers can decrease the potential for errors in the data and therefore improve the rigor and reproducibility of their research.
+
+\textbf{Improving the Reproducibility of Experimental Data Recording} One key concept for improving the reproducibility of experimental data collection is understanding how to create and use the ``tidy" data format, which enables later data analysis using R's \textit{tidyverse} framework. The \textit{tidyverse} framework enables powerful and user-friendly data management, processing, and analysis by combining simple tools to solve complex, multi-step problems, and this framework is enabled by ensuring those simple tools share a common interface: a ``tidy" data format \cite{ross2017declutter, silge2016tidytext, wickham2016ggplot2, wickham2016r}. Working within the R framework facilitates research that adheres to standards of reproducibility through scriptable data analysis that can easily be placed under version control \cite{bryan2017excuse}. Since the tools are simple and share a common interface, they are easier to learn, use, and combine than tools created in the classical R framework \cite{ross2017declutter, lowndes2017our, reviewer2017review, mcnamara2016state}. This \textit{tidyverse} framework is quickly becoming the standard taught in introductory R courses and books \cite{hicks2017guide, baumer2015data, kaplan2017teaching, stander2017enthusing, reviewer2017review, mcnamara2016state} (see also Letters of Support [LOS], Kimmel, Peng), ensuring ample training resources for researchers new to programming, including books (e.g., \cite{baumer2017modern, lifesciencesR}, some freely available online, e.g., \cite{wickham2016r}), massive open online courses (MOOCs), onsite university courses \cite{baumer2015data, kaplan2017teaching, stander2017enthusing}, and Software Carpentry workshops \cite{wilson2014software, pawlik2017developing}. Further, tools that extend the tidyverse have been created to enable high-quality data analysis and visualization in several domains, including text mining \cite{silge2017text}, microbiome studies \cite{mcmurdie2013phyloseq}, natural language processing \cite{RJ-2017-035}, network analysis \cite{RJ-2017-023}, ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}.
+
+RStudio allows users to create their own custom ``Project" template, suited to a specific type of data analysis or software development, which can then be registered and accessed by other users \cite{rstudioprojecttemplate}. While a ``Project" can have any internal structure, a common structure can be enforced for a certain type of project through the creation of a new ``Project" template, which defines the required subdirectories, structure, and file names of common elements that must exist in the project \cite{rstudioprojecttemplate}. This template, when selected by a future user, will create a new directory with a ``skeleton" structure, potentially including templated files (e.g., for metadata). Projects saved in this format can be easily put under \textit{Git} version control in \textit{RStudio}, which includes a pane that allows users to work under version control without learning command-line version control language and, if desired, easily connect the project with an online version of the project hosted on \textit{GitHub}. This ``project" framework has recently been encouraged by a number of researchers as a way to enable computationally reproducible research, especially for research conducted by teams \cite{marwick2017packaging, parker2017opinionated, lowndes2017our}, and the use of \textit{Git} and \textit{GitHub} has also been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2017excuse, lowndes2017our, cetinkaya2017infrastructure}.  
+
+\textbf{Improving the Reproducibility of Experimental Data Pre-Processing.} Scriptable software tools bring key advantages compared to GUI software in terms of data pre-processing \cite{cetinkaya2017infrastructure, huber2015orchestrating, preeyanon2014reproducible, piccolo2016tools}, but it is critical to provide some training on the use of these tools for researchers new to programming. Expertise with a scripting language is not universal across the biomedical community, although literacy in programming is increasing in the sciences \cite{ram2013git}, and many now recommend programming as a critical skill for all biology Ph.D. students \cite{list2017ten}. 
+
+\textit{Contrast the lack of guidance on experimental data recording for academic research with the guidelines from industry, including ``Good laboratory practice").}
+
+\subsubsection{Module subject material}
+
+We propose to develop two collections of modules, \textbf{Improving the Reproducibility of Experimental Data Recording} and \textbf{Improving the Reproducibility of Experimental Data Pre-Processing}. 
+
+\input{tables/module_content_data_recording.tex}
+
+\input{tables/module_content_data_preprocessing.tex}
+
+\subsubsection{Format for the training modules}
+
+\begin{itemize}
+\item Online book created through the ``bookdown" format, with each module as a book chapter. We can use Git Pages to host this (CSU options for web hosting?).
+\item Training videos embedded for each module, each 5--30 minutes. Videos will be similar to online course lectures and will be hosted using YouTube. Embedding in the book will allow users to watch videos without leaving the book's webpage. 
+\item Each chapter will end with exercise questions (around 10 questions, combination of discussion questions and applied exercises), as well as an embedded video with discussion of the discussion questions and a detailed walk-through of answers to applied exercises. 
+\item Possibly host this through an online course platform like DataCamp?
+\end{itemize}
+
+\textbf{Online book.} To ensure that these training modules are easy for researchers to access, use, and reference, we will provide all training materials through an online book created with the \textit{bookdown} framework \cite{xie2016bookdown} (see LOS, Xie). Through this new framework, we will be able to create a searchable online book that weaves R code into the text and that can include embedded tutorial videos, active weblinks to online references, and computationally reproducible practice examples and exercises. Further, by including R code examples as executable code, we will be able to use this online book to frequently check tutorial code examples to quickly identify and fix any broken tutorial code \cite{xie2016bookdown}.  Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}.  
+
+\input{tables/module_tracks.tex}
+
+\subsubsection{Piloting and evaluating effectiveness of training modules}
+
+\subsubsection{Insuring compliance with Rehabilitation Act}
+
+\subsection{Team}
+
+\subsubsection{Program Director/Principal Investigator}
+
+\begin{quotation}
+``Is the PD/PI capable of providing both administrative and scientific leadership to the development and implementation of the proposed program? Is there evidence that an appropriate level of effort will be devoted by the program leadership to ensure the program's intended goal is accomplished? If the project is collaborative or multi-PD/PI, do the investigators have complementary and integrated expertise; are their leadership approach, governance and organizational structure appropriate for the project?"
+\end{quotation}
+
+\begin{quotation}
+``Describe \textbf{arrangements for administration} of the program.  Provide evidence that the Program Director/Principal Investigator is actively engaged in research and/or teaching in an area related to the mission of NIH, and can \textbf{organize, administer, monitor, and evaluate the research education program}. For programs proposing multiple PDs/PIs, describe the complementary and integrated expertise of the PDs/PIs; their leadership approach, and governance appropriate for the planned project."
+\end{quotation}
+
+\subsubsection{Other members of the team}
+
+\subsection{Institutional Environment and Commitment}
+
+\begin{quotation}
+``Describe the institutional environment, reiterating the \textbf{availability of facilities and educational resources} (described separately under Facilities \& Other Resources), that can contribute to the planned Research Education Program. Evidence of institutional commitment to the research educational program is required. A \textbf{letter of institutional commitment} must be attached as part of Letters of Support (see below). Appropriate institutional commitment should include the provision of adequate staff, facilities, and educational resources that can contribute to the planned research education program."
+\end{quotation}
+
+\subsection{Evaluation Plan}
+
+\begin{quotation}
+``Applications must include a plan for evaluating the activities supported by the award in terms of their \textbf{frequency of use} and their \textbf{usefulness}. The use of \textbf{multiple evaluation approaches} is highly encouraged as is \textbf{testing several groups with different characteristics}. The application must specify \textbf{baseline metrics (e.g., numbers, educational levels, and demographic characteristics of test group)} in a structured format, as well as \textbf{measures to gauge the short and long-term success of the research education award in achieving its objectives}. Applicants are expected to \textbf{obtain feedback from test group} to help identify weaknesses and to provide suggestions for improvements, and \textbf{make the evaluation and feedback data} available to NIGMS staff."
+\end{quotation}
+
+\input{tables/evaluation.tex}
+
+\textbf{Learning objectives} These are what we're trying to determine were achieved by the training modules.
+
+\textbf{Pilot / text group evaluation}:
+
+\begin{itemize}
+\item Work with GAUSSI to use some students as pilot testers?
+\item Recruit researchers / faculty as pilot testers?
+\item Work with CSU's Research Ethics group to figure out ways to pilot?
+\end{itemize}
+
+The key goal of this project is to develop tools that are easy to use by a broad range of applied metabolomics researchers. We will therefore conduct regular short (two hours) user testings several times per year and one long (two days) user testing session per year. The user testing groups will consist primarily of student trainees involved in applied metabolomics research from a range of departments at Colorado State University (see LOS, Clark, De Long, Heuberger). The shorter testing sessions will be used to test stable versions of the developed R packages immediately before they are published to the Comprehensive R Archive Network (CRAN). These testing sessions will ask participants to work through package tutorial vignettes and other test cases and will focus on identifying aspects of the package that cause unwanted behavior on certain computer systems or when users provide unexpected input. Further, these shorter testing sessions will be used to identify sections of vignette tutorials or help files that are unclear to targeted users. The longer, two-day testing sessions will be more open and will provide participants with open-ended metabolomics data analysis challenges, using data from \textit{Metabolomics Workbench} and the \textit{National Metabolomics Data Repository} that differ from the data used to develop the tools. Participants will be scheduled into groups, allowing them to participate during the two days while meeting outside obligations like classes and meetings. Participants will be encouraged to use both the tools we develop here, as well as any other available R tools, to complete these challenges in groups in a ``hackathon"-style structure. Participants will be given guidance on how to use GitHub to work in groups and share final results from the challenge, a framework Dr. Anderson has successfully used in a previous similar event at Colorado State University (Figure \ref{csu-r-hackathon}). This longer testing will help us identify limitations in the usability of the tools we will develop here, validate the tools using separate data, scope future development aims by identifying analysis tools that users would have liked to have to help with these open-ended challenges but that were not yet available in the R environment, and compare the tools we develop to existing metabolomics data analysis and visualization tools. Dr. Anderson (PI) has run several two-hour user testing sessions with students from various departments of Colorado State University prior to releasing R software packages \cite{futureheatwaves, countyweather}. Further, in April 2016, she led a longer, two-day user testing session through a Weather Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}). Around 15 people participated, including undergraduate students, graduate students, postdoctoral fellows, and professors from CSU's Departments of Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and Statistics. Some of the ideas and code developed during this Hackathon have since led to development and publication of open source software \cite{countyfloods, noaastormevents}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/csu_hackathon.png}
+\end{center}
+\caption{\label{csu-r-hackathon} Some of the approximately 15 undergraduate students, graduate students, postdoctoral fellows, and professors who participated in a two-day Weather Data Hackathon at Colorado State University in April 2016.}
+\end{figure}
+
+\textbf{Long-term evaluation}:
+
+\begin{itemize}
+\item Google Analytics for online book. How often are people accessing the book? How long are they spending on the book website? Where are the people accessing the book?
+\item YouTube analytics for the embedded videos. How often are people accessing the book? How long are they spending on the book website? Where are the people accessing the book?
+\item Quiz for each chapter of the book? Use to evaluate how well they've mastered the material? (Possibly could use embedded Shiny apps for this? Other ways to do this?)
+\item Rating options for each chapter of the online book? Usefulness? What they learned?
+\item Survey within each chapter of the online book? Educational level, demographic characteristics.
+\end{itemize}
+
+\textbf{Things we want to know about the final training materials:}
+
+\textit{Quantitative:}
+
+\begin{itemize}
+\item How many people have accessed the online book?
+\item How are book users distributed across the U.S.? Are there many international users accessing the book?
+\item When someone accesses the online book, how long on average do they spend reading or exploring the book? How many users are spending more than 10 minutes on the book per visit (about the minimum time for a module)?
+\item How many people have downloaded the entire book?
+\item How many people have commented on or made suggestions for the book through its ``Issues" page?
+\item How many people have viewed each of the tutorial videos?
+\item What percent of people who begin to watch each video finish it? 
+\item For each video, are there common locations in the video where many people turn it off?
+\item For online quizzes, how many people take each quiz?
+\item For each quiz question, what percent of people answer it correctly? Are there some questions that many trainees struggle with after going through the training material?
+\item For audio files of Co-Is answering discussion questions, how often do people listen to those? How many people listen to the complete file?
+\item For applied exercise that include data or files to download, how many people have downloaded the files?
+\item What is the demographic profile of users (age, gender, race, ...)?
+\item What is the educational profile of users (highest degree, area of research)?
+\item What is the professional profile of users (current position, typical research tasks for which the trainee is responsible)?
+\item For each module, which elements did a trainee use (online book text, video tutorial, additional content like discussion questions and quizzes)? How useful did the trainee find each of the elements he or she used (on a Likert scale)?
+\item For each module, did the user feel that he or she had adequate prior knowledge to follow the material in the module, or were there unstated prerequisites that the trainee lacked and felt limited their ability to learn from the training module?
+\item For each module, does the trainee anticipate making any changes to his / her research practice based on having taken this module?
+\item For each module, what percent of the material was new to the trainee (versus things he or she had already learned or heard about outside of the module)?
+\end{itemize}
+
+\textit{Qualitative:}
+
+\begin{itemize}
+\item What types of suggestions and comments have people made about the book through its ``Issues" page? Are these mostly to fix typos, or are there substantive questions? Have users helped to identify areas with which they struggled?
+\item What are the users' goals in taking the training modules?
+\item How did the user decide which modules to take?
+\item For each module, what are elements that the trainee wished had been covered but were not?
+\item For each module, were there elements that the trainee did not find useful that could have been excluded?
+\item For each module, how did the trainee use any additional materials (discussion questions, quiz questions, applied exercises) that came with the module?
+\item For each module, how does the trainee plan to change his or her research practice based on having taken the module?
+\item Did the trainee consider using other training materials to learn this material (e.g., on-campus courses, online MOOCs, other books or video series)? If so, what aspects of our training materials led to the decision to pick them?
+\item Why did the trainee decide to use these training modules (e.g., requirement for a course, PI told them to, self-motivated to improve their research practices, interested in learning new technology)?
+\end{itemize}
+
+\textbf{Levels of evaluation:}
+
+\begin{itemize}
+\item \textbf{Final users of the online book and videos.} These could potentially be from anywhere in the world, and for many we won't have great ways to contact them. 
+\item \textbf{Workshop attendees for the workshops we plan to propose and do at national microbiology / immunology conferences.} For these people, we could definitely do a survey before to get information on demographics, education level, interest in the training materials, etc. We could also do a post survey to find out what they learned, how helpful it was, what they found confusing, etc. Finally, we could get their email addresses to ask some longer-term evaluation questions (e.g., How are they using what they learned 1--2 years after taking the workshop? How much did they retain in terms of principals, implementation, and examples?). We can also use questions that are asked during the workshops and areas where additional materials (applied exercises, quizzes, discussion questions) are problematic to help us hone our training materials.
+\item \textbf{Early online users.} We will plan to develop and post the text and some of the additional educational materials (e.g., quizzes, discussion questions) online through GitHub \textit{as we write the book and develop the materials}. We will use social media to invite people to try out the book as we develop it. Based on previous work developing online books, we have found that this open development process can help attract users very early in the process, and that these users are often very helpful in providing feedback as the book is developed. We will elicit their feedback through GitHub (``Issues" page will be the main forum for them to post comments and suggestions).
+\item \textbf{CSU pilot users.} We can ask these pilot users many questions, both before and after the pilot testing. Further, we will have access to ask them longer-term outcomes, as well as to ask at the department level how the use of these training materials by a number of people in the department has changed research practices and what is considered ``best practice" for research in the department (i.e., a `bubble up" effect).
+\item \textbf{Pilot users from other institutions.} Similar to CSU pilot users, although we'll have a bit less access for determining longer-term and department-wide outcomes.
+\end{itemize}
+
+\subsection{Dissemination Plan}
+
+\begin{quotation}
+``A specific plan must be provided to disseminate the finished training modules \textbf{nationally} and make them \textbf{freely accessible}. In addition, links to these modules will be posted and maintained on the NIGMS web site."
+\end{quotation}
+
+We will create an online tutorial book, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten}. We will use GitHub's free ``Pages" web publishing framework to publish the book freely online, and we will also submit it to the \textit{bookdown.org} website under a Creative Commons license. Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}. Both are publicly and freely available online under the Creative Commons license (see LOS, Xie). 
+
+We will publish the video lectures using the YouTube platform and embed these videos within the online book. The videos, like the book, will be published under a Creative Commons license.
+
+For many online training materials on the principals and implementation of computationally reproducible research, the target audience is statisticians and other researchers who focus on data analysis. This audience now has access to many excellent resources for improving research reproducibility at the data analysis stage. Our target audience is instead researchers who focus on conducting experimental, laboratory-based biomedical research and whose research tasks are more focused on the earlier research steps of running experiments, recording experimental data, and pre-processing that data, prior to data analysis steps. We are focusing our dissemination plans on this target audience, for whom training materials on improving the reproducibility of later data analysis steps might be of limited relevance.
+
+We will also take steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials. We will travel in Years 02 and 03 to one national microbiology ([conference]) and one national immunology ([conference]) conference. We will submit proposals to these conferences to present half-day (student?) workshops covering why and how to improve reproducibility in experimental data recording and pre-processing for biomedical microbiology and immunology research. We will also submit poster abstracts to present and discuss the training materials as part of each conference's poster sessions. We have budgeted for two members of our team (the PI and one co-I) to attend each of these conferences to help disseminate the training materials produced by the project. [CSU's microbiology seminar series? Conferences on-campus at CSU? Are there ones that are repeated every year?]
+
+The PI has previously had substantial success in disseminating online training materials. She is the co-instructor of a five-course specialization on \textit{Mastering Software Development in R} through the Massive Open Online Course platform Coursera. The first course in this series has had over 25,000 participants since it was opened in fall 2016. An accompanying online book on the LeanPub platform has been accessed by [x] people. The PI, however, does not have a presence in the microbiology and immunology community, and so the co-investigators, who are heavily involved in this community, will form a key bridge in making sure our target audience is aware that these training materials are available.
+    
+\subsection{Timeline}
+
+\begin{quotation}
+``Provide a timeline for \textbf{module development}, \textbf{piloting and refinement}, \textbf{dissemination}, \textbf{evaluation}, and \textbf{maintenance}.  This timeline must propose making the training publicly available within two years of the award date."
+\end{quotation}
+
+
+\clearpage
+
+\section{Works cited}
+
+\bibliographystyle{unsrtnat}
+\bibliography{rep_modules}
+
+\end{document}
