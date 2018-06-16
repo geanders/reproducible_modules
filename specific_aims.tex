@@ -1,0 +1,66 @@
+\documentclass[pdftex,english,11pt,parskip=half]{scrartcl}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[labelfont=bf,font=small,format=plain]{caption}
+\usepackage{doi}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{float}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+\usepackage{url,hyperref,color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\fixme}[1]{{\color{red} #1}}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\begin{document}
+\addtokomafont{section}{\large}
+\def\bf{\normalfont\bfseries}
+\pagestyle{empty}
+
+\section*{Specific Aims}
+\begingroup
+    \fontsize{11pt}{12pt}\selectfont 
+    
+Many excellent free training resources exist to improve the computational reproducibility of biomedical research. However, most of these materials target researchers at the stage of \textit{data analysis}, and provide much less guidance principals and techniques to improve the reproducibility of the earlier steps of \textbf{experimental data recording} and \textbf{experimental data pre-processing}. In this project, we will create training modules to fill this gap. A key aim is to make these modules \textbf{accessible and useful to laboratory-based researchers} by including examples from real microbiology and immunology research projects and by piloting the training modules among laboratory-based biomedical researchers.
+
+% \textbf{Significance and educational aims of proposed modules.} Among the steps in conducting experimental research, the collection and pre-processing of experimental data are steps where it is critical to ensure good practices to ensure research reproducibility. However, much of the training available for computational reproducibility focuses on later steps of the research process, such as the analysis of processed experimental data. Here, we aim to develop training modules that focus on principals and techniques of improving the reproducibility of research at these stages of the research process. 
+
+\textbf{Content of training modules.} We will develop two sequences of modules. The first sequence, \textbf{``Improving the Reproducibility of Experimental Data Recording"}, will explore the pitfalls of combining experimental data recording and analysis through the use of macro-enabled spreadsheets, explain the power of recording data in structured data formats, present the 'tidy' data format as one implementation of structured data, explain how reproducibility can be improved by using consistently-structured 'Project' directories to store all research project files, and demonstrate the use of \textit{git} and \textit{GitLab} to maintain single, current versions of all files while tracking the evolution of those files. The second sequence, \textbf{``Improving the Reproducibility of Experimental Data Pre-Processing"}, will focus on improving the reproducibility of experimental data pre-processing steps, like gating for flow cytometry data and peak finding / quantifying for mass spectrometry data. Training materials will explain how the use of code scripts for these steps dramatically improve reproducibility compared to using vendor-supplied point-and-click software and will introduce trainees to some of the popular R software extensions for this pre-processing. This sequence will also include advice on how to use literate programming tools (\textit{Rmarkdown}) to create well-documented data pre-processing protocols that a research group can re-use to consistently and reproducibly pre-process the experimental data they collect. Each module will fall into one of three categories for teaching reproducibility: (1) principals; (2) implementation; and (3) case study examples. Implementation modules will focus on tools available through the popular open source R software and its RStudio interface. Working with laboratory-based co-investigators on our team, we will ensure that these modules and the examples used in them are approachable and useful to researchers without extensive computational training.  
+
+\textbf{Format and dissemination of training modules.} All training modules will be collected together in an online book, with each chapter covering one module. The chapter will center on an embedded YouTube video with a recorded lecture of 10--25 minutes, recorded in Colorado State University's professional-grade video recording facilities. The chapter will include written text to supplement the video lecture and to be used as a later reference by trainees. Each chapter will end with additional educational materials crafted to reinforce the video lecture, including discussion questions, applied exercises, and multiple choice quizzes. We will create this book using R's \textit{bookdown} framework and will publish it freely and openly online---under the Creative Commons 3.0 license---using Git Pages, with Google Analytics enabled to aid in evaluation. 
+
+%To comply with x, we will include in the online book transcripts for each training video.
+\textbf{Evaluation of training modules.} Our evaluations of the training modules developed under this grant will be assisted by an expert in program evaluation from Colorado State University's Science, Technology, Education, and Mathematics (STEM) Center (Maertens). \textbf{These evaluations will be focused on scientists at a variety of levels (undergraduate to faculty) and will determine the usefulness, clarity, and relevance of the developed modules to these researchers.} We will conduct project evaluations of: (1) on-campus pilot testers; (2) off-campus pilot testers; (3) workshop participants at a national microbiology meeting; and (4) online users of the final online book. We will collect evaluation resultsthrough website analytics, quantitative survey questions, open-ended survey questions, and focus-group-style feedback generated through biannual full-day pilot testing sessions at Colorado State University and at a workshop at the American Association for Microbiology's annual meeting. Results on the long-term benefits of the training modules will be collected by one-year follow-up surveys to the pilot testers and workshop participants.
+
+% These evaluation sessions will include live presentations of the lectures to be taped as modules, as well as directed work-throughs of the practical exercises included in the online book for each module. We will focus these testings on members of Colorado State University's Department of Microbiology, Immunology, \& Pathology. Following the user testing (e.g., six months--one year after), we will survey the lab head to determine which practices taught in the modules have been adapted. 
+
+\textbf{Project team.}  This project will bring together experts in R programming (Anderson, Lyons), including its use to improve the computational reproducibility of health-related research, with laboratory-based academic researchers in Microbiology and Immunology (Henao-Tamayo, Gonzalez-Juarrero) who are \textbf{attuned to the needs of and barriers to improving the reproducibility of experimental data collection and pre-processing among laboratory-based biomedical researchers}. Our team will allow us to develop training modules that present state-of-the-art approaches and tools to reproducibility, but do so in a way that is prioritized to be most useful and accessible to health researchers whose training has focused on laboratory-related, rather than computational, methods, and for whom existing training materials on computational reproducibility might be hard to understand or apply to their own research projects. 
+
+\endgroup
+
+\end{document}
