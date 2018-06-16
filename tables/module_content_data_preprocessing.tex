@@ -61,7 +61,7 @@ Module title & Description of module content & Objectives (After taking the modu
 
       \tabitem Video providing a detailed
       walk-through of a solution to the applied exercise.\\
-\textcolor{blue}{\textbf{Principals and power of R's 'tidyverse'}} & The R programming language now includes a collection of 'tidyverse' extension 
+\textcolor{red}{\textbf{Simplify scripted pre-processing through R's 'tidyverse' tools}} & The R programming language now includes a collection of 'tidyverse' extension 
       packages that enable user-friendly yet powerful work with experimental data,
       including pre-processing and exploratory visualizations. The principal behind
       the 'tidyverse' is that a collection of simple, general tools can be joined 
@@ -82,60 +82,66 @@ Module title & Description of module content & Objectives (After taking the modu
 
       \tabitem Video with detailed answers and explanations for the quiz questions; 
 
-      \tabitem Links
-      to further free sources for learning more about the 'tidyverse' and how to use its 
-      tools.\\
-\textcolor{blue}{\textbf{Complex data types in R and Bioconductor}} & Raw data from many biomedical experiments, especially those that
-      use high-throughput techniques, can be very large and complex. Because of the 
-      scale and complexity of these data, software for pre-processing the data in R
-      often uses complex, 'untidy' data formats. These complex data formats are necessary
-      for computational efficiency and to aid the structure of the pre-processing
-      software, but the 'untidy' formats add a critical barrier for researchers who 
-      wish to explore and visualize the data, especially using the 'tidyverse' tools
-      now commonly taught when introducing R to researchers. In this module, we will 
-      explain why complex data formats are often used in open source software for 
-      pre-processing experimental data. We will describe the 'list' data structure often
-      used as a backbone for complex data structures, and well as provide tips on how to
-      explore and extract data stored in R in this format. & \tabitem Explain why R software for pre-processing biomedical data often stores the 
-      data in complex, 'untidy' formats; 
-
-      \tabitem Describe the structure of R's 'list' data
+      \tabitem Links to further free sources for developing more 'tidyverse' coding 
+        skills.\\
+\textcolor{blue}{\textbf{Complex data types in experimental data pre-processing}} & Raw data from many biomedical experiments, especially those that
+  use high-throughput techniques, can be very large and complex. Because of the 
+  scale and complexity of these data, software for pre-processing the data in R
+  often uses complex, 'untidy' data formats. These complex data formats are necessary
+  for computational efficiency and to aid the structure of the pre-processing
+  software, but the 'untidy' formats add a critical barrier for researchers who 
+  wish to explore and visualize the data. In this module, we will 
+  describe the complex data formats are often used in open source software for 
+  pre-processing experimental data, explain why use of these complex formats is
+  often necessary, and outline how these complex formats create hurdles in 
+  implementing reproducibility tools among laboratory-based scientists. & \tabitem Explain why R software for pre-processing biomedical data often stores the 
+  data in complex, 'untidy' formats; 
+  
+  \tabitem Describe how these complex data formats can create barriers to 
+  laboratory-based researchers seeking to use reproducibility tools for 
+  data pre-processing. & 15 & \tabitem Quiz: Determine trainee's understanding of why complex data formats
+  are often used within steps of experimental data pre-processing in open-source
+  software; 
+  
+  \tabitem Video providing detailed
+  answers to quiz questions.\\
+\textcolor{red}{\textbf{Complex data types in R and Bioconductor}} & Many R extension packages for pre-processing experimental data use complex (rather than
+    'tidy') data formats within their code, and many output data in complex formats. This
+    is necessary for computational efficiency of the pre-processing, but creates a hurdle
+    for using many common tools taught to improve research reproduciblity, 
+    including R's 'tidyverse' tools. With the rising popularity of the 'tidyverse' collection of R tools, which require
+      data to be in a 'tidy' format, R users have recognized that the use of complex, 'untidy'
+  data formats can complicate reproducible code for data pre-processing, analysis,
+  and visualization. Very recently, some researchers have developed tools 
+  (the broom and biobroom R package extensions) that
+  can extract a 'tidy' dataset from data stored in a complex, list-based format.
+  These tools create a clean, simple connection between the complex data formats
+  often used in pre-processing or modeling experimental data and the 'tidy' format
+  required to use the 'tidyverse' tools now taught in many introductory R courses. In this module, we will describe the 'list' data structure,
+    the common backbone for complex data structures in R, and well as provide tips on how to
+  explore and extract data stored in R in this format. 
+      We will then demonstrate how the new \textit{broom} and \textit{biobroom} packages 
+    can be used to extract  to use  to convert output from pre-processing software to 'tidy'
+    data formats for futher steps of reproducible data visualization and analysis. 
+      'tidy' versions of pre-processed experimental data from their complex data formats,
+      to allow user-friendly data analysis and visualization using the widely-taught
+      general 'tidyverse' tools. & \tabitem Describe the structure of R's 'list' data
       format; 
 
       \tabitem Take basic steps to explore
-      and extract data stored in R's complex, list-based structures. & 15 & \tabitem Applied exercise: We will provide example data in a complex, list-based format. 
-      The trainee will explore this data based on step-by-step instructions and will 
-      extract specified elements from the data format; 
-
-      \tabitem Video providing a detailed
-      walk-through of completing this exercise, with explanations for specific steps.\\
-\textcolor{red}{\textbf{Converting from complex data types to 'tidy' data formats}} & With the rising popularity of the 'tidyverse' collection of R tools, which require
-      data to be in a 'tidy' format, R users have recognized that the use of complex, 'untidy'
-      data formats can complicate reproducible code for data pre-processing, analysis,
-      and visualization. Very recently, some researchers have developed tools 
-      (the broom and biobroom R package extensions) that
-      can extract a 'tidy' dataset from data stored in a complex, list-based format.
-      These tools create a clean, simple connection between the complex data formats
-      often used in pre-processing or modeling experimental data and the 'tidy' format
-      required to use the 'tidyverse' tools now taught in many introductory R courses.
-      In this module, we will show trainees how to access these broom and biobroom 
-      packages. We will then demonstrate how these packages can be used to extract 
-      'tidy' versions of pre-processed experimental data from their complex data formats,
-      to allow user-friendly data analysis and visualization using the widely-taught
-      general 'tidyverse' tools. & \tabitem Describe what the broom and biobroom R packages can do; 
+      and extract data stored in R's complex, list-based structures;
+  
+      \tabitem Describe what the \textit{broom} and \textit{biobroom} R packages can do; 
 
       \tabitem Explain why 
-      converting data from a complex format to a 'tidy' format can improve the 
-      transparency and reproducibility of a research project. & 10 & \tabitem Quiz: Trainees will be tested on their understanding of 'tidy' versus complex
-      data formats, the difficulties introduced by complex data formats, and how data 
-      can be converted from a complex to a 'tidy' format in R; 
-
-      \tabitem Video discussing 
-      correct answers to the quiz questions; 
-
-      \tabitem Links to tutorials to find out more
-      about using the broom and biobroom packages in R to extract 'tidy' datasets from 
-      complex data formats.\\
+  converting data from a complex format to a 'tidy' format can improve the 
+  transparency and reproducibility of a research project. & 15 & \tabitem Applied exercise: We will provide example data in a complex, list-based format. 
+  The trainee will explore this data based on step-by-step instructions and will 
+  extract specified elements from the data format as well as practice using \textit{broom} and
+  \textit{biobroom} R packages to extract 'tidy' data from complex data formats.; 
+  
+  \tabitem Video providing a detailed
+  walk-through of completing this exercise, with explanations for specific steps.\\
 \addlinespace
 \textcolor{black}{\textbf{Example: Converting from complex data types to 'tidy' data formats}} & We will provide a detailed example of a case where data pre-processing in R
       has resulted in data in a complex, 'untidy' format, and where tools can be 
@@ -157,7 +163,27 @@ Module title & Description of module content & Objectives (After taking the modu
 
       \tabitem Video demonstrating a detailed solution to the applied
       exercise.\\
-\textcolor{red}{\textbf{How RMarkdown documents can improve data pre-processing}} & RMarkdown can be used to create documents that combine code and text in a 
+\textcolor{blue}{\textbf{Introduction to reproducible data pre-processing protocols}} & Reproducibility tools can be used to create reproducible data pre-precessing 
+    protocols---documents that combine code and text in a 
+  'knitted' document ... . In this module, we will describe how
+  reproducible data pre-processing protocols 
+  can be leveraged early in a research project to improve the reproducibility 
+  of the pre-processing of experimental data and to ensure transparency, consistency,
+  and reproducibility across the research projects conducted by a research team. & \tabitem Describe a reproducible data pre-processing protocol; 
+  
+  \tabitem Explain how reproducible data pre-processing protocol can be used to improve
+    the reproducibility
+  of research projects at the data pre-processing phase; 
+  
+  \tabitem List other benefits of using reproducible data pre-processing protocols,
+    including improving efficiency and consistency of data pre-processing across a
+    research groups research projects. & 15 & \tabitem Discussion questions: Including discussion of how reproducible data pre-processing 
+  protocols can make biomedical research more reproducible at the data pre-processing stage; 
+  
+  \tabitem Short audio 
+  recording of two Co-Is giving their
+  own answers to these discussion questions.\\
+\textcolor{red}{\textbf{Introduction to RMarkdown as a tool for creating reproducible data pre-processing protocols}} & RMarkdown can be used to create documents that combine code and text in a 
       'knitted' document, and it has become a popular tool among statisticians
       and data scientists for improving the computational reproducibility and 
       efficiency of their research. This tool can also be used earlier in the 
@@ -167,37 +193,31 @@ Module title & Description of module content & Objectives (After taking the modu
       RMarkdown is used among statisticians to improve the reproducibility, 
       efficiency, and transparency of data analysis, as well as describe how it 
       can be leveraged earlier in a research project to improve the reproducibility 
-      of the pre-processing of experimental data. & \tabitem Define RMarkdown; 
+      of the pre-processing of experimental data. We will also provide detailed instructions on how to use RMarkdown
+      in RStudio to create documents that combine code and text. We will explain how
+  these documents can be converted into different final file formats (PDF, HTML,
+  Microsoft Word). We will show how an RMarkdown document describing a data 
+  pre-processing protocol can be used to efficiently apply the same data
+  pre-processing steps to different sets of raw data. & \tabitem Define RMarkdown; 
 
       \tabitem Describe the documents that can be created using
       RMarkdown; 
 
       \tabitem Explain how RMarkdown can be used to improve the reproducibility
-      of research projects at the data pre-processing phase. & 15 & \tabitem Discussion questions: Including discussion of why RMarkdown (and similar
-      approaches) could make data pre-processing more reproducible; 
-
-      \tabitem Short audio 
-      recording of two Co-Is giving their
-      own answers to these discussion questions.\\
-\textcolor{red}{\textbf{How to create reproducible data pre-processing protocols using RMarkdown}} & In this module, we will provide detailed instructions on how to use RMarkdown
-      in RStudio to create documents that combine code and text. We will explain how
-      these documents can be converted into different final file formats (PDF, HTML,
-      Microsoft Word). We will show how an RMarkdown document describing a data 
-      pre-processing protocol can be used to efficiently apply the same data
-      pre-processing steps to different sets of raw data. & \tabitem Define a data pre-processing protocol; 
-
+      of research projects at the data pre-processing phase; 
+  
       \tabitem Create a document in RStudio using 
       RMarkdown; 
-
-      \tabitem Render the document in 
-      multiple file formats; 
-
-      \tabitem Apply the document to several different datasets
-      that follow the same format. & 15 & \tabitem Applied exercise: Trainees will be asked to create, save, and render 
+  
+  \tabitem Render the document in 
+  multiple file formats; 
+  
+  \tabitem Apply the document to several different datasets
+  that follow the same format. & 15 & \	abitem Applied exercise: Trainees will be asked to create, save, and render 
     their own RMarkdown document through RStudio; 
-
-    \tabitem Video providing a detailed
-    walk-through of a solution to the applied exercise.\\
+  
+  \tabitem Video providing a detailed
+  walk-through of a solution to the applied exercise.\\
 \textcolor{black}{\textbf{Example: Creating a reproducible data pre-processing protocol}} & We will provide an example of creatin a reproducible protocol for the automated
       gating of flow cytometry data for a project on the immunology of tuberculosis
       [more details on project]. This data pre-processing protocol was created 

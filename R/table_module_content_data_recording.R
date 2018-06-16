@@ -6,6 +6,8 @@ my_table <- tribble(
   ~ `Module title`, ~ Type, ~ `Description of module content`, 
   ~ `Objectives (After taking the module, the trainee can ...)`, 
   ~ `Video Length`,  ~ `Extra educational materials`,
+  
+# Module 1  
   "Separating data recording and analysis", "Principals",
     "Many biomedical laboratories currently use spreadsheets, with embedded macros, 
       to both record and analyze experimental data. This practice empedes the transparency
@@ -30,6 +32,8 @@ my_table <- tribble(
 
     \\tabitem Short audio recording of two Co-Is giving their
       own answers to these discussion questions.",
+  
+# Module 2  
   "Principals and power of structured data formats", "Principals",
     "In this module, we will explain what makes a dataset 'structured' and
       why this format is a powerful tool for reproducible research.", 
@@ -46,6 +50,8 @@ my_table <- tribble(
 
     \\tabitem Video walking trainees 
       through one solution to the applied exercise.",
+
+# Module 3
   "The 'tidy' data format: an implementation of a structured data format", "Implementation",
   "The 'tidy' data format was outlined in a 200[x] paper and has since quickly 
   gained popularity among statisticians and data scientists. By consistently 
@@ -71,6 +77,8 @@ my_table <- tribble(
   for quiz questions, including showing 'tidy' versions of each example dataset; 
 
   \\tabitem Link to paper that established the 'tidy' data format.",
+
+# Module 4
   "Designing templates for tidy data collection", "Implementation",
     "This module will move from the principals of the 'tidy' data format to the 
       practical details of designing a 'tidy' data format to use for a specific 
@@ -88,6 +96,8 @@ my_table <- tribble(
   of the data; 
 
   \\tabitem Video providing a detailed solution to the applied exercise.",
+
+# Module 5
   "Example: Creating a template for data collection", "Example",
     "In this module, we will walk through an example of creating a template to collect
       data in a 'tidy' format for a laboratory-based research project. As an example,
@@ -109,6 +119,8 @@ my_table <- tribble(
 
     \\tabitem Short audio recording of two Co-Is giving their
       own answers to these discussion questions.", 
+
+# Module 6
   "Power of using a single 'Project' directory for storing and tracking research project files", "Principals",
     "To improve the computational reproducibility of a research project, researchers
       can use a single 'Project' directory to collectively store 
@@ -139,6 +151,8 @@ my_table <- tribble(
       research project; 
 
       \\tabitem Video with detailed answers and discussion of quiz questions.",
+
+# Module 7
   "Creating 'Project' templates", "Implementation",
     "Researchers can gain even more benefits, in terms of improving both the reproducibility
       and efficiency of research, by using a consistent structure for the 'Project' 
@@ -165,6 +179,8 @@ my_table <- tribble(
     \\tabitem Short audio recording of two Co-Is discussing how they have
       saved and tracked research project files in previous projects and what barriers to
       reproducibility these practices introduced.",
+
+# Module 8
   "Example: Creating a 'Project' template", "Example",
     "In this module, we will walk through a real example of establishing the format 
       for a research group's 'Project' template, creating that template using RStudio,
@@ -183,7 +199,9 @@ my_table <- tribble(
 
      \\tabitem Video demonstrating a detailed solution 
       to the applied exercise.",
-  "Harnessing version control for transparent data collection", "Principals",
+
+# Module 9
+  "Harnessing version control for transparent data recording", "Principals",
     "As a research project progresses, a typical practice in many experimental 
       research groups is to save new versions of files (e.g., 'draft1.doc', 'draft2.doc'),
       so that any changes can be reverted to earlier versions. However, this practice 
@@ -209,6 +227,8 @@ my_table <- tribble(
 
       \\tabitem Short audio recording of two Co-Is giving their
       own answers to these discussion questions.",
+
+# Module 10
   "Using git and GitLab to enhance the reproducibility of collaborative research", "Principals",
     "Once a researcher has learned to use git on their own 
       computer for local version control, they can begin using version control 
