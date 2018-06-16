@@ -1,0 +1,104 @@
+\documentclass[pdftex,english,11pt,parskip=half]{scrartcl}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[labelfont=bf,font=small,format=plain]{caption}
+\usepackage{doi}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{float}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+\usepackage{url,hyperref,color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\fixme}[1]{{\color{red} #1}}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\begin{document}
+\addtokomafont{section}{\large}
+\def\bf{\normalfont\bfseries}
+\pagestyle{empty}
+
+\textbf{Budget justification} \ \\
+% Total direct costs over the three years of the project: $250,000
+% May want to distribute as: $112,500 Year 01, $112,500 Year 02, $25,000 Year 03
+% Modules should be published by the end of the second year. The third year 
+% can be used for futher evaluation and refining of these modules.
+
+{\large \textbf{Personnel}} \\
+
+\noindent \textbf{Brooke Anderson,} \textit{Ph.D., Principal Investigator, x academic person-months, x summer person-months (25\% effort) in Years 01 through 02, x academic person-months, x summer person-months (10\% effort) in Year 03.} Dr. Anderson is an assistant professor of Epidemiology in the Department of Environmental \& Radiological Health Sciences at Colorado State University, with an affiliate position at the Department of Statistics. She is an expert in R programming and has created and published several open-source R packages, in particular to facilitate environmental epidemiological research. She has experience creating R programs to work with large data, including climate model output and large weather datasets, as well as programs that interface with open web-based datasets. She is the co-instructor of a series of Massive Open Online Courses on \textit{Mastering Software Development in R} through Coursera and an associated open online book. Dr. Anderson will lead the development of all training modules developed through this grant, including through supervising the development and integration of training materials from co-investigators. She will also lead user testing and other evaluation of all developed modules to ensure the developed modules are clear, effective, and well-matched to meet the needs of biological researchers from a variety of scientific backgrounds, including those new to programming. 
+
+\noindent \textbf{Mike Lyons,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03, x academic person-months.}
+
+\noindent \textbf{Marcela Henao-Tamayo,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03.}
+
+\noindent \textbf{Mercedes Gonzalez-Juarrero,} \textit{Ph.D., Co-Investigator, x academic person-months, x summer person-months (5\% effort) in Years 01--03.}
+
+{\large \textbf{Travel}} \\
+
+\noindent \textbf{Domestic travel.} Domestric travel funds are requested for three travel expenses: (1) Travel for PI and one co-I to travel to the American Society for Microbiology Conference in Chicago, IL, in June 2020 (Year 02 of project period) to lead a workshop based on the developed training materials and to present a poster on the project results to help disseminate these results to laboratory-based biomedical researchers; (2) Travel for PI to attend either the UseR or RStudio Conference in Year 01, to ensure cutting-edge implementation methods for improving computational reproducibility of research is included in the training materials and to learn the latest techniques for using R's \textit{bookdown} interface to create and disseminate free and open training materials; and (3) Travel for PI to attend a Program Meeting in Year 03 of the project. 
+\begin{itemize}
+\item Year 01: \$1,400
+\item Year 02: \$2,800
+\item Year 03: \$1,000
+\end{itemize}
+% The conference travel budget estimates $400 per flight, $175 per night at a hotel for four nights, and $75 per day for food for five days, then rounds up. 
+% The SC meeting travel budget estimates $300 for flight, $175 per night at a hotel for 2.5 nights, and $75 per day for food for three days, then rounds down (presumably some meals would be covered).
+
+{\large \textbf{Materials and Supplies}} \\ Annual funds (\$300/year) are requested for screen-capture software (e.g., \textit{Camtasia}), other software, and books to facilitate the proposed training module development. \\
+
+\noindent \textbf{Conference Registrations.} Funds are budgeted for (1) Registration for PI and one co-I to for the American Society for Microbiology Conference in Chicago, IL, in June 2020 (Year 02 of project period), for which they will apply to lead a workshop based on the developed training materials and to present a poster on the project results to help disseminate these results to laboratory-based biomedical researchers; (2) Registration for PI to attend either the UseR or RStudio Conferences in Year 01, to ensure cutting-edge implementation methods for improving computational reproducibility of research is included in the training materials and to learn the latest techniques for using R's \textit{bookdown} interface to create and disseminate free and open training materials
+\begin{itemize}
+\item Year 01: \$800
+\item Year 02: \$1600
+\item Year 03: \$0
+\end{itemize}
+
+\noindent \textbf{Hospitality.} Funds are budgeted each year to provide breakfast, lunch, coffee, and snacks for two days per project year to 20 people (budgeted at \$425/day) for biannual user testing days with faculty, research associates, postdoctoral fellows, graduate students, and undergraduate students from Colorado State University. Colorado State University provides room reservations free to faculty for similar events, and so funds to rent a space are not required (See Letter of Support, Dr. Jac Nickoloff).
+\begin{itemize}
+\item Year 01: \$850
+\item Year 02: \$850
+\item Year 03: \$850
+\end{itemize}
+% About $13 per "box" of coffee, serves about 12
+% About $9 per person for catering from Spoons (for lunch)
+% About $6 per person for catering from Panera for breakfast
+% About $4 per person for snacks seems reasonable
+% Breakfast for 20 x 2; Lunch for 20 x 2; Snacks for 20 x 2; Coffee for 20 x 4; 
+% Total hospitality budget for extended user testing (round up): $800 
+% Snacks for 15 x 3; Coffee for 15 x 3
+% Total hospitality budget for each shorter user testing (round up): $75 
+
+\noindent \textbf{Consulting through CSU's STEM center for project evaluation.} Julie Maertens will assist in the design and implementation of project evaluation each year of this project.
+\begin{itemize}
+\item Year 01: \$1,000
+\item Year 02: \$1,000
+\item Year 03: \$1,000
+\end{itemize}
+% Maximum budget for evaluation costs: $3,000 over the project period
+
+\end{document}
