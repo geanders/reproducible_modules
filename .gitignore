@@ -4,3 +4,5 @@
 .Ruserdata
 *.log
 *.synctex.gz
+*.aux
+*.bbl
