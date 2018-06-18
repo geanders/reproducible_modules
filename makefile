@@ -1,7 +1,8 @@
 all: pdf/budget_justification.pdf pdf/cover_letter.pdf pdf/human_subjects.pdf \
   pdf/project_abstract.pdf pdf/project_narrative.pdf pdf/research_approach.pdf \
   pdf/research_environment.pdf pdf/specific_aims.pdf pdf/module_content_tables.pdf \
-  pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf
+  pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf \
+  pdf/timeline.pdf
 
 pdf/budget_justification.pdf: writing/budget_justification.tex
 	pdflatex writing/budget_justification; 
@@ -42,9 +43,14 @@ pdf/specific_aims.pdf: writing/specific_aims.tex
 	pdflatex writing/specific_aims
 	mv specific_aims.pdf pdf/
 	rm specific_aims.*
+	
+pdf/timeline.pdf: writing/timeline.tex figures/timeline.pdf
+	pdflatex writing/timeline
+	mv timeline.pdf pdf/
+	rm timeline.*
 
 pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
- tables
+ tables figures/timeline.pdf
 	pdflatex writing/research_approach
 	bibtex research_approach
 	mv research_approach.pdf pdf/
@@ -84,6 +90,9 @@ tables/module_tracks.tex: R/table_module_tracks.R
 	
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
+	
+figures/timeline.pdf: R/plot_timeline.R
+	R CMD BATCH R/plot_timeline.R
 	
 clean: 
 	rm pdf/*.pdf
