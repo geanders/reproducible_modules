@@ -43,7 +43,7 @@ my_table <- tribble(
                                 "Another very long\ndescription of the\nresearch associate")),
         caption = "Some examples of tracks of training modules for sample trainees") %>% 
   kable_styling(latex_options = c("hold_position", "repeat_header"), 
-                font_size = 10) %>% 
+                font_size = 8) %>% 
   row_spec(0, angle = 45) %>% 
   column_spec(1, width = "20em") %>% 
   group_rows("Very long sequence name for sequence 1", 1, 10, latex_align = 'l') %>% 

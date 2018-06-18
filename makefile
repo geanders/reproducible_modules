@@ -50,7 +50,9 @@ pdf/timeline.pdf: writing/timeline.tex figures/timeline.pdf
 	rm timeline.*
 
 pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
- tables figures/timeline.pdf
+ tables/evaluation.tex tables/module_content_data_preprocessing.tex \
+ tables/module_tracks.tex tables/module_content_data_recording.tex \
+ figures/timeline.pdf
 	pdflatex writing/research_approach
 	bibtex research_approach
 	mv research_approach.pdf pdf/
@@ -59,17 +61,20 @@ pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
 	rm research_approach.bbl
 	rm research_approach.log
 	
-pdf/module_content_tables.pdf: writing/module_content_tables.tex tables
+pdf/module_content_tables.pdf: writing/module_content_tables.tex \
+ tables/module_content_data_recording.tex \
+ tables/module_content_data_preprocessing.tex
 	pdflatex writing/module_content_tables
 	mv module_content_tables.pdf pdf/
 	rm module_content_tables.*
 	
-pdf/module_track_table.pdf: writing/module_track_table.tex tables
+pdf/module_track_table.pdf: writing/module_track_table.tex \
+ tables/module_tracks.tex 
 	pdflatex writing/module_track_table
 	mv module_track_table.pdf pdf/
 	rm module_track_table.*
 	
-pdf/evaluation_table.pdf: writing/evaluation_table.tex tables
+pdf/evaluation_table.pdf: writing/evaluation_table.tex tables/evaluation.tex
 	pdflatex writing/evaluation_table
 	mv evaluation_table.pdf pdf/
 	rm evaluation_table.*
@@ -86,7 +91,7 @@ tables/module_content_data_preprocessing.tex: R/table_module_content_data_prepro
 	R CMD BATCH R/table_module_content_data_preprocessing.R
 	
 tables/module_tracks.tex: R/table_module_tracks.R
-	R CMD BATCH R/table_module_tracks
+	R CMD BATCH R/table_module_tracks.R
 	
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
