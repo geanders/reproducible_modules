@@ -36,3 +36,7 @@
     + Do we need to add something about how we safely store the data?
 - Complete draft on Facilities & Other Resources
 - Make a timeline
+- Complete the module content table
+- Complete the module track table
+- Complete the evaluation table
+- Make figure---research project and where we fit in
