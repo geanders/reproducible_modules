@@ -1,12 +1,17 @@
 all: pdf/budget_justification.pdf pdf/cover_letter.pdf pdf/human_subjects.pdf \
   pdf/project_abstract.pdf pdf/project_narrative.pdf pdf/research_approach.pdf \
   pdf/research_environment.pdf pdf/specific_aims.pdf pdf/module_content_tables.pdf \
-  pdf/module_track_table.pdf pdf/evaluation_table.pdf
+  pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf
 
 pdf/budget_justification.pdf: writing/budget_justification.tex
 	pdflatex writing/budget_justification; 
 	mv budget_justification.pdf pdf/
 	rm budget_justification.*
+	
+pdf/criteria_for_review.pdf: writing/criteria_for_review.tex
+	pdflatex writing/criteria_for_review; 
+	mv criteria_for_review.pdf pdf/
+	rm criteria_for_review.*
 	
 pdf/cover_letter.pdf: writing/cover_letter.tex
 	pdflatex writing/cover_letter;
