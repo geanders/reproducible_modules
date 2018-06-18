@@ -1,7 +1,38 @@
-- Meet with Jac---letter of institutional support
-- What resources at CSU for recording interview-style videos?
+- LOS: Jac
 - LOS: Gaussi
 - LOS: Volckens
 - LOS: Yihui
 - LOS: Peng
 - LOS: West
+- LOS: Outside CSU collaborators
+- LOS: Chair of MIPs
+- LOS: Rudolph
+- Make sure we have draft documents for all components required for the proposal
+- Check with project officer 
+    + page limit 
+    + landscape + portrait orientation
+    + do pdf submissions have to originate from Word documents?
+    + any questions about evaluation?
+- Refine budget
+    + add Greg
+    + add travel to other conferences for dissemination? for R training?
+    + from Kathy, current travel budget might be too conservative
+- Describe format (and how it is innovative)
+    + details of bookdown and online books
+    + prototype of what our book will look like?
+    + YouTube format for videos, plus how we will create them
+    + format for quizzes / online exercises?
+- Describe why the proposed training module content is significant
+- Describe the research team
+    + Bios / descriptions of everyone's research
+    + Description of how I will manage the project, including process of 
+      creating materials, refining them, testing on user groups, etc.
+- Mock up evaluation criteria for reviewers for the grant
+- Draft human subjects piece
+    + Exemption 1 (research conducting in an educational setting involving
+      normal education practices)
+    + Do we need to do things like de-identifying data collected from course 
+      evaluation surveys?
+    + Do we need to add something about how we safely store the data?
+- Complete draft on Facilities & Other Resources
+- Make a timeline
