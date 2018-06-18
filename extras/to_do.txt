@@ -7,6 +7,8 @@
 - LOS: Outside CSU collaborators
 - LOS: Chair of MIPs
 - LOS: Rudolph
+- Next draft of Specific Aims
+- Next draft of module content tables
 - Make sure we have draft documents for all components required for the proposal
 - Check with project officer 
     + page limit 
