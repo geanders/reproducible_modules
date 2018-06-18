@@ -86,18 +86,23 @@ tables: tables/module_content_data_recording.tex \
 	
 tables/module_content_data_recording.tex: R/table_module_content_data_recording.R
 	R CMD BATCH R/table_module_content_data_recording.R
+	rm table_module_content_data_recording.Rout
 	
 tables/module_content_data_preprocessing.tex: R/table_module_content_data_preprocessing.R
 	R CMD BATCH R/table_module_content_data_preprocessing.R
+	rm table_module_content_data_preprocessing.Rout
 	
 tables/module_tracks.tex: R/table_module_tracks.R
 	R CMD BATCH R/table_module_tracks.R
+	rm table_module_tracks.Rout
 	
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
+	rm table_evaluation.Rout
 	
 figures/timeline.pdf: R/plot_timeline.R
 	R CMD BATCH R/plot_timeline.R
+	rm plot_timeline.Rout
 	
 clean: 
 	rm pdf/*.pdf
