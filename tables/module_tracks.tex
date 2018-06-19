@@ -1,35 +1,38 @@
-\begin{table}[!h]
 
-\caption{\label{tab:}Some examples of tracks of training modules for sample trainees}
+\begin{landscape}\begin{table}[!h]
+
+\caption{\label{tab:}Examples of how different types of trainees might use subsets of the training modules to meet their specific training needs.}
 \centering
-\fontsize{8}{10}\selectfont
-\begin{tabular}[t]{>{\centering\arraybackslash}p{20em}ccc}
+\fontsize{9}{11}\selectfont
+\begin{tabular}[t]{>{\centering\arraybackslash}p{28em}ccccc}
 \toprule
-\rotatebox{45}{} & \rotatebox{45}{\makecell[l]{Long description of\\the student}} & \rotatebox{45}{Module 2} & \rotatebox{45}{\makecell[l]{Another very long\\description of the\\research associate}}\\
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\makecell[c]{\textbf{Graduate student}\\who would like to\\learn in detail\\how to use\\reproducibility tools\\for data recording\\and pre-processing\\and is willing to learn\\R programming tools}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Principal investigator}\\who does not program\\but would like to\\learn how his/her\\research team could\\improve reproducibility\\of data recording\\and pre-processing}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Biostatistician}\\who would\\like to understand\\barriers faced by\\collaborators\\in implementing\\reproducibility\\principals early\\in research projects}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Technician}\\in charge of\\running and\\pre-processing\\mass\\spectrometry\\data}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Undergraduate}\\\textbf{student}\\who wants an\\introduction\\to improving\\reproducibility\\of data\\recording}}\\
 \midrule
 \addlinespace[0.3em]
-\multicolumn{4}{l}{\textbf{Very long sequence name for sequence 1}}\\
-\hspace{1em}\tabitem Separating data recording and analysis & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Principals and power of structured data formats & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem The 'tidy' data format: an implementation of a structured data format & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
-\hspace{1em}\tabitem Designing templates for tidy data collection & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Example: Creating a template for data collection & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Power of using a single 'Project' directory for storing and tracking research project files & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
-\hspace{1em}\tabitem Creating 'Project' templates & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Example: Creating a 'Project' template & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Harnessing version control for transparent data recording & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
-\hspace{1em}\tabitem Using git and GitLab to enhance the reproducibility of collaborative research & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\multicolumn{6}{l}{\textbf{Improving the Reproducibility of Experimental Data Recording}}\\
+\hspace{1em}\tabitem Separating data recording and analysis & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
+\hspace{1em}\tabitem Principals and power of structured data formats & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
+\hspace{1em}\tabitem The 'tidy' data format: an implementation of a structured data format & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Designing templates for 'tidy' data collection & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Example: Creating a template for 'tidy' data collection & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Power of using a single structured 'Project' directory for storing and tracking research project files & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
+\hspace{1em}\tabitem Creating 'Project' templates & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Example: Creating a 'Project' template & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Harnessing version control for transparent data recording & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
+\hspace{1em}\tabitem Enhance the reproducibility of collaborative research with version control platforms & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
+\hspace{1em}\tabitem Using git and GitLab to implement version control & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
 \addlinespace[0.3em]
-\multicolumn{4}{l}{\textbf{Sequence 2}}\\
-\hspace{1em}\tabitem Principals and benefits of scripted pre-processing of experimental data & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Introduction to R code scripts & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Simplify scripted pre-processing through R's 'tidyverse' tools & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
-\hspace{1em}\tabitem Complex data types in experimental data pre-processing & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Complex data types in R and Bioconductor & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Example: Converting from complex data types to 'tidy' data formats & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Introduction to reproducible data pre-processing protocols & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
-\hspace{1em}\tabitem Introduction to RMarkdown as a tool for creating reproducible data pre-processing protocols & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
-\hspace{1em}\tabitem Example: Creating a reproducible data pre-processing protocol & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No}\\
+\multicolumn{6}{l}{\textbf{Improving the Reproducibility of Experimental Data Pre-Processing}}\\
+\hspace{1em}\tabitem Principals and benefits of scripted pre-processing of experimental data & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Introduction to scripted data pre-processing in R & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Simplify scripted pre-processing through R's 'tidyverse' tools & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Complex data types in experimental data pre-processing & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Complex data types in R and Bioconductor & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Example: Converting from complex to 'tidy' data formats & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Introduction to reproducible data pre-processing protocols & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem RMarkdown for creating reproducible data pre-processing protocols & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{white}{No} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
+\hspace{1em}\tabitem Example: Creating a reproducible data pre-processing protocol & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No}\\
 \bottomrule
 \end{tabular}
 \end{table}
+\end{landscape}
