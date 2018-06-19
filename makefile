@@ -55,6 +55,8 @@ pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
  figures/timeline.pdf
 	pdflatex writing/research_approach
 	bibtex research_approach
+	pdflatex writing/research_approach
+	pdflatex writing/research_approach
 	mv research_approach.pdf pdf/
 	rm research_approach.aux
 	rm research_approach.out
