@@ -8,7 +8,7 @@ my_table <- tribble(
   ~ `Video length`,  ~ `Extra educational materials`,
   
 # Module 1  
-  "Separating data recording and analysis", "Principals",
+  "Separating data recording and analysis", "Principles",
     "Many biomedical laboratories currently use spreadsheets, with embedded macros, 
       to both record and analyze experimental data. This practice empedes the transparency
       and reproducibility of both data recording and data analysis. In this module, we 
@@ -34,7 +34,7 @@ my_table <- tribble(
       own answers to these discussion questions",
   
 # Module 2  
-  "Principals and power of structured data formats", "Principals",
+  "Principles and power of structured data formats", "Principles",
     "The format in which experimental data is recorded can have a large influence
       on how easy and likely it is to implement reproducibility tools in later stages of
       data pre-processing, analysis, and visualization. Recording data in a 'structured'
@@ -75,7 +75,7 @@ my_table <- tribble(
     that is now particularly popular in data analysis)", 
   "15", 
   "\\tabitem Quiz questions: For example datasets, correctly identify which of the 'tidy'
-  data principals the dataset has or lacks 
+  data principles the dataset has or lacks 
 
   \\tabitem Video giving answers and explanations
   for quiz questions, including showing 'tidy' versions of each example dataset 
@@ -84,7 +84,7 @@ my_table <- tribble(
 
 # Module 4
   "Designing templates for tidy data collection", "Implementation",
-    "This module will move from the principals of the 'tidy' data format to the 
+    "This module will move from the principles of the 'tidy' data format to the 
       practical details of designing a 'tidy' data format to use when collecting 
       experimental data. We will describe common issues that prevent many real datasets from
       experimental research projects from being 'tidy' and show how these issues
@@ -111,7 +111,7 @@ my_table <- tribble(
       Finally, we will show examples of how the experimental data can easily be 
       cleaned, analyzed, and visualized using reproducible tools once it is in a 
       'tidy' format.", 
-    "\\tabitem Understand how the principals of 'tidy' data can be applied 
+    "\\tabitem Understand how the principles of 'tidy' data can be applied 
       when recording experimental
       data for a real, complex research project;
 
@@ -125,7 +125,7 @@ my_table <- tribble(
       own answers to these discussion questions", 
 
 # Module 6
-  "Power of using a single structured 'Project' directory for storing and tracking research project files", "Principals",
+  "Power of using a single structured 'Project' directory for storing and tracking research project files", "Principles",
     "To improve the computational reproducibility of a research project, researchers
       can use a single 'Project' directory to collectively store 
       all research data (raw and pre-processed), meta-data, code for data pre-processing,
@@ -202,7 +202,7 @@ my_table <- tribble(
       to the applied exercise.",
 
 # Module 9
-  "Harnessing version control for transparent data recording", "Principals",
+  "Harnessing version control for transparent data recording", "Principles",
     "As a research project progresses, a typical practice in many experimental 
       research groups is to save new versions of files (e.g., 'draft1.doc', 'draft2.doc'),
       so that changes can be reverted. However, this practice 
@@ -227,7 +227,7 @@ my_table <- tribble(
       own answers to these discussion questions",
 
 # Module 10
-  "Enhance the reproducibility of collaborative research with version control platforms", "Principals",
+  "Enhance the reproducibility of collaborative research with version control platforms", "Principles",
     "Once a researcher has learned to use git on their own 
       computer for local version control, they can begin using version control 
       platforms (e.g., GitLab, GitHub) to collaborate with others in their research
@@ -274,14 +274,14 @@ my_table <- tribble(
   ) %>% 
   mutate(`Module title` = cell_spec(`Module title`, format = "latex",
                                     color = factor(Type,
-                                                   c("Principals",
+                                                   c("Principles",
                                                      "Implementation", 
                                                       "Example"),
                                                    c("blue", "red", "black")),
                                     bold = TRUE)) %>% 
   select(-Type) %>% 
   kable("latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
-                  caption = "Modules for the first sequence, \\textbf{'Improving the Reproducibility of Experimental Data Recording'}. The color of each module's title indicates whether the module focuses on \\textbf{Principals} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
+                  caption = "Modules for the first sequence, \\textbf{'Improving the Reproducibility of Experimental Data Recording'}. The color of each module's title indicates whether the module focuses on \\textbf{Principles} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
   kable_styling(latex_options = c("hold_position", "striped", "repeat_header"), 
                 font_size = 9) %>% 
   column_spec(1, bold = TRUE, width = "10em") %>% 

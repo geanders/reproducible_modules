@@ -5,7 +5,7 @@ library(kableExtra)
 my_table <- tribble(
   ~ ` `, ~ `Student`, ~`PI`, ~ `Biostatistician`, ~ `Technician`, ~ `Undergrad`,
   "\\tabitem Separating data recording and analysis", "Yes", "Yes", "Yes", "No", "Yes",
-  "\\tabitem Principals and power of structured data formats", "Yes", "Yes", "No", "No", "Yes",
+  "\\tabitem Principles and power of structured data formats", "Yes", "Yes", "No", "No", "Yes",
   "\\tabitem The 'tidy' data format: an implementation of a structured data format", "Yes", "Yes", "No", "No", "No",
   "\\tabitem Designing templates for 'tidy' data collection", "Yes", "Yes", "No", "No", "No",
   "\\tabitem Example: Creating a template for 'tidy' data collection", "Yes", "Yes", "Yes", "No", "No",
@@ -16,7 +16,7 @@ my_table <- tribble(
   "\\tabitem Enhance the reproducibility of collaborative research with version control platforms", "Yes", "Yes", "No", "No", "Yes",
   "\\tabitem Using git and GitLab to implement version control", "Yes", "No", "No", "No", "No",
  
-  "\\tabitem Principals and benefits of scripted pre-processing of experimental data", "Yes", "Yes", "No", "Yes", "No",
+  "\\tabitem Principles and benefits of scripted pre-processing of experimental data", "Yes", "Yes", "No", "Yes", "No",
   "\\tabitem Introduction to scripted data pre-processing in R", "Yes", "No", "No", "Yes", "No",
   "\\tabitem Simplify scripted pre-processing through R's 'tidyverse' tools", "Yes", "No", "No", "Yes", "No",
   "\\tabitem Complex data types in experimental data pre-processing", "Yes", "Yes", "Yes", "Yes", "No",
@@ -51,7 +51,7 @@ my_table <- tribble(
         col.names = linebreak(c("", 
                                 "\\textbf{Graduate student}\nwho would like to\nlearn in detail\nhow to use\nreproducibility tools\nfor data recording\nand pre-processing\nand is willing to learn\nR programming tools", 
                                 "\\textbf{Principal investigator}\nwho does not program\nbut would like to\nlearn how his/her\nresearch team could\nimprove reproducibility\nof data recording\nand pre-processing",
-                                "\\textbf{Biostatistician}\nwho would\nlike to understand\nbarriers faced by\ncollaborators\nin implementing\nreproducibility\nprincipals early\nin research projects",
+                                "\\textbf{Biostatistician}\nwho would\nlike to understand\nbarriers faced by\ncollaborators\nin implementing\nreproducibility\nprinciples early\nin research projects",
                                 "\\textbf{Technician}\nin charge of\nrunning and\npre-processing\nmass\nspectrometry\ndata",
                                 "\\textbf{Undergraduate}\n\\textbf{student}\nwho wants an\nintroduction\nto improving\nreproducibility\nof data\nrecording"),
                               align = 'c'),

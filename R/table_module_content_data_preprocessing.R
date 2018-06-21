@@ -8,7 +8,7 @@ my_table <- tribble(
   ~ `Video length`,  ~ `Extra educational materials`,
   
 # Module 1
-  "Principals and benefits of scripted pre-processing of experimental data", "Principals",
+  "Principles and benefits of scripted pre-processing of experimental data", "Principles",
     "The experimental data collected for biomedical research often requires 
       pre-processing before it can be analyzed (e.g., gating of flow cytometry data, 
       peak finding and quantification for LC / MS metabolomics data). While 
@@ -66,7 +66,7 @@ my_table <- tribble(
   "Simplify scripted pre-processing through R's 'tidyverse' tools", "Implementation",
     "The R programming language now includes a collection of 'tidyverse' extension 
       packages that enable user-friendly yet powerful work with experimental data,
-      including pre-processing and exploratory visualizations. The principal behind
+      including pre-processing and exploratory visualizations. The principle behind
       the 'tidyverse' is that a collection of simple, general tools can be joined 
       together to solve complex problems, as long as a consistent format is used 
       for the input and output of each tool (the 'tidy' data format taught in other
@@ -92,7 +92,7 @@ my_table <- tribble(
         skills",
 
 # Module 4
-  "Complex data types in experimental data pre-processing", "Principals",
+  "Complex data types in experimental data pre-processing", "Principles",
   "Raw data from many biomedical experiments, especially those that
   use high-throughput techniques, can be very large and complex. Because of the 
   scale and complexity of these data, software for pre-processing the data in R
@@ -173,7 +173,7 @@ my_table <- tribble(
       exercise",  
 
 # Module 7
-  "Introduction to reproducible data pre-processing protocols", "Principals",
+  "Introduction to reproducible data pre-processing protocols", "Principles",
   "Reproducibility tools can be used to create reproducible data pre-precessing 
     protocols---documents that combine code and text in a 
   'knitted' document, which can be re-used to ensure data pre-processing is consistent
@@ -253,14 +253,14 @@ my_table <- tribble(
   ) %>% 
   mutate(`Module title` = cell_spec(`Module title`, format = "latex",
                                     color = factor(Type,
-                                                   c("Principals",
+                                                   c("Principles",
                                                      "Implementation", 
                                                      "Example"),
                                                    c("blue", "red", "black")),
                                     bold = TRUE)) %>% 
   select(-Type) %>% 
   kable("latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
-        caption = "Modules for the second sequence, \\textbf{'Improving the Reproducibility of Experimental Data Pre-Processing'}. The color of each module's title indicates whether the module focuses on \\textbf{Principals} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
+        caption = "Modules for the second sequence, \\textbf{'Improving the Reproducibility of Experimental Data Pre-Processing'}. The color of each module's title indicates whether the module focuses on \\textbf{Principles} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
   kable_styling(latex_options = c("hold_position", "striped", "repeat_header"), 
                 font_size = 9) %>% 
   column_spec(1, bold = TRUE, width = "10em") %>% 
