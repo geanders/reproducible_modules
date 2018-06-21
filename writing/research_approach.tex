@@ -77,19 +77,15 @@ Dr. Anderson (PI) was an early adopter of the \textit{bookdown} framework. Since
 
 We will publish the book's code openly online through GitHub from the beginning of our development of the training materials, as well as publish the current version of materials as the online book. \textbf{By making the training materials available from day one, as they are developed, we will be able to attract early users to help disseminate the material as it evolves and also be able to get early feedback on the content as it is developed.} Once the online book is developed, we will be able to submit a static version of it to be posted on the homepage of the \textit{bookdown.org} website [ref], which will serve as another way for trainees to find and access the materials.
 
-\section{Approach}
+\section{Proposed Research Education Program}
 
-\begin{quotation}
-``Does the proposed program clearly state its goals and objectives, including the audience to be reached, the content to be conveyed, and the intended outcome?  Is there evidence that the program is based on a sound rationale, as well as sound educational concepts and principles? Is the plan for evaluation sound and likely to provide information on the effectiveness of the program?"
-\end{quotation}
-
-\subsection{Proposed Research Education Program Plan}
+\textbf{Project goals and objectives.} Our project's primary goal is to develop training modules that address the needs of laboratory-based biomedical researchers seeking to improve reproducibility, especially of experimental data recording and pre-processing, in their research projects. The expected result of this project is an online book that contains [x] training modules as separate chapters, with video lectures, written text, and additional educational materials collected within each module's chapter. We consider it critical that these training materials be clear, relevant, and useful to a key audience of biomedical scientists whose primary research activities focus on laboratory research, rather than data analysis or statistics. To help us achieve this goal, our team includes three co-investigators from this key audience who will play an early and continuing role in developing and refining the training materials for this audience, and our plan includes intensive user testing of the developing materials on several groups of pilot testers from this audience. Our co-investigators' network of connections in Microbiology and Immunology will help us widely disseminate these materials to our target audience, as will the free, online format of the materials and presenting the materials at national and international Microbiology and Immunology conferences in the second and third years of the project.
 
 \begin{quotation}
 ``While the proposed research education program may complement ongoing research training and education occurring at the applicant institution, the proposed educational experiences must be distinct from those research training and research education programs currently receiving federal support. When research training programs are on-going in the same department, the applicant organization should clearly distinguish between the activities in the proposed research education program and the research training supported by the training program. The research education proposed must be \textbf{targeted to trainees and investigators at any level}. State the \textbf{goals for education} and \textbf{justify the area of training} selected for module development in terms of its \textbf{relevance and potential impact} on improving the development of skills and knowledge important for conducting rigorous and reproducible research. Describe the \textbf{subject material} to be covered.  Describe the \textbf{format} for the training module proposed and \textbf{justify it in terms of the education goals}.  The \textbf{length} of the proposed training module should be explained in terms of \textbf{scope and depth of coverage} of the subject matter.  In addition, \textbf{how the research education will be utilized by trainees or investigators} should be described---for example, a module on how to avoid confirmation bias to be taken by all beginning laboratory workers, or a module on appropriate design of animal studies to be taken immediately prior to beginning such work.  Describe the \textbf{plans for piloting and evaluating the effectiveness} of the training module. Describe \textbf{plans for making the proposed training module section 508 compliant of the Rehabilitation Act} (29 U.S.C. '794 d), as amended by the Workforce Investment Act of 1998 (P.L. 105 – 220; see http://www.section508.gov/ for additional information). Provide a \textbf{timeline for module development, piloting and refinement, dissemination, evaluation, and maintenance}.  This timeline must propose \textbf{making the training publicly available within two years} of the award date."
 \end{quotation}
 
-\subsubsection{Educational goals of the modules}
+\subsubsection*{Educational goals of the modules}
 
 The importance of computational reproducibility of scientific research is increasingly recognized by scientists, journals, and funding agencies, with such ``computationally reproducible" research requiring that all data and code for a research project be available and that this data and code can be used to regenerate study findings either by the original researcher or by other researchers \cite{ellis2017share, ram2013git}.
 
@@ -103,7 +99,7 @@ Reproducbility can also be improved, starting at the data recording stage or ear
 
 \textbf{Teaching implementation tools to improve reproducibility.} These modules will teach the principals of reproducibility as well as introduce researchers to tools for implementing reproducible research workflows. The implementation portion of these modules will focus on tools from the open-source R programming language. R can be freely, quickly, and easily downloaded and installed to a user's computer, allowing new users to get started quickly, a critical consideration for usable scientific software \cite{list2017ten}. R has been maintained for over a decade by the R Development Core Team and works with all major computing platforms, ensuring  widespread access, stability, and compatability, also critical for ease-of-use \cite{baumer2017lessons, altschul2013anatomy}. R offers a well-developed environment for creating new tools that extend the core language \cite{wickham2015r} and includes ample tools for documenting research workflows \cite{xie2015dynamic, xie2016bookdown}. R's status as the \textit{lingua franca} of statisticians and biostatisticians means that its use in early stages of experimental data recording and pre-processing can help foster closer collaborations between laboratory-based scientists and statisticians throughout the research process. R can be scaled as the volume of data in projects grows \cite{list2017ten}, as it includes tools to interface with distributed computing platforms (e.g., \textit{Hadoop} \cite{pathak2014rhadoop}, \textit{Spark} \cite{sparklyr}), and its scripts can be integrated within workflow management systems (e.g., \textit{Galaxy} \cite{goecks2010galaxy, walker2016models}). 
 
-\subsubsection{Module subject material}
+\subsubsection*{Module subject material}
 
 We propose to develop two collections of modules, \textbf{Improving the Reproducibility of Experimental Data Recording} and \textbf{Improving the Reproducibility of Experimental Data Pre-Processing}. Our team has worked together to create a curriculum of training modules that we believe will help fill an important training gap for laboratory-based biomedical researchers (Tables [x] and [x]). The first sequence, \textbf{``Improving the Reproducibility of Experimental Data Recording"; Table [x]}, will explore the pitfalls of combining experimental data recording and analysis within macro-enabled spreadsheets, explain the power structured data formats for recording data, describe how reproducibility can be improved by using a single structured directory to store all research project files, and demonstrate the use of version control to maintain single, current versions of all files while saving a history of all file changes. The second sequence, \textbf{``Improving the Reproducibility of Experimental Data Pre-Processing"; Table [x]}, will focus on improving the reproducibility of experimental data pre-processing steps, like gating for flow cytometry data and peak finding / quantifying for mass spectrometry data. Training materials will explain how the use of code scripts for these steps dramatically improves reproducibility compared to using vendor-supplied point-and-click software and will introduce trainees to popular R software for this pre-processing. This sequence will include advice on reproducible data pre-processing protocols and how to create them using literate programming tools (\textit{Rmarkdown}).
 
@@ -117,7 +113,7 @@ We have divided the content into modules in a way that will allow different trai
 
 \input{tables/module_tracks.tex}
 
-\subsubsection{Format for the training modules}
+\subsubsection*{Format for the training modules}
 
 \begin{itemize}
 \item Online book created through the ``bookdown" format, with each module as a book chapter. We can use Git Pages to host this (CSU options for web hosting?).
@@ -128,26 +124,7 @@ We have divided the content into modules in a way that will allow different trai
 
 \textbf{Online book.} To ensure that these training modules are easy for researchers to access, use, and reference, we will provide all training materials through an online book created with the \textit{bookdown} framework \cite{xie2016bookdown} (see LOS, Xie). Through this new framework, we will be able to create a searchable online book that weaves R code into the text and that can include embedded tutorial videos, active weblinks to online references, and computationally reproducible practice examples and exercises. Further, by including R code examples as executable code, we will be able to use this online book to frequently check tutorial code examples to quickly identify and fix any broken tutorial code \cite{xie2016bookdown}.  Dr. Anderson (PI) has previously created two \textit{bookdown}-based books, \textit{R Programming for Research} and \textit{Mastering Software Development in R}.  
 
-\subsubsection{Piloting and evaluating effectiveness of training modules}
-
-We will conduct two, day-long user testing sessions at CSU in each year of the project. The CSU user testing groups will consist of current and future laboratory-based biomedical researchers. We will recruit trainees with a variety of research roles, including undergraduate students, graduate students, postdoctoral fellows, research associates, and principal investigators. We have informed several CSU biomedical researchers about these proposed testing sessions and received their support in encouraging CSU researchers within their groups and departments to participate (see letters from ...). 
-
-In the first two project years, each session will test the set of modules developed since the last user testing (approximately [x] modules will be tested each of these session). The sessions will begin with our team giving live lectures of the same content we plan to film for the video lectures included in the online book. This will allow us to improve and refine this content, based on detailed feedback from testers representative of our target audience, before filming the final video lectures. During the rest of the session, we will divide the trainees into small teams to work through the additional educational materials (applied exercises, quiz questions, and discussion questions) to iron out problems with the clarity or implementation of these materials. The trainees will have access to the in-development online book as they work through these materials.
-
-[Information we will collect from these training sessions.]
-
-Dr. Anderson (PI) has experience in productively conducting these kinds of user testing sessions at CSU. She has run several two-hour user testing sessions with students from various departments of Colorado State University prior to releasing R software packages \cite{futureheatwaves, countyweather}. Further, in April 2016, she led a longer, two-day user testing session through a Weather Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}). Around 15 people participated, including undergraduate students, graduate students, postdoctoral fellows, and professors from CSU's Departments of Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and Statistics. Some of the ideas and code developed during this Hackathon have since led to development and publication of open source software \cite{countyfloods, noaastormevents}.
-
-\begin{SCfigure}
-\centering
-\includegraphics[width = 0.6\textwidth]{figures/csu_hackathon.png}
-\caption{Some of the approximately 15 undergraduate students, graduate students, postdoctoral fellows, and professors who participated in a two-day Weather Data Hackathon at Colorado State University in April 2016 led by Dr. Anderson.}
-\label{csu-r-hackathon} 
-\end{SCfigure}
-
-\subsubsection{Insuring compliance with Rehabilitation Act}
-
-``Electronic content shall conform to Level A and Level AA Success Criteria and Conformance Requirements in Web Content Accessibility Guidelines (WCAG) 2.0"
+\noindent \textbf{Insuring compliance with Rehabilitation Act.} ``Electronic content shall conform to Level A and Level AA Success Criteria and Conformance Requirements in Web Content Accessibility Guidelines (WCAG) 2.0"
 
 \begin{itemize}
 \item The vast majority of our content outside of videos will be text based. Even example data files will mostly be text files.
@@ -187,7 +164,7 @@ Our team combines experts in R programming (Anderson, Lyons), including its use 
 
 \noindent \textbf{Dr. Julie Maertens (Research Associate)} is a senior evaluator at the Colorado State University STEM Center, which assists and collaborates with faculty involved with STEM education-based research and programming in designing and carrying out evaluations. She will assist in the design and implementation of project evaluation throughout this project. Dr. Maertens will only be involved in the project to assist in planning and implementing evaluation, and her percent effort is capped at 0.85\% to reflect the RFA's budget restriction of \$3,000 total on program evaluation, including salary support.
 
-\subsubsection{Coordination and management of the team}
+\subsubsection*{Coordination and management of the team}
 
 Our plan of content development and publishing is ambitious, but we are confident we can meet it. Dr. Anderson previously developed the online content, in collaboration with a co-instructor, for a five-course specialization with approximately twice as much content in under nine months. She has experience developing and publishing online training materials for learning R-based tools, including through the \textit{bookdown} online book framework we plan to use here. In this previous development of online training materials, Dr. Anderson learned to collaborate closely with co-authors in developing and refining the content and in developing quizzes and applied exercises to allow trainees to test their understanding of the content. She will bring that experience in the proposed project, to help organize and integrate the contributions of our team of co-investigators. For the technical development of the book, she will be assisted by and supervise an undergraduate hourly during the first two years of the project, to help in turning the intellectual content that she and the co-investigators develop into the formatted online book. She will work with Dr. Maertens to solidify and implement evaluations of the training materials.
 
@@ -203,7 +180,22 @@ Colorado State University is host to a large number of laboratory-based biomedic
 
 Colorado State University offers many excellent facilities that we will take advantage of to help us achieve our project's goals. CSU provides meeting rooms that we can reserve free-of-charge to use for the CSU-based user testings. CSU's [Andrew West's center] has professional-grade recording equipment that we will use to record the video lectures within each module. CSU's STEM Center will provide help in evaluating the training modules, including through the budgeted involvement of Dr. Julie Maertens, a senior evaluator at the center. [Other ways that CSU is a good environment for this.]
 
-\subsection{Evaluation Plan}
+\subsection{Pilot testing and evaluation}
+
+We will conduct two, day-long user testing sessions at CSU in each year of the project. The CSU user testing groups will consist of current and future laboratory-based biomedical researchers. We will recruit trainees with a variety of research roles, including undergraduate students, graduate students, postdoctoral fellows, research associates, and principal investigators. We have informed several CSU biomedical researchers about these proposed testing sessions and received their support in encouraging CSU researchers within their groups and departments to participate (see letters from ...). 
+
+In the first two project years, each session will test the set of modules developed since the last user testing (approximately [x] modules will be tested each of these session). The sessions will begin with our team giving live lectures of the same content we plan to film for the video lectures included in the online book. This will allow us to improve and refine this content, based on detailed feedback from testers representative of our target audience, before filming the final video lectures. During the rest of the session, we will divide the trainees into small teams to work through the additional educational materials (applied exercises, quiz questions, and discussion questions) to iron out problems with the clarity or implementation of these materials. The trainees will have access to the in-development online book as they work through these materials.
+
+[Information we will collect from these training sessions.]
+
+Dr. Anderson (PI) has experience in productively conducting these kinds of user testing sessions at CSU. She has run several two-hour user testing sessions with students from various departments of Colorado State University prior to releasing R software packages \cite{futureheatwaves, countyweather}. Further, in April 2016, she led a longer, two-day user testing session through a Weather Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}). Around 15 people participated, including undergraduate students, graduate students, postdoctoral fellows, and professors from CSU's Departments of Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and Statistics. Some of the ideas and code developed during this Hackathon have since led to development and publication of open source software \cite{countyfloods, noaastormevents}.
+
+\begin{SCfigure}
+\centering
+\includegraphics[width = 0.6\textwidth]{figures/csu_hackathon.png}
+\caption{Some of the approximately 15 undergraduate students, graduate students, postdoctoral fellows, and professors who participated in a two-day Weather Data Hackathon at Colorado State University in April 2016 led by Dr. Anderson.}
+\label{csu-r-hackathon} 
+\end{SCfigure}
 
 \begin{quotation}
 ``Applications must include a plan for evaluating the activities supported by the award in terms of their \textbf{frequency of use} and their \textbf{usefulness}. The use of \textbf{multiple evaluation approaches} is highly encouraged as is \textbf{testing several groups with different characteristics}. The application must specify \textbf{baseline metrics (e.g., numbers, educational levels, and demographic characteristics of test group)} in a structured format, as well as \textbf{measures to gauge the short and long-term success of the research education award in achieving its objectives}. Applicants are expected to \textbf{obtain feedback from test group} to help identify weaknesses and to provide suggestions for improvements, and \textbf{make the evaluation and feedback data} available to NIGMS staff."
@@ -274,6 +266,7 @@ Colorado State University offers many excellent facilities that we will take adv
 \item \textbf{CSU pilot users.} We can ask these pilot users many questions, both before and after the pilot testing. Further, we will have access to ask them longer-term outcomes, as well as to ask at the department level how the use of these training materials by a number of people in the department has changed research practices and what is considered ``best practice" for research in the department (i.e., a `bubble up" effect).
 \item \textbf{Pilot users from other institutions.} Similar to CSU pilot users, although we'll have a bit less access for determining longer-term and department-wide outcomes.
 \end{itemize}
+    
 
 \subsection{Dissemination Plan}
 
@@ -290,7 +283,7 @@ For many online training materials on the principals and implementation of compu
 We will also take steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials. We will travel in Years 02 and 03 to one national microbiology ([conference]) and one national immunology ([conference]) conference. We will submit proposals to these conferences to present half-day (student?) workshops covering why and how to improve reproducibility in experimental data recording and pre-processing for biomedical microbiology and immunology research. We will also submit poster abstracts to present and discuss the training materials as part of each conference's poster sessions. We have budgeted for two members of our team (the PI and one co-I) to attend each of these conferences to help disseminate the training materials produced by the project. [CSU's microbiology seminar series? Conferences on-campus at CSU? Are there ones that are repeated every year?]
 
 The PI has previously had substantial success in disseminating online training materials. She is the co-instructor of a five-course specialization on \textit{Mastering Software Development in R} through the Massive Open Online Course platform Coursera. The first course in this series has had over 25,000 participants since it was opened in fall 2016. An accompanying online book on the LeanPub platform has been accessed by [x] people. The PI, however, does not have a presence in the microbiology and immunology community, and so the co-investigators, who are heavily involved in this community, will form a key bridge in making sure our target audience is aware that these training materials are available.
-    
+
 \subsection{Timeline}
 
 \begin{quotation}
