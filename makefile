@@ -2,7 +2,7 @@ all: pdf/budget_justification.pdf pdf/cover_letter.pdf pdf/human_subjects.pdf \
   pdf/project_abstract.pdf pdf/project_narrative.pdf pdf/research_approach.pdf \
   pdf/research_environment.pdf pdf/specific_aims.pdf pdf/module_content_tables.pdf \
   pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf \
-  pdf/timeline.pdf
+  pdf/timeline.pdf pdf/team_roles_table.pdf
 
 pdf/budget_justification.pdf: writing/budget_justification.tex
 	pdflatex writing/budget_justification; 
@@ -71,6 +71,12 @@ pdf/module_content_tables.pdf: writing/module_content_tables.tex \
 	mv module_content_tables.pdf pdf/
 	rm module_content_tables.*
 	
+pdf/team_roles_table.pdf: writing/team_roles_table.tex \
+ tables/team_roles.tex 
+	pdflatex writing/team_roles_table 
+	mv team_roles_table.pdf pdf/
+	rm team_roles_table.*
+	
 pdf/module_track_table.pdf: writing/module_track_table.tex \
  tables/module_tracks.tex 
 	pdflatex writing/module_track_table
@@ -102,6 +108,10 @@ tables/module_tracks.tex: R/table_module_tracks.R
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
 	rm table_evaluation.Rout
+	
+tables/team_roles.tex: R/table_team_roles.R
+	R CMD BATCH R/table_team_roles.R
+	rm table_team_roles.Rout
 	
 figures/timeline.pdf: R/plot_timeline.R
 	R CMD BATCH R/plot_timeline.R
