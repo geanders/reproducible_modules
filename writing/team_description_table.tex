@@ -1,0 +1,47 @@
+\documentclass[pdftex,english,11pt,parskip=half]{scrartcl}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage[margin=0.7in]{geometry}
+%\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[labelfont=bf,font=small,format=plain]{caption}
+\usepackage{doi}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{float}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+\usepackage{url,hyperref,color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\newcommand{\fixme}[1]{{\color{red} #1}}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\begin{document}
+\addtokomafont{section}{\large}
+\def\bf{\normalfont\bfseries}
+\pagestyle{empty}
+
+\input{tables/team_description.tex}
+
+\end{document}
