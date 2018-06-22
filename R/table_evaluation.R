@@ -53,7 +53,7 @@ my_table <- tribble(
                                 "AAM workshop participants",
                                 "Online users")),
         caption = "\\label{tab:evaluation} Pilot testing and evaluation of different groups.") %>% 
-  kable_styling(latex_options = c("repeat_header"), 
+  kable_styling(latex_options = c("repeat_header", "hold_position"), 
                 font_size = 8) %>% 
   row_spec(0, angle = 45) %>% 
   column_spec(1, width = "30em") %>% 
