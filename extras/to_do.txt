@@ -1,29 +1,14 @@
 - LOS: Rudolph
 - LOS: Other group's LOS
 - Make sure we have draft documents for all components required for the proposal
-- Describe format (and how it is innovative)
-    + details of bookdown and online books
-    + prototype of what our book will look like?
-    + YouTube format for videos, plus how we will create them
-    + format for quizzes / online exercises?
 - Describe why the proposed training module content is significant
-- Describe the research team
-    + Bios / descriptions of everyone's research
-    + Description of how I will manage the project, including process of 
-      creating materials, refining them, testing on user groups, etc.
-    + Table describing the main team?
-    + Table clarifying team contributions to the content?
 - Draft human subjects piece
     + Exemption 1 (research conducting in an educational setting involving
       normal education practices)
     + Do we need to do things like de-identifying data collected from course 
       evaluation surveys?
     + Do we need to add something about how we safely store the data?
-- Draft how we will comply with the Rehabilitation Act
 - Complete draft on Facilities & Other Resources
-- Edit the timeline
 - Complete the evaluation table
-- Make figure---research project and where we fit in
 - Better quality figure for our prototype
 - Finalize cover letter
-- Add label references for all the tables built with R
