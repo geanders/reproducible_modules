@@ -56,7 +56,7 @@ my_table <- tribble(
                                 "Gregory\nRobertson"),
                               align = 'c'),
         caption = "\\label{tab:roles} Roles of our main team in developing the proposed training materials.") %>% 
-  kable_styling(latex_options = c("hold_position", "repeat_header"), 
+  kable_styling(latex_options = c("hold_position", "repeat_header", "scale_down"), 
                 font_size = 8) %>% 
   row_spec(0) %>% 
   column_spec(1, width = "33em") %>% 
