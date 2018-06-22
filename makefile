@@ -2,7 +2,7 @@ all: pdf/budget_justification.pdf pdf/cover_letter.pdf pdf/human_subjects.pdf \
   pdf/project_abstract.pdf pdf/project_narrative.pdf pdf/research_approach.pdf \
   pdf/research_environment.pdf pdf/specific_aims.pdf pdf/module_content_tables.pdf \
   pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf \
-  pdf/timeline.pdf pdf/team_roles_table.pdf
+  pdf/timeline.pdf pdf/team_roles_table.pdf pdf/team_description_table.pdf
 
 pdf/budget_justification.pdf: writing/budget_justification.tex
 	pdflatex writing/budget_justification; 
@@ -52,6 +52,7 @@ pdf/timeline.pdf: writing/timeline.tex figures/timeline.pdf
 pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
  tables/evaluation.tex tables/module_content_data_preprocessing.tex \
  tables/module_tracks.tex tables/module_content_data_recording.tex \
+ tables/team_description.tex tables/team_roles.tex \
  figures/timeline.pdf
 	pdflatex writing/research_approach
 	bibtex research_approach
@@ -77,6 +78,12 @@ pdf/team_roles_table.pdf: writing/team_roles_table.tex \
 	mv team_roles_table.pdf pdf/
 	rm team_roles_table.*
 	
+pdf/team_description_table.pdf: writing/team_description_table.tex \
+ tables/team_description.tex 
+	pdflatex writing/team_description_table 
+	mv team_description_table.pdf pdf/
+	rm team_description_table.*
+	
 pdf/module_track_table.pdf: writing/module_track_table.tex \
  tables/module_tracks.tex 
 	pdflatex writing/module_track_table
@@ -91,7 +98,7 @@ pdf/evaluation_table.pdf: writing/evaluation_table.tex tables/evaluation.tex
 tables: tables/module_content_data_recording.tex \
  tables/module_content_data_preprocessing.tex \
  tables/module_tracks.tex \
- tables/evaluation.tex
+ tables/evaluation.tex tables/team_roles.tex tables/team_description.tex
 	
 tables/module_content_data_recording.tex: R/table_module_content_data_recording.R
 	R CMD BATCH R/table_module_content_data_recording.R
@@ -112,6 +119,10 @@ tables/evaluation.tex: R/table_evaluation.R
 tables/team_roles.tex: R/table_team_roles.R
 	R CMD BATCH R/table_team_roles.R
 	rm table_team_roles.Rout
+
+tables/team_description.tex: R/table_team_description.R
+	R CMD BATCH R/table_team_description.R
+	rm table_team_description.Rout
 	
 figures/timeline.pdf: R/plot_timeline.R
 	R CMD BATCH R/plot_timeline.R

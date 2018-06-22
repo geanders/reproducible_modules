@@ -1,0 +1,121 @@
+library(dplyr)
+library(tibble)
+library(kableExtra)
+
+my_table <- tribble(
+  ~ `Person / role`, ~ Description,
+  
+  "\\textbf{Brooke Anderson}
+
+  Principal Investigator
+  
+  \\textit{Assistant Professor,}
+  
+  \\textit{Dept of Environmental \\& Radiological Health Sciences}", 
+  
+  "Dr. Anderson is an expert in R 
+  programming and has created and published several open-source R packages, in 
+  particular to facilitate environmental epidemiological research. She has experience 
+  creating R programs to work with large data, including climate model output and 
+  large weather datasets, as well as programs that interface with open web-based datasets.
+  She is the co-instructor of a series of Massive Open Online Courses on 
+  \\textit{Mastering Software Development in R} through Coursera and an associated open
+  online book.",
+  
+  "\\textbf{Michael Lyons}
+
+  Co-Investigator
+  
+  \\textit{Assistant Professor,}
+  
+  \\textit{Dept. of Microbiology, Immunology \\& Pathology}", 
+  
+  "Dr. Lyons works on the computational biology and
+  pharmacology of tuberculosis (TB) infection and treatment in experimental animal
+  models and TB patients. Prior to joining CSU full-time in 2011, he was a
+  software engineer in the computer industry for 12 years, and prior to that, a
+  theoretical physicist. Through a K25 award, he obtained significant classroom
+  and hands-on training and exposure to laboratory methods related to drug and
+  vaccine development for TB, providing him with a solid understanding of how
+  preclinical and clinical data are used for evidence-based decision making in the
+  biomedical sciences. He is highly attuned to the problems that this project aims
+  to address, and he has a clear understanding of the practical limitations and
+  challenges for both the laboratory scientist and data analyst.",
+  
+  "\\textbf{Mercedes Gonzalez-Juarrero} 
+  
+  Co-Investigator
+  
+  \\textit{Associate Professor,}
+  
+  \\textit{Dept. of Microbiology, Immunology \\& Pathology}",
+  
+  "Dr. Gonzalez-Juarrero studies the basic nature of the
+  cell mediated immune response to mycobacteria infections. During the last ten
+  years, her research group has undertaken studies to investigate the emergence of
+  immunosuppression during pulmonary tuberculosis, with the primary goal of
+  learning how and where to target the latently infected host to fully recover the
+  antimicrobial activity of the infected cell, and how to use this information in
+  the context of current chemotherapeutic and multidrug resistant TB infections.
+  Dr. Gonzalez-Juarrero became particularly interested in how to improve the
+  reproducibility, transparency, and efficiency of experimental data recording
+  within her research projects when she attended Dr. Anderson's (PI) CSU course on
+  \\textit{R Programming for Research} in Fall 2017 and learned about the
+  principles of structured data formats, including the 'tidy' data format now
+  popular with statisticians. This realization led to important discussions with
+  Drs. Anderson and Lyons regarding data recording and understanding the role of
+  each scientist from data recording through to analysis.",
+  
+  "\\textbf{Marcela Henao-Tamayo}
+  
+  Co-Investigator
+  
+  \\textit{Assistant Professor,}
+  
+  \\textit{Dept. of Microbiology, Immunology \\& Pathology,}
+  
+  \\textit{Co-Director of CSU-Flow Cytometry Facility}",
+  
+  "Dr. Henao-Tamayo studies the immunopathogenesis of
+  tuberculosis using animal models to evaluate the role of different types of T
+  cells and Myeloid Derived cells in tuberculosis and BCG vaccination (Bacille
+  Calmette Guerin, the only approved vaccine against TB). She has tested numerous
+  vaccine candidates evaluating the immune response they elicit in association
+  with protection against tuberculosis disease. She is interested in how existing
+  tools for computational reproducibility can be applied to data recording and
+  pre-processing in her own research laboratory, and she and Dr. Anderson (PI)
+  co-advise a graduate student who is integrating open-source R software into the
+  regular practice of Dr. Henao-Tamayo's research work, including through
+  implementation of reproducible automated gating of flow cytometry data.",
+  
+  "\\textbf{Gregory Robertson}
+  
+  Co-Investigator
+  
+  \\textit{Assistant Professor,}
+  
+  \\textit{Dept. of Microbiology, Immunology \\& Pathology}",
+  
+  "Dr. Robertson has more than 20 years of classical and clinical microbiology
+  experience with emphasis in antibacterial discovery and mode-of-action studies
+  for novel and existing classes of antimicrobials. This includes efforts in
+  academia, and also with larger pharmaceutical corporations (Eli Lilly and Co)
+  and smaller bio-pharmaceutical groups (Cumbre Pharmaceuticals). His current
+  research is focused on \textit{Mycobacterium tuberculosis} host-pathogen
+  interactions and the development and application of novel preclinical animal
+  models to further anti-tuberculosis drug development and evaluate drug
+  resistance. In the context of improving reproducibility in biomedical research,
+  Dr. Robertson is particularly passionate about the perils of using spreadsheets
+  with embedded macros as a tool for recording and analyzing experimental data."
+) %>%   
+  kable("latex", booktabs = T, escape = FALSE, 
+          align = 'l',
+          caption = "\\label{tab:team_description} Key members of our project team.") %>%
+  kable_styling(latex_options = c("striped"), 
+                font_size = 8) %>% 
+  column_spec(1, width = "14em") %>% 
+  column_spec(2, width = "45em")
+  
+fileConn <- file("tables/team_description.tex")
+writeLines(my_table, fileConn)
+close(fileConn)
