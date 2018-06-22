@@ -55,7 +55,7 @@ my_table <- tribble(
                                 "\\textbf{Technician}\nin charge of\nrunning and\npre-processing\nmass\nspectrometry\ndata",
                                 "\\textbf{Undergraduate}\n\\textbf{student}\nwho wants an\nintroduction\nto improving\nreproducibility\nof data\nrecording"),
                               align = 'c'),
-        caption = "Examples of how different types of trainees might use subsets of the training modules to meet their specific training needs.") %>% 
+        caption = "\\label{tab:tracks} Examples of how different types of trainees might use subsets of the training modules to meet their specific training needs.") %>% 
   kable_styling(latex_options = c("hold_position", "repeat_header"), 
                 font_size = 9) %>% 
   row_spec(0, align = 'c') %>% 
