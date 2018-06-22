@@ -61,6 +61,7 @@ pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
 	rm research_approach.aux
 	rm research_approach.out
 	rm research_approach.bbl
+	rm research_approach.blg
 	rm research_approach.log
 	
 pdf/module_content_tables.pdf: writing/module_content_tables.tex \
