@@ -42,7 +42,7 @@ my_table <- tribble(
                                 "Non-CSU pilot testers",
                                 "AAM workshop participants",
                                 "Online users")),
-        caption = "Pilot testing and evaluation of different groups.") %>% 
+        caption = "\\label{tab:evaluation} Pilot testing and evaluation of different groups.") %>% 
   kable_styling(latex_options = c("repeat_header"), 
                 font_size = 8) %>% 
   row_spec(0, angle = 45) %>% 
