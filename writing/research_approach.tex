@@ -409,7 +409,7 @@ If you are doing calculations in your data file, that likely means you are regul
 \end{itemize}
 
 This topic will covered in a \textit{Principles} module on ``Separating data
-recording and analysis".
+recording and analysis". Key readings for this section will be \cite{broman2018data} and \cite{ellis2018share}.
 
 \begin{figure}[b] \centering \includegraphics[width =
 0.8\textwidth]{figures/algorithms.png} \caption{An \textit{xkcd} cartoon
@@ -420,50 +420,23 @@ is still a common practice in many biomedical laboratories. \textit{Source: xkcd
 by Randall Munroe}} \label{fig:spreadsheet} \end{figure}
 
 \textbf{Using a structured data format to record data.} Every extra step of data
-formatting is another chance to introduce an error in the data. The format in which experimental data is recorded can have a large influence on how easy and likely it is to implement reproducibility tools in later stages of data pre-processing, analysis, and visualization. Recording data in a ``structured" format brings many benefits for later stages of the research process, especially in terms of improving reproducibility.Therefore, by keeping research data pipelines simple---which can be more easily achieved if
+formatting is another chance to introduce an error in the data. The format in which experimental data is recorded can have a large influence on how easy and likely it is to implement reproducibility tools in later stages of data pre-processing, analysis, and visualization. One key concept for improving the reproducibility of experimental data collection is understanding how to create and use structured data formats, of which the ``tidy" data format is one popular implementation. 
+
+Recording data in a ``structured" format brings many benefits for later stages of the research process, especially in terms of improving reproducibility. Therefore, by keeping research data pipelines simple---which can be more easily achieved if
 data is initially recorded in a format amenable to later data pre-processing,
 analysis, and visualization---researchers can decrease the potential for errors
 in the data and therefore improve the rigor and reproducibility of their
-research. 
+research. Data that is in a structured tabular, two-dimensional format is vastly easier for collaborators like statisticians to understand and work with, without additional data formatting \cite{broman2018data}; however, many biomedical researchers are unaware of this simple yet powerful strategy in data recording and how it can improve the efficiency and effectiveness of collaborations \cite{ellis2018share}. ``When a researcher turns over a properly tidied dataset, it dramatically decreases the workload on the statistician and minimizes the likelihood of errors during analysis. By taking the time to tidy the data, the data generator, who knows the details of the data generated better than anyone else, can expect to get the analysis back sooner and can be more confident in its accuracy." \cite{ellis2018share}
 
-\begin{itemize}
-\item ``A set of general principles for sharing data have emerged within the statistics community (Broman and Woo 2017; Wickham 2014; Wilson et al. 2014; Wilson et al. 2017; White et al. 2013). But these principles are not always clear to researchers, scien- tists, or collaborators generating the data. This has led to a disconnect between those generating data and those analyzing it about the best way for data to be shared." \cite{ellis2018share} 
-\item Following certain principals when sharing data for collaboration can ``avoid the most common pitfalls and sources of delay in the transition from data collection to data analysis (Leek and Peng 2015)". \cite{ellis2018share} 
-\item Statisticians have advised that providing data to collaborators in a structured format (specifically the ``tidy" implementation) can improve the reproducibility of research, reduce the opportunity for errors being introduced when a collaborator cleans data from an unstructured format, and also increase the speed with which the collaborator can return their results \cite{ellis2018share}. 
-\item A structured data format: ``Briefly, it is best to include a row at the top of each data table or spreadsheet that contains informative column names. And, each cell should include only one value or unit of information. Sentences should generally be avoided here; any lengthy explanations should instead be included in the 'code book.'" \cite{ellis2018share} 
-\item ``The general principles of tidy data have been laid out previously (Wickham 2014). While the article describes tidy data using R (R: The R Project for Statistical Computing n.d.), the principles are more generally applicable:
-1. Each variable should be in one column.
-2. Each different observation of that variable should be in a
-different row.
-3. There should be one table for each 'kind' of data.
-4. If there are multiple tables, each table should include a
-column in the table (with the same column label!) that allows them to be joined or merged (see Figures 1(a) and (b))." \cite{ellis2018share}
-\item ``When a researcher turns over a properly tidied dataset, it dramatically decreases the workload on the statistician and minimizes the likelihood of errors during analysis. By taking the time to tidy the data, the data generator, who knows the details of the data generated better than anyone else, can expect to get the analysis back sooner and can be more confident in its accuracy." \cite{ellis2018share}
-\item It is very important to use the \textit{same} structured format across all of the files in the research project the record the same type of data. 
-\item ``Use a consistent data layout in multiple files. If your data are in multiple files and you use different layouts in different files, it will be extra work for the analyst to combine the files into one dataset for analysis. With a consistent structure, it will be easy to automate this process." \cite{broman2018data}
-\item ``Researchers who use spreadsheets should be aware of these common errors and design spreadsheets that are \textbf{tidy}, consistent, and as resistant to mistakes as possible." \cite{broman2018data} 
-\item ``The best layout for your data within a spreadsheet is as a single big rectangle with rows corresponding to subjects and columns corresponding to variables. The first row should contain variable names, and please do not use more than one row for the variable names. ... The data files that we receive are usually not in rectangular form. More often, there seem to be bits of data sprinkled about." \cite{broman2018data} `
-\item `If, from the start, the data were organized as a rectangle, it would save the analyst a great deal of time." \cite{broman2018data} ``Reorganizing the data into a 'tidy' format can simplify later analysis. But the rectangular aspect is the most important part." \cite{broman2018data}
-\end{itemize}
-
-The 'tidy' data format is one implementation of a structured data format that was introduced in a 2014 paper and has since quickly gained popularity among statisticians and data scientists. By consistently using this data format, researchers have found they can employ combinations of simple, generalizable tools to perform complex tasks in data processing, analysis, and visualization. 
-
-\begin{itemize}
-\item One key concept for improving the reproducibility of experimental data collection is understanding how to create and use structured data formats, of which the ``tidy" data format is one popular implementation. 
-\item The ``tidy" data
+The ``tidy" data format is one implementation of a structured data format that has quickly gained popularity among statisticians and data scientists since it was defined in a 2014 paper \cite{wickham2014tidy}. The ``tidy" data
 format plugs into the \textit{tidyverse} framework, which enables powerful and
 user-friendly data management, processing, and analysis by combining simple
 tools to solve complex, multi-step problems, and this framework is enabled by
 ensuring those simple tools share a common interface: a ``tidy" data format
-\cite{ross2017declutter, silge2016tidytext, wickham2016ggplot2, wickham2016r}.
-\item Working within the R framework facilitates research that adheres to standards of
-reproducibility through scriptable data analysis that can easily be placed under
-version control \cite{bryan2018excuse}. 
-\item Since the tools are simple and share a
+\cite{ross2017declutter, silge2016tidytext, wickham2016ggplot2, wickham2016r}. Since the \textit{tidyverse} tools are simple and share a
 common interface, they are easier to learn, use, and combine than tools created
 in the classical R framework \cite{ross2017declutter, lowndes2017our,
-reviewer2017review, mcnamara2016state}. 
-\item This \textit{tidyverse} framework is
+reviewer2017review, mcnamara2016state}. This \textit{tidyverse} framework is
 quickly becoming the standard taught in introductory R courses and books
 \cite{hicks2017guide, baumer2015data, kaplan2017teaching, stander2017enthusing,
 reviewer2017review, mcnamara2016state}, ensuring ample training resources for
@@ -476,43 +449,14 @@ tools that extend the tidyverse have been created to enable high-quality data
 analysis and visualization in several domains, including text mining
 \cite{silge2017text}, microbiome studies \cite{mcmurdie2013phyloseq}, natural
 language processing \cite{RJ-2017-035}, network analysis \cite{RJ-2017-023},
-ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}. 
-\item The increasingly popular ``tidyverse" framework in the R environment emphasizes the creation and use of many small, general purpose tools that can be easily piped together through consistent interfaces to solve complex analysis and visualization problems. 
-\item R's tidyverse has excellent tools that allow you to ``Use many simple models to better understand complex datasets" and to ``turn models into tidy data [with \textit{broom}]. This is a powerful technique for working with large numbers of models because once you have tidy data, you can apply all of the [other tidyverse] techniques. ... The broom package provides a general set of functions to turn models into tidy data." \cite{grolemund2016r} 
-\item Specifically, there are many courses, books, etc., that scientists can use to learn general R skills, and many scientists are already skilled in general R. Scientists can leverage general R programming skills to do metabolomics data analysis much more easily if the metabolomics skills follow the same protocals / interface / etc. as more general tools like \textit{ggplot2} and \textit{htmlwidgets}. 
-\item ``The grammar of graphics is based on modular components that when combined in different ways will produce different graphics. This enables the user to construct a combinatoric number of plots, including those that were not preconceived by the implementation of the grammar. Most existing tools lack these capabilities." \cite{yin2012ggbio} \item The \textit{ggplot2} framework also offers many other advantages over classic R plotting functions in R for new R users. The \textit{ggplot2} package creates a framework for visualizing data in R using a ``grammar of graphics" approach. This framework is particularly noteworthy for its ability to create multi-layered graphics, and it allows users to add elements to a graphics object to customize elements like color scales and labeling. 
-\item ``Creating small reusable components is most in line with the ggplot2 spirit: you can recombine them flexibily to create whatever plot you want." \cite{wickham2016ggplot2} \item The \textit{ggplot2} framework is ``very powerful because you are not limited to a set of pre=specified graphics, but you can create new graphics that are precisely tailored for your problem" \cite{wickham2016ggplot2}. 
-\item In particular, it allows a user to learn a series of small, simple tools that can be applied over and over to many different styles of plots, and it separates elements that determine the appearance of the plot (e.g., titles, labeling, colors, themes) from elements that capture the way that the data should be shown (e.g., heatmap, volcano plot). 
-\item The \textit{ggplot2} framework includes methods for preventing overplotting, including adding transparency to geoms and binning points to create two-dimensional histograms. \cite{wickham2016ggplot2} 
-\item With \textit{ggplot2} and its extensions, an R user will learn basic building block tools for creating graphics and then can use these tools to customize and build any type of plot. 
-\item ``Because there is a simple set of core principles and very few special cases, \textit{ggplot2} is also easy to learn. ... Practically, \textit{ggplot2} provides beautiful, hassle-free plots that take care of fiddly details like drawing legends. The plots can be built up iteratively and edited later. A carefully chose set of defaults means that most of the time you can produce a publication-quality graphic in seconds, but if you do have special formatting requirements, a comprehensive theming system makes it easy to do what you want. Instead of spending time making your graph look pretty, you can focus on creating a graph that best reveals the messages in your data." \cite{wickham2016ggplot2} 
-\item The \textit{ggplot2} framework includes extensive functionality, so that it R plots are created using this system, many other tools can be used to customize the resulting plots (including customizing color schemes, axis labels, etc.). 
-\item Further, these tools are much easier for a new user to learn and extend to many different types of plots than classic R tools. ``Most graphics packages are just a big collection of special cases. For example, in base R, if you design a new graphic, it's composed of raw plot elements like points and lines, and it's hard to design new components that combine with existing plots. 
-\item In \textit{ggplot2}, the expressions used to create a new graphic are composed of higher-level elements like representations of the raw data and other statistical transformations, and can be easily combined with new datasets and other plots." \cite{wickham2016ggplot2} 
-\item ``One of the key ideas behind \textit{ggplot2} is that it allows you to easily iterate, building up a complex plot a layer at a time. Each layer can come from a different dataset and have a different aesthetic mapping, making it possible to create sophisticated plots that display data from multiple sources." \cite{wickham2016ggplot2}
-\item ``In base and lattice graphics, most functions take a large number of arguments that specify both data and non-data appearance, which makes the functions complicated and harder to learn. \textit{ggplot2} takes a different approach: when creating the plot you determine how the data is displayed, then \textit{after} it has been created you can edit every detail of the rendering, using the theming system." \cite{wickham2016ggplot2} The ``pipeline" functionality of \textit{ggplot2} (``+") and \textit{dplyr} (``\%>\%") allow you ``to solve complex problems by combining small pieces that are easily understood in isolation." \cite{wickham2016ggplot2} 
-\item The \textit{ggplot2} framework allows R users to create useful, attractive, and easily customized graphics with any dataset that is in a ``tidy" dataframe format. 
-\item ``Every layer must have some data associated with it, and that data must be in a tidy data frame. ... A tidy data frame has variables in the columns and observations in the rows." \cite{wickham2016ggplot2} 
-\item ``The principle behind tidy data is simple: storing your data in a consistent way makes it easier to work with it. Tidy data is a mapping between the statistical structure of a data frame (variables and observations) and the physical structure (columns and rows). ... Tidy data is particularly important for \textit{ggplot2} because the job of \textit{ggplot2} is to map variables to visual properties: if your data isn't tidy, you'll have a hard time visualizing it." \cite{wickham2016ggplot2} 
-\item Under this ``tidy" format, each row of a dataframe gives a single measurement at the level of the unit of observation of interest for the research question, and all variables of interest are included as separate columns. This is particularly appealing because \textit{ggplot2} is now the main plotting framework taught to new R users through popular workshops (e.g., Software Carpentry workshops), massive open online courses [examples], and in many in-person courses [examples / references]. Cheatsheets exist to help building graphics with \textit{ggplot2}. Also, there are a number of other resources for learning this plotting framework, including books (\textit{ggplot2}, \textit{R for Data Science}) and online courses (my Coursera visualization courses, Datacamp course?). 
-\item ``In base and lattice graphics, most functions take a large number of arguments that specify both data and non-data appearance, which makes the functions complicated and harder to learn. \textit{ggplot2} takes a different approach: when creating the plot you determine how the data is displayed, then \textit{after} it has been created you can edit every detail of the rendering, using the theming system." \cite{wickham2016ggplot2} 
-\item The ``pipeline" functionality of \textit{ggplot2} (``+") and \textit{dplyr} (``\%>\%") allow you ``to solve complex problems by combining small pieces that are easily understood in isolation." \cite{wickham2016ggplot2} 
-\item With \textit{ggplot2} and its extensions, an R user will learn basic building block tools for creating graphics and then can use these tools to customize and build any type of plot. 
-\item ``Because there is a simple set of core principles and very few special cases, \textit{ggplot2} is also easy to learn. ... Practically, \textit{ggplot2} provides beautiful, hassle-free plots that take care of fiddly details like drawing legends. The plots can be built up iteratively and edited later. A carefully chose set of defaults means that most of the time you can produce a publication-quality graphic in seconds, but if you do have special formatting requirements, a comprehensive theming system makes it easy to do what you want. Instead of spending time making your graph look pretty, you can focus on creating a graph that best reveals the messages in your data." \cite{wickham2016ggplot2} 
-\item The \textit{ggplot2} framework includes extensive functionality, so that it R plots are created using this system, many other tools can be used to customize the resulting plots (including customizing color schemes, axis labels, etc.). Further, these tools are much easier for a new user to learn and extend to many different types of plots than classic R tools. 
-\item ``Most graphics packages are just a big collection of special cases. For example, in base R, if you design a new graphic, it's composed of raw plot elements like points and lines, and it's hard to design new components that combine with existing plots. In \textit{ggplot2}, the expressions used to create a new graphic are composed of higher-level elements like representations of the raw data and other statistical transformations, and can be easily combined with new datasets and other plots." \cite{wickham2016ggplot2} 
-\item ``One of the key ideas behind \textit{ggplot2} is that it allows you to easily iterate, building up a complex plot a layer at a time. Each layer can come from a different dataset and have a different aesthetic mapping, making it possible to create sophisticated plots that display data from multiple sources." \cite{wickham2016ggplot2} 
-\item ``In base and lattice graphics, most functions take a large number of arguments that specify both data and non-data appearance, which makes the functions complicated and harder to learn. \textit{ggplot2} takes a different approach: when creating the plot you determine how the data is displayed, then \textit{after} it has been created you can edit every detail of the rendering, using the theming system." \cite{wickham2016ggplot2}
-\item The tidyverse ``framework makes it easy for analysts to reshape, combine, group and otherwise manip- ulate data. Packages such as ggplot2, dplyr, and many built-in R modeling and plotting func- tions require the input to be in a tidy form, so keeping the data in this form allows multiple tools to be used in sequence in a seamless analysis pipeline (Wickham, 2009; Wickham and Francois, 2014)." \cite{robinson2014broom}
-\item ``The ideal thing to do when tidying data are to create a com- puter script (in R, Python, or something else) that takes the raw data as input and produces the tidy data being shared as output. Ideally, this script would be run a couple of times to ensure the code produces the same output. Alternatively, in many cases, the person who collected the data may not know how to code in a scripting language. However, he or she still has incentive to make the data tidy for a statistician to speed the process of collaboration. In this case, the statistician should be provided something called pseudocode, which is simply a simple explanation, often broken down into steps, to explain what has been done to the data." \cite{ellis2018share}
-\end{itemize}
+ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}. Further, by using a consistent structured format like the ``tidy" format across many or all data in a research project, it becomes much easier to create solid, well-tested code scripts for data pre-processing and analysis and to apply those scripts consistently and reproducibly across the datasets from multiple experiments \cite{broman2018data}.
 
 This topic will
 be covered in a \textit{Principles} module on ``Principles and power of
 structured data formats", two \textit{Implementation} modules on ``The 'tidy'
 data format: an implementation of a structured data format" and ``Designing
 templates for tidy data collection", and one \textit{Example} module called
-``Example: Creating a template for 'tidy' data collection".
+``Example: Creating a template for 'tidy' data collection". Key readings for this section will be \cite{broman2018data} and \cite{wickham2014tidy}. 
 
 \textbf{Managing all research project files in a single, structured directory.}
 Reproducbility can also be improved, starting at the data recording stage or
