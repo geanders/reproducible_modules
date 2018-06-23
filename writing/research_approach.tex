@@ -181,9 +181,15 @@ in the hands of laboratory-based, rather than computationally-based, researchers
 Many of the principles and tools for improving reproducibility at the steps 
 of data recording and pre-processing are new and developing, and so many 
 biomedical researchers did not have the opportunity to learn them at previous 
-points in their training and have not been as widely exposed to these principles
-and techniques through more recent academic conferences and career development
-compared to computationally-based researchers. Training materials that are short, 
+points in their training. 
+Many excellent free training resources exist to improve the computational
+reproducibility of biomedical research. However, most of these
+materials---including some developed by Dr. Anderson for her open online and
+CSU-based courses in R programming [refs]---target researchers at the stage of
+\textit{data analysis}, and provide much less guidance on the principles and
+techniques to improve reproducibility of the earlier steps of
+\textbf{experimental data recording} and \textbf{experimental data
+pre-processing}. Training materials that are short, 
 modular, and accessible can help fill a critical need in providing this needed
 training \cite{munafo2017manifesto} and have proven very popular in providing 
 similar training to the audience of data scientists and statisticians \cite{leek2015opinion}. To reach a key audience of laboratory-based scientists, these training materials
@@ -225,60 +231,11 @@ research, rather than data analysis or statistics.
 
 \subsubsection*{Proposed training modules}
 
-\begin{quotation} ``State the \textbf{goals for education} and \textbf{justify
-the area of training} selected for module development in terms of its
-\textbf{relevance and potential impact} on improving the development of skills
-and knowledge important for conducting rigorous and reproducible research.
-Describe the \textbf{subject material} to be covered. The \textbf{length} of the
-proposed training module should be explained in terms of \textbf{scope and depth
-of coverage} of the subject matter.  In addition, \textbf{how the research
-education will be utilized by trainees or investigators} should be
-described---for example, a module on how to avoid confirmation bias to be taken
-by all beginning laboratory workers, or a module on appropriate design of animal
-studies to be taken immediately prior to beginning such work." \end{quotation}
-
-Our emphasis on primary experimental data collected and recorded as a data
-structure, specifically the innovative "tidy" data format developed within the R
-statistical programming environment, and presented in an innovative e-book
-format
-
-
-[Paragraph on why we are focusing on data recording and data pre-processing.]
-Many excellent free training resources exist to improve the computational
-reproducibility of biomedical research. However, most of these
-materials---including some developed by Dr. Anderson for her open online and
-CSU-based courses in R programming [refs]---target researchers at the stage of
-\textit{data analysis}, and provide much less guidance on the principles and
-techniques to improve reproducibility of the earlier steps of
-\textbf{experimental data recording} and \textbf{experimental data
-pre-processing}. In this project, we will create training modules to fill this
-gap. [More on this, ideally with some references to the importance of
-reproduciblity in these steps.]
-
-[A paragraph on who our key audience is and why we are focusing on that
-audience.] A key aim is to make these modules \textbf{accessible and useful to
-our target audience, laboratory-based researchers}. Three of the Co-Is on our
-team (Gonzalez-Juarrero, Henao-Tamayo, and Robertson) represent this key
-audience. [Why it is so important to develop these training materials for this
-audience.]
-
-[A paragraph about how we plan to focus on this audience] We plan to make these
-modules accessible and useful to our target audience, laboratory-based
-researchers by including examples from real microbiology and immunology research
-projects and by piloting the training modules among laboratory-based biomedical
-researchers. Our training materials will provide resources that can be used by
-this audience of researchers at a variety of levels, from undergraduate students
-to principal investigators, with a modular design that will allow a trainee to
-use the subset of modules the best meets his or her immediate needs.
-
-[A paragraph on how our training materials will fit in with the training
-materials developed under previous rounds of this grant.]
-
 We aim to create training modules that will show laboratory-based biomedical
 researchers how simple computational reproducibility principles can improve
 biomedical research reproducibility at the stages of data recording and
-preprocessing and teach them how to implement these principles in their
-laboratories. The importance of computational reproducibility of scientific
+preprocessing, as well as teach them how to implement these principles in their
+laboratories. The importance of such computational reproducibility of scientific
 research is increasingly recognized by scientists, journals, and funding
 agencies, with such ``computationally reproducible" research requiring that all
 data and code for a research project be available and that this data and code
@@ -286,11 +243,19 @@ can be used to regenerate study findings either by the original researcher or by
 other researchers \cite{ellis2018share, ram2013git}. Among our team, we have
 found that there are many common existing practices---including use of
 spreadsheets with embedded macros to concurrently record and analyze
-experimental data, unstructured [too strong?] management of project files,
+experimental data, problematic management of project files,
 reliance on proprietory, vendor-supplied point-and-click software for data
 pre-processing---that can interfere with the transparency, reproducibility, and
-efficiency of the kind of research they conduct. [Some more about how we're not
-the first people to notice that this is a problem for reproducibility / rigor.] 
+efficiency of the kind of research they conduct. These problems have also been 
+identified by others as key barriers to research reproducibility 
+\cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
+Our team has worked together to craft a list of
+specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we aim
+to address with these modules so that they will offer training in a collection
+of principles and techniques that tackle barriers to reprodubility with
+straightforward fixes, but which we have found are still very common in
+biomedical laboratory-based research programs, including those here at Colorado
+State University. 
 
 We propose to develop two collections of modules, \textbf{Improving the
 Reproducibility of Experimental Data Recording} and \textbf{Improving the
@@ -329,71 +294,6 @@ relevant subsets of the modules to complete, and potentially combining this
 content with other training modules available through the NIH's [Clearinghouse]
 [ref]. Table \ref{tab:tracks} gives a few examples of how different trainees
 could create and follow their own ``track" of the material.
-
-For many of the barriers we identified to reproducibility at these stages of
-research, a simple fix exists. Our team has worked together to craft a list of
-specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we aim
-to address with these modules so that they will offer training in a collection
-of principles and techniques that tackle barriers to reprodubility with
-straightforward fixes, but which we have found are still very common in
-biomedical laboratory-based research programs, including those here at Colorado
-State University. We have identified several easy-to-address barriers to
-computational reproducibility at two stages of biomedical research: experimental
-data recording and experimental data pre-processing.
-
-\begin{itemize}
-\item ``From our experience in the Leek group (where we work with a large number of collaborators to analyze data) and from conversations with other statisticians, the primary source of delay in the speed of returning results to collaborators is the con- dition of the data when they arrive." \cite{ellis2018share} `
-\item `Consistent data sharing reduces the likelihood of errors during analysis and also decreases analysis turnaround time [when collaborating with statisticians."  \cite{ellis2018share} 
-\item ``When a researcher turns over a properly tidied dataset, it dramatically decreases the workload on the statistician and minimizes the likelihood of errors during analysis."  \cite{ellis2018share}
-\item ``Unquestionably, a significant contribu- tor to failure in oncology trials is the qual- ity of published preclinical data. Drug development relies heavily on the literature, especially with regards to new targets and biology. Moreover, clinical endpoints in can- cer are defined mainly in terms of patient survival, rather than by the intermediate endpoints seen in other disciplines (for example, cholesterol levels for statins). Thus, it takes many years before the clinical appli- cability of initial preclinical observations is known. The results of preclinical studies must therefore be very robust to withstand the rigours and challenges of clinical trials, stemming from the heterogeneity of both tumours and patients. The scientific community assumes that the claims in a preclinical study can be taken at face value — that although there might be some errors in detail, the main message of the paper can be relied on and the data will, for the most part, stand the test of time. Unfor- tunately, this is not always the case. Although the issue of irreproducible data has been discussed between scientists for decades, it has recently received greater attention (see go.nature.com/q7i2up) as the costs of drug development have increased along with the number of late-stage clinical-trial failures and the demand for more effective therapies." \cite{begley2012drug}
-\item ``Although the importance of multiple studies corroborating a given result is acknowledged in virtually all of the sciences (Fig. 1), the modern use of “reproducible research” was originally applied not to corroboration, but to transparency, with application in the com- putational sciences. Computer scientist Jon Claerbout coined the term and associated it with a software platform and set of proce- dures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables (4)." \cite{goodman2016does}
-\item ``Statistical methods can be complex, and continue to evolve in many specialties, particularly novel ones such as omics. However, statisticians and methodologists are only sporadically involved, often leading to flawed designs and analyses.72 Much flawed and irreproducible work has been published, even when only simple statistical tests are involved. Investigators of one study73 examined the use of Fisher’s exact test in 71 articles from six major medical journals. When a statistician was a member of the team, the test was used more appropriately than when one was not. Data that are multidimensional (ie, contain many features) are particularly at risk of false positives and overfitting, particularly when analysed by inexperienced or untrained analysts. Problems with statistical analysis might not be identified in peer review, especially when the report is not assessed by a statistician or methodologist." \cite{ioannidis2014increasing}
-\item ``Little evidence exists about the research training of laboratory scientists. The way that many laboratory studies are reported suggests that scientists are unaware that their methodological approach is without rigour (figure). Many laboratory scientists have insufficient training in statistical methods and study design. This issue might be a more important deficiency than is poor training in clinical researchers, especially for laboratory investigation done by one scientist in an isolated laboratory—by contrast, many people would examine a clinical study protocol and report." \cite{ioannidis2014increasing}
-\item ``Statisticians and methodologists should be involved in all stages of research. This recommendation has been repeatedly discussed, mostly for clinical trials, but it applies to all types of studies. Enhancement of communication between methodologists and other health scientists is also important." \cite{ioannidis2014increasing}
-\item These are early steps of the ``dry lab" part of an experiment.
-\item ``We define reproducibility as the ability to recompute data analytic results given an observed dataset and knowledge of the data analysis pipeline. The replicability of a study is the chance that an independent experi- ment targeting the same scientific question will produce a consistent result (1). ... There have been some very public failings of reproduc- ibility across a range of disciplines from can- cer genomics (3) to economics (4), and the data for many publications have not been made publicly available, raising doubts about the quality of data analyses." \cite{leek2015opinion}
-\item ``From a computational perspective, there are three major components to a reproducible and replicable study: (i) the raw data from the experiment are available, (ii) the statisti- cal code and documentation to reproduce the analysis are available, and (iii) a correct data analysis must be performed." \cite{leek2015opinion}
-\item ``If we can prevent prob- lematic data analyses from being conducted, we can substantially reduce the burden on the community of having to evaluate an increasingly heterogeneous and complex population of studies and research findings. The best way to prevent poor data analysis in the scientific literature is to (i) increase the number of trained data analysts in the scientific community and (ii) identify sta- tistical software and tools that can be shown to improve reproducibility and rep- licability of studies." \cite{leek2015opinion}
-\item ``In today’s technology-driven era of biological discovery, many biologists generate extremely large datasets, including high-throughput sequencing, proteomic and metabolomic spectra, and high-content imaging screens. Subsequently, biologists must overcome many challenges of incorporating computing into their standard procedures for data analysis, including installing and running software that is not 'point-and-click,' navigating at the command-line interface, comparing various analysis tools that supposedly perform the same tasks, establishing effective note-taking for their computing trials, and managing large datasets. Especially for trainees, it can be overwhelming to know how to begin to address these challenges. Providing a roadmap for workflow approach and management is likely to accelerate biologists’ skill-building in computing." \cite{shade2015computing}
-\item ``Skills in computing can enhance biologists’ logic and capacity for experimental design, increase understanding and interpretation of results, and promote interdisciplinary science by building a shared vocabulary and experience with collaborators in computer science, bioinformatics, statistics, physics, and engineering. We’ve suggested a systematic roadmap for computing workflows for biologists, including considering the overarching goals of the workflow, taking an iterative approach to analysis, implementing reproducibility checkpoints, recording effective computing notes, and adopting a team approach to analysis." \cite{shade2015computing}
-\item In fMRI: ``Although we aim for reproduction of results with other data and independent analysis methods, the first step is to ensure that results can be replicated within la- boratories. This seems an easy task, but it is in fact com- mon that results cannot be replicated after, say, a year or two, when the student or post-doc responsible for the analyses and the data management has left. Increasing our capacity to replicate the data analysis workflow has another crucial aspect: this will allow us to better docu- ment our work, and therefore communicate and share it much more easily. It is crucial that we remember that resources are limited, and part of our work is to make it easy for others to check and build upon our findings." \cite{pernet2015improving}
-\item In fMRI: ``In computer science and related communities, a number of informatics tools and software are available (databases, control version system, virtual machines, etc.) to handle data and code, check results and ensure reproducibility. Neuroscientists working with functional MRI are, how- ever, largely from other communities such as biology, medicine and psychology. Because of the differences in training and the field of research, such informatics tools are not necessarily sufficient, and are certainly not fully ac- cessible to or mastered by all researchers. In this review, we address specifically the community of neuroscientists with little programming experience, and point to a num- ber of tools and practices that can be used today by any- one willing to improve his or her research practices, with a view to better reproducibility." \cite{pernet2015improving}
-\item ``We define reproducibility as the ability of an entire experi- ment to be reproduced [16], from data acquisition to re- sults." \cite{pernet2015improving}
-\item For basic and preclinical research: ``Basic and preclinical research is particularly important
-because it forms the foundation on which future studies are
-built. It is preclinical research that provides the exciting, new
-ideas that will eventually find their way into clinical studies
-and new drugs that provide benefit to humankind. Yet this preclinical
-research is poorly predictive of ultimate success in the
-clinic.14,15 And it is observational research that both attracts
-immediate public attention and often provides the hypothesis
-on which interventional studies are based." \cite{begley2015reproducibility}
-\item The costs to improving the computational reproducibility of a study are cheap compared to the costs of replicating a study.
-\item ``What is difficult to quantify is the opportunity cost associated
-with studies that fail to replicate. Investigators who pursue
-a provocative and exciting idea but that is not based on robust
-data will consume wasted hours for an idea that is ultimately
-discarded. For ideas that proceed into late stages of clinical
-evaluation or are even adopted in clinical practice only to be
-discarded subsequently,17 the cost can be enormous." \cite{begley2015reproducibility}
-\item ``It was recognized over a decade ago that experiments involving
-array technology were potentially fraught with problems.
-To address this, a requirement for mandatory full data
-deposition was recommended in 2001 and quickly adopted by
-many journals. This minimum information about a microarray
-experiment standard has been widely accepted by investigators
-and journals. However, despite being accepted as the desired
-norm over a decade ago, compliance remains a problem.
-An analysis of data from high-profile microarray publications
-that appeared between 2005 and 2006 in Nature Genetics reproduced
-the results of only 2 of 18 reanalyzed papers. The
-principal reason for failure was lack of availability of original
-raw data.22 A study of 127 articles on microarray studies published
-between July 2011 and April 2012 revealed that ≈75%
-were still not minimum information about a microarray experiment
-compliant. Furthermore, reanalysis of data often did not
-support the original conclusions.30" \cite{begley2015reproducibility}
-\end{itemize}
 
 \underline{\textbf{Improving the Reproducibility of Experimental Data
 Recording}} 
