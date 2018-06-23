@@ -154,37 +154,74 @@ another way for trainees to find and access the materials.
 
 \section{Approach---Proposed Research Education Program}
 
-\textbf{Project goals and objectives.} Our project's primary goal is to develop
+\subsubsection*{Project goals and objectives.} 
+
+Our team combines experts in R programming
+(Anderson, Lyons) with a group of biomedical researchers (Gonzalez-Juarrero,
+Henao-Tamayo, and Robertson) who have, collectively, spent decades in
+laboratory-based research to improve understanding of tuberculosis and other
+diseases. We met as faculty members of the same College at Colorado State
+University, and since have discovered how many of the tools that Drs. Anderson
+and Lyons teach and use to improve the reproducibility of \textit{data analysis}
+for biomedical research can substantially improve reproducibility and
+trasparency in the laboratory-based biomedical research projects of Drs.
+Gonzalez-Juarrero, Henao-Tamayo, and Robertson at the stages of \textit{data
+recording} and \textit{data pre-processing}. Improving the computational 
+research at these stages is critical, as these steps form the foundation and 
+provide the input for the later stages of data analysis, visualization and 
+interpretation. If data recording and pre-processing are not reproducible, there 
+is no chance to make the full research project computationally reproducible.
+Further, improving the reproducibility of these steps will make collaborations with
+statisticians 
+and data analyists more efficient and less prone to errors \cite{ellis2018share}, 
+encouraging productive and high-quality ``Team Science" \cite{munafo2017manifesto}.
+
+The reproducibility of data recording and pre-processing is typically 
+in the hands of laboratory-based, rather than computationally-based, researchers.
+Many of the principles and tools for improving reproducibility at the steps 
+of data recording and pre-processing are new and developing, and so many 
+biomedical researchers did not have the opportunity to learn them at previous 
+points in their training and have not been as widely exposed to these principles
+and techniques through more recent academic conferences and career development
+compared to computationally-based researchers. Training materials that are short, 
+modular, and accessible can help fill a critical need in providing this needed
+training \cite{munafo2017manifesto} and have proven very popular in providing 
+similar training to the audience of data scientists and statisticians \cite{leek2015opinion}. To reach a key audience of laboratory-based scientists, these training materials
+must be appropriate to trainees with a variety of prerequisite programming skills, 
+including material that can provide a useful coverage of the principles
+for trainees with little or no programming experience. Further, this material must
+include viewpoints from researchers in our key audience of laboratory-based researchers,
+and they must include examples of implementing the techniques that will be relevant to
+this audience.
+
+Over the past year, we have begun
+to work together to do this within our own research projects: for example, in
+Fall 2017 Dr. Gonzalez-Juarrero attended Dr. Anderson's (PI) course in \textit{R
+Programming for Research} and has brought the ideas and techniques back to her
+research laboratory, in Fall 2017 Dr. Lyons worked with Dr. Anderson to bring in
+real tuberculosis drug development data to use in the final group project in Dr.
+Anderson's R Programming course, and in Spring 2018 Dr. Henao-Tamayo and Dr.
+Anderson began co-advising a graduate student with the aims of implementing
+open-source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
+laboratry. Collectively, we are passionate about the idea that
+\textbf{open-source tools can be used to bring substantial improvements to
+reproducibility of data recording and pre-processing in laboratory-based
+research}, and yet we are also able to recognize the key barriers in
+implementing these tools in this setting, as well as in training
+laboratory-based researchers in how to use these tools, and why existing free
+training materials have, to date, been limited in meeting these needs for the
+key audience of laboratory-based biomedical researchers. 
+
+Our project's \textbf{primary goal} is to develop
 training modules that address the needs of laboratory-based biomedical
 researchers seeking to improve reproducibility, especially of experimental data
-recording and pre-processing, in their research projects. The expected result of
+recording and pre-processing, in their research projects. The \textbf{expected result} of
 this project is an online book that contains twenty short training modules as separate
 chapters, with video lectures, written text, and additional educational
 materials collected within each module's chapter. We consider it critical that
 these training materials be clear, relevant, and useful to a key audience of
 biomedical scientists whose primary research activities focus on laboratory
-research, rather than data analysis or statistics. To help us achieve this goal,
-our team includes three co-investigators from this key audience who will play an
-early and continuing role in developing and refining the training materials for
-this audience, and our plan includes intensive user testing of the developing
-materials on several groups of pilot testers from this audience. Our
-co-investigators' network of connections in Microbiology and Immunology will
-help us widely disseminate these materials to our target audience, as will the
-free, online format of the materials and presenting the materials at national
-and international Microbiology and Immunology conferences in the second and
-third years of the project.
-
-\begin{itemize}
-\item ``Without formal requirements for continuing education, the most effective solutions may be to develop educational resources that are accessible, easy-to-digest and immediately and effectively applicable to research (for example, brief, web-based modules for specific top- ics, and combinations of modules that are customized for particular research applications). A modular approach simplifies the process of iterative updating of those materials. Demonstration software and hands-on examples may also make the lessons and implications par- ticularly tangible to researchers at any career stage" \cite{munafo2017manifesto}\item ``Studies of statistical power persistently find it to be below (sometimes well below) 50\%, across both time and the different disciplines studied [2,35,36]. Low statistical power increases the likelihood of obtaining both false-positive and false-negative results [2], meaning that it offers no advantage if the purpose is to accumulate knowledge. Despite this, low-powered research persists because of dysfunctional incentives, poor understanding of the consequences of low power, and lack of resources to improve power. Team science is a solution to the latter problem---instead of relying on the limited resources of single investigators, distributed collaboration across many study sites facilitates high-powered designs and greater potential for testing generalizability across the settings and populations sampled. This also brings greater scope for multiple theoretical and disciplinary perspectives, and a diverse range of research cultures and experiences, to be incorporated into a research project." \cite{munafo2017manifesto}
-\item ``Multi-centre and collaborative efforts have a long and successful tradition in fields such as randomized controlled trials in some areas of clinical medicine, and in genetic association analyses, and have improved the robustness of the resulting research literatures. Multi-site collaborative projects have also been advocated for other types of research, such as animal studies [41--43], in an effort to maximize their power, enhance standardization, and optimize transparency and protection from biases. The Many Labs projects illustrate this potential in the social and behavioural sciences, with dozens of laboratories implementing the same research protocol to obtain highly precise estimates of effect sizes, and evaluate variability across samples and settings [44,45]. It is also possible, and desirable, to incorporate a team science ethos into student training " \cite{munafo2017manifesto}
-\item ``According to a U.S. National Science Foundation (NSF) subcommittee on replicability in science (9), 'reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original inves- tigator. That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results.... Reproducibility is a minimum necessary condition for a finding to be believable and informative.' ... Reproducibility defined in this way mainly addresses issues of trust that data and analyses are as represented. The definition does not specify to what extent deviations are acceptable. Such reproducibility does not add new evidential weight, although greater subjective weight is often accorded to evidence that is more highly trusted. New evidence is provided by new experimentation, defined in the NSF report as 'replicability,' which refers to 'the ability of a researcher to duplicate the results of a prior study if the same procedures are followed but new data are collected.'" \cite{goodman2016does}
-\item ``How can we dramatically scale up data science education in the short term? One approach that we have taken is through massive online open courses (MOOCs). The Johns Hopkins Data Science Speciali- zation (jhudatascience.org) is a sequence of nine courses covering the full spectrum of data science skills from formulating quan- titative questions, to cleaning data, to sta- tistical analysis and producing reproducible reports. Thus far, we have enrolled more than 1.5 million students in this Specializa- tion. A complementary approach is crowd- sourced short courses such as Data and Soft- ware Carpentry (software-carpentry.org) that have addressed the extreme demand for data science knowledge on a smaller scale. However, simply increasing data analytic literacy comes at a cost. Most scientists in these programs will receive basic to moderate training in data analysis, creating the potential for producing individuals with enough skill to perform data analysis but without enough knowledge to pre- vent mistakes.
-To improve the global robustness of scientific data analysis, we must couple education efforts with the identification of data analytic strategies that are most re- producible and replicable in the hands of basic or intermediate data analysts. Statisti- cians must bring to bear their history of developing rigorous methods to the area of data science." \cite{leek2015opinion}
-\item ``Novices program differently than experts [26] and need different approaches or tools. If you ask a professional programmer to iterate over a list of integers and produce the average, they can write the code within seconds, using stored knowledge of the exact pattern required. Novices will approach this problem totally differently: they need to remember the syntax for the different parts, know how to iter- ate over a list, know how to use an accumulator variable, and so on.
-Novices may need to spend time thinking about an algorithm on paper (something expert programmers rarely need, as they have usually memorised most common algorithmic pat- terns). They may need to construct examples in guided steps. They may struggle to debug. Debugging usually involves contrasting what is happening to what should be happening, but a novice’s grasp on what should be happening is usually fragile.
-Novices do not become professionals simply by doing what professionals do at a slower pace. We do not teach reading by taking a classic novel and simply proceeding more slowly. We teach by using shorter books with simpler words and larger print. So in programming, we must take care to use small, self-contained tasks at a level suitable for novices, with tools that suit their needs and without scoffing." \cite{brown2018ten}
-\item ``Our final tip for teaching programming is that you don’t have to program to do it. Faced with the challenges of learning syntax, semantics, algorithms, and design, examples that seem small to instructors can still easily overwhelm novices. Breaking the problem down into smaller sin- gle-concept pieces can reduce the cognitive load to something manageable." \cite{brown2018ten}
-\end{itemize}
+research, rather than data analysis or statistics. 
 
 \subsubsection*{Proposed training modules}
 
@@ -205,34 +242,6 @@ structure, specifically the innovative "tidy" data format developed within the R
 statistical programming environment, and presented in an innovative e-book
 format
 
-[A paragraph on why we, specifically, passionately think that these training
-modules would address a key need.] Our team combines experts in R programming
-(Anderson, Lyons) with a group of biomedical researchers (Gonzalez-Juarrero,
-Henao-Tamayo, and Robertson) who have, collectively, spent decades in
-laboratory-based research to improve understanding of tuberculosis and other
-diseases. We met as faculty members of the same College at Colorado State
-University, and since have discovered how many of the tools that Drs. Anderson
-and Lyons teach and use to improve the reproducibility of \textit{data analysis}
-for biomedical research could substantially improve reproducibility and
-trasparency in the laboratory-based biomedical research projects of Drs.
-Gonzalez-Juarrero, Henao-Tamayo, and Robertson at the stages of \textit{data
-recording} and \textit{data pre-processing}. Over the past year, we have begun
-to work together to do this within our own research projects: for example, in
-Fall 2017 Dr. Gonzalez-Juarrero attended Dr. Anderson's (PI) course in \textit{R
-Programming for Research} and has brought the ideas and techniques back to her
-research laboratory, in Fall 2017 Dr. Lyons worked with Dr. Anderson to bring in
-real tuberculosis drug development data to use in the final group project in Dr.
-Anderson's R Programming course, and in Spring 2018 Dr. Henao-Tamayo and Dr.
-Anderson began co-advising a graduate student with the aims of implementing
-open-source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
-laboratry. Collectively, we are passionate about the idea that
-\textbf{open-source tools can be used to bring substantial improvements to
-reproducibility of data recording and pre-processing in laboratory-based
-research}, and yet we are also able to recognize the key barriers in
-implementing these tools in this setting, as well as in training
-laboratory-based researchers in how to use these tools, and why existing free
-training materials have, to date, been limited in meeting these needs for the
-key audience of laboratory-based biomedical researchers. 
 
 [Paragraph on why we are focusing on data recording and data pre-processing.]
 Many excellent free training resources exist to improve the computational
