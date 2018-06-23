@@ -513,9 +513,7 @@ particularly on improving the reproducibility of this step for complex
 raw data output by research equipment, for example: feature identification 
 and quantification in mass spectrometry data, gating in flow cytometry data, 
 image pre-processing for functional magnetic resonance imaging (fMRI), as well
-as general pre-processing steps like normalization and scaling.
-
-This sequence will include nine modules covering three main topics: 
+as general pre-processing steps like normalization and scaling. This sequence will include nine modules covering three main topics: 
 
 \textbf{Using code scripts to pre-process experimental data.} The experimental data collected for biomedical research often requires 
 pre-processing before it can be analyzed (e.g., gating of flow cytometry data, 
@@ -580,19 +578,12 @@ pre-processing protocol".
 
 \underline{\textbf{Choice of tools to include in ``Implementation" modules.}}
 
-\begin{itemize}
-\item ``Our collective experience with R suggested that its range of well-implemented statistical and visualization tools would decrease development and distribution time for robust soft- ware for CBB. We also note that R is gaining widespread usage within the CBB community independently of the Bio- conductor Project. Many other bioinformatics projects and researchers have found R to be a good language and toolset with which to work." \cite{gentleman2004bioconductor}
-\item ``The R environment includes a well established system for packaging together related software components and docu- mentation. There is a great deal of support in the language for creating, testing, and distributing software in the form of 'packages'. Using a package system lets us develop different software modules and distribute them with clear notions of protocol compliance, test-based validation, version identifi- cation, and package interdependencies. The packaging sys- tem has been adopted by hundreds of developers around the world and lies at the heart of the Comprehensive R Archive Network, where several hundred independent but interoper- able packages addressing a wide range of statistical analysis and visualization objectives may be downloaded as open source." \cite{gentleman2004bioconductor}
-\item ``Perhaps the most important aspect of using R is its active user and developer communities. This is not a static language. R is undergoing major changes that focus on the changing techno- logical landscape of scientific computing. Exposing biologists to these innovations and simultaneously exposing those involved in statistical computing to the needs of the CBB com- munity has been very fruitful and we hope beneficial to both communities." \cite{gentleman2004bioconductor}
-\item ``A principle that applies across all areas of education is that transference only comes with mas- tery [22]. Courses should therefore stick to one language until learners have progressed far enough with it to be able to distinguish the forest from the trees. While an experienced pro- grammer can, for example, take what they know about loops and function calls in one lan- guage and reuse that understanding in a language with a different syntax or semantics, a newcomer does not yet know which elements of their knowledge are central and which are accidental. Attempting to force transference too early—e.g., requiring them to switch from Python to JavaScript in order to do a web programming course early in their education—will confuse learners and erode their confidence." \cite{brown2018ten}
-\end{itemize}
-
 To improve reproducibility practices among our target audience, it is important
 that we provide them with some instruction on how to implement the
 reproduciblity principles we cover. For some of these principles, there are
 several reasonable and well-developed tools that could be used for
 implementations. However, few researchers are interested in learning every tool,
-and instead would prefer to learn one set of tools that ``just work". 
+and instead would prefer to learn one set of tools that ``just work", and presenting a single set of tools improves the chance of trainees mastering the tools \cite{brown2018ten}.
 
 We have chosen for the implementation portion of these
 modules to focus on tools from the open-source R programming language. R can be
@@ -603,9 +594,8 @@ by the R Development Core Team and works with all major computing platforms,
 ensuring  widespread access, stability, and compatability, also critical for
 ease-of-use \cite{baumer2017lessons, altschul2013anatomy}. R offers a
 well-developed environment for creating new tools that extend the core language
-\cite{wickham2015r} and includes ample tools for documenting research workflows
-\cite{xie2015dynamic, xie2016bookdown}. R's status as the \textit{lingua franca}
-of statisticians and biostatisticians means that its use in early stages of
+\cite{wickham2015r, gentleman2004bioconductor} and includes ample tools for documenting research workflows
+\cite{xie2015dynamic, xie2016bookdown}. R's status as a common tool among statisticians and biostatisticians means that its use in early stages of
 experimental data recording and pre-processing can help foster closer
 collaborations between laboratory-based scientists and statisticians throughout
 the research process. R can be scaled as the volume of data in projects grows
@@ -616,9 +606,7 @@ systems (e.g., \textit{Galaxy} \cite{goecks2010galaxy, walker2016models}). Some
 of the implementation tools---git and GitLab, for example---are separate from R
 but can be mastered much more easily if trainees are taught to use them through
 RStudio's user-friendly interfaces rather than using the command line or other
-alternative interfaces.
-
-RStudio is a free, open-source Integrated Development Environment (IDE) for the R programming language. It is actively developed by a team of some of the best R programmers worldwide, including the developers of the ``tidyverse" (including the \textit{ggplot2} plotting system), the most popular tools for literate programming in R (\textit{knitr} and \textit{RMarkdown}) and the Shiny web application system. 
+alternative interfaces. RStudio is a free, open-source Integrated Development Environment (IDE) for the R programming language. It is actively developed by a team of some of the best R programmers worldwide, including the developers of the ``tidyverse" (including the \textit{ggplot2} plotting system), the most popular tools for literate programming in R (\textit{knitr} and \textit{RMarkdown}) and the Shiny web application system. 
 
 We have also selected to focus on this set of tools for
 the \textit{Implementation} modules because two members of our team (Anderson
