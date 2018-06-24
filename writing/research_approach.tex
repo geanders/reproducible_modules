@@ -157,84 +157,74 @@ another way for our key audience of laboratory-based biomedical researchers to f
 
 \subsubsection*{Project goals and objectives.} 
 
-Our team combines experts in R programming
-(Anderson, Lyons) with a group of biomedical researchers (Gonzalez-Juarrero,
+Our core project team combines two experts in R programming
+(Anderson, Lyons) with three biomedical researchers (Gonzalez-Juarrero,
 Henao-Tamayo, and Robertson) who have, collectively, spent decades in
 laboratory-based research to improve understanding of tuberculosis and other
-diseases. We met as faculty members of the same College at Colorado State
-University, and since have discovered how many of the tools that Drs. Anderson
+diseases. We met as fellow faculty members of the College of Veterinary Medicine \& Biomedical Sciences at Colorado State
+University, and since have discovered that many of the tools that Drs. Anderson
 and Lyons teach and use to improve the reproducibility of \textit{data analysis}
 for biomedical research can substantially improve reproducibility and
 transparency in the laboratory-based biomedical research projects of Drs.
 Gonzalez-Juarrero, Henao-Tamayo, and Robertson at the stages of \textit{data
 recording} and \textit{data pre-processing}. Improving the computational 
-research at these stages is critical, as these steps form the foundation and 
-provide the input for the later stages of data analysis, visualization and 
-interpretation---if data recording and pre-processing are not reproducible, there 
-is no chance to make the full research project computationally reproducible.
-Further, improving the computational reproducibility of the steps of data recording and pre-processing makes collaborations with
+reproducibility of research at these stages is critical, as these steps form the foundation, and 
+provide input, for the later stages of data analysis, visualization and 
+interpretation. If data recording and pre-processing are not computationally reproducible, there 
+is no chance to make the full research project reproducible.
+Further, improving the computational reproducibility of the steps of data recording and pre-processing has other key advantages for laboratory-based researchers, including making collaborations with
 statisticians 
 and data analysts more efficient and less prone to errors \cite{ellis2018share}, 
-encouraging productive and high-quality ``Team Science" \cite{munafo2017manifesto}.
+and so encouraging productive and high-quality ``Team Science" to tackle large biomedical research projects \cite{munafo2017manifesto}.
 
-Over the past year, we have begun
-to work together to do this within our own research projects: for example, in
+Over the past year, our team of co-investigators has begun
+to work together to improve the computational reproducibility of experimental data recording and pre-processing within our own research projects. For example, in
 Fall 2017 Dr. Gonzalez-Juarrero attended Dr. Anderson's (PI) course in \textit{R
 Programming for Research} and has brought the ideas and techniques back to her
-research laboratory, in Fall 2017 Dr. Lyons worked with Dr. Anderson to bring in
-real tuberculosis drug development data to use in the final group project in Dr.
-Anderson's R Programming course, and in Spring 2018 Dr. Henao-Tamayo and Dr.
-Anderson began co-advising a graduate student with the aims of implementing
+research laboratory, and in Spring 2018 Dr. Henao-Tamayo and Dr.
+Anderson began co-advising a graduate student to implement
 open-source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
 laboratory. Collectively, we are passionate about the idea that
-\textbf{open-source tools can be used to bring substantial improvements to
+\textbf{open-source tools can be used to substantially improve the
 reproducibility of data recording and pre-processing in laboratory-based
-research}, and yet we are also able to recognize the key barriers in
+biomedical research}, and yet we are also able to recognize that \textbf{there are key barriers in
 implementing these tools in this setting, as well as in training
-laboratory-based researchers in how to use these tools, and why existing free
-training materials have, to date, been limited in meeting these needs for the
-key audience of laboratory-based biomedical researchers. 
+laboratory-based researchers how to use these tools}. 
 
-We aim to create training modules that will show laboratory-based biomedical
+Through this project, we aim to create training modules that will teach laboratory-based biomedical
 researchers how simple computational reproducibility principles can improve
-biomedical research reproducibility at the stages of data recording and
-preprocessing, as well as teach them how to implement these principles in their
-laboratories. The importance of such computational reproducibility of scientific
-research is increasingly recognized by scientists, journals, and funding
-agencies, with such ``computationally reproducible" research requiring that all
-data and code for a research project be available and that this data and code
-can be used to regenerate study findings either by the original researcher or by
-other researchers \cite{ellis2018share, ram2013git}. Among our team, we have
+reproducibility at the stages of data recording and
+preprocessing. The importance of \textit{computational reproducibility}---in which all
+data and code for a research project is openly available and can be used to regenerate study findings either by the original researcher or by
+other researchers---is increasingly recognized by scientists, journals, and funding
+agencies \cite{ellis2018share, ram2013git}. The reproducibility of the steps of data recording and pre-processing is typically 
+in the hands of laboratory-based, rather than computationally-based, researchers.
+While many excellent free training resources exist to improve the computational
+reproducibility of biomedical research, most of these
+materials---including some developed by Dr. Anderson for her online and
+CSU-based courses in R programming \cite{andersoncoursebook, andersonmastering}---target researchers at the stage of
+\textit{data analysis} for the audience of \textit{computationally-based researchers}, and provide much less guidance on the principles and
+techniques to improve reproducibility of the earlier steps of
+\textbf{experimental data recording} and \textbf{experimental data
+pre-processing} for \textbf{laboratory-based researchers}. 
+
+Among our team, we have
 found that there are many common existing practices---including use of
-spreadsheets with embedded macros to concurrently record and analyze
+spreadsheets with embedded formulas that concurrently record and analyze
 experimental data, problematic management of project files,
-reliance on proprietary, vendor-supplied point-and-click software for data
+and reliance on proprietary, vendor-supplied point-and-click software for data
 pre-processing---that can interfere with the transparency, reproducibility, and
-efficiency of the kind of research they conduct. These problems have also been 
+efficiency of laboratory-based biomedical research projects. These problems have also been 
 identified by others as key barriers to research reproducibility 
 \cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
 Our team has worked together to craft a list of
-specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we aim
-to address, choosing topics that tackle barriers to Reproducibility with
-straightforward fixes, but which we have found are still very common in
+specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we will address in these training modules, choosing topics that tackle barriers to reproducibility that have
+straightforward, easy-to-teach solutions, but which we have found are still very common in
 biomedical laboratory-based research programs, including those here at Colorado
-State University. 
-
-The reproducibility of data recording and pre-processing is typically 
-in the hands of laboratory-based, rather than computationally-based, researchers.
-Many excellent free training resources exist to improve the computational
-reproducibility of biomedical research. However, most of these
-materials---including some developed by Dr. Anderson for her open online and
-CSU-based courses in R programming [refs]---target researchers at the stage of
-\textit{data analysis}, and provide much less guidance on the principles and
-techniques to improve reproducibility of the earlier steps of
-\textbf{experimental data recording} and \textbf{experimental data
-pre-processing}. Training materials that are short, 
+State University. Training materials that are short, 
 modular, and accessible can help fill a critical need in providing laboratory-based biomedical researchers this needed
 training \cite{munafo2017manifesto} and have proven very popular in providing 
-similar training to the audience of data scientists and statisticians \cite{leek2015opinion}. 
-
-Our project's \textbf{primary goal} is to develop
+similar training to the audience of data scientists and statisticians \cite{leek2015opinion}. Our project's \textbf{primary goal} is to develop
 training modules that address the needs of laboratory-based biomedical
 researchers seeking to improve reproducibility, especially of experimental data
 recording and pre-processing, in their research projects. The \textbf{expected result} of
@@ -789,7 +779,7 @@ In addition to these methods of disseminating the training materials to a genera
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.94\textwidth]{figures/timeline.pdf}
+    \includegraphics[width=0.9\textwidth]{figures/timeline.pdf}
     \caption{Timeline for proposed activities for this project.}
     \label{fig:timeline}
 \end{figure}
