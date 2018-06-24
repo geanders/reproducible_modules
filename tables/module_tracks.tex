@@ -1,13 +1,16 @@
 
-\begin{landscape}\begin{table}[!h]
+\begin{landscape}\rowcolors{2}{gray!6}{white}
+\begin{table}
 
 \caption{\label{tab:}\label{tab:tracks} Examples of how different types of trainees might use subsets of the training modules to meet their specific training needs.}
 \centering
 \fontsize{9}{11}\selectfont
 \begin{tabular}[t]{>{\centering\arraybackslash}p{28em}ccccc}
+\hiderowcolors
 \toprule
 \multicolumn{1}{c}{} & \multicolumn{1}{c}{\makecell[c]{\textbf{Graduate student}\\who would like to\\learn in detail\\how to use\\reproducibility tools\\for data recording\\and pre-processing\\and is willing to learn\\R programming tools}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Principal investigator}\\who does not program\\but would like to\\learn how his/her\\research team could\\improve reproducibility\\of data recording\\and pre-processing}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Biostatistician}\\who would\\like to understand\\barriers faced by\\collaborators\\in implementing\\reproducibility\\principles early\\in research projects}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Technician}\\in charge of\\running and\\pre-processing\\mass\\spectrometry\\data}} & \multicolumn{1}{c}{\makecell[c]{\textbf{Undergraduate}\\\textbf{student}\\who wants an\\introduction\\to improving\\reproducibility\\of data\\recording}}\\
 \midrule
+\showrowcolors
 \addlinespace[0.3em]
 \multicolumn{6}{l}{\textbf{Improving the Reproducibility of Experimental Data Recording}}\\
 \hspace{1em}\tabitem Separating data recording and analysis & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{pink}{Yes} & \cellcolor{white}{No} & \cellcolor{pink}{Yes}\\
@@ -35,4 +38,5 @@
 \bottomrule
 \end{tabular}
 \end{table}
+\rowcolors{2}{white}{white}
 \end{landscape}
