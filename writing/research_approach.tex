@@ -92,64 +92,51 @@ critical place in such an analysis framework.
 
 \section{Innovation} \vspace{-0.1in}
 
-To disseminate the training materials we develop, \textbf{we will use the
+\textbf{We will use the
 innovative \textit{bookdown} framework \cite{xie2016bookdown} to structure and
-publish all of our training materials as a free and open online book}. The
+publish all of our training materials as a free and open online book, with embedded video lectures and additional educational materials}. The
 \textit{bookdown} framework has been available for a little over two years and
-extends the principles of \textit{rmarkdown} to allow users to create attractive
-online books that integrate programming code and text. This format allows
-authors to efficiency create books with many coding examples---code and its
-output does not need to be copied and pasted into a document, but instead can be
-automatically generated each time the book is edited. Also, since the book is
-created by executing those code examples, regularly test that all code remains
-free of bugs created by changes in dependencies (e.g., updates to R packages
-used in the code) \cite{xie2016bookdown}. Through this innovative framework, we
-will be able to create a searchable online book that weaves R code into the text
-and that can include embedded tutorial videos, active weblinks to online
-references, and computationally reproducible practice examples and exercises
-(Figure \ref{fig:prototype}). While relatively new, this framework has proven
+extends the principles of \textit{Rmarkdown} \cite{xie2015dynamic} to allow authors to create attractive
+online books that integrate programming code and text. With this format, code examples and related
+output do not need to be copied and pasted into a document, but instead is
+automatically generated. Through this innovative framework, we
+will create a searchable online book that weaves R code into the text
+and includes embedded video lectures, active web links to online
+references, and computationally reproducible examples and exercises
+(Figure \ref{fig:prototype}). Further, trainees will be able to
+download the book as either a PDF or EPUB file, to use as a reference as they
+continue learning to implement reproducibility tools in their research projects. Even though this framework is new, it has proven
 itself reliable and effective---it serves as the framework for several extremely
-popular and highly-accessed books on R programming, including \textit{R for Data
-Science} [ref]. 
+popular and highly-accessed books on R programming, including the extremely popular book \textit{R for Data
+Science} \cite{wickham2016r}. 
 
 \begin{figure}[t] \includegraphics[width =
 \textwidth]{figures/book_prototype.jpg} \caption{Prototype of online course
 book, with features highlighted.} \label{fig:prototype} \end{figure}
 
-Dr. Anderson (PI) was an early adopter of the \textit{bookdown} framework. Since
-it became available, she has used it to create two \textit{bookdown}-based
-books: the \textit{R Programming for Research} online coursebook, which she uses
+Dr. Anderson (PI) is an early adopter of the \textit{bookdown} framework and served as an expert reviewer for \textit{bookdown: Authoring Books
+and Technical Documents with R Markdown} \cite{xie2016bookdown}. Since
+the \textit{bookdown} framework became available, she has used it to create two openly-available online
+books: the \textit{R Programming for Research} online coursebook (https://geanders.github.io/RProgrammingForResearch/), which she uses
 as a joint textbook and website for the \textit{R Programming for Research}
 course she teaches each fall at Colorado State University, and \textit{Mastering
-Software Development in R}, which she co-wrote with Dr. Roger Peng as a manual
+Software Development in R} (https://bookdown.org/rdpeng/RProgDA/), which she co-wrote with Dr. Roger Peng as a manual
 for developing advanced R programming skills and which has been downloaded by
-over 14,000 people from LeanPub (see letter from Dr. Peng). Dr. Anderson served as one of the six
-reviewers---along with R programming experts Jan de Leeuw, Karl Broman, Michael
-Grayling, Daniel Kaplan, and Max Kuhn---for \textit{bookdown: Authoring Books
-and Technical Documents with R Markdown} \cite{xie2016bookdown}.
+over 14,000 people from LeanPub (see letter from Dr. Peng). 
 
 \textbf{The use of this framework will help us effectively reach a large
-audience in need of training materials for improving the reproducibility of data
-recording and pre-processing in biomedical research.} We will be able to freely
-post this book online using the Git Pages feature of GitHub, as we have done
-with previous books created with the same framework [ref]. This will allow anyone to
-freely access this content online, and to explore the module contents to find
-the set of modules that best suits their immediate training needs. The
-book-style format makes the content easy to navigate through both its use of
-sections and chapters to group material and through its embedded search
-functionality (Figure \ref{fig:prototype}). Further, researchers will be able to
-download the book as either a PDF or EPUB file, to use as a reference as they
-continue learning to implement reproducibility tools in their research projects.
-
-We will publish the book's code openly online through GitHub from the beginning
-of our development of the training materials, as well as publish the current
-version of materials as the online book. \textbf{By making the training
+audience of laboratory-based biomedical researchers in need of training materials to improve the reproducibility of data
+recording and pre-processing.} We will 
+post this book online using the \textit{GitHub Pages} \cite{gitpages}, as we have done
+with a previous book created with the same framework \cite{andersoncoursebook}. This will allow anyone to
+freely access this content online. We will publish both the current version of the developing book and its underlying code openly online from the beginning
+of our development of the training materials. \textbf{By making the training
 materials available from day one, as they are developed, we will be able to
 attract early users to help disseminate the material as it evolves and also be
-able to get early feedback on the content as it is developed.} Once the online
+able to get early feedback.} Once the online
 book is developed, we will submit a static version of it to be posted
-on the homepage of the \textit{bookdown.org} website [ref], which will serve as
-another way for trainees to find and access the materials.
+on the homepage of the \textit{bookdown.org} website \cite{bookdownorg}, providing
+another way for our key audience of laboratory-based biomedical researchers to find and access the materials.
 
 \section{Approach---Proposed Research Education Program}
 
@@ -163,7 +150,7 @@ diseases. We met as faculty members of the same College at Colorado State
 University, and since have discovered how many of the tools that Drs. Anderson
 and Lyons teach and use to improve the reproducibility of \textit{data analysis}
 for biomedical research can substantially improve reproducibility and
-trasparency in the laboratory-based biomedical research projects of Drs.
+transparency in the laboratory-based biomedical research projects of Drs.
 Gonzalez-Juarrero, Henao-Tamayo, and Robertson at the stages of \textit{data
 recording} and \textit{data pre-processing}. Improving the computational 
 research at these stages is critical, as these steps form the foundation and 
@@ -172,7 +159,7 @@ interpretation---if data recording and pre-processing are not reproducible, ther
 is no chance to make the full research project computationally reproducible.
 Further, improving the computational reproducibility of the steps of data recording and pre-processing makes collaborations with
 statisticians 
-and data analyists more efficient and less prone to errors \cite{ellis2018share}, 
+and data analysts more efficient and less prone to errors \cite{ellis2018share}, 
 encouraging productive and high-quality ``Team Science" \cite{munafo2017manifesto}.
 
 Over the past year, we have begun
@@ -184,7 +171,7 @@ real tuberculosis drug development data to use in the final group project in Dr.
 Anderson's R Programming course, and in Spring 2018 Dr. Henao-Tamayo and Dr.
 Anderson began co-advising a graduate student with the aims of implementing
 open-source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
-laboratry. Collectively, we are passionate about the idea that
+laboratory. Collectively, we are passionate about the idea that
 \textbf{open-source tools can be used to bring substantial improvements to
 reproducibility of data recording and pre-processing in laboratory-based
 research}, and yet we are also able to recognize the key barriers in
@@ -206,14 +193,14 @@ other researchers \cite{ellis2018share, ram2013git}. Among our team, we have
 found that there are many common existing practices---including use of
 spreadsheets with embedded macros to concurrently record and analyze
 experimental data, problematic management of project files,
-reliance on proprietory, vendor-supplied point-and-click software for data
+reliance on proprietary, vendor-supplied point-and-click software for data
 pre-processing---that can interfere with the transparency, reproducibility, and
 efficiency of the kind of research they conduct. These problems have also been 
 identified by others as key barriers to research reproducibility 
 \cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
 Our team has worked together to craft a list of
 specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we aim
-to address, choosing topics that tackle barriers to reprodubility with
+to address, choosing topics that tackle barriers to Reproducibility with
 straightforward fixes, but which we have found are still very common in
 biomedical laboratory-based research programs, including those here at Colorado
 State University. 
@@ -289,7 +276,7 @@ Recording}}
 The first sequence will provide principles and tools for improving
 computational reproducibility at the stage of experimental data recording. This sequence will include eleven modules covering four main topics: 
 
-\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between speadsheet cells---to jointly record, visualize, and analyze experimental data \cite{broman2018data}. This practice empedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template that uses embedded formulas to analyze and visualize the data as soon as it is collected, it can leads to a data recording set-up for the laboratory that is extraordinarily opaque and complex (e.g., Figure \ref{fig:spreadsheet}). To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining the recorded experimental data as a ``read-only" file, and separating and pre-processing and analysis steps and rigorously keeping code and formula for these steps outside of the file used to record the data \cite{broman2018data, marwick2018packaging}. Further, statisticians have outlined specific methods that an experimental scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros, using a separate Excel file for each dataset, recording descriptions of the variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding spliting or merging cells \cite{ellis2018share, broman2018data}. This topic will covered in a \textit{Principles} module on ``Separating data
+\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between spreadsheet cells---to jointly record, visualize, and analyze experimental data \cite{broman2018data}. This practice impedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template that uses embedded formulas to analyze and visualize the data as soon as it is collected, it can leads to a data recording set-up for the laboratory that is extraordinarily opaque and complex (e.g., Figure \ref{fig:spreadsheet}). To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining the recorded experimental data as a ``read-only" file, and separating and pre-processing and analysis steps and rigorously keeping code and formula for these steps outside of the file used to record the data \cite{broman2018data, marwick2018packaging}. Further, statisticians have outlined specific methods that an experimental scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros, using a separate Excel file for each dataset, recording descriptions of the variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding splitting or merging cells \cite{ellis2018share, broman2018data}. This topic will covered in a \textit{Principles} module on ``Separating data
 recording and analysis". Key readings for this section will be \cite{broman2018data} and \cite{ellis2018share}.
 
 \begin{figure}[t] \centering \includegraphics[width =
@@ -419,7 +406,7 @@ called ``Introduction to scripted data pre-processing in R" and ``Simplify
 scripted pre-processing through R's 'tidyverse' tools".
 
 \textbf{2. Working with complex data types during pre-processing.} Many R functions output data in a form that is ``untidy" \cite{robinson2014broom}, in the sense that it does not comply with the structured ``tidy" format required by R's \textit{tidyverse} tools \cite{wickham2014tidy}. This is particularly true for raw data from many biomedical experiments, especially machine-generated data (e.g., output from a flow cytometer or mass spectrometer). Further, Biocondutor, which hosts many R packages useful for preprocessing and analyzing experimental biomedical data, relies heavily on an object-oriented framework, with functions outputting data in S4 object formats \cite{gentleman2004bioconductor}.  This aids interoperability among Bioconductor packages and helps collect different types of data from an experiment (e.g., expression measurements, phenotypes, and administrative data from an experiment) \cite{gentleman2004bioconductor}, but these S4 objects are 'untidy', in the sense that they do not follow the format required for 'tidyverse' R tools \cite{biobroom} While these formats are well-justified within open-source software for pre-processing complex biomedical data, they add a critical barrier for researchers wishing
-to implement reproduciblity tools, especially tools from the popular and user-friendly 'tidyverse' collection of R package externsions \cite{robinson2014broom}. This hurdle can be surmounted by skilled R programmers, but it creates a barrier for researchers who are learning scripting tools \cite{robinson2014broom}, and it can reduce transparency of analysis by requiring obscure, lengthy code to extract and tidy data from the complex data object \cite{robinson2014broom}. Very recently, the \textit{broom} and \textit{biobroom} R packages have been developed 
+to implement reproducibility tools, especially tools from the popular and user-friendly 'tidyverse' collection of R package extensions \cite{robinson2014broom}. This hurdle can be surmounted by skilled R programmers, but it creates a barrier for researchers who are learning scripting tools \cite{robinson2014broom}, and it can reduce transparency of analysis by requiring obscure, lengthy code to extract and tidy data from the complex data object \cite{robinson2014broom}. Very recently, the \textit{broom} and \textit{biobroom} R packages have been developed 
 to extract a 'tidy' dataset from many common complex data formats that are output by R functions, including much of the output formats common for preprocessing biomedical experimental data \cite{robinson2014broom, biobroom}.
 These tools create a clean, simple connection between the complex data formats
 often used in pre-processing experimental data and the 'tidy' format
@@ -429,7 +416,7 @@ data types in R and Bioconductor", and an \textit{Example} module called
 ``Example: Converting from complex to 'tidy' data formats".
 
 \textbf{3. Reproducible data pre-processing protocols.} Pre-processing software allows many parameter choices, which can lead to an explosion of possible combinations of parameter choices in pre-processing data \cite{munafo2017manifesto, shade2015computing, pernet2015improving}. To ensure transparent and high-quality biomedical research, it is important to be thoughtful in selecting the parameter values, and to keep a detailed record of which parameter values were selected and why throughout pre-processing. Ideally, a research group should maintain ``protocols" describing this pre-processing that are as detailed and reproducible as the experimental protocols they maintain  \cite{gentleman2004bioconductor}. Creating and maintaining such \textit{data pre-processing protocols} helps make it easier and clearer for laboratory-based researchers to share the pre-processing ``recipe" with collaborators and as part of publishing a journal article that meets reproducibility guidelines. It also helps ensure a continuity of methods across a research group, where a research laboratory can be sure the same pre-processing is maintained as researchers join and leave the group \cite{shade2015computing}.
-Reproducibility tools can be used to create reproducible data pre-precessing protocols---documents that combine code and text in a ``knitted" document, which can be re-used to ensure data pre-processing is consistent and reproducible across research projects. The R extension package RMarkdown can be used to create documents that combine code and text in a 
+Reproducibility tools can be used to create reproducible data pre-processing protocols---documents that combine code and text in a ``knitted" document, which can be re-used to ensure data pre-processing is consistent and reproducible across research projects. The R extension package RMarkdown can be used to create documents that combine code and text in a 
 ``knitted" document, and it has become a popular tool 
 for improving the computational reproducibility and 
 efficiency of the data analysis stage of research. This tool can also be used earlier in the research process, however, to improve reproducibility of pre-processing steps. 
@@ -442,7 +429,7 @@ pre-processing protocol".
 
 To improve reproducibility practices among our target audience of laboratory-based biomedical researchers, it is important
 that we provide them with some instruction on how to implement the
-reproduciblity principles presented. For some of these principles, there are
+reproducibility principles presented. For some of these principles, there are
 several reasonable and well-developed tools that could be used for
 implementations. However, few researchers are interested in learning every tool,
 and instead would prefer to learn one set of tools that ``just work", and presenting a single set of tools improves the chance of trainees mastering the tools \cite{brown2018ten}. 
@@ -453,7 +440,7 @@ freely, quickly, and easily downloaded and installed to a user's computer,
 allowing new users to get started quickly, a critical consideration for usable
 scientific software \cite{list2017ten}. R has been maintained for over a decade
 by the R Development Core Team and works with all major computing platforms,
-ensuring  widespread access, stability, and compatability, also critical for
+ensuring  widespread access, stability, and compatibility, also critical for
 ease-of-use \cite{baumer2017lessons, altschul2013anatomy}. R offers a
 well-developed environment for creating new tools that extend the core language
 \cite{wickham2015r, gentleman2004bioconductor} and includes ample tools for documenting research workflows
@@ -533,7 +520,7 @@ materials.
 We will create this online book using the \textit{bookdown} framework
 \cite{xie2016bookdown}. This in an innovative framework that will allow us to
 create a searchable online book that weaves R code into the text and that can
-include embedded tutorial videos, active weblinks to online references, and
+include embedded tutorial videos, active web links to online references, and
 computationally reproducible practice examples and exercises. Further, by
 including R code examples as executable code, we will be able to use this online
 book to frequently check tutorial code examples to quickly identify and fix any
@@ -657,7 +644,7 @@ Maertens to solidify and implement evaluations of the training materials.
 
 \subsection{Institutional Environment and Commitment}
 
-Colorado State University is a Research-I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's land-grant university, CSU has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community. Colorado State University is very supportive of improving the reproducbility of
+Colorado State University is a Research-I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's land-grant university, CSU has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community. Colorado State University is very supportive of improving the reproducibility of
 research, and it offers ample resources that will help us ensure the success of
 the proposed project. \textbf{Our institution has clearly expressed its support
 for our proposed effort to create, refine, evaluate, and disseminate these
@@ -762,7 +749,7 @@ who participated in a two-day Weather Data Hackathon at Colorado State
 University in April 2016 led by Dr. Anderson.} \label{csu-r-hackathon}
 \end{SCfigure}
 
-\textbf{Participants in American Socity for Microbiology pre-conference workshop.} [For these people, we could definitely do a survey before to get information on demographics, education level, interest in the training materials, etc. We could also do a post survey to find out what they learned, how helpful it was, what they found confusing, etc. Finally, we could get their email addresses to ask some longer-term evaluation questions (e.g., How are they using what they learned 1--2 years after taking the workshop? How much did they retain in terms of principals, implementation, and examples?). We can also use questions that are asked during the workshops and areas where additional materials (applied exercises, quizzes, discussion questions) are problematic to help us hone our training materials.]
+\textbf{Participants in American Society for Microbiology pre-conference workshop.} [For these people, we could definitely do a survey before to get information on demographics, education level, interest in the training materials, etc. We could also do a post survey to find out what they learned, how helpful it was, what they found confusing, etc. Finally, we could get their email addresses to ask some longer-term evaluation questions (e.g., How are they using what they learned 1--2 years after taking the workshop? How much did they retain in terms of principals, implementation, and examples?). We can also use questions that are asked during the workshops and areas where additional materials (applied exercises, quizzes, discussion questions) are problematic to help us hone our training materials.]
 
 \textbf{Trainees who access and use the online book and embedded materials.}  We will plan to develop and post the text and some of the additional educational materials (e.g., quizzes, discussion questions) online through GitHub \textit{as we write the book and develop the materials}. We will use social media to invite people to try out the book as we develop it. Based on previous work developing online books, we have found that this open development process can help attract users very early in the process, and that these users are often very helpful in providing feedback as the book is developed. We will elicit their feedback through GitHub (``Issues" page will be the main forum for them to post comments and suggestions). [These could potentially be from anywhere in the world, and for many we won't have great ways to contact them.]
 
