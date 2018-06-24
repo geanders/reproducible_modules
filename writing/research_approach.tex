@@ -50,45 +50,60 @@
 \section{Significance}
 \vspace{-0.1in}
 
-Current focal points of NIH-funded biomedical research include translational
-medicine, big data analyses of genomic, proteomic, and metabolomic experiments,
-and team science \cite{}, all of which rely on the generation, sharing, and
-integration of high-quality experimental data that may be used and re-used in
-multiple types of analysis and visualization platforms. The NIH Strategic Plan
-for Data Science \cite{} emphasizes the critical need to capitalize on this
-emerging ecosystem of data, and includes the need to address multiple practical
-issues related to data storage, management, accessibility, and usablility.
-However, consideration of the current sources of much of this data from
-individual bench scientists and academic research groups, leads to the 
-recognition that a large amount of biomedical data collection is in the form 
-of commercial or open source spreadsheets that contain sometimes complex 
-organizational
-patterns of quantitative and qualitative tables, charts, graphs, notes and other
-figures, embedded black-box statistical calculations, and mixtures of
-experimental data types and units. Further, it is widely known and discussed
-among data scientists, mathematical modelers, and statisticians \cite{}, that
-there is a frequent need disgard, transform, and reformat sometimes large
-amounts of this primary data and meta-data. While such ``data cleaning'' is
-necessary for it's use in the advanced and developing data tools, it is often
-conducted by the data-scientist with minimal or no communcation with those who
-generated the data. From our experience with drug and vaccine development for
-infectious diseases, \textbf{we have identified this step of data recording and
-pre-processing as a potential critical point of failure for reproducible
-research results.} In this proposal, we provide a solution to mitigate such
-potential failures by using the R programming language and the concept of "tidy"
-data stuructures, together with a set of training modules that are aimed at the
-laboratory bench scientists whose attention is rather to their experimental
-technique and collection of accurate data, and who may have little or no
-background in the use of general purpose software tools.
+The recent NIH-Wide Strategic Plan \cite{nih2016strategic} describes an
+integrative view of biology and human health that includes translational
+medicine, team science, and the importance of capitalizing on an exponentially 
+growing and increasingly complex data ecosystem \cite{nih2018data}.  Underlying 
+this view is the need to use, share and reuse biomedical data generated from widely 
+varying experimental systems and researchers. Basic sources of biomedical data range 
+from relatively small sets of measurements, such as animal body weights and bacterial 
+cell counts that may be recorded by hand, to thousands or millions of instrument generated 
+data points from various imaging, -omic, and flow-cytometry experiments. In either case, 
+there is a generally common data or information workflow (Figure \ref{fig:workflow}) that proceeds 
+from measurement, to data recording, pre-processing, analysis, and interpretation 
+\cite{}.  However, the distinct actions of data recording and data pre-processing are often 
+merged or combined as a single entity using commercial or open source spreadsheets.  Such 
+spreadsheets include various levels of meta-data, including filesystem data that determines 
+reading and writing operations by the software environment in which it runs, together with multiple 
+experimental data types and units recorded in sometimes complicated arrangements of tables, 
+charts, notes, and other figures.  Additionally, and especially for instrument generated data sets, 
+these spreadsheets are often used to pre-process the data with black-box statistical calculations 
+and graph generating 
+functions that are combined with the primary or raw experimental data.  It is also widely 
+known and discussed among data scientists, mathematical modelers, and statisticians 
+\cite{krishnan2016towards}, that there is a frequent need to discard, transform, and 
+reformat various elements of these spreadsheets in an often labor intensive and error 
+prone process of ``data cleaning'', in order to apply more advanced computational methods 
+and to integrate the data with other analysis and visualization platforms.
 
-While this proposal uses examples from microbiology and immunology experiments,
-the collection of primary data in a flexible, open source, transpararent, 
-and reproducible format, which can be kept in it's primary state without the 
-need for additional modification, is a solution that extends thoughout
-large and small scale biomedical science projects.  Figure () below shows an 
-example workflow of such a comprehensive experimental data and quantitative 
-analysis framework, and indicates our specific focus, highlighting it's 
-critical place in such an analysis framework.
+\textbf{Here, we identify the clear separation between data recording and data pre-processing 
+as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation requires 
+some change in the conventional understanding and use of spreadsheets, and a recognition by 
+biomedical researchers that recent advances in computer programming languages, especially the 
+R programming language, provide user-friendly and accessible tools and concepts that can be 
+used to build on their existing methods to implement a transparent and reproducible data workflow. 
+As a wholesale adoption of these concepts and software tools may be disruptive to established 
+laboratory procedures, the 
+approach in this proposal is to provide training modules that can be adopted as appropriate 
+for a wide range of individuals with differing roles within small and large research groups.  
+General principles and guidelines are presented separately from implementation and examples. 
+Additionally, the training modules will be developed on-site with NIH-funded microbiology 
+and immunology labs devoted to anti-tuberculosis drug and vaccine development. 
+\textbf{Our ultimate educational goal is introduce the language, concepts, and tools of R-based 
+``tidy'' data structures to the laboratory bench scientist whose attention is rather to their 
+experimental technique and collection of accurate data, and who may have little or no background 
+in the use of general purpose software tools.} While this proposal uses examples from microbiology 
+and immunology experiments, the collection of primary data in a flexible, open source, 
+transparent, and reproducible format or data structure that can be kept in it's primary state 
+without the need for additional modification, is a solution that extends throughout large and 
+small scale biomedical science projects. 
+
+\begin{figure}[ht] \includegraphics[width =
+\textwidth, trim={0 9cm 0 3cm}, clip]{figures/workflow.png} 
+\caption{Data workflows with spreadsheet-combined data recording and pre-processing, 
+and separation of data recording and pre-processing using a  ``tidy'' data structure.} 
+\label{fig:workflow} \end{figure}
+
 
 \section{Innovation} \vspace{-0.1in}
 
