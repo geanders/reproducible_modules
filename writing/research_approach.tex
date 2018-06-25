@@ -59,11 +59,13 @@ varying experimental systems and researchers. Basic sources of biomedical data r
 from relatively small sets of measurements, such as animal body weights and bacterial 
 cell counts that may be recorded by hand, to thousands or millions of instrument generated 
 data points from various imaging, -omic, and flow-cytometry experiments. In either case, 
-there is a generally common data or information workflow (Figure \ref{fig:workflow}) that proceeds 
+there is a generally common data or information workflow that proceeds 
 from measurement, to data recording, pre-processing, analysis, and interpretation 
-\cite{}.  However, the distinct actions of data recording and data pre-processing are often 
-merged or combined as a single entity using commercial or open source spreadsheets.  Such 
-spreadsheets include various levels of meta-data, including filesystem data that determines 
+\cite{}.  However, the distinct actions of data recording, data pre-processing, and analysis 
+are often merged or combined as a single entity by the researcher using commercial or open 
+source spreadsheets, or as part of an often proprietary experimental measurement 
+system\/software combination (Figure \ref{fig:workflow}).  Such spreadsheets include various 
+levels of meta-data, including filesystem data that determines 
 reading and writing operations by the software environment in which it runs, together with multiple 
 experimental data types and units recorded in sometimes complicated arrangements of tables, 
 charts, notes, and other figures.  Additionally, and especially for instrument generated data sets, 
@@ -71,14 +73,14 @@ these spreadsheets are often used to pre-process the data with black-box statist
 and graph generating 
 functions that are combined with the primary or raw experimental data.  It is also widely 
 known and discussed among data scientists, mathematical modelers, and statisticians 
-\cite{krishnan2016towards}, that there is a frequent need to discard, transform, and 
-reformat various elements of these spreadsheets in an often labor intensive and error 
+\cite{broman2018data, krishnan2016towards}, that there is a frequent need to discard, 
+transform, and reformat various elements of these spreadsheets in an often labor intensive and error 
 prone process of ``data cleaning'', in order to apply more advanced computational methods 
 and to integrate the data with other analysis and visualization platforms.
 
-\textbf{Here, we identify the clear separation between data recording and data pre-processing 
-as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation requires 
-some change in the conventional understanding and use of spreadsheets, and a recognition by 
+\textbf{Here, we identify the clear separation between data recording, data pre-processing, and
+analysis as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation 
+requires some change in the conventional understanding and use of spreadsheets, and a recognition by 
 biomedical researchers that recent advances in computer programming languages, especially the 
 R programming language, provide user-friendly and accessible tools and concepts that can be 
 used to build on their existing methods to implement a transparent and reproducible data workflow. 
@@ -89,9 +91,9 @@ for a wide range of individuals with differing roles within small and large rese
 General principles and guidelines are presented separately from implementation and examples. 
 Additionally, the training modules will be developed on-site with NIH-funded microbiology 
 and immunology labs devoted to anti-tuberculosis drug and vaccine development. 
-\textbf{Our ultimate educational goal is introduce the language, concepts, and tools of R-based 
-``tidy'' data structures to the laboratory bench scientist whose attention is rather to their 
-experimental technique and collection of accurate data, and who may have little or no background 
+\textbf{Our primary educational goal is to introduce the language, concepts, and tools of an R-based 
+ecosystem for reproducible research to laboratory bench scientists whose attention is rather to 
+their experimental technique and collection of accurate data, and who may have little or no background 
 in the use of general purpose software tools.} While this proposal uses examples from microbiology 
 and immunology experiments, the collection of primary data in a flexible, open source, 
 transparent, and reproducible format or data structure that can be kept in it's primary state 
@@ -100,8 +102,9 @@ small scale biomedical science projects.
 
 \begin{figure}[ht] \includegraphics[width =
 \textwidth, trim={0 9cm 0 3cm}, clip]{figures/workflow.png} 
-\caption{Data workflows with spreadsheet-combined data recording and pre-processing, 
-and separation of data recording and pre-processing using a  ``tidy'' data structure.} 
+\caption{Example data workflows illustrating the spreadsheet-based output from
+combined data recording and analysis, and combined data-recording and pre-processsing as potential
+critial points of failure for reproducible research.} 
 \label{fig:workflow} \end{figure}
 
 
