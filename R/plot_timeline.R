@@ -209,7 +209,7 @@ my_timeline <- my_df %>%
   facet_wrap(~ milestones, ncol = 1, scales = "free_y") 
 
 # Write out as pdf
-pdf("figures/timeline.pdf", width = 10, height = 11.5)
+pdf("figures/timeline.pdf", width = 10, height = 11)
 ggthemr("dust")
 print(my_timeline)
 ggthemr_reset()
