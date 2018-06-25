@@ -476,19 +476,16 @@ languages.
 \subsubsection*{Format for the training modules}
 
 \textbf{Online book.} We will use an online book to collect all the training
-materials in a single structure. Each chapter of the book will contain all the
-materials from one of the modules listed in Tables \ref{tab:content_one} and
+materials we develop in a single online document. Each chapter of the book will contain the
+materials for one of the modules listed in Tables \ref{tab:content_one} and
 \ref{tab:content_two}, for twenty chapters total. We have created a prototype
 (Figure \ref{fig:prototype}) to demonstrate some features of the final book.
 Users will be able to quickly navigate through chapters with a navigation bar on
 the left of the webpage, with chapter subsection links opening when a chapter is
-selected. We will embed the lecture video at the start of the chapter, allowing
-a user to watch the video content without leaving the book website, which
-prevent having to ``hop around" online to watch the video and then access
-written text and additional educational materials in the book. This type of format, 
-in which video content is woven into written and additional materials, has been
+selected. We will embed a lecture video at the start of the chapter, allowing
+a user to watch the video content without leaving the book website. This type of format, 
+in which video content is woven together with written text and additional educational materials, has been
 praised as an effective format for presenting online training materials \cite{searls2012online}.
-
 The book will
 include a link for the trainee to download a copy as a PDF or EPUB file, to use
 as a future reference offline if desired. The format also includes buttons that
@@ -497,33 +494,23 @@ other platforms, as well as a link to the book's \textit{GitHub} repository, to 
 early users of the in-development materials to provide feedback on typos, broken
 links, unclear materials, and other issues to iron out as we develop the
 materials. 
-
-We will create this online book using the \textit{bookdown} framework
-\cite{xie2016bookdown}. This in an innovative framework that will allow us to
-create a searchable online book that weaves R code into the text and that can
-include embedded tutorial videos, active web links to online references, and
-computationally reproducible practice examples and exercises. Further, by
-including R code examples as executable code, we will be able to use this online
-book to frequently check tutorial code examples to quickly identify and fix any
-broken tutorial code \cite{xie2016bookdown}. We will use \textit{GitHub}'s \textit{Git Pages} to
+We will use \textit{GitHub}'s \textit{Git Pages} to
 freely post this book online. Dr. Anderson (PI) has previously created two
-\textit{bookdown}-based books, \textit{R Programming for Research} and
-\textit{Mastering Software Development in R}, and has posted and maintained
-\textit{R Programming for Research} online continuously since Fall 2016 through
-Git Pages.  
+\textit{bookdown}-based books, \textit{R Programming for Research} \cite{andersoncoursebook} and
+\textit{Mastering Software Development in R} \cite{andersonmastering}, and has posted and maintained
+\textit{R Programming for Research} online through \textit{GitHub Pages} continuously since Fall 2016, providing evidence of the robustness of this method of dissemination.  
 
-\textbf{Video lectures.} ``Video lectures have many advantages: a sense of immediacy, the feeling of a personal touch, helpful emphasis and nuance in the presentation, and the simple fact that a memorable professor makes for memorable subject matter. In such skilled hands, the video format affords the use of techniques that have been shown to enhance learning, including not only visual material but also expressions of enthusiasm by the lecturer and even humor [2]." \cite{searls2012ten}
-Each chapter will include a video lecture that covers
+\textbf{Video lectures.} 
+Since videos can engage online learners better than some other types of learning materials \cite{searls2012ten}, each chapter will include a video lecture that covers
 the module's material, with the approximate length of each lecture listed in
 Tables \ref{tab:content_one} and \ref{tab:content_two}. We will record these
 video lectures in CSU's Computer Assisted Teaching Support laboratory (see
-letter from Dr. West), which includes equipment and staff for creating
+letter from Dr. Andrew West), which includes equipment and staff for creating
 professional-quality video lectures. We will use YouTube to freely host these
-videos and embed the video within the text of that module's chapter in the
+videos, which will allow us to embed the video within the text of the module's chapter in the
 online book (see Figure \ref{fig:prototype} for an example of how this will look
-to trainees). Trainees will be able to watch each of these videos without
-leaving the online books webpage, while hosting them through YouTube will allow
-us to take advantage of their excellent, free, and well-tested platform for
+to trainees).Hosting the video lectures through YouTube will allow
+us to take advantage of YouTube's excellent, free, and well-tested platform for
 sharing videos, as well as allow us to collect detailed analytics on how often
 each video is watched and for how long, to help us assess the use of this
 component of the training material. 
@@ -531,36 +518,35 @@ component of the training material.
 \textbf{Additional educational materials.} Each module will contain additional
 educational material, to help the trainee absorb the material and assess his or
 her mastery of the topics. Depending on the module, this additional content will
-either be a quiz, questions for discussion, or an applied exercise to try out
-the implementation of a tool or principle covered in the module (see Tables
+either be a quiz, questions for discussion, or an applied exercise (see Tables
 \ref{tab:content_one} and \ref{tab:content_two} for the specific material
-planned for each module). For many of the \textit{Implementation} modules, these extra educational materials will be applied examples, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten, searls2012ten, via2011ten}, while including quizzes within training content help trainees self-evaluate their mastery of the material \cite{searls2012ten, via2011ten}. To help engage trainees, we will include audio and
+planned for each module). For many of the \textit{Implementation} modules, these extra educational materials will be applied exercises, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten, searls2012ten, via2011ten}. Including quizzes as the additional educational material within some of the modules will help trainees self-evaluate their mastery of the material \cite{searls2012ten, via2011ten}. 
+
+To help engage trainees, we will include audio and
 video content walking the trainee through answers and solutions for these
 additional materials. While not a substitute for in-person training, these video
-and audio discussions of the materials is meant to mimic the detailed
+and audio discussions helps mimic the detailed
 walk-throughs and discussions that we would do after a student attempted these
-materials if we were teaching these materials in person. We will tape the video
-and audio content in CSU's Computer Assisted Teaching Support laboratory (see
-letter from Dr. West). We will host the video content through YouTube and the
-audio content through SoundCloud and embed this content in the online book, as
-with the video lectures. We will use Google Forms as a free and unlimited way
+materials if we were teaching these materials in person. As with the video lectures, we will tape this video
+and audio content in CSU's Computer Assisted Teaching Support laboratory. We will host the video content through YouTube and the
+audio content through SoundCloud and embed this content in the online book. We will use Google Forms as a free and unlimited way
 for us to create the quizzes and embed them in the online book [ref].
 
 \noindent \textbf{Insuring compliance with Rehabilitation Act.} We have plans
-for making our proposed training module section 508 compliant of the
-Rehabilitation Act (29 U.S.C. '794 d), as amended by the Workforce Investment
+for making our proposed training module compliant with the
+Rehabilitation Act, as amended by the Workforce Investment
 Act of 1998. Much of the online content will be text based. For figures and
 other images in the book, we will use \textit{alt} and \textit{longdesc} attributes
 within the image tag to provide a text alternative. Using YouTube to host the
-lecture videos will allow us to draw on their functionality for accessibility,
-including ``enough time" requirements in terms of being able to pause and turn
+lecture videos will allow us to draw on that platform's functionality for accessibility,
+including ``enough time" functionality, in terms of being able to pause and turn
 off the content. YouTube allows users to add and edit closed caption content on
 their videos, which we will use to add optional closed captions to this
 content---in addition to improving accessibility of the content, it may also
-help trainees for whom English is a second language to follow the content. In
-the first two years of the grant, we will have a student hourly who will assist
+help trainees for whom English is a second language to follow the video lectures. In
+the first two years of the grant, our team will include a student hourly who will assist
 Dr. Anderson in the technical implementation of the online book, and helping to
-ensure the content is compliant with the Rehabilitation Act will be one of her
+ensure the content is compliant with the Rehabilitation Act will be one of his or her
 key tasks. If this task requires the use of interesting techniques or
 technologies, Dr. Anderson and the student may prepare a journal article
 describing these techniques and submit it to \textit{The R Journal} during the
@@ -572,29 +558,24 @@ software on these topics (e.g., \cite{uswebr, godfrey2013statistical}).
 
 \input{tables/team_description.tex}
 
-Our team (Table \ref{tab:team_description}) combines experts in R programming (Anderson, Lyons), including its use
-to improve the computational reproducibility of health-related research, with
-laboratory-based academic researchers in Microbiology and Immunology
+Our core team (Table \ref{tab:team_description}) combines experts in R programming (Anderson, Lyons) with
+laboratory-based biomedical researchers in microbiology and immunology
 (Henao-Tamayo, Gonzalez-Juarrero, Robertson) who are \textbf{attuned to the
 needs of and barriers to improving the reproducibility of experimental data
 collection and pre-processing among laboratory-based biomedical researchers}.
 Our team will allow us to develop training modules that present state-of-the-art
 approaches and tools for reproducibility, but do so in a way that is prioritized
-to be most useful and accessible to health researchers whose training has
-focused on laboratory-related, rather than computational, methods, and for whom
-existing training materials on computational reproducibility might be hard to
-understand or apply to their own research projects. 
+to be most useful and accessible to biomedical researchers whose training has
+focused on laboratory-related, rather than computational, research. 
 
 \noindent Our team will also include a to-be-named undergraduate student hourly and Dr. Julie Maertens (Research Associate), a senior evaluator
-at the Colorado State University STEM Center, which assists and collaborates
-with faculty involved with STEM education-based research and programming in
-designing and carrying out evaluations. The student hourly will assist Dr. Anderson
+at the Colorado State University STEM Center. The student hourly will assist Dr. Anderson
 in the technical work of publishing the content our team develops in an online book. 
 Dr. Maertens will assist in the design and
 implementation of project evaluation throughout this project. Dr. Maertens will
 only be involved in the project to assist in planning and implementing
 evaluation, and her percent effort is capped at 0.85\% to reflect the RFA's
-budget restriction of \$3,000 total on program evaluation, including salary
+budget restriction of \$3,000 on program evaluation, including salary
 support.
 
 \subsubsection*{Coordination and management of the team}
@@ -602,30 +583,28 @@ support.
 \input{tables/team_roles.tex}
 
 The Principal Investigator and all four Co-Investigators will collaborate to 
-develop the materials in the training modules. We have designed a plan (Table \ref{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the primary authors of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the first tester of the module and will work through the module material and provided detailed feedback to the two authors of the module for refining the material. The training materials for the module will then be tested on the next CSU pilot testing session (sessions will occur twice per year over the project period), and further refined based on that feedback, feedback from the two Co-Investigators who did not have the roles of author or first tester for that module, and any feedback from early online users. Dr. Anderson will then film the video lecture for the module. Throughout the project period, Dr. Anderson and the four Co-Investigators will meet as a group bi-monthly to check in on progress on the project. 
-
-Throughout the module development period (first two years of the project), Dr. Anderson and the undergraduate student will transfer the developed training content into the online book format and publish it online. Dr. Maertens will assist Dr. Anderson at points throughout the project period to develop materials for evaluation, including feedback surveys to use with CSU pilot testers, survey questions to include in the online book for evaluation purposes, and brief training on how to best elicit qualitative feedback from pilot testers during the biannual CSU pilot testing sessions.
+develop the materials in the training modules. We have designed a plan (Table \ref{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the \textbf{primary authors} of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the \textbf{first tester} of the module and will evaluate and test all module material, providing detailed feedback to the two authors of the module to allow them to refine the material. The training materials for the module will then be tested in an in-person CSU pilot testing session (sessions will occur twice per year over the project period, with each session testing the content for approximatelyfive modules), and further refined based on that feedback, as well as on feedback from the two Co-Investigators who did not have roles of author or first tester for that module, and any feedback from early online users. After this refinement based on early feedback, Dr. Anderson will film the video lecture for the module.  
+Throughout the module development period (first two years of the project), Dr. Anderson and the undergraduate student will transfer the developed training content into the online book format and publish it online, and Dr. Anderson will be in charge of maintaining and updating the online material during the third project year. Dr. Anderson will lead the planning and implementation of the CSU pilot testing sessions and other activities related to pilot testing and refinement of the training modules. Dr. Maertens will assist Dr. Anderson at points throughout the project period to develop materials for evaluation, including feedback surveys to use with CSU pilot testers, survey questions to include in the online book for evaluation purposes, and brief training on how to best elicit qualitative feedback from pilot testers during the biannual CSU pilot testing sessions. The four co-investigators will play key roles in disseminating the training materials to our key audience, as they are all well-connected withing the microbiology and immunology research communities. Throughout the project period, Dr. Anderson, the four co-investigators, Dr. Maertens, and the studeny hourly will meet as a group at least four times per project year to check in on progress on the project. 
 
 Our plan of content development and publishing is ambitious, but we are
 confident we can meet it. Dr. Anderson previously developed the online content,
-in collaboration with a co-instructor, for a five-course specialization with
+in collaboration with a co-instructor, for a five-course specialization (\textit{Mastering Software Development with R}, see letter from Dr. Roger Peng) with
 approximately twice as much content in under nine months. She has experience
 developing and publishing online training materials for learning R-based tools,
 including through the \textit{bookdown} online book framework we plan to use
 here. In this previous development of online training materials, Dr. Anderson
-learned to collaborate closely with co-authors in developing and refining the
+learned to collaborate closely with co-authors in developing and refining online educational
 content and in developing quizzes and applied exercises to allow trainees to
-test their understanding of the content. She will bring that experience in the
+test their understanding of that content. She will bring that experience in the
 proposed project, to help organize and integrate the contributions of our team
 of co-investigators. For the technical development of the book, she will be
 assisted by and supervise an undergraduate hourly during the first two years of
 the project, to help in turning the intellectual content that she and the
-co-investigators develop into the formatted online book. She will work with Dr.
-Maertens to solidify and implement evaluations of the training materials.
+co-investigators develop into the formatted online book. 
 
 \subsection{Institutional Environment and Commitment}
 
-Colorado State University is a Research-I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's land-grant university, CSU has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community. Colorado State University is very supportive of improving the reproducibility of
+Colorado State University is a Research I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's landgrant university, CSU has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community and strongly values its history and continuing commitment to sharing cutting-edge scientific knowledge through outreach education activities. Colorado State University is very supportive of improving the reproducibility of
 research, and it offers ample resources that will help us ensure the success of
 the proposed project. \textbf{Our institution has clearly expressed its support
 for our proposed effort to create, refine, evaluate, and disseminate these
@@ -640,7 +619,7 @@ proposal. As also expressed in that letter, Dr. Anderson's department supports
 that the training materials developed under this grant will be made freely
 available through online publication under a Creative Commons license. Dr.
 Anderson's department has supported her previous development and publication of
-similarly free and open training materials following a similar format [ref].
+similarly free and open training materials following a similar format \cite{andersoncoursebook, andersonmastering}.
 
 Colorado State University is host to a large number of laboratory-based
 biomedical researchers, especially in fields related to drug and vaccine
@@ -648,20 +627,19 @@ development for infectious diseases. We will \textbf{take advantage of this
 environment} to help us pilot test and refine the training materials, to ensure
 they are clear, relevant, and useful to our target population of
 laboratory-based biomedical researchers. We have received statements of support
-from relevant programs, including the the director of the CSU Interdisciplinary
-Graduate Program in Cell \& Molecular Biology, and Associate Director of the
-Interdisciplinary NSF-NRT GAUSSI training program in Computational Biology, to
+from relevant programs---including the director of the CSU Interdisciplinary
+Graduate Program in Cell \& Molecular Biology and the Associate Director of the
+Interdisciplinary NSF-NRT GAUSSI training program in Computational Biology---to
 help disseminate our materials to pilot testers and early users of our training
-materials within CSU (see letters from Drs. Dean Gregg, Carol Wilusz, and Jeff
+materials on-campus at CSU (see letters from Drs. Dean Gregg, Carol Wilusz, and Jeff
 Wilusz). 
 
-Colorado State University offers many excellent facilities that we will take
-advantage of to help us achieve our project's goals. CSU provides meeting rooms
+CSU provides meeting rooms
 that we can reserve free-of-charge to use for the CSU-based user testings. The
 Computer Assisted Teaching Support (CATS) laboratory at CSU's Academy for
 Teaching and Learning has professional-grade recording equipment that we will
 use to record the video lectures within each module (see letter from Dr. Andrew
-West). CSU's STEM Center will provide help in evaluating the training modules,
+West), and CSU's STEM Center will provide help in evaluating the training modules,
 including through the budgeted involvement of Dr. Julie Maertens, a senior
 evaluator at the center. 
 
