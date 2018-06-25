@@ -661,20 +661,20 @@ to help identify weaknesses and to provide suggestions for improvements, and
 \textbf{make the evaluation and feedback data} available to NIGMS staff."
 \end{quotation}
 
-\input{tables/evaluation.tex}
+\textbf{Pilot testing}
 
-We will use [x] different methods for pilot testing and evaluating these materials: ... We expect that these different methods will allow us to collect different sets of 
+\textbf{We will pilot test the training materials using three methods: (1) biannual on-campus  day-long pilot testing at Colorado State University (two sessions per project year, six total over the project); (2) a workshop at the [AAM] in year 2 of the project; and (3) early online users of the training materials.} We expect that these different methods will allow us to collect different sets of 
 feedback on the frequency of use and usefulness of the training materials (Table \ref{tab:evaluation}), providing a rich collection of ideas for us to use in refining the materials. Examples of what we hope to learn from each group in pilot testing and evaluation (Tables \ref{tab:evaluation}). For each of the modules, we have outlined learning objectives will help us evaluate if the training modules are useful in achieving their educational goals (Tables \ref{tab:content_one} and \ref{tab:content_two}).
 
-\textbf{Biannual CSU pilot testing sessions.}
+\textbf{Biannual Colorado State University pilot testing sessions.}
 We will conduct two, day-long pilot testing sessions at CSU in each year of the
-project. The CSU user testing groups will consist of current and future
+project. The CSU pilot testing participants will include current and future
 laboratory-based biomedical researchers. We will recruit trainees with a variety
 of research roles, including undergraduate students, graduate students,
 postdoctoral fellows, research associates, and principal investigators. We have
 informed several CSU biomedical researchers about these proposed testing
 sessions and received their support in encouraging CSU researchers within their
-groups and departments to participate (see letters from ...). 
+groups and departments to participate (see letters from Drs. Gregg Dean, Carol Wilusz, and Jeff Wilusz). 
 
 In the first two project years, each session will test the set of modules
 developed since the last user testing (approximately five modules will be tested
@@ -689,18 +689,14 @@ out problems with the clarity or implementation of these materials. The trainees
 will have access to the in-development online book as they work through these
 materials. In the last year of the project, these sessions will revisit the material
 in modules that proved problematic in their first round of pilot testing, allowing us
-to re-test approximately ten of the modules (five tested per session in project year 3). [We can ask these pilot users many questions, both before and after the pilot testing. Further, we will have access to ask them longer-term outcomes, as well as to ask at the department level how the use of these training materials by a number of people in the department has changed research practices and what is considered ``best practice" for research in the department (i.e., a `bubble up" effect).]
-
-Dr. Anderson (PI) has experience in productively conducting these kinds of user
+to re-test approximately ten of the modules (five tested per session in project year 3).
+To solicit specific feedback from these sessions, we will survey the participants during the sessions (for examples of the types of feedback we will collect through these surveys, see Table \ref{tab:evaluation}). Six months after each pilot testing session, we will send participants a follow-up survey, to help evaluate longer-term success of the training in improving the reproducibility of data recording and pre-processing. Dr. Anderson (PI) has experience in productively conducting these kinds of user
 testing sessions at CSU. She has run several two-hour user testing sessions with
 students from various departments of Colorado State University prior to
 releasing R software packages \cite{futureheatwaves, countyweather}. Further, in
 April 2016, she led a longer, two-day user testing session through a Weather
 Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}).
-Around 15 people participated, including undergraduate students, graduate
-students, postdoctoral fellows, and professors from CSU's Departments of
-Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and
-Statistics. Some of the ideas and code developed during this Hackathon have
+Some of the ideas and code developed during this Hackathon have
 since led to development and publication of open source software
 \cite{countyfloods, noaastormevents}.
 
@@ -708,21 +704,59 @@ since led to development and publication of open source software
 0.6\textwidth]{figures/csu_hackathon.png} \caption{Some of the approximately 15
 undergraduate students, graduate students, postdoctoral fellows, and professors
 who participated in a two-day Weather Data Hackathon at Colorado State
-University in April 2016 led by Dr. Anderson.} \label{csu-r-hackathon}
+University in April 2016 led by Dr. Anderson. Around 15 people participated, including from CSU's Departments of
+Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and
+Statistics. } \label{csu-r-hackathon}
 \end{SCfigure}
 
-\textbf{Participants in American Society for Microbiology pre-conference workshop.} [For these people, we could definitely do a survey before to get information on demographics, education level, interest in the training materials, etc. We could also do a post survey to find out what they learned, how helpful it was, what they found confusing, etc. Finally, we could get their email addresses to ask some longer-term evaluation questions (e.g., How are they using what they learned 1--2 years after taking the workshop? How much did they retain in terms of principles, implementation, and examples?). We can also use questions that are asked during the workshops and areas where additional materials (applied exercises, quizzes, discussion questions) are problematic to help us hone our training materials.]
+\textbf{American Society for Microbiology pre-conference workshop.}
+The American Society for Microbiology presents pre-conference workshops at its annual 
+conference, for which scientists can submit proposals. We will submit a proposal 
+to lead a day-long workshop at the ASM conference in year 2 of the project. This 
+workshop will cover the content of most of the training modules listed in Tables
+\ref{tab:content_one} and \ref{tab:content_two}. It will include live lectures of the 
+materials from the online video lectures, as well as directed work through the 
+additional educational materials for each module. As with the CSU pilot testing sessions, we will use surveys to get immediate and follow-up (six months after, to evaluate longer-term outcomes) feedback from 
+the participants of this workshop.
 
-\textbf{Trainees who access and use the online book and embedded materials.}  We will plan to develop and post the text and some of the additional educational materials (e.g., quizzes, discussion questions) online through \textit{GitHub} \textit{as we write the book and develop the materials}. We will use social media to invite people to try out the book as we develop it. Based on previous work developing online books, we have found that this open development process can help attract users very early in the process, and that these users are often very helpful in providing feedback as the book is developed. We will elicit their feedback through \textit{GitHub} (``Issues" page will be the main forum for them to post comments and suggestions). [These could potentially be from anywhere in the world, and for many we won't have great ways to contact them.]
+\textbf{Early online users.}  We will develop the book openly online from the start of 
+the project, including posting all underlying code online at \textit{GitHub} and 
+posting the current version of the online book through \textit{GitHub Pages}, using 
+\textit{Travis Continuous Integration} to rebuild the book each time we commit 
+changes to its underlying code. Dr. Anderson has used a similar development process
+with an online coursebook \textit{andersoncoursebook}; this open development process
+helps attract early users and also provides book users with a real-life view of how 
+version control tools and platforms can enable ``live" development of a project. We will 
+have a first version of the written text for the online book for at least five of the 
+modules ready by the first CSU pilot testing session (approximately six months into year 1 of the project); at this point, we will actively recruit early online users through
+social media and through our networks R users (Anderson and Lyons) and biomedical researchers (Gonzalez-Juarrero, Henao-Tamayo, and Robertson). We will enable Google Analytics on the online book's webpage, which will allow us to track how many people 
+access the online book, how often they stay on the book's page, and the distribution of these early users across the United States and the world. 
+Similarly, analytics from the platforms we use to host embedded material (YouTube,
+SoundCloud, and Google Forms) will allow us to track the use of those materials.
+We will also use Google Forms to create voluntary surveys within the online book, to generate additional feedback from these early users in terms of their characteristics and on the usefulness of the modules.  While this voluntary survey will not provide data on \textit{all} early online users, it will help characterize a collection of the users, and we selected to make the survey voluntary (rather than required to access the book) in hopes of making the book as accessible as possible, and to avoid discouraging users who might be drawn in by browsing the materials before committing to provide their information or feedback.
+
+\textbf{External program evaluation}
+
+An external evaluation of the proposed training modules program will be conducted by Julie Maertens in the Colorado State University STEM Center, which facilitates collaborations among STEM-related education and outreach projects within and outside CSU. Dr. Maertens has conducted several large-scale, multi-site youth program evaluations in conjunction with the State of Colorado, and also regularly works with researchers in- and outside of Colorado to implement STEM education and outreach evaluations. She currently leads the evaluation of three federally funded projects designed to: (1) Create a pre-service secondary teacher program that integrates the requirements for traditional engineering undergraduate degree programs; (2) Improve recruitment and persistence of women in the geosciences using a deliberate mentorship approach, and (3) Improve recruitment and retention of underrepresented minorities in computational biology and genomics by creating and conducting week-long workshops in Todos Santos, Mexico.
+
+The conceptual framework for the evaluation will be organized using the CIPP model, which is designed to guide project decision-making based on assessment of a program’s context, input, process and product \cite{stufflebeam2004cipp}. The operational framework will use observable data to conduct both formative [F] and summative [S] evaluation of the program, and will focus on 2 main areas of the conceptual evaluation model to determine: 1) How well the program is implemented (\textit{process}), and 2) How well the proposed modules and training activities meet the program objectives (\textit{product}).
+
+Evaluation data will include baseline program metrics as well as measures to gauge the short- and long-term success of the proposed training modules in achieving program objectives. Examples of data to be collected include:
 
 \begin{itemize}
-\item Google Analytics for online book's website.
-\item YouTube analytics for the embedded videos. 
-\item Quiz for some modules. Use to evaluate how well they've mastered the material. Use Google Forms to embed these quizzes.
-\item Link to voluntary survey in each chapter of the online book: Educational level, demographic characteristics. Includes rating for the usefulness of that module.
+\item Number, educational level, and demographics of online module users (where available; survey participation is optional)
+\item Brief post-course evaluation of module usefulness (e.g., accessibility, content, goals, structure, overall experience) among online module users (where available; survey participation is optional)
+\item Number, educational level, and demographics of in-person test users
+\item In depth, 15-point post-course evaluation of module usefulness among in-person test users
+\item Follow-up surveys among in-person test users to determine future usefulness of the modules (e.g., how and whether module content is applied to future research activities)
+\item Project team implementation surveys
 \end{itemize}
 
-\textbf{Non-CSU pilot testers.} All same as the online testers, plus some more detailed qualitative information.
+In addition to the proposed data collection, Dr. Maertens will train the project team to collect qualitative data among test users during the day-long user testing sessions (on-campus at CSU and at the ASM workshop), and how to use a qualitative content analysis process to extract ‘themes’ related to feedback (e.g., strengths, weaknesses) about the modules. These themes may be used, along with the evaluation survey data, to make iterative improvements to the modules each year.
+
+Survey results will be presented annually via written report, and will summarize all findings and iterative program changes and provide recommendations for future programming. See Table \ref{tab:external_evaluation} for evaluation questions and methods.
+
+\input{tables/external_evaluation.tex}
 
 \subsection{Dissemination Plan}
 
