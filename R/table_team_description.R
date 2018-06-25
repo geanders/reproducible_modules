@@ -31,16 +31,16 @@ my_table <- tribble(
   \\textit{Dept. of Microbiology, Immunology \\& Pathology}", 
   
   "Dr. Lyons works on the computational biology and
-  pharmacology of tuberculosis (TB) infection and treatment in experimental animal
-  models and TB patients. Prior to joining CSU full-time in 2011, he was a
+  pharmacology of tuberculosis infection and treatment in experimental animal
+  models and tuberculosis patients. Prior to joining CSU full-time in 2011, he was a
   software engineer in the computer industry for 12 years, and prior to that, a
   theoretical physicist. Through a K25 award, he obtained significant classroom
   and hands-on training and exposure to laboratory methods related to drug and
-  vaccine development for TB, providing him with a solid understanding of how
+  vaccine development for tuberculosis, providing him with a solid understanding of how
   preclinical and clinical data are used for evidence-based decision making in the
   biomedical sciences. He is highly attuned to the problems that this project aims
   to address, and he has a clear understanding of the practical limitations and
-  challenges for both the laboratory scientist and data analyst.",
+  challenges for both the laboratory scientist and data analyst. He uses R daily in his academic research",
   
   "\\textbf{Mercedes Gonzalez-Juarrero} 
   
@@ -56,15 +56,13 @@ my_table <- tribble(
   immunosuppression during pulmonary tuberculosis, with the primary goal of
   learning how and where to target the latently infected host to fully recover the
   antimicrobial activity of the infected cell, and how to use this information in
-  the context of current chemotherapeutic and multidrug resistant TB infections.
+  the context of current chemotherapeutic and multidrug resistant tuberculosis infections.
   Dr. Gonzalez-Juarrero became particularly interested in how to improve the
   reproducibility, transparency, and efficiency of experimental data recording
-  within her research projects when she attended Dr. Anderson's (PI) CSU course on
+  within her research projects when she attended Dr. Anderson's CSU course on
   \\textit{R Programming for Research} in Fall 2017 and learned about the
-  principles of structured data formats, including the 'tidy' data format now
-  popular with statisticians. This realization led to important discussions with
-  Drs. Anderson and Lyons regarding data recording and understanding the role of
-  each scientist from data recording through to analysis.",
+  principles of structured data formats, including the \``tidy\" data format now
+  popular with statisticians, and she has begun implementing these principles in her research laboratory.",
   
   "\\textbf{Marcela Henao-Tamayo}
   
@@ -78,8 +76,8 @@ my_table <- tribble(
   
   "Dr. Henao-Tamayo studies the immunopathogenesis of
   tuberculosis using animal models to evaluate the role of different types of T
-  cells and Myeloid Derived cells in tuberculosis and BCG vaccination (Bacille
-  Calmette Guerin, the only approved vaccine against TB). She has tested numerous
+  cells and myeloid-derived cells in tuberculosis and Bacille
+  Calmette Guerin vaccination. She has tested numerous
   vaccine candidates evaluating the immune response they elicit in association
   with protection against tuberculosis disease. She is interested in how existing
   tools for computational reproducibility can be applied to data recording and
@@ -97,20 +95,20 @@ my_table <- tribble(
   \\textit{Dept. of Microbiology, Immunology \\& Pathology}",
   
   "Dr. Robertson has more than 20 years of classical and clinical microbiology
-  experience with emphasis in antibacterial discovery and mode-of-action studies
+  experience, with an emphasis in antibacterial discovery and mode-of-action studies
   for novel and existing classes of antimicrobials. This includes efforts in
   academia, and also with larger pharmaceutical corporations (Eli Lilly and Co)
   and smaller bio-pharmaceutical groups (Cumbre Pharmaceuticals). His current
-  research is focused on \textit{Mycobacterium tuberculosis} host-pathogen
+  research is focused on \\textit{Mycobacterium tuberculosis} host-pathogen
   interactions and the development and application of novel preclinical animal
   models to further anti-tuberculosis drug development and evaluate drug
   resistance. In the context of improving reproducibility in biomedical research,
   Dr. Robertson is particularly passionate about the perils of using spreadsheets
-  with embedded macros as a tool for recording and analyzing experimental data."
+  with embedded formulas as a tool for recording and analyzing experimental data."
 ) %>%   
   kable("latex", booktabs = T, escape = FALSE, 
           align = 'l',
-          caption = "\\label{tab:team_description} Key members of our project team.") %>%
+          caption = "\\label{tab:team_description} Principal and co-investigators on our project team.") %>%
   kable_styling(latex_options = c("striped", "hold_position", "scale_down"), 
                 font_size = 8) %>% 
   column_spec(1, width = "14em") %>% 
