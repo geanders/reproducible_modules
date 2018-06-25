@@ -56,7 +56,7 @@ my_table <- tribble(
                                 "\\textbf{Undergraduate}\n\\textbf{student}\nwho wants an\nintroduction\nto improving\nreproducibility\nof data\nrecording"),
                               align = 'c'),
         caption = "\\label{tab:tracks} Examples of how different types of trainees might use subsets of the training modules to meet their specific training needs.") %>% 
-  kable_styling(latex_options = c("striped", "repeat_header"), 
+  kable_styling(latex_options = c("striped", "repeat_header", "scale_down"), 
                 font_size = 9) %>% 
   row_spec(0, align = 'c') %>% 
   column_spec(1, width = "28em") %>% 

@@ -261,7 +261,7 @@ my_table <- tribble(
   select(-Type) %>% 
   kable("latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
         caption = "\\label{tab:content_two} Modules for the second sequence, \\textbf{'Improving the Reproducibility of Experimental Data Pre-Processing'}. The color of each module's title indicates whether the module focuses on \\textbf{Principles} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
-  kable_styling(latex_options = c("striped", "repeat_header"), 
+  kable_styling(latex_options = c("striped", "repeat_header", "scale_down"), 
                 font_size = 9) %>% 
   column_spec(1, bold = TRUE, width = "10em") %>% 
   column_spec(2, width = "30em") %>% 
