@@ -111,7 +111,7 @@ my_table <- tribble(
   kable("latex", booktabs = T, escape = FALSE, 
           align = 'l',
           caption = "\\label{tab:team_description} Key members of our project team.") %>%
-  kable_styling(latex_options = c("striped", "hold_position"), 
+  kable_styling(latex_options = c("striped", "hold_position", "scale_down"), 
                 font_size = 8) %>% 
   column_spec(1, width = "14em") %>% 
   column_spec(2, width = "45em")
