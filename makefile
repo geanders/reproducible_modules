@@ -2,7 +2,7 @@ all: pdf/budget_justification.pdf pdf/cover_letter.pdf pdf/human_subjects.pdf \
   pdf/project_abstract.pdf pdf/project_narrative.pdf pdf/research_approach.pdf \
   pdf/research_environment.pdf pdf/specific_aims.pdf pdf/module_content_tables.pdf \
   pdf/module_track_table.pdf pdf/evaluation_table.pdf pdf/criteria_for_review.pdf \
-  pdf/timeline.pdf pdf/team_roles_table.pdf pdf/team_description_table.pdf
+  pdf/timeline.pdf pdf/team_roles_table.pdf pdf/team_description_table.pdf 
 
 pdf/budget_justification.pdf: writing/budget_justification.tex
 	pdflatex writing/budget_justification; 
@@ -53,7 +53,7 @@ pdf/research_approach.pdf: rep_modules.bib writing/research_approach.tex \
  tables/evaluation.tex tables/module_content_data_preprocessing.tex \
  tables/module_tracks.tex tables/module_content_data_recording.tex \
  tables/team_description.tex tables/team_roles.tex \
- figures/timeline.pdf
+ tables/external_evaluation.tex figures/timeline.pdf 
 	pdflatex writing/research_approach
 	bibtex research_approach
 	pdflatex writing/research_approach
@@ -115,6 +115,10 @@ tables/module_tracks.tex: R/table_module_tracks.R
 tables/evaluation.tex: R/table_evaluation.R
 	R CMD BATCH R/table_evaluation.R
 	rm table_evaluation.Rout
+	
+tables/external_evaluation.tex: R/table_external_evaluation.R
+	R CMD BATCH R/table_external_evaluation.R
+	rm table_external_evaluation.Rout
 	
 tables/team_roles.tex: R/table_team_roles.R
 	R CMD BATCH R/table_team_roles.R
