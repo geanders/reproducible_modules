@@ -1,7 +1,5 @@
-- LOS: Rudolph
 - LOS: Other group's LOS
 - Make sure we have draft documents for all components required for the proposal
-- Describe why the proposed training module content is significant
 - Draft human subjects piece
     + Exemption 1 (research conducting in an educational setting involving
       normal education practices)
@@ -9,6 +7,4 @@
       evaluation surveys?
     + Do we need to add something about how we safely store the data?
 - Complete draft on Facilities & Other Resources
-- Complete the evaluation table
-- Better quality figure for our prototype
 - Finalize cover letter
