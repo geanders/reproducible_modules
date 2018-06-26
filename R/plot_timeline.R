@@ -121,7 +121,7 @@ my_df <- tribble(
   ymd("2021-09-02"),
 
   "Module piloting and evaluation",
-  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  "Follow-up surveys to CSU pilot testers\nand ASM workshop participants",
   ymd("2020-03-01"),
   ymd("2020-03-02"),
 

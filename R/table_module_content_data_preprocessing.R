@@ -98,7 +98,7 @@ my_table <- tribble(
   scale and complexity of these data, software for pre-processing the data in R
   often uses complex, 'untidy' data formats. While these formats are necessary
   for computational efficiency, they add a critical barrier for researchers wishing
-  to implement reproduciblity tools. In this module, we will 
+  to implement reproducibility tools. In this module, we will 
   explain why use of complex data formats is
   often necessary within open source pre-processing software 
   and outline the hurdles created in 
@@ -174,7 +174,7 @@ my_table <- tribble(
 
 # Module 7
   "Introduction to reproducible data pre-processing protocols", "Principles",
-  "Reproducibility tools can be used to create reproducible data pre-precessing 
+  "Reproducibility tools can be used to create reproducible data pre-processing 
     protocols---documents that combine code and text in a 
   'knitted' document, which can be re-used to ensure data pre-processing is consistent
   and reproducible across research 
