@@ -6,7 +6,9 @@ my_table <- tribble(
   ~ ` `, ~ `Evaluation Questions \\& Function`, ~ `Data Collection`, ~ `Timing`,
   
   "Process", 
-  "To what extent is the program implemented as proposed? [F \\& S]",
+  "To what extent is the program implemented as proposed? 
+  
+  \\textit{(Formative [F] \\& Summative [S])}",
   "\\tabitem Project team surveys to determine the extent to which the program activities are 
   implemented as planned, whether activities take place within the proposed time frame, 
   what barriers to implementation are encountered, and whether and how data collected are 
@@ -15,7 +17,9 @@ my_table <- tribble(
   
   "Product",
   "How well does implementation of the training modules meet the 
-  program objectives? [F \\& S]",
+  program objectives? 
+  
+  \\textit{(Formative [F] \\& Summative [S])}",
   "\\tabitem Survey data collected to understand whether and how well the training modules 
   impact short- and long-term participant learning and utility outcomes of interest",
   "Years 1--3"
