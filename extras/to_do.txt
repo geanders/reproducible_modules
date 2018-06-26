@@ -1,5 +1,5 @@
 Mike's:
-- Update Project Abstract 
+- Update the Project Abstract 
 - Mike take a last pass at Specific Aims
 - Take one more pass at tables 1 and 2
 - Take a look at Human Subjects
