@@ -10,12 +10,12 @@ my_table <- tribble(
 # Module 1  
   "Separating data recording and analysis", "Principles",
     "Many biomedical laboratories currently use spreadsheets, with embedded macros, 
-      to both record and analyze experimental data. This practice empedes the transparency
+      to both record and analyze experimental data. This practice impedes the transparency
       and reproducibility of both data recording and data analysis. In this module, we 
       will describe this common practice and explain how it impedes the transparency and
       reproducibility of data recording and analysis. We will then outline alternative
       approaches that separate the steps of data recording and data analysis and explain
-      how these alternative approaches can improve the reproducbility of biomedical 
+      how these alternative approaches can improve the reproducibility of biomedical 
       research.", 
     "\\tabitem Explain the difference between data recording and data analysis 
 
@@ -159,7 +159,7 @@ my_table <- tribble(
   "Creating 'Project' templates", "Implementation",
     "Researchers can use RStudio's 'Projects' interface to implement the structured
       collection of files for a research project in a single directory, with the added
-      benefits that this interface faciliates use of version control. 
+      benefits that this interface facilitates use of version control. 
       Researchers can gain even more benefits, in terms of improving both the reproducibility
       and efficiency of research, by using a consistent structure for the 'Project' 
       directories for all of the research projects for a research group. We will demonstrate 
