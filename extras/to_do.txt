@@ -38,3 +38,4 @@ Brooke's:
 - Research approach---work in Mike's suggestions
 - Make repo public (and move to GitHub?)
 - Any extra refs for formatting (YouTube, Google Analytics, Google Forms)?
+- Fill out assignment request form
