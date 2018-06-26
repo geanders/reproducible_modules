@@ -9,7 +9,7 @@ my_table <- tribble(
   "\\tabitem Highest educational degree", "Yes",  "Yes", "Yes",
   "\\tabitem Research role (e.g., principal investigator, research associate, graduate student)", "Yes", "Yes", "Yes",
   
-  "\\tabitem How many trainees have accessed online book?", "No", "No", "Yes",
+  "\\tabitem How many trainees have accessed the online book?", "No", "No", "Yes",
   "\\tabitem How are online book users distributed across the U.S.?", "No", "No", "Yes",
   "\\tabitem How many international trainees have accessed the online book?", "No", "No", "Yes",
   "\\tabitem How many trainees attended the ASM workshop?", "No", "Yes", "No",
@@ -29,7 +29,7 @@ my_table <- tribble(
   "\\tabitem Was the module useful enough that the trainee would recommend it to other scientists?", "Yes", "Yes", "Yes",
   "\\tabitem Which elements of the training modules (video lecture, written text, additional educational materials) did the trainee find most useful?", "Yes", "Yes", "No",
   "\\tabitem For each module video, are there spots where it is common for trainees to stop watching?", "No", "No", "Yes",
-  "\\tabitem Why did the trainee chose which modules to use?", "Yes", "Yes", "No",
+  "\\tabitem How did the trainee chose which modules to use?", "Yes", "Yes", "No",
   "\\tabitem For the modules taken, what content did the trainee wish had been covered but was not?", "Yes", "Yes", "No"
 ) %>% 
   mutate(`CSU pilot testers` = cell_spec(`CSU pilot testers`, format = "latex",
@@ -46,13 +46,13 @@ my_table <- tribble(
                                                                      labels = c("white", "pink")))) %>% 
   kable("latex", booktabs = T, escape = FALSE, 
         align = 'c',
-        col.names = linebreak(c("", "CSU pilot testers", 
-                                "AAM workshop participants",
-                                "Online users")),
-        caption = "\\label{tab:evaluation} Pilot testing and evaluation of different groups.") %>% 
+        col.names = linebreak(c("", "CSU pilot\ntesters", 
+                                "ASM workshop\nparticipants",
+                                "Early online\nusers"), align = 'c'),
+        caption = "\\label{tab:evaluation} Examples of types of feedback we anticipate to generate from pilot testing among different groups to help us refine the training materials.") %>% 
   kable_styling(latex_options = c("repeat_header", "hold_position", "scaled_down"), 
                 font_size = 8) %>% 
-  row_spec(0, angle = 45) %>% 
+  row_spec(0, bold = TRUE) %>% 
   column_spec(1, width = "30em") %>% 
   column_spec(2, width = "9em") %>% 
   column_spec(3, width = "9em") %>% 
