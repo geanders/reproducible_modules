@@ -21,7 +21,6 @@ Brooke's:
 - Proofread references
 - Take one more pass at tables 1 and 2
 - Look for typos in table 4
-- Edit figure legends
 - Take out anything about non-CSU piloting
 - Proofread Biosketches
 - Make Biosketches as PDFs
