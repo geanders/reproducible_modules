@@ -22,7 +22,7 @@ my_df <- tribble(
   ymd("2021-01-01"),
   
   "Module development",
-  "Film video lectures and embed in online book",
+  "Film video lectures and embed\nin online book",
   ymd("2019-09-01"),
   ymd("2021-03-31"),
 
@@ -32,17 +32,17 @@ my_df <- tribble(
   ymd("2021-03-31"),
 
   "Module development",
-  "Create additional educational materials (quizzes,\ndiscussion questions, applied exercises)",
+  "Create additional educational materials\n(quizzes, etc.)",
   ymd("2019-06-01"),
   ymd("2021-03-31"),
 
   "Module development",
-  "Record audio and video discussions /\nsolutions to applied materials",
+  "Record audio and video discussions\nsolutions to applied materials",
   ymd("2020-01-01"),
   ymd("2021-03-31"),
 
   "Module development",
-  "Attend R conference to ensure materials include\nnewest techniques / learn bookdown developments",
+  "Attend R conference to ensure materials\ninclude newest techniques",
   ymd("2019-07-04"),
   ymd("2019-07-07"),
  
@@ -64,7 +64,7 @@ my_df <- tribble(
   ymd("2022-03-31"),
 
   "Module maintenance and refinement", 
-  "Make any needed refinements to quizzes,\napplied exercises, and discussion questions",
+  "Refine quizzes, etc.",
   ymd("2021-04-01"),
   ymd("2022-03-31"),
 
@@ -79,11 +79,6 @@ my_df <- tribble(
   "Develop feedback survey for\nCSU pilot testers",
   ymd("2019-08-01"),
   ymd("2019-08-31"),
-
-  "Module piloting and evaluation",
-  "Train with CSU STEM Center for strategies to get\nfocus-group-type feedback from CSU pilot session",
-  ymd("2019-08-01"),
-  ymd("2019-08-03"),
 
   "Module piloting and evaluation",
   "Develop feedback survey to\ninclude in online book",
@@ -156,7 +151,7 @@ my_df <- tribble(
   ymd("2022-03-31"),
   
   "Module piloting and evaluation",
-  "Workshop at American Society for Microbiology\nconference to pilot training materials",
+  "Workshop at ASM conference to\npilot training materials",
   ymd("2020-06-15"),
   ymd("2020-06-16"),
 
@@ -168,12 +163,12 @@ my_df <- tribble(
   ymd("2022-03-31"),
   
   "Module dissemination",
-  "Share links through social media to book as it develops",
+  "Share links through social media\nto book as it develops",
   ymd("2019-05-15"),
   ymd("2022-03-31"),
   
   "Module dissemination",
-  "Recruit CSU and non-CSU colleagues to\nbe early users of online materials",
+  "Recruit CSU and non-CSU colleagues as\nearly users of online materials",
   ymd("2019-08-01"),
   ymd("2021-09-01"),
   
@@ -183,27 +178,27 @@ my_df <- tribble(
   ymd("2021-09-16"),
   
   "Module dissemination",
-  "Present project at microbiology / immunology conferences",
+  "Present project at microbiology /\nimmunology conferences",
   ymd("2020-06-01"),
   ymd("2020-06-04"),
 
   "Module dissemination",
-  "Present modules at microbiology / immunology conferences",
+  "Present project at microbiology /\nimmunology conferences",
   ymd("2020-06-27"),
   ymd("2020-06-30"),
   
   "Module dissemination",
-  "Present modules at microbiology / immunology conferences",
+  "Present modules at microbiology /\nimmunology conferences",
   ymd("2021-06-15"),
   ymd("2021-06-16"),
 
   "Module dissemination",
-  "Post static version of the book to bookdown.org",
+  "Post static version of the\nbook to bookdown.org",
   ymd("2021-03-30"),
   ymd("2021-03-31"),
 
   "Module dissemination",
-  "Post static version of the book to bookdown.org",
+  "Post static version of the\nbook to bookdown.org",
   ymd("2022-03-30"),
   ymd("2022-03-31")
 ) %>% 
@@ -234,7 +229,7 @@ my_timeline <- my_df %>%
   facet_wrap(~ milestones, ncol = 1, scales = "free_y") 
 
 # Write out as pdf
-pdf("figures/timeline.pdf", width = 10, height = 10.5)
+pdf("figures/timeline.pdf", width = 8, height = 11)
 ggthemr("dust")
 print(my_timeline)
 ggthemr_reset()
