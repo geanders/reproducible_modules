@@ -33,7 +33,7 @@ my_df <- tribble(
 
   "Module development",
   "Create additional educational materials (quizzes,\ndiscussion questions, applied exercises)",
-  ymd("2019-09-01"),
+  ymd("2019-06-01"),
   ymd("2021-03-31"),
 
   "Module development",
@@ -119,11 +119,36 @@ my_df <- tribble(
   "Day-long pilot testing at CSU",
   ymd("2021-09-01"),
   ymd("2021-09-02"),
+
+  "Module piloting and evaluation",
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2020-03-01"),
+  ymd("2020-03-02"),
+
+  "Module piloting and evaluation",
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2020-09-01"),
+  ymd("2020-09-02"),
+
+  "Module piloting and evaluation",
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2021-03-01"),
+  ymd("2021-03-02"),
   
   "Module piloting and evaluation",
-  "Ongoing piloting with non-CSU collaborators",
-  ymd("2019-09-01"),
-  ymd("2022-03-31"),
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2021-09-01"),
+  ymd("2021-09-02"),
+
+  "Module piloting and evaluation",
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2022-03-01"),
+  ymd("2022-03-02"),
+
+  "Module piloting and evaluation",
+  "Follow-up surves to CSU pilot testers\nand ASM workshop participants",
+  ymd("2021-12-15"),
+  ymd("2021-12-06"),
 
   "Module piloting and evaluation",
   "Ongoing piloting with early online users",
@@ -148,7 +173,7 @@ my_df <- tribble(
   ymd("2022-03-31"),
   
   "Module dissemination",
-  "Recruit CSU and non-CSU colleagues to\nbe involved in pilot testing materials",
+  "Recruit CSU and non-CSU colleagues to\nbe early users of online materials",
   ymd("2019-08-01"),
   ymd("2021-09-01"),
   
@@ -158,7 +183,7 @@ my_df <- tribble(
   ymd("2021-09-16"),
   
   "Module dissemination",
-  "Present modules at microbiology / immunology conferences",
+  "Present project at microbiology / immunology conferences",
   ymd("2020-06-01"),
   ymd("2020-06-04"),
 
@@ -180,7 +205,7 @@ my_df <- tribble(
   "Module dissemination",
   "Post static version of the book to bookdown.org",
   ymd("2022-03-30"),
-  ymd("2022-03-31"),
+  ymd("2022-03-31")
 ) %>% 
   mutate(milestones = fct_relevel(milestones, 
                                   "Module development",
@@ -209,7 +234,7 @@ my_timeline <- my_df %>%
   facet_wrap(~ milestones, ncol = 1, scales = "free_y") 
 
 # Write out as pdf
-pdf("figures/timeline.pdf", width = 10, height = 11)
+pdf("figures/timeline.pdf", width = 10, height = 10.5)
 ggthemr("dust")
 print(my_timeline)
 ggthemr_reset()
