@@ -1,8 +1,10 @@
 Mike's:
-- Update the Project Abstract 
+- Update the Project Abstracts 
 - Mike take a last pass at Specific Aims
 - Take one more pass at tables 1 and 2
 - Take a look at Human Subjects
+- try something with git
+
 
 Brooke's: 
 
