@@ -29,3 +29,4 @@ Brooke's:
 - Any extra refs for formatting (YouTube, Google Analytics, Google Forms)?
 - Fill out assignment request form
 - Add section of program participants
+- Spell check
