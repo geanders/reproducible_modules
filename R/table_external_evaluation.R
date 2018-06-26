@@ -26,7 +26,7 @@ my_table <- tribble(
 ) %>% 
   kable("latex", booktabs = T, escape = FALSE, 
         align = 'cllc',
-        caption = "\\label{tab:external_evaluation} External evaluation questions, methods, and timeline") %>% 
+        caption = "\\label{tab:external_evaluation} External evaluation questions, methods, and timeline.") %>% 
   kable_styling(latex_options = c("hold_position", "scale_down"), 
                 font_size = 10) %>% 
   row_spec(0, bold = TRUE, background = "lightgray") %>% 

@@ -55,7 +55,7 @@ my_table <- tribble(
                                 "Marcela\nHenao-\nTamayo",
                                 "Gregory\nRobertson"),
                               align = 'c'),
-        caption = "\\label{tab:roles} Roles of our main team in developing the proposed training materials.") %>% 
+        caption = "\\label{tab:roles} Roles of our team of investigators in developing the proposed training materials.") %>% 
   kable_styling(latex_options = c("hold_position", "repeat_header", "scale_down"), 
                 font_size = 8) %>% 
   row_spec(0) %>% 
