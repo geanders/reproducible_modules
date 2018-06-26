@@ -110,9 +110,9 @@ my_table <- tribble(
           align = 'l',
           caption = "\\label{tab:team_description} Principal and co-investigators on our project team.") %>%
   kable_styling(latex_options = c("striped", "hold_position", "scale_down"), 
-                font_size = 8) %>% 
+                font_size = 10) %>% 
   column_spec(1, width = "14em") %>% 
-  column_spec(2, width = "45em")
+  column_spec(2, width = "35em")
   
 fileConn <- file("tables/team_description.tex")
 writeLines(my_table, fileConn)
