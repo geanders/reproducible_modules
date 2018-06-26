@@ -54,33 +54,22 @@ The recent NIH-Wide Strategic Plan \cite{nih2016strategic} describes an
 integrative view of biology and human health that includes translational
 medicine, team science, and the importance of capitalizing on an exponentially 
 growing and increasingly complex data ecosystem \cite{nih2018data}.  Underlying 
-this view is the need to use, share and reuse biomedical data generated from widely 
+this view is the need to use, share, and re-use biomedical data generated from widely 
 varying experimental systems and researchers. Basic sources of biomedical data range 
 from relatively small sets of measurements, such as animal body weights and bacterial 
-cell counts that may be recorded by hand, to thousands or millions of instrument generated 
+cell counts that may be recorded by hand, to thousands or millions of instrument-generated 
 data points from various imaging, -omic, and flow cytometry experiments. In either case, 
-there is a generally common data or information workflow that proceeds 
-from measurement, to data recording, pre-processing, analysis, and interpretation.  However, the distinct actions of data recording, data pre-processing, and analysis 
+there is a generally common workflow that proceeds 
+from measurement, to data recording, pre-processing, analysis, and interpretation.  However, in practice the distinct actions of data recording, data pre-processing, and analysis 
 are often merged or combined as a single entity by the researcher using commercial or open 
 source spreadsheets, or as part of an often proprietary experimental measurement 
-system / software combination (Figure \ref{fig:workflow}), resulting in key failure points for reproducibility at the stages of data recording and pre-processing.  It is widely 
+system / software combination (Figure \ref{fig:workflow}), resulting in key failure points for reproducibility at the stages of data recording and pre-processing.  
+
+It is widely 
 known and discussed among data scientists, mathematical modelers, and statisticians 
 \cite{broman2018data, krishnan2016towards}, that there is a frequent need to discard, 
-transform, and reformat various elements of the data shared with them by laboratory-based researchers following any such stages of data recording and pre-processing, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting the data through ``data cleaning'' in order to apply more advanced computational methods
-and to integrate the data with other analysis and visualization platforms. Instead, a critical need for reproducibility is for the transparent and clear sharingacross research teams of: (1) raw data, directly from hand-recording or directly output from the experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data) and saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
-
-% Such spreadsheets include various 
-% levels of meta-data, including filesystem data that determines 
-% reading and writing operations by the software environment in which it runs, together with multiple 
-% experimental data types and units recorded in sometimes complicated arrangements of tables, 
-% charts, notes, and other figures.  Additionally, and especially for instrument generated data sets, 
-% these spreadsheets are often used to pre-process the data with black-box statistical calculations 
-% and graph generating 
-% functions that are combined with the primary or raw experimental data.  
-
-% these spreadsheets in an often labor intensive and error 
-% prone process of ``data cleaning'', in order to apply more advanced computational methods
-% and to integrate the data with other analysis and visualization platforms.
+transform, and reformat various elements of the data shared with them by laboratory-based researchers, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting the data to apply more advanced computational methods
+and to integrate the data with other analysis and visualization platforms. Instead, a critical need for reproducibility is for the transparent and clear sharing across research teams of: (1) raw data, directly from hand-recording or directly output from experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data) and saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
 
 \begin{figure}[h] 
 \centering
@@ -91,13 +80,36 @@ critical points of failure for reproducible research. Red arrows indicate where 
 
 \textbf{Here, we identify the clear separation between data recording, data pre-processing, and
 analysis---breaking up commonly existing ``black boxes" in data handling across the research process---as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation 
-requires some change in the conventional understanding and use of spreadsheets, and a recognition by 
+requires some change in the conventional understanding and use of spreadsheets and a recognition by 
 biomedical researchers that recent advances in computer programming languages, especially the 
 R programming language, provide user-friendly and accessible tools and concepts that can be 
-used to build on their existing methods to implement a transparent and reproducible data workflow that extends to data recording and pre-processing. 
+used to extend a transparent and reproducible data workflow to data recording and pre-processing. 
+To meet this need, we propose to develop two sequences of modules, \textbf{Improving the
+Reproducibility of Experimental Data Recording} and \textbf{Improving the
+Reproducibility of Experimental Data Pre-Processing}. Our team has worked
+together to create a curriculum of training modules that we believe will help
+fill an important training gap for laboratory-based biomedical researchers
+(Tables \ref{tab:content_one} and \ref{tab:content_two}). The first sequence,
+``Improving the Reproducibility of Experimental Data Recording" (Table
+\ref{tab:content_one}), will explore the pitfalls of combining experimental data
+recording and analysis within formula-enabled spreadsheets, explain the power of
+structured data formats for recording data, describe how reproducibility can be
+improved by using a single structured directory to store all research project
+files, and demonstrate the use of version control to maintain single, current
+versions of all files while saving a history of all file changes. The second
+sequence, ``Improving the Reproducibility of Experimental Data
+Pre-Processing" (Table \ref{tab:content_two}), will focus on improving the
+reproducibility of experimental data pre-processing steps, like gating for flow
+cytometry data and feature extraction / quantification for mass spectrometry data.
+Training materials will explain how the use of code scripts for these pre-processing steps
+dramatically improves reproducibility compared to using vendor-supplied
+point-and-click software and will introduce trainees to popular R software for
+this pre-processing. This sequence will also include advice on the use of reproducible data
+pre-processing protocols and how to create these protocols using literate programming tools (\textit{Rmarkdown}).
+
 As a wholesale adoption of these concepts and software tools may be disruptive to established 
-laboratory procedures, the 
-approach in this proposal is to provide training modules that can be adopted as appropriate 
+laboratory procedures, our 
+approach is to provide training modules that can be adopted as appropriate 
 for a wide range of individuals with differing roles within small and large research groups.  
 General principles and guidelines are presented separately from implementation and examples. 
 Additionally, the training modules will be developed on-site with NIH-funded microbiology
@@ -111,34 +123,11 @@ transparent, and reproducible format or data structure that can be kept in it's 
 without the need for additional modification, is a solution that extends throughout large and 
 small scale biomedical science projects. 
 
-We propose to develop two sequences of modules, \textbf{Improving the
-Reproducibility of Experimental Data Recording} and \textbf{Improving the
-Reproducibility of Experimental Data Pre-Processing}. Our team has worked
-together to create a curriculum of training modules that we believe will help
-fill an important training gap for laboratory-based biomedical researchers
-(Tables \ref{tab:content_one} and \ref{tab:content_two}). The first sequence,
-\textbf{``Improving the Reproducibility of Experimental Data Recording"} (Table
-\ref{tab:content_one}), will explore the pitfalls of combining experimental data
-recording and analysis within formula-enabled spreadsheets, explain the power of
-structured data formats for recording data, describe how reproducibility can be
-improved by using a single structured directory to store all research project
-files, and demonstrate the use of version control to maintain single, current
-versions of all files while saving a history of all file changes. The second
-sequence, \textbf{``Improving the Reproducibility of Experimental Data
-Pre-Processing"} (Table \ref{tab:content_two}), will focus on improving the
-reproducibility of experimental data pre-processing steps, like gating for flow
-cytometry data and feature extraction / quantification for mass spectrometry data.
-Training materials will explain how the use of code scripts for these pre-processing steps
-dramatically improves reproducibility compared to using vendor-supplied
-point-and-click software and will introduce trainees to popular R software for
-this pre-processing. This sequence will also include advice on the use of reproducible data
-pre-processing protocols and how to create these protocols using literate programming tools (\textit{Rmarkdown}).
-
 \section{Innovation} \vspace{-0.1in}
 
 \textbf{We will use the
 innovative \textit{bookdown} framework \cite{xie2016bookdown} to structure and
-publish all of our training materials as a free and open online book, with embedded video lectures and additional educational materials}. The
+publish all of our training materials as a free and open online book, with embedded video lectures and additional educational materials to help these training modules reach a global audience of biomedical researchers}. The
 \textit{bookdown} framework has been available for a little over two years and
 extends the principles of \textit{Rmarkdown} \cite{xie2015dynamic} to allow authors to create attractive
 online books that integrate programming code and text. With this format, code examples and related
@@ -158,16 +147,6 @@ Science} \cite{wickham2016r}.
 \textwidth]{figures/book_prototype.jpg} \caption{Prototype of online course
 book, with features highlighted.} \label{fig:prototype} \end{figure}
 
-Dr. Anderson (PI) is an early adopter of the \textit{bookdown} framework and served as an expert reviewer for \textit{bookdown: Authoring Books
-and Technical Documents with R Markdown} \cite{xie2016bookdown}. Since
-the \textit{bookdown} framework became available, she has used it to create two openly-available online
-books: the \textit{R Programming for Research} online coursebook (https://geanders.github.io/RProgrammingForResearch/), which she uses
-as a joint textbook and website for the \textit{R Programming for Research}
-course she teaches each fall at Colorado State University, and \textit{Mastering
-Software Development in R} (https://bookdown.org/rdpeng/RProgDA/), which she co-wrote with Dr. Roger Peng as a manual
-for developing advanced R programming skills and which has been downloaded by
-over 14,000 people from LeanPub (see letter from Dr. Peng). 
-
 \textbf{The use of this framework will help us effectively reach a large
 audience of laboratory-based biomedical researchers in need of training materials to improve the reproducibility of data
 recording and pre-processing.} We will 
@@ -181,6 +160,16 @@ able to get early feedback.} Once the online
 book is developed, we will submit a static version of it to be posted
 on the homepage of the \textit{bookdown.org} website \cite{bookdownorg}, providing
 another way for our key audience of laboratory-based biomedical researchers to find and access the materials.
+
+Dr. Anderson (PI) is an early adopter of the \textit{bookdown} framework and served as an expert reviewer for \textit{bookdown: Authoring Books
+and Technical Documents with R Markdown} \cite{xie2016bookdown}. Since
+the \textit{bookdown} framework became available, she has used it to create two openly-available online
+books: the \textit{R Programming for Research} online coursebook (https://geanders.github.io/RProgrammingForResearch/), which she uses
+as a joint textbook and website for the \textit{R Programming for Research}
+course she teaches each fall at Colorado State University, and \textit{Mastering
+Software Development in R} (https://bookdown.org/rdpeng/RProgDA/), which she co-wrote with Dr. Roger Peng as a manual
+for developing advanced R programming skills and which has been downloaded by
+over 14,000 people from LeanPub (see letter from Dr. Peng). 
 
 \section{Approach---Proposed Research Education Program}
 
