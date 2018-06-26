@@ -32,7 +32,6 @@ Brooke's:
 - Proofread Biosketches
 - Make Biosketches as PDFs
 - Make Letters of Support as PDFs
-- Update margins throughout
 - Double-check on STEM acronym
 - Research approach---work in Mike's suggestions
 - Make repo public (and move to GitHub?)
