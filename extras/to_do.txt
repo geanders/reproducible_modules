@@ -15,7 +15,6 @@ Brooke's:
 - Proofread references
 - Take one more pass at tables 1 and 2
 - Take out anything about non-CSU piloting
-- Make Biosketches as PDFs
 - Make repo public (and move to GitHub?)
 - Fill out assignment request form
 - Spell check
