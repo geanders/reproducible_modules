@@ -12,8 +12,7 @@ my_table <- tribble(
     "Many biomedical laboratories currently use spreadsheets, with embedded macros, 
       to both record and analyze experimental data. This practice impedes the transparency
       and reproducibility of both data recording and data analysis. In this module, we 
-      will describe this common practice and explain how it impedes the transparency and
-      reproducibility of data recording and analysis. We will then outline alternative
+      will describe this common practice and will outline alternative
       approaches that separate the steps of data recording and data analysis and explain
       how these alternative approaches can improve the reproducibility of biomedical 
       research.", 
@@ -59,7 +58,7 @@ my_table <- tribble(
 # Module 3
   "The 'tidy' data format: an implementation of a structured data format", "Implementation",
   "The 'tidy' data format is one implementation of a structured data format that
-  was introduced in a 2014 paper and has since quickly 
+  was introduced in a 2014 paper \\cite{wickham2014tidy} and has since quickly 
   gained popularity among statisticians and data scientists. By consistently 
   using this data format, researchers have found they can employ combinations 
   of simple, generalizable tools to perform complex tasks in data processing, 
@@ -283,12 +282,12 @@ my_table <- tribble(
   kable("latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
                   caption = "\\label{tab:content_one} Modules for the first sequence, \\textbf{'Improving the Reproducibility of Experimental Data Recording'}. The color of each module's title indicates whether the module focuses on \\textbf{Principles} (blue), \\textbf{Implementation} (red), or \\textbf{Case study examples} (black). This table is continued over several pages.") %>% 
   kable_styling(latex_options = c("striped", "repeat_header", "scale_down"), 
-                font_size = 9) %>% 
+                font_size = 10) %>% 
   column_spec(1, bold = TRUE, width = "10em") %>% 
-  column_spec(2, width = "30em") %>% 
-  column_spec(3, width = "15em") %>% 
+  column_spec(2, width = "28em") %>% 
+  column_spec(3, width = "14em") %>% 
   column_spec(4, width = "3em") %>% 
-  column_spec(5, width = "15em") %>% 
+  column_spec(5, width = "14em") %>% 
   landscape()
 
 fileConn <- file("tables/module_content_data_recording.tex")

@@ -51,12 +51,12 @@ my_table <- tribble(
                                 "Early online\nusers"), align = 'c'),
         caption = "\\label{tab:evaluation} Examples of types of feedback we anticipate to generate from pilot testing among different groups to help us refine the training materials.") %>% 
   kable_styling(latex_options = c("repeat_header", "hold_position", "scaled_down"), 
-                font_size = 8) %>% 
+                font_size = 10) %>% 
   row_spec(0, bold = TRUE) %>% 
   column_spec(1, width = "30em") %>% 
-  column_spec(2, width = "9em") %>% 
-  column_spec(3, width = "9em") %>% 
-  column_spec(4, width = "9em") %>% 
+  column_spec(2, width = "5em") %>% 
+  column_spec(3, width = "5em") %>% 
+  column_spec(4, width = "5em") %>% 
   group_rows("Characteristics of the trainees?", 1, 3, latex_align = 'l') %>% 
   group_rows("How often the training materials are used", 4, 8, latex_align = 'l') %>% 
   group_rows("Patterns in use of each module", 9, 14, latex_align = 'l') %>% 
