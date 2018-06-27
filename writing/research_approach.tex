@@ -29,13 +29,13 @@
 \usepackage{float}
 %\usepackage[authoryear]{natbib}
 \usepackage[numbers]{natbib}
-\usepackage{url,hyperref,color}
+\usepackage{url,color}
 \usepackage{rotating}
 \usepackage{lscape}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.75}
 \hypersetup{colorlinks,breaklinks,
-            linkcolor=darkblue,urlcolor=darkblue,
-            anchorcolor=darkblue,citecolor=darkblue}
+            linkcolor=black,urlcolor=black,
+            anchorcolor=black,citecolor=black}
 \newcommand{\fixme}[1]{{\color{red} #1}}
 \renewcommand\thesection{\Alph{section}}
 \renewcommand{\familydefault}{\sfdefault}
@@ -60,59 +60,58 @@ from relatively small sets of measurements, such as animal body weights and bact
 cell counts that may be recorded by hand, to thousands or millions of instrument-generated 
 data points from various imaging, -omic, and flow cytometry experiments. In either case, 
 there is a generally common workflow that proceeds 
-from measurement, to data recording, pre-processing, analysis, and interpretation.  However, in practice the distinct actions of data recording, data pre-processing, and analysis 
+from measurement to data recording, pre-processing, analysis, and interpretation.  However, in practice the distinct actions of data recording, data pre-processing, and data analysis 
 are often merged or combined as a single entity by the researcher using commercial or open 
 source spreadsheets, or as part of an often proprietary experimental measurement 
-system / software combination (Figure \ref{fig:workflow}), \textbf{resulting in key failure points for reproducibility at the stages of data recording and pre-processing.}  
+system / software combination (Figure \ref*{fig:workflow}), \textbf{resulting in key failure points for reproducibility at the stages of data recording and pre-processing.}  
 
 It is widely 
 known and discussed among data scientists, mathematical modelers, and statisticians 
 \cite{broman2018data, krishnan2016towards} that there is frequently a need to discard, 
-transform, and reformat various elements of the data shared with them by laboratory-based researchers, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting the data before applying more advanced computational methods. Instead, a critical need for reproducibility is for the transparent and clear sharing across research teams of: (1) raw data, directly from hand-recording or directly output from experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data) and saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
+transform, and reformat various elements of the data shared with them by laboratory-based researchers, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting before applying more advanced computational methods. Instead, a critical need for reproducibility is for the transparent and clear sharing across research teams of: (1) raw data, directly from hand-recording or directly output from experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data), saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
 
 \begin{figure}[h] 
 \centering
 \includegraphics[width = \textwidth]{figures/existing_blackboxes.jpg} 
 \caption{Two common scenarios where ``black boxes" of non-transparent, non-reproducible data handling exist in research data workflows at the stages of data recording and pre-processing. These create potential
-critical points of failure for reproducible research. Red arrows indicate where data is passed to other research team members, including statisticians / data analysts, often within complex or unstructured spreadsheet files.} 
+points of failure for reproducible research. Red arrows indicate where data is passed to other research team members, including statisticians / data analysts, often within complex or unstructured spreadsheet files.} 
 \label{fig:workflow} \end{figure}
 
-\textbf{Here, we identify the clear separation between data recording, data pre-processing, and
-analysis---breaking up commonly existing ``black boxes" in data handling across the research process---as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation 
+\textbf{Here, we identify a clear separation among data recording, data pre-processing, and
+data analysis---breaking up commonly existing ``black boxes" in data handling across the research process---as a critical point for enhancement of data reproducibility.} Such a rigorous demarcation 
 requires some change in the conventional understanding and use of spreadsheets and a recognition by 
 biomedical researchers that recent advances in computer programming languages, especially the 
 R programming language, provide user-friendly and accessible tools and concepts that can be 
-used to extend a transparent and reproducible data workflow to data recording and pre-processing. 
+used to extend a transparent and reproducible data workflow to the steps of data recording and pre-processing. 
 Among our team, we have
 found that there are many common existing practices---including use of
 spreadsheets with embedded formulas that concurrently record and analyze
 experimental data, problematic management of project files,
 and reliance on proprietary, vendor-supplied point-and-click software for data
 pre-processing---that can interfere with the transparency, reproducibility, and
-efficiency of laboratory-based biomedical research projects. These problems have also been 
+efficiency of laboratory-based biomedical research projects, problems that have also been
 identified by others as key barriers to research reproducibility 
 \cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
 Our team has worked together to craft a list of
-specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we will address in training modules, choosing topics that tackle barriers to reproducibility that have
+specific topics (Tables \ref*{tab:content_one} and \ref*{tab:content_two}) we will address in training modules, choosing topics that tackle barriers to reproducibility that have
 straightforward, easy-to-teach solutions, but which are still very common in
-biomedical laboratory-based research programs, including those at Colorado
-State University.
+biomedical laboratory-based research programs.
 
 As a wholesale adoption of these concepts and software tools may be disruptive to established 
 laboratory procedures, our 
 approach is to provide training modules that can be adopted as appropriate 
 for a wide range of individuals with differing roles within small and large research groups.  
 General principles and guidelines are presented separately from implementation and examples. 
-Additionally, the training modules will be developed on-site with NIH-funded microbiology
+Additionally, the training modules will be developed on-site at Colorado State University with NIH-funded microbiology
 and immunology laboratories devoted to anti-tuberculosis drug and vaccine development, as
 \textbf{our primary educational goal is to introduce the language, concepts, and tools of an R-based 
 ecosystem for reproducible research to \underline{laboratory-based scientists} whose attention is rather to 
 their experimental technique and collection of accurate data, and who may have little or no background 
 in the use of general purpose software tools.} While this proposal uses examples from microbiology 
 and immunology experiments, the collection of primary data in a flexible, open source, 
-transparent, and reproducible format or data structure that can be kept in its primary state 
-without the need for additional modification, is a solution that extends throughout large and 
-small scale biomedical science projects. 
+transparent, and reproducible format, which can be kept in its primary state 
+without the need for additional modification, is a solution that extends throughout large- and 
+small-scale biomedical science projects. 
 
 \section{Innovation} \vspace{-0.1in}
 
@@ -127,11 +126,11 @@ automatically generated. Through this innovative framework, we
 will create a searchable online book that weaves R code into the text
 and includes embedded video lectures, active web links to online
 references, and computationally reproducible examples and exercises
-(Figure \ref{fig:prototype}). Further, trainees will be able to
+(Figure \ref*{fig:prototype}). Further, trainees will be able to
 download the book as either a PDF or EPUB file to use as a reference as they
 continue learning to implement reproducibility tools in their research projects. Though this framework is new, it has proven
 itself reliable and effective---it serves as the framework for several 
-popular and highly-accessed books on R programming, including the extremely popular book \textit{R for Data
+popular and highly-accessed books on R programming, including the extremely popular  \textit{R for Data
 Science} \cite{wickham2016r}. 
 
 \begin{figure}[t] \includegraphics[width =
@@ -143,10 +142,10 @@ audience of laboratory-based biomedical researchers in need of training material
 recording and pre-processing.} We will 
 post this book online using \textit{GitHub Pages} \cite{gitpages}, as we have done
 with a previous book created with the same framework \cite{andersoncoursebook}, allowing anyone to
-freely access this content online. We will publish both the current version of the developing book and its underlying code openly online from the beginning
+freely access the content online. We will publish both the current version of the developing book and its underlying code openly online from the beginning
 of our development of the training materials. \textbf{By making the training
 materials available from day one, as they are developed, we will be able to
-attract early users to help disseminate the material as it evolves and also to get early feedback.} Once the online
+attract early users to help disseminate the material as it evolves and to get early feedback.} Once the online
 book is developed, we will submit a static version of it to be posted
 on the homepage of the \textit{bookdown.org} website \cite{bookdownorg}, providing
 another way for our key audience of laboratory-based biomedical researchers to find and access the materials.
@@ -163,13 +162,11 @@ over 14,000 people from LeanPub (see letter from Dr. Peng).
 
 \section{Approach---Proposed Research Education Program}
 
-\subsubsection*{Training modules.} 
-
 \textbf{Through this project, we aim to create training modules that will teach laboratory-based biomedical
-researchers how simple computational reproducibility principles can improve
+researchers how simple computational reproducibility principles and tools can improve
 reproducibility at the stages of data recording and
 pre-processing.} The importance of \textit{computational reproducibility}---in which all
-data and code for a research project is openly available and can be used to regenerate study findings either by the original researcher or by
+data and code for a research project are openly available and can be used to regenerate study findings either by the original researcher or by
 other researchers---is increasingly recognized by scientists, journals, and funding
 agencies \cite{ellis2018share, ram2013git}.
 Our core project team combines two experts in R programming
@@ -198,8 +195,8 @@ materials---including some developed by Dr. Anderson for her online and
 CSU-based courses in R programming \cite{andersoncoursebook, andersonmastering}---target researchers at the stage of
 \textit{data analysis} for the audience of \textit{computationally-based researchers}, and provide much less guidance on the principles and
 techniques to improve reproducibility of the earlier steps of
-\textbf{experimental data recording} and \textbf{experimental data
-pre-processing} for \textbf{laboratory-based researchers}. 
+\textit{experimental data recording} and \textit{experimental data
+pre-processing} for \textit{laboratory-based researchers}. 
 Over the past year, our team of co-investigators has begun
 to work together to improve the computational reproducibility of experimental data recording and pre-processing within our own research projects. For example, in
 Fall 2017 Dr. Gonzalez-Juarrero attended Dr. Anderson's (PI) course in \textit{R
@@ -224,7 +221,6 @@ materials collected within each module's chapter. We consider it critical that
 these training materials be clear, relevant, and useful to a key audience of
 biomedical scientists whose primary research activities focus on laboratory
 research, rather than data analysts or statisticians. 
-
 To meet this need, we propose to develop two sequences of modules, \textbf{Improving the
 Reproducibility of Experimental Data Recording} and \textbf{Improving the
 Reproducibility of Experimental Data Pre-Processing}. 
@@ -239,11 +235,8 @@ have divided the content into modules in a way that will allow \textbf{trainees
 and investigators at any level} to create their own ``tracks" by selecting
 relevant subsets of the modules to complete, potentially combining this
 content with other training modules available through the National Institute of General Medical Science's \textit{Clearinghouse for Training Modules to Enhance Data Reproducibility}
-\cite{clearinghouse} to create a training experience aligned with their individual training needs. Table \ref{tab:tracks} gives a few examples of how different trainees
+\cite{clearinghouse} to create a training experience aligned with their individual training needs. Table \ref*{tab:tracks} gives a few examples of how different trainees
 could create and follow their own ``track" through the training materials we propose to develop.
-The training modules will be divided into two sequences, ``Improving the Reproducibility of Experimental Data
-Recording" and ``Improving the Reproducibility of Experimental Data
-Pre-Processing".
 
 \underline{\textbf{Sequence 1: Improving the Reproducibility of Experimental Data
 Recording}} 
@@ -251,8 +244,8 @@ Recording}}
 The first sequence will provide principles and tools for improving
 computational reproducibility at the stage of experimental data recording. This sequence will include eleven modules covering four main topics: 
 
-\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between spreadsheet cells---to jointly record, visualize, and analyze experimental data (Sequence 1 in Figure \ref{fig:workflow}) \cite{broman2018data}. This practice impedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template with embedded formulas, it leads to a data recording / analysis process that can become extraordinarily opaque and complex. To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining recorded experimental data as ``read-only" files, separating data recording from any data pre-processing or data analysis steps \cite{broman2018data, marwick2018packaging}. Statisticians have outlined specific methods that a laboratory-based scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros or embedded formulas, using a separate Excel file for each dataset, recording descriptions of variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding splitting or merging cells \cite{ellis2018share, broman2018data}. These topics will covered in a \textit{Principles} module on ``Separating data
-recording and analysis" (Table \ref{tab:content_one}). 
+\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between spreadsheet cells---to jointly record, visualize, and analyze experimental data (Sequence 1 in Figure \ref*{fig:workflow}) \cite{broman2018data}. This practice impedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template with embedded formulas, it leads to a data recording / analysis process that can become extraordinarily opaque and complex. To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining recorded experimental data as ``read-only" files, separating data recording from any data pre-processing or data analysis steps \cite{broman2018data, marwick2018packaging}. Statisticians have outlined specific methods that a laboratory-based scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros or embedded formulas, using a separate Excel file for each dataset, recording descriptions of variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding splitting or merging cells \cite{ellis2018share, broman2018data}. These topics will covered in a \textit{Principles} module on ``Separating data
+recording and analysis" (Table \ref*{tab:content_one}). 
 
 \textbf{2. Using a structured data format to record data.} Every extra step of data
 cleaning is another chance to introduce errors in experimental biomedical data, and yet laboratory-based researchers often share experimental data with collaborators in a format that requires extensive additional cleaning before it can be input into data analysis \cite{broman2018data}. Recording data in a ``structured" format brings many benefits for later stages of the research process, especially in terms of improving reproducibility and reducing the probability of errors in analysis \cite{ellis2018share}. Data that is in a structured, tabular, two-dimensional format is substantially easier for collaborators to understand and work with, without additional data formatting \cite{broman2018data}. Further, by using a consistent structured format across many or all data in a research project, it becomes much easier to create solid, well-tested code scripts for data pre-processing and analysis and to apply those scripts consistently and reproducibly across datasets from multiple experiments \cite{broman2018data}. However, many biomedical researchers are unaware of this simple yet powerful strategy in data recording and how it can improve the efficiency and effectiveness of collaborations \cite{ellis2018share}. 
@@ -279,19 +272,19 @@ analysis and visualization in several domains, including text mining
 language processing \cite{RJ-2017-035}, network analysis \cite{RJ-2017-023},
 ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}. 
 
-These topic will
+These topics will
 be covered in a \textit{Principles} module on ``Principles and power of
 structured data formats", two \textit{Implementation} modules on ``The 'tidy'
 data format: an implementation of a structured data format" and ``Designing
 templates for tidy data collection", and one \textit{Example} module called
-``Example: Creating a template for 'tidy' data collection" (Table \ref{tab:content_one}). 
+``Example: Creating a template for 'tidy' data collection" (Table \ref*{tab:content_one}). 
 
 \textbf{3. Managing all research project files in a single, structured directory.}
 Reproducibility can also be improved, starting at the data recording stage, by using a single, structured directory to store all files related to the
 project. This ``project" framework of structured and thoughtful file management has recently been encouraged by a number of
 researchers as a way to enable computationally reproducible research, especially
 for research conducted by teams \cite{marwick2018packaging,
-parker2017opinionated, lowndes2017our}. If a consistent structure is used for these directories across different research projects, it can substantially increase the efficiency of, and reduce errors in, data pre-processing and analysis, as code scripts can be created that can be re-used across different project directories with few required changes \cite{marwick2018packaging}. This practice also improves the efficiency and effectiveness of collaborations with data scientists, mathematical modelers, and statisticians, as it allows the researchers to share critical research project files---raw data, processed data, and code scripts for extracting the processed data from the raw data \cite{ellis2018share, shade2015computing}---in a single file. Further, some have suggested that if researchers learn better practices for managing ``clean" project files, it will help increase their willingness to share those files and so meet standards of reproducibility \cite{marwick2018packaging}. 
+parker2017opinionated, lowndes2017our}. If a consistent structure is used for these directories across different research projects, it can substantially increase the efficiency of, and reduce errors in, data pre-processing and analysis, as code scripts can be created that can be re-used across different project directories with few required changes \cite{marwick2018packaging}. This practice also improves the efficiency and effectiveness of collaborations with data scientists, mathematical modelers, and statisticians, as it allows the researchers to share critical research project files---raw data, processed data, and code scripts for extracting the processed data from the raw data \cite{ellis2018share, shade2015computing}---in a single directory. Further, some have suggested that if researchers learn better practices for managing ``clean" project files, it will help increase their willingness to share those files and so meet standards of reproducibility \cite{marwick2018packaging}. 
 
 One implementation of this practice is as an \textit{RStudio} ``Project". In \textit{RStudio}, a researcher can collect all project files in a single, structured directory and save this directory as a ``Project" \cite{rstudiousingprojects}. \textit{RStudio} ``Projects" allow easy integration with version control tools (\textit{git}) and online platforms for sharing a directory under version control (\textit{GitHub}, \textit{GitLab}). 
 While a ``Project" can have any internal
@@ -305,12 +298,12 @@ These topics will be
 covered in a \textit{Principles} module on the ``Power of using a single
 structured 'Project' directory for storing and tracking research project files",
 an \textit{Implementation} module on ``Creating 'Project' templates", and an
-\textit{Example} module called ``Example: Creating a 'Project' template" (Table \ref{tab:content_one}).
+\textit{Example} module called ``Example: Creating a 'Project' template" (Table \ref*{tab:content_one}).
 
-\textbf{4. Implementing version control.} As a research project progresses, a typical practice in many laboratory-based research groups is to save new, renamed versions of each file (e.g., ``draft1.doc", ``draft2.doc") \cite{bryan2018excuse}, so that they can revert to earlier versions of a file. However, this practice leads to an explosion of files, and it becomes hard to track which files represent the ``current" state of a project. Version control---which tracks and documents changes to any files that the user chooses to track in a directory---allows researchers to edit and change research project files more cleanly, keeping a single copy of each file in the directory rather than multiple versions, while maintaining the power to backtrack to previous versions. Further, with version control, ``commit messages" are required to explain changes, making both the changes and the reasoning behind them transparent. The use of the version control software \textit{Git} has been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2018excuse, lowndes2017our, cetinkaya2017infrastructure}. Once a researcher has learned to use \textit{git} on their own computer for local version control, they can begin using version control 
+\textbf{4. Implementing version control.} As a research project progresses, a typical practice in many laboratory-based research groups is to save new, renamed versions of each file (e.g., ``draft1.doc", ``draft2.doc") \cite{bryan2018excuse}, so that the researchers can revert to earlier versions of a file. However, this practice leads to an explosion of files, and it becomes hard to track which files represent the ``current" state of a project. Version control---which tracks and documents changes to any files that the user chooses to track in a directory---allows researchers to edit and change research project files more cleanly, keeping a single copy of each file in the directory rather than multiple versions, while maintaining the power to backtrack to previous versions. Further, with version control, ``commit messages" are required to explain changes, making both the changes and the reasoning behind them transparent. The use of the version control software \textit{Git} has been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2018excuse, lowndes2017our, cetinkaya2017infrastructure}. Once a researcher has learned to use \textit{git} on their own computer for local version control, they can begin using version control 
 platforms (e.g., \textit{GitLab}, \textit{GitHub}) to collaborate with others in their research
 group while keeping the project under version control \cite{bryan2018excuse, shade2015computing}. Platforms like \textit{GitHub} and \textit{GitLab} allow
-the all collaborators to share a current version of a project directory 
+all collaborators to share a current version of a project directory 
 (similar to Dropbox), but in a way that allows easy use of version control 
 and that is more efficient for exploring (and, when necessary, undoing) the changes 
 each team member has made to project files \cite{bryan2018excuse}. For many years, using \textit{Git} version control required use of the command line,
@@ -321,7 +314,7 @@ topics will be covered in two \textit{Principles} modules called ``Harnessing
 version control for transparent data recording" and ``Enhance the
 reproducibility of collaborative research with version control platforms" as
 well as an \textit{Implementation} module on ``Using \textit{git} and \textit{GitLab} to implement
-version control" (Table \ref{tab:content_one}). 
+version control" (Table \ref*{tab:content_one}). 
 
 \underline{\textbf{Sequence 2: Improving the Reproducibility of Experimental Data
 Pre-Processing}}
@@ -337,12 +330,10 @@ and quantification in mass spectrometry data and gating in flow cytometry data--
 as general pre-processing steps like normalization and scaling. This sequence will include nine modules covering three main topics: 
 
 \textbf{1. Using code scripts to pre-process experimental data.} The experimental data collected for biomedical research often requires 
-pre-processing before it can be analyzed (e.g., gating of flow cytometry data, 
-feature identification 
-and quantification for mass spectrometry data). While 
-point-and-click software is often available for this pre-processing, it is used interactively and often does not create a history of steps and choices \cite{pernet2015improving}, at least not in a format that is easy for a statistician to navigate, understand, and check \cite{peng2011reproducible, pernet2015improving}. 
-Statisticians have clearly stated that, to ensure research is reproducible and that a collaboration is efficient, they would like to receive raw experimental data (i.e., the direct output from experimental equipment), the processed data (preferably in a 'tidy' format), and an ``explicit and exact recipe" for how the processed data was derived from the raw data \cite{ellis2018share}.
-A code script, like an R script, provides this ``explicit and exact recipe". Scripted pre-processing can also help reduce the temptation to manually edit data during pre-processing, including manually changing file formats, which prevents reproducibility and impedes transparency \cite{pernet2015improving}. While many of the pre-processing tasks required for biomedical experimental data are complex (e.g., feature identification and quantification, gating), R has package extensions that can be used for these tasks, many hosted on Bioconductor \cite{huber2015orchestrating}. 
+pre-processing before it can be analyzed. While 
+point-and-click software is often available for this pre-processing (Scenario 2 in Figure \ref*{fig:workflow}), it is used interactively and often does not create a history of steps and choices \cite{pernet2015improving}, at least not in a format that is easy for a statistician to navigate, understand, and check \cite{peng2011reproducible, pernet2015improving}. 
+Statisticians have clearly stated that, to ensure research is reproducible and that a collaboration is efficient, they would like to receive raw experimental data (i.e., the direct output from experimental equipment), the processed data (preferably in a ``tidy" format), and an ``explicit and exact recipe" for how the processed data was derived from the raw data \cite{ellis2018share}.
+A code script, like an R script, provides this ``explicit and exact recipe". Scripted pre-processing can also help reduce the temptation to manually edit data during pre-processing, including manually changing file formats, which prevents reproducibility and impedes transparency \cite{pernet2015improving}. While many of the pre-processing tasks required for biomedical experimental data are complex (e.g., feature identification, gating), R has package extensions that can be used for these tasks, many hosted on Bioconductor \cite{huber2015orchestrating}. 
 Open-source scriptable
 software tools bring other key advantages compared to proprietary software in terms of data
 pre-processing, including that open-source choices are transparent and often more robust and easier to extend \cite{cetinkaya2017infrastructure, huber2015orchestrating,
@@ -351,21 +342,21 @@ These topics will be covered in one
 \textit{Principles} module on ``Principles and benefits of scripted
 pre-processing of experimental data" and two \textit{Implementation} modules
 called ``Introduction to scripted data pre-processing in R" and ``Simplify
-scripted pre-processing through R's \textit{tidyverse} tools" (Table \ref{tab:content_two}).
+scripted pre-processing through R's \textit{tidyverse} tools" (Table \ref*{tab:content_two}).
 
-\textbf{2. Working with complex data types during pre-processing.} Many R functions output data in a format that is ``untidy" \cite{robinson2014broom}, in the sense that it does not comply with the structured ``tidy" format required by R's \textit{tidyverse} tools \cite{wickham2014tidy}. This is particularly true for raw data from many biomedical experiments, especially machine-generated data (e.g., output from a flow cytometer or mass spectrometer). Further, Bioconductor, which hosts many R packages useful for pre-processing and analyzing experimental biomedical data, relies heavily on an object-oriented framework \cite{gentleman2004bioconductor}.  This aids interoperability among Bioconductor packages and helps contain different types of data from an experiment (e.g., expression measurements, phenotypes, and administrative data from an experiment) \cite{gentleman2004bioconductor}, but these data formats are ``untidy", in the sense that they do not follow the format required for \textit{tidyverse} tools \cite{biobroom} While these formats are well-justified within open-source software for pre-processing complex biomedical data, they add a critical barrier for researchers wishing
-to implement reproducibility tools \cite{robinson2014broom}. This hurdle can be surmounted by skilled R programmers, but it creates a significant barrier for researchers who are new to scripting tools \cite{robinson2014broom}, and it can reduce transparency of analysis by requiring obscure, lengthy code to extract and tidy data from the complex data object \cite{robinson2014broom}. Very recently, the \textit{broom} and \textit{biobroom} R packages have been developed 
-to extract a 'tidy' dataset from many common complex data formats that are output by R functions, including much of the output formats common in pre-processing biomedical experimental data \cite{robinson2014broom, biobroom}.
+\textbf{2. Working with complex data types during pre-processing.} Many R functions output data in a format that is ``untidy" \cite{robinson2014broom}, in the sense that it does not comply with the structured ``tidy" format required by R's \textit{tidyverse} tools \cite{wickham2014tidy}. This is particularly true for raw data from many biomedical experiments, especially machine-generated data (e.g., output from a flow cytometer or mass spectrometer). Further, Bioconductor, which hosts many R packages useful for pre-processing and analyzing experimental biomedical data, relies heavily on an object-oriented framework \cite{gentleman2004bioconductor}.  This aids interoperability among Bioconductor packages and helps contain different types of data from an experiment (expression measurements, phenotypes, and administrative data) \cite{gentleman2004bioconductor}. While these formats are well-justified within open-source software for pre-processing complex biomedical data, they add a critical barrier for researchers wishing
+to implement reproducibility tools \cite{robinson2014broom}. This hurdle can be surmounted by skilled R programmers, less so for researchers new to scripting tools \cite{robinson2014broom}, and it can reduce transparency of analysis by requiring obscure, lengthy code to extract and tidy data from the complex data object \cite{robinson2014broom}. Very recently, the \textit{broom} and \textit{biobroom} R packages have been developed 
+to extract a ``tidy" dataset from many common complex data formats that are output by R functions \cite{robinson2014broom, biobroom}.
 The \textit{biobroom} package, in particular, can ``tidy" data within many popular Bioconductor data formats, including \textit{ExpressionSet} objects \cite{biobroom}. These topics will be covered in a \textit{Principles} module on ``Complex data types in
 experimental data pre-processing", a \textit{Implementation} module on ``Complex
 data types in R and Bioconductor", and an \textit{Example} module called
-``Example: Converting from complex to 'tidy' data formats" (Table \ref{tab:content_two}).
+``Example: Converting from complex to 'tidy' data formats" (Table \ref*{tab:content_two}).
 
 \textbf{3. Reproducible data pre-processing protocols.} Pre-processing software requires many parameter choices, which can lead to an explosion of possible combinations of ways to pre-process experimental biomedical data \cite{munafo2017manifesto, shade2015computing, pernet2015improving}. To ensure transparent and high-quality biomedical research, it is important to be thoughtful in selecting these parameter values and to keep a detailed record of which parameter values were selected and why. Ideally, a research group should maintain ``protocols" describing this pre-processing that are as detailed and reproducible as their experimental protocols  \cite{gentleman2004bioconductor}. Creating and maintaining such \textit{data pre-processing protocols} helps make it easier and clearer for laboratory-based researchers to share their pre-processing ``recipe" with collaborators and to publish journal articles that meet reproducibility guidelines. It also helps ensure continuity in methods for a research group, ensuring that the same pre-processing is maintained as researchers join and leave the group \cite{shade2015computing}.
 Reproducibility tools can be used to create \textit{reproducible data pre-processing protocols}---documents that combine code and text in a ``knitted" document, which can be re-used across experiments and research projects. \textit{RMarkdown} can be used to combine code and text to create these reproducible data pre-processing protocols. These topics will be covered in a \textit{Principles} module called ``Introduction to reproducible data pre-processing protocols", an \textit{Implementation} module on ``RMarkdown
 for creating reproducible data pre-processing protocols", and an
 \textit{Example} module called ``Example: Creating a reproducible data
-pre-processing protocol" (Table \ref{tab:content_two}). 
+pre-processing protocol" (Table \ref*{tab:content_two}). 
 
 \underline{\textbf{Choice of tools to include in ``Implementation" modules.}}
 
@@ -412,7 +403,7 @@ improve reproducibility without a mastery of R. For example, \textit{RStudio} an
 keep them under version control, and interface with \textit{GitLab} without using any R code within the project. Similarly, while
 the ``tidy" data format is currently an important implementation common within R
 for structuring data, understanding its principles and characteristics does not
-require any knowledge of R. In our table of example ``tracks" (Table \ref{tab:tracks}), the track we give for an example Principal Investigator is one example
+require any knowledge of R. In our table of example ``tracks" (Table \ref*{tab:tracks}), the track we give for an example Principal Investigator is one example
 of a track that requires no prior knowledge of R or other programming
 languages.   
 
@@ -426,9 +417,9 @@ languages.
 
 \textbf{Online book.} We will use an online book to collect all the training
 materials we develop in a single online document. Each chapter of the book will contain the
-materials for one of the modules listed in Tables \ref{tab:content_one} and
-\ref{tab:content_two}, for twenty chapters total. We have created a prototype
-(Figure \ref{fig:prototype}) to demonstrate some features of the final book.
+materials for one of the modules listed in Tables \ref*{tab:content_one} and
+\ref*{tab:content_two}, for twenty chapters total. We have created a prototype
+(Figure \ref*{fig:prototype}) to demonstrate some features of the final book.
 Users will be able to quickly navigate through chapters with a navigation bar on
 the left of the webpage, with chapter subsection links opening when a chapter is
 selected. We will embed a lecture video at the start of the chapter, allowing
@@ -436,7 +427,7 @@ a user to watch the video content without leaving the book website. This type of
 in which video content is woven together with written text and additional educational materials, has been
 praised as an effective format for presenting online training materials \cite{searls2012online}.
 The book will
-include a link for the trainee to download a copy as a PDF or EPUB file, to use
+include a link for the trainee to download a copy as a PDF or EPUB file to use
 as a future reference offline if desired. The format also includes buttons that
 can be used to share the link to the online book with others through Twitter and
 other platforms, as well as a link to the book's \textit{GitHub} repository, to allow
@@ -452,14 +443,14 @@ freely post this book online. Dr. Anderson (PI) has previously created two
 \textbf{Video lectures.} 
 Since videos can engage online learners better than some other types of learning materials \cite{searls2012ten}, each chapter will include a video lecture that covers
 the module's material, with the approximate length of each lecture listed in
-Tables \ref{tab:content_one} and \ref{tab:content_two}. We will record these
+Tables \ref*{tab:content_one} and \ref*{tab:content_two}. We will record these
 video lectures in CSU's Computer Assisted Teaching Support laboratory (see
 letter from Dr. Andrew West), which includes equipment and staff for creating
 professional-quality video lectures. We will use YouTube \cite{youtube} to freely host these
 videos, which will allow us to embed the video within the text of the module's chapter in the
-online book (see Figure \ref{fig:prototype} for an example of how this will look
+online book (see Figure \ref*{fig:prototype} for an example of how this will look
 to trainees). Hosting the video lectures through YouTube will allow
-us to take advantage of YouTube's excellent, free, and well-tested platform for
+us to take advantage of YouTube's free, and well-tested platform for
 sharing videos, as well as allow us to collect detailed analytics on how often
 each video is watched and for how long, to help us assess the use of this
 component of the training material. 
@@ -468,7 +459,7 @@ component of the training material.
 educational material, to help the trainee absorb the material and assess his or
 her mastery of the topics. Depending on the module, this additional content will
 either be a quiz, questions for discussion, or an applied exercise (see Tables
-\ref{tab:content_one} and \ref{tab:content_two} for the specific material
+\ref*{tab:content_one} and \ref*{tab:content_two} for the specific material
 planned for each module). For many of the \textit{Implementation} modules, these extra educational materials will be applied exercises, since providing tutorials, example code, and example datasets can substantially improve the ability of new users to learn software tools \cite{list2017ten, searls2012ten, via2011ten}. Including quizzes as the additional educational material within some of the modules will help trainees self-evaluate their mastery of the material \cite{searls2012ten, via2011ten}. 
 We will also include audio and
 video content walking the trainee through answers and solutions for these
@@ -477,7 +468,7 @@ and audio discussions help mimic the detailed
 walk-throughs and discussions that we would do after a student attempted these
 materials if we were teaching these materials in person. As with the video lectures, we will tape this video
 and audio content in CSU's Computer Assisted Teaching Support laboratory. We will host the video content through YouTube \cite{youtube} and the
-audio content through SoundCloud \cite{soundcloud}, which will allow us embed the hosted content in the online book. We will use Google Forms \cite{googleforms} as a free and unlimited way
+audio content through SoundCloud \cite{soundcloud}. We will use Google Forms \cite{googleforms} as a free and unlimited way
 to create the quizzes and embed them in the online book.
 
 \noindent \textbf{Insuring compliance with Rehabilitation Act.} We have plans
@@ -506,7 +497,7 @@ software on these topics (e.g., \cite{uswebr, godfrey2013statistical}).
 
 \input{tables/team_description.tex}
 
-Our core team (Table \ref{tab:team_description}) combines experts in R programming (Anderson, Lyons) with
+Our core team (Table \ref*{tab:team_description}) combines experts in R programming (Anderson, Lyons) with
 laboratory-based biomedical researchers in microbiology and immunology
 (Henao-Tamayo, Gonzalez-Juarrero, Robertson) who are \textbf{attuned to the
 needs of and barriers to improving the reproducibility of experimental data
@@ -515,8 +506,7 @@ Our team will allow us to develop training modules that present state-of-the-art
 approaches and tools for reproducibility, but do so in a way that is prioritized
 to be most useful and accessible to biomedical researchers whose training has
 focused on laboratory-related, rather than computational, research. 
-
-\noindent Our team will also include a to-be-named undergraduate student hourly and Dr. Julie Maertens (Research Associate), a senior evaluator
+Our team also includes a to-be-named undergraduate student hourly and Dr. Julie Maertens (Research Associate), a senior evaluator
 at the Colorado State University Science, Technology, Engineering, and Math (STEM) Center. The student hourly will assist Dr. Anderson
 in the technical work of publishing the content our team develops in an online book. 
 Dr. Maertens will assist in the design and
@@ -531,7 +521,7 @@ support.
 \input{tables/team_roles.tex}
 
 The Principal Investigator and all four Co-Investigators will collaborate to 
-develop the materials in the training modules. We have designed a plan (Table \ref{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the \textbf{primary authors} of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the \textbf{first tester} of the module and will evaluate and test all module material, providing detailed feedback to the two authors of the module to allow them to refine the material. The training materials for the module will then be tested in an in-person CSU pilot testing session (sessions will occur twice per year over the project period, with each session testing the content for approximately five modules), and further refined based on that feedback, as well as on feedback from the two Co-Investigators who did not have roles of author or first tester for that module, and any feedback from early online users. After this refinement based on early feedback, Dr. Anderson will film the video lecture for the module.  
+develop the materials in the training modules. We have designed a plan (Table \ref*{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the \textbf{primary authors} of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the \textbf{first tester} of the module and will evaluate and test all module material, providing detailed feedback to the two authors of the module to allow them to refine the material. The training materials for the module will then be tested in an in-person CSU pilot testing session (sessions will occur twice per year over the project period, with each session testing the content for approximately five modules), and further refined based on that feedback, as well as on feedback from the two Co-Investigators who did not have roles of author or first tester for that module, and any feedback from early online users. After this refinement based on early feedback, Dr. Anderson will film the video lecture for the module.  
 Throughout the module development period (first two years of the project), Dr. Anderson and the undergraduate student will transfer the developed training content into the online book format and publish it online, and Dr. Anderson will be in charge of maintaining and updating the online material during the third project year. Dr. Anderson will lead the planning and implementation of the CSU pilot testing sessions and other activities related to pilot testing and refinement of the training modules. Dr. Maertens will assist Dr. Anderson at points throughout the project period to develop materials for evaluation, including feedback surveys to use with CSU pilot testers, survey questions to include in the online book for evaluation purposes, and brief training on how to best elicit qualitative feedback from pilot testers during the biannual CSU pilot testing sessions. The four co-investigators will play key roles in disseminating the training materials to our key audience, as they are all well-connected within the microbiology and immunology research communities. Throughout the project period, Dr. Anderson, the four co-investigators, Dr. Maertens, and the student hourly will meet as a group at least four times per project year to check in on progress on the project. 
 
 Our plan of content development and publishing is ambitious, but we are
@@ -596,25 +586,24 @@ evaluator at the center.
 \textbf{Pilot testing}
 
 \textbf{We will pilot test the training materials using three methods: (1) biannual on-campus  day-long pilot testing at Colorado State University (two sessions per project year, six total over the project); (2) a workshop at the American Society for Microbiology Conference in year 2 of the project; and (3) early online users of the training materials.} We expect that these different methods will allow us to collect different sets of 
-feedback on the frequency of use and usefulness of the training materials (Table \ref{tab:evaluation}), providing a rich collection of ideas for refining the materials. For each of the modules, we have outlined learning objectives will help us evaluate if the training modules are useful in achieving their educational goals (Tables \ref{tab:content_one} and \ref{tab:content_two}).
+feedback on the frequency of use and usefulness of the training materials (Table \ref*{tab:evaluation}), providing a rich collection of ideas for refining the materials. For each of the modules, we have outlined learning objectives will help us evaluate if the training modules are useful in achieving their educational goals (Tables \ref*{tab:content_one} and \ref*{tab:content_two}).
 
 \input{tables/evaluation.tex}
 
 \textbf{Biannual Colorado State University pilot testing sessions.}
-We will conduct two, day-long pilot testing sessions at CSU in each year of the
+We will conduct two day-long pilot testing sessions at CSU in each year of the
 project. The CSU pilot testing participants will include current and future
 laboratory-based biomedical researchers. We will recruit trainees with a variety
 of research roles, including undergraduate students, graduate students,
 postdoctoral fellows, research associates, and principal investigators. We have
 informed several CSU biomedical researchers about these proposed testing
-sessions and received their support in encouraging CSU researchers within their
+sessions and received their support in encouraging researchers within their
 groups and departments to participate (see letters from Drs. Gregg Dean, Carol Wilusz, and Jeff Wilusz). 
 
 In the first two project years, each session will test the set of modules
 developed since the last user testing (approximately five modules will be tested
 in each of these session). The sessions will begin with our team giving live
-lectures of the same content we plan to film for the video lectures included in
-the online book. This will allow us to improve and refine this content, based on
+lectures of the same content we plan to film for the video lectures. This will allow us to improve and refine this content, based on
 detailed feedback from testers representative of our target audience, before
 filming the final video lectures. During the rest of the session, we will divide
 the trainees into small teams to work through the additional educational
@@ -624,12 +613,12 @@ will have access to the in-development online book as they work through these
 materials. In the last year of the project, these sessions will revisit the material
 in modules that proved problematic in their first round of pilot testing, allowing us
 to re-test approximately ten of the modules (five tested per session in project year 3).
-To solicit specific feedback from these sessions, we will survey the participants during the sessions (for examples of the types of feedback we will collect through these surveys, see Table \ref{tab:evaluation}). Six months after each pilot testing session, we will send participants a follow-up survey, to help evaluate longer-term success of the training in improving the reproducibility of data recording and pre-processing. Dr. Anderson (PI) has experience in productively conducting these kinds of user
+To solicit specific feedback from these sessions, we will survey the participants during the sessions (for examples of the types of feedback we will collect through these surveys, see Table \ref*{tab:evaluation}). Six months after each pilot testing session, we will send participants a follow-up survey, to help evaluate longer-term success of the training in improving the reproducibility of data recording and pre-processing. Dr. Anderson (PI) has experience in productively conducting these kinds of user
 testing sessions at CSU. She has run several two-hour user testing sessions with
 students from various departments of Colorado State University prior to
 releasing R software packages \cite{futureheatwaves, countyweather}. Further, in
 April 2016, she led a longer, two-day user testing session through a Weather
-Data Hackathon at Colorado State University (Figure \ref{csu-r-hackathon}).
+Data Hackathon at Colorado State University (Figure \ref*{csu-r-hackathon}).
 Some of the ideas and code developed during this Hackathon have
 since led to development and publication of open source software
 \cite{countyfloods, noaastormevents}.
@@ -648,7 +637,7 @@ The American Society for Microbiology presents pre-conference workshops at its a
 conference, for which scientists can submit proposals. We will submit a proposal 
 to lead a day-long workshop at the ASM conference in year 2 of the project. This 
 workshop will cover the content of most of the training modules listed in Tables
-\ref{tab:content_one} and \ref{tab:content_two}. It will include live lectures of the 
+\ref*{tab:content_one} and \ref*{tab:content_two}. It will include live lectures of the 
 materials from the online video lectures, as well as directed work through the 
 additional educational materials for each module. As with the CSU pilot testing sessions, we will use surveys to get immediate and follow-up (six months after, to evaluate longer-term outcomes) feedback from 
 the participants of this workshop.
@@ -660,16 +649,16 @@ posting the current version of the online book through \textit{GitHub Pages}, us
 changes to its underlying code. Dr. Anderson has used a similar development process
 with an online coursebook \cite{andersoncoursebook}; this open development process
 helps attract early users and also provides book users with a real-life view of how 
-version control tools and platforms can enable ``live" development of a project. 
+version control tools and platforms can enable ``live" development of a project. In fact, a similar process was used to develop this proposal (http://github.com/geanders/reproducible\_modules), following the lead of a previous project funded under this mechanism (https://github.com/riffomonas/RR\_R25\_2014).
 
 By six months into year 1 of the project, we will 
 have a first version of the online book's written text for at least five 
 modules. At this point, we will actively recruit early online users through
 social media and through our networks R users (Anderson and Lyons) and biomedical researchers (Gonzalez-Juarrero, Henao-Tamayo, and Robertson) (see letters from Drs. Roger Peng and Jorge Henao-Mejia). We will enable Google Analytics \cite{googleanalytics} on the online book's webpage, which will allow us to track how many people 
-access the online book, how often they stay on the book's page, and the distribution of these early users across the United States and the world. 
+access the online book, how often they stay on the book's page, as well as the distribution of these early users across the United States and the world. 
 Similarly, analytics from the platforms we use to host embedded material (YouTube \cite{youtube},
 SoundCloud \cite{soundcloud}, and Google Forms \cite{googleforms}) will allow us to track the use of those materials.
-We will use Google Forms \cite{googleforms} to create voluntary surveys within the online book, to generate additional feedback from these early users in terms of their characteristics and on the usefulness of the modules.  While this voluntary survey will not provide data on \textit{all} early online users, it will help characterize a collection of the users, and we selected to make the survey voluntary (rather than required to access the book) in hopes of making the book as accessible as possible, and to avoid discouraging users who might be drawn in by browsing the materials before committing to provide their information or feedback.
+We will use Google Forms \cite{googleforms} to create voluntary surveys within the online book, to generate additional feedback from these early users in terms of their characteristics and on the usefulness of the modules.  While this voluntary survey will not provide data on \textit{all} early online users, it will help characterize a collection of the users. We are selecting to make the survey voluntary (rather than required to access the book) in hopes of making the book as accessible as possible, and to avoid discouraging users who might be drawn in by browsing the materials before committing to provide their information or feedback.
 
 \textbf{External program evaluation}
 
@@ -690,13 +679,13 @@ Evaluation data will include baseline program metrics as well as measures to gau
 
 In addition to the proposed data collection, Dr. Maertens will train the project team to collect qualitative data among test users during the day-long user testing sessions (on-campus at CSU and at the ASM workshop), and how to use a qualitative content analysis process to extract ‘themes’ related to feedback (e.g., strengths, weaknesses) about the modules. These themes may be used, along with the evaluation survey data, to make iterative improvements to the modules each year.
 
-Survey results will be presented annually via written report, and will summarize all findings and iterative program changes and provide recommendations for future programming. See Table \ref{tab:external_evaluation} for evaluation questions and methods.
+Survey results will be presented annually via written report, and will summarize all findings and iterative program changes and provide recommendations for future programming. See Table \ref*{tab:external_evaluation} for evaluation questions and methods.
 
 \input{tables/external_evaluation.tex}
 
 \subsection{Dissemination Plan}
 
-Using \textit{GitHub Pages} \cite{gitpages}, we will publish the book freely online, with all materials published under the Creative Commons Attribution-ShareAlike 4.0 International License, \textbf{making all materials freely accessible, both nationally and internationally}. From the beginning of the project, we will publish the book online as it develops, and we will promote this material through social media (e.g., Twitter) and through our network of colleagues in biomedical research and the R programming community (for example, see letters from Drs. Roger Peng and Jorge Henao-Mejia). Since this book will be hosted online, it will be easy to link to from the National Institute of General Medical Sciences' \textit{Clearinghouse for Training Modules to Enhance Data Reproducibility} \cite{clearinghouse}. There will be no paywall or other restriction on accessing any of the training materials, and source code for the book and exercises will be published on \textit{GitHub}. All video and audio content will be published online in free formats through YouTube \cite{youtube} and SoundCloud \cite{soundcloud}, with the content embedded in the online book (see Figure \ref{fig:prototype}). At the end of project years 2 and 3, we will also post a static version of the book to the website \textit{bookdown.org}, where people can go to find free online books published using the \textit{bookdown} format and which invites direct submissions from authors that have used these framework. 
+Using \textit{GitHub Pages} \cite{gitpages}, we will publish the book freely online, with all materials published under the Creative Commons Attribution-ShareAlike 4.0 International License, \textbf{making all materials freely accessible, both nationally and internationally}. From the beginning of the project, we will publish the book online as it develops, and we will promote this material through social media (e.g., Twitter) and through our network of colleagues in biomedical research and the R programming community (for example, see letters from Drs. Roger Peng and Jorge Henao-Mejia). Since this book will be hosted online, it will be easy to link to from the National Institute of General Medical Sciences' \textit{Clearinghouse for Training Modules to Enhance Data Reproducibility} \cite{clearinghouse}. There will be no paywall or other restriction on accessing any of the training materials, and source code for the book and exercises will be published on \textit{GitHub}. All video and audio content will be published online in free formats through YouTube \cite{youtube} and SoundCloud \cite{soundcloud}, with the content embedded in the online book (see Figure \ref*{fig:prototype}). At the end of project years 2 and 3, we will also post a static version of the book to the website \textit{bookdown.org}, where people can go to find free online books published using the \textit{bookdown} format and which invites direct submissions from authors that have used these framework. 
 
 In addition to these methods of disseminating the training materials to a general audience, \textbf{we will also take specific steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials.} We will apply to present posters or oral presentations in years 2 and 3 of the project at three national and international conferences (American Society for Microbiology Conference, American Association of Immunologists Meeting, and International Society for the Advancement of Cytometry) to help get out the news among our target audience that these materials are freely available. We will also invite colleagues (and their research group members) at and outside of CSU to serve as early online users of the our materials (see letters from Drs. Gregg Dean, Carol Wilusz, Jeffrey Wilusz, and Jorge Henao-Mejia). In addition to providing us with feedback to help refine our materials, this will help us disseminate the materials. Finally, we will write and submit a paper describing these training materials and highlighting their content in a biomedical journal relevant to our target audience.
 
@@ -704,7 +693,7 @@ The PI has previously had substantial success in disseminating online training m
 
 \subsection{Program Participants}
 
-Here we propose to develop training modules that are freely available nationally and internationally. Unlike traditional, on-site training or educational programs, we do not have a constrained program participant group that we plan to enroll in the final program funded by this award, which we consider use of the online training materials. However, we anticipate that the key participant group in this program, in terms of accessing and using the developed online materials, will be laboratory-based biomedical researchers interested in improving reproducibility within their laboratories. Table \ref{tab:tracks} gives some examples of different types of researchers we hope will participate in this program through use of the final online materials. Given the open dissemination of these materials, other participants could include researchers from other fields or people from outside academic research. We anticipate that at least a few hundred people will participate in using the final training materials, although based on our previous work in disseminating training materials openly online, the number of participants could reach several thousand.
+Here we propose to develop training modules that are freely available nationally and internationally. Unlike traditional, on-site training or educational programs, we do not have a constrained program participant group that we plan to enroll in the final program funded by this award, which we consider use of the online training materials. However, we anticipate that the key participant group in this program, in terms of accessing and using the developed online materials, will be laboratory-based biomedical researchers interested in improving reproducibility within their laboratories. Table \ref*{tab:tracks} gives some examples of different types of researchers we hope will participate in this program through use of the final online materials. Given the open dissemination of these materials, other participants could include researchers from other fields or people from outside academic research. We anticipate that at least a few hundred people will participate in using the final training materials, although based on our previous work in disseminating training materials openly online, the number of participants could reach several thousand.
 
 \subsection{Potential Pitfalls and Alternative Plans}
 
@@ -715,7 +704,7 @@ We have high confidence that we will be able to successfully develop, test, refi
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\textwidth]{figures/timeline.pdf}
-    \caption{Timeline for proposed activities for this project. The solid red lines show the start and end of the project period, while the dotted red lines separate each project year. All training materials will be freely and publicly available online by the end of the second project year.}
+    \caption{Timeline for proposed activities for this project. The vertical solid red lines show the start and end of the project period, while the vertical dotted red lines separate each project year. All training materials will be freely and publicly available online by the end of the second project year.}
     \label{fig:timeline}
 \end{figure}
 
