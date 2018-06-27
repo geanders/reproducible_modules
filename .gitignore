@@ -7,4 +7,9 @@
 *.aux
 *.bbl
 *.pdf
-pdf/*.pdf
+biosketches/*
+extras/*
+letters_of_support/*
+literature/*
+to_submit/*
+to_submit.zip
