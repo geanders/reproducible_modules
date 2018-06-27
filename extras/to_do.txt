@@ -3,25 +3,19 @@ Mike's:
 - Mike take a last pass at Specific Aims
 - Take one more pass at tables 1 and 2
 - Take a look at Human Subjects
-- try something with git
 
 Brooke's: 
 
-- LOS: Other group's LOS
-- Update Project Abstract 
 - Final proof of Project Abstract
 - Final proof of Project Narrative
 - Final proof of Facilities & Other Resources
-- Brooke takes a last pass at Specific Aims
 - Final proof of Specific Aims
 - Final proof of Cover Letter
 - Take another pass at Human Subjects
 - Proofread references
 - Take one more pass at tables 1 and 2
 - Take out anything about non-CSU piloting
-- Proofread Biosketches
 - Make Biosketches as PDFs
-- Research approach---work in Mike's suggestions
 - Make repo public (and move to GitHub?)
 - Fill out assignment request form
 - Spell check
