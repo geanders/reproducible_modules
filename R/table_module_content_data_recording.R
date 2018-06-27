@@ -5,7 +5,7 @@ library(kableExtra)
 my_table <- tribble(
   ~ `Module title`, ~ Type, ~ `Description of module content`, 
   ~ `Objectives (After taking the module, the trainee can ...)`, 
-  ~ `Video length`,  ~ `Extra educational materials`,
+  ~ `Video length (min.)`,  ~ `Extra educational materials`,
   
 # Module 1  
   "Separating data recording and analysis", "Principles",
@@ -171,7 +171,7 @@ my_table <- tribble(
       to use to consistently and reproducibly manage all files for a research project
 
      \\tabitem Understand how RStudio can be used to create a template
-      to use to create consistently-structured research 'Project' directories", 
+      to create consistently-structured research 'Project' directories", 
     "25", 
     "\\tabitem Discussion questions, including descriptions of how the trainee has saved and
       tracked research project files for previous research projects and what barriers,
@@ -188,14 +188,14 @@ my_table <- tribble(
       and initializing a new research project directory using the created template.
       This example will be from a laboratory-based research group that studies the efficacy of 
       tuberculosis drugs in a murine model.", 
-    "\\tabitem Create a 'Project' template in RStudio to use to initialize 
+    "\\tabitem Create a 'Project' template in RStudio to initialize 
       consistently-formatted 'Project' directories to store all files related to 
       a research project
   
       \\tabitem Initialize a new 'Project' directory using this template", 
     "15", 
     "\\tabitem Applied exercise: Create and save a 'Project' 
-      template that meets specifications provided for an example research group; 
+      template that meets specifications provided for an example research group 
 
      \\tabitem Video demonstrating a detailed solution 
       to the applied exercise.",
@@ -231,8 +231,8 @@ my_table <- tribble(
       computer for local version control, they can begin using version control 
       platforms (e.g., GitLab, GitHub) to collaborate with others in their research
       group while keeping the project under version control. These platforms allow
-      the all collaborators to share a current version of a project directory 
-      (similar to Dropbox), but in a way that allows easy use of version control 
+      all collaborators to share a current version of a project directory 
+      in a way that allows easy use of version control 
       and that is more efficient for exploring (and, when necessary, undoing) the changes 
       each team member has made to project files. In this module, we will describe 
       why a research team may want to use a version control platform like GitLab 
@@ -244,8 +244,8 @@ my_table <- tribble(
      \\tabitem Describe the difference between version control (e.g., git) and 
       a version control platform (e.g., GitLab)", 
     "10", 
-    "\\tabitem Discussion questions: Describe how you have shared research project 
-    files in past research projects---email? Dropbox? Department servers?
+    "\\tabitem Discussion questions: Describe how past research projects 
+    share files without using version control
 
     \\tabitem Short audio file with two Co-Is discussing their answers", 
 

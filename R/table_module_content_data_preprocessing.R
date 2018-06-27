@@ -5,7 +5,7 @@ library(kableExtra)
 my_table <- tribble(
   ~ `Module title`, ~ Type, ~ `Description of module content`, 
   ~ `Objectives (After taking the module, the trainee can ...)`, 
-  ~ `Video length`,  ~ `Extra educational materials`,
+  ~ `Video length (min.)`,  ~ `Extra educational materials`,
   
 # Module 1
   "Principles and benefits of scripted pre-processing of experimental data", "Principles",
@@ -14,7 +14,7 @@ my_table <- tribble(
       peak finding and quantification for LC / MS metabolomics data). While 
       often proprietary point-and-click software is available for this pre-processing,
       use of such software can limit the transparency and reproducibility of this 
-      pre-processing stage of the analysis and is 
+      analysis stage and is 
       time-consuming for repeated tasks over large research projects.
       In this module, we will explain how scripted pre-processing, especially using open source software, 
       can improve the transparency, reproducibility, and
@@ -83,7 +83,7 @@ my_table <- tribble(
       R's 'tidyverse'.", 
     "15", 
     "\\tabitem Quiz questions: What is R's 
-      'tidyverse' is and why is it a powerful yet user-friendly tool for improving
+      'tidyverse' and why is it a powerful yet user-friendly tool for improving
       the reproducibility of research projects 
 
       \\tabitem Video with detailed answers and explanations for the quiz questions 
@@ -127,7 +127,7 @@ my_table <- tribble(
   These tools create a clean, simple connection between the complex data formats
   often used in pre-processing experimental data and the 'tidy' format
   required to use the 'tidyverse' tools now taught in many introductory R courses. In this module, we will describe the 'list' data structure,
-    the common backbone for complex data structures in R, and well as provide tips on how to
+    the common backbone for complex data structures in R and provide tips on how to
   explore and extract data stored in R in this format, including through the 
      \\textit{broom} and \\textit{biobroom} packages.", 
     "\\tabitem Describe the structure of R's 'list' data
@@ -155,7 +155,7 @@ my_table <- tribble(
       We will demonstrate the complex initial format of this pre-processed data and then
       show trainees how a 'tidy' dataset can be extracted and used for further data
       analysis and visualization using the popular R 'tidyverse' tools. 
-      This example will use real experimental data from on of our Co-Is 
+      This example will use real experimental data from one of our Co-Is 
       research on the immunology of tuberculosis.", 
     "\\tabitem Describe how tools like \\textit{biobroom} were used in this real 
     research example to convert from the complex data format from pre-processing to
@@ -245,8 +245,8 @@ my_table <- tribble(
       pre-processing protocol to replace manual or point-and-click data pre-processing
       tools", 
     "20", 
-    "\\tabitem Quiz questions: Test understand of how and why we 
-      created a reproducible data pre-processing protocols for this 
+    "\\tabitem Quiz questions: Test understanding of how and why we 
+      created a reproducible data pre-processing protocol for this 
       pre-processing step, and how this improves reproducibility for the research group; 
 
       \\tabitem Short video with a detailed discussion of quiz questions"
