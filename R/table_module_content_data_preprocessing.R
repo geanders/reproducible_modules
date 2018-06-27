@@ -11,37 +11,31 @@ my_table <- tribble(
   "Principles and benefits of scripted pre-processing of experimental data", "Principles",
     "The experimental data collected for biomedical research often requires 
       pre-processing before it can be analyzed (e.g., gating of flow cytometry data, 
-      peak finding and quantification for LC / MS metabolomics data). While 
-      often proprietary point-and-click software is available for this pre-processing,
-      use of such software can limit the transparency and reproducibility of this 
+      feature finding / quantification for mass spectrometry data). 
+    Use of point-and-click software can limit the transparency and reproducibility of this 
       analysis stage and is 
-      time-consuming for repeated tasks over large research projects.
-      In this module, we will explain how scripted pre-processing, especially using open source software, 
-      can improve the transparency, reproducibility, and
-      transparency of research.", 
+      time-consuming for repeated tasks.
+      We will explain how scripted pre-processing, especially using open source software, 
+      can improve transparency and reproducibility.", 
     "\\tabitem Define 'pre-processing' of experimental data 
 
-      \\tabitem Describe how point-and-click software limits transparency and reproducibility
-      of data pre-processing
-
       \\tabitem Describe an open source
-      code script and explain how it can enable pre-processing 
-      experimental data 
+      code script and explain how it can increase reproducibility of data pre-processing
 
       ", 
     "15", 
     "\\tabitem Discussion questions, including common pre-processing needs and 
-    practices in their research area
+    practices 
       
       \\tabitem Short audio recording of two Co-Is giving their
-      own answers to these discussion questions",
+      answers",
 
 # Module 2
   "Introduction to scripted data pre-processing in R", "Implementation",
-    "In this module, we will show how researchers can implement scripted pre-processing
-    of experimental data through use of R scripts. 
-    We will demonstrate the difference between interactive coding and the
-      use of code scripts, using R for examples. We will then demonstrate how to 
+    "We will show how to implement scripted pre-processing
+    of experimental data through R scripts. 
+    We will demonstrate the difference between interactive coding and 
+     code scripts, using R for examples. We will then demonstrate how to 
       create, save, and run an R code script for a simple data cleaning task.", 
     "\\tabitem Describe what an R code script is and how it differs from interactive
       coding in R 
@@ -104,18 +98,18 @@ my_table <- tribble(
   and outline the hurdles created in 
   reproducibility tool use among laboratory-based scientists.", 
   "\\tabitem Explain why R software for pre-processing biomedical data often stores 
-  data in complex, 'untidy' formats; 
+  data in complex, 'untidy' formats 
   
   \\tabitem Describe how these complex data formats can create barriers to 
   laboratory-based researchers seeking to use reproducibility tools for 
-  data pre-processing.", 
+  data pre-processing", 
   "15", 
   "\\tabitem Quiz questions: Why are complex data formats
   often used within steps of experimental data pre-processing in open-source
   software and how does their use complicate the use of reproducibility tools
   
   \\tabitem Video providing detailed
-  answers to quiz questions",
+  answers",
 
 # Module 5
   "Complex data types in R and Bioconductor", "Implementation",
