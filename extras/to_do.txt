@@ -9,7 +9,6 @@ Brooke's:
 - Final proof of Cover Letter
 - Proofread references
 - Take one more pass at tables 1 and 2
-- Take out anything about non-CSU piloting
 - Make repo public (and move to GitHub?)
 - Spell check
 - Fill out RICRO form
