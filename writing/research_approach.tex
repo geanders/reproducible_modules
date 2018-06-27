@@ -141,7 +141,7 @@ book, with features highlighted.} \label{fig:prototype} \end{figure}
 \textbf{The use of this framework will help us effectively reach a large
 audience of laboratory-based biomedical researchers in need of training materials to improve the reproducibility of data
 recording and pre-processing.} We will 
-post this book online using \textit{GitHub Pages} \cite{gitpages}, as we have done
+post this book online using \textit{gitHub Pages} \cite{gitpages}, as we have done
 with a previous book created with the same framework \cite{andersoncoursebook}, allowing anyone to
 freely access the content online. We will publish both the current version of the developing book and its underlying code openly online from the beginning
 of our development of the training materials. \textbf{By making the training
@@ -193,7 +193,7 @@ in the hands of laboratory-based, rather than computationally-based, researchers
 While many excellent free training resources exist to improve the computational
 reproducibility of biomedical research, most of these
 materials---including some developed by Dr. Anderson for her online and
-CSU-based courses in R programming \cite{andersoncoursebook, andersonmastering}---target researchers at the stage of
+Colorado State University-based courses in R programming \cite{andersoncoursebook, andersonmastering}---target researchers at the stage of
 \textit{data analysis} for the audience of \textit{computationally-based researchers}, and provide much less guidance on the principles and
 techniques to improve reproducibility of the earlier steps of
 \textit{experimental data recording} and \textit{experimental data
@@ -204,9 +204,9 @@ Fall 2017 Dr. Gonzalez-Juarrero attended Dr. Anderson's (PI) course in \textit{R
 Programming for Research} and has brought the ideas and techniques back to her
 research laboratory, and in Spring 2018 Dr. Henao-Tamayo and Dr.
 Anderson began co-advising a graduate student to implement
-open-source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
+open source tools for pre-processing flow cytometry in Dr. Henao-Tamayo's
 laboratory. Collectively, we are passionate about the idea that
-open-source tools can be used to substantially improve the
+open source tools can be used to substantially improve the
 reproducibility of data recording and pre-processing in laboratory-based
 biomedical research, and yet we are also able to recognize that there are key barriers in
 implementing these tools in this setting, as well as in training
@@ -275,10 +275,10 @@ ecology \cite{hsieh2016inext}, and genomics \cite{yin2012ggbio}.
 
 These topics will
 be covered in a \textit{Principles} module on ``Principles and power of
-structured data formats", two \textit{Implementation} modules on ``The 'tidy'
+structured data formats", two \textit{Implementation} modules on ``The ``tidy''
 data format: an implementation of a structured data format" and ``Designing
 templates for tidy data collection", and one \textit{Example} module called
-``Example: Creating a template for 'tidy' data collection" (Table \ref*{tab:content_one}). 
+``Example: Creating a template for ``tidy'' data collection" (Table \ref*{tab:content_one}). 
 
 \textbf{3. Managing all research project files in a single, structured directory.}
 Reproducibility can also be improved, starting at the data recording stage, by using a single, structured directory to store all files related to the
@@ -287,7 +287,7 @@ researchers as a way to enable computationally reproducible research, especially
 for research conducted by teams \cite{marwick2018packaging,
 parker2017opinionated, lowndes2017our}. If a consistent structure is used for these directories across different research projects, it can substantially increase the efficiency of, and reduce errors in, data pre-processing and analysis, as code scripts can be created that can be re-used across different project directories with few required changes \cite{marwick2018packaging}. This practice also improves the efficiency and effectiveness of collaborations with data scientists, mathematical modelers, and statisticians, as it allows the researchers to share critical research project files---raw data, processed data, and code scripts for extracting the processed data from the raw data \cite{ellis2018share, shade2015computing}---in a single directory. Further, some have suggested that if researchers learn better practices for managing ``clean" project files, it will help increase their willingness to share those files and so meet standards of reproducibility \cite{marwick2018packaging}. 
 
-One implementation of this practice is as an \textit{RStudio} ``Project". In \textit{RStudio}, a researcher can collect all project files in a single, structured directory and save this directory as a ``Project" \cite{rstudiousingprojects}. \textit{RStudio} ``Projects" allow easy integration with version control tools (\textit{git}) and online platforms for sharing a directory under version control (\textit{GitHub}, \textit{GitLab}). 
+One implementation of this practice is as an \textit{RStudio} ``Project". In \textit{RStudio}, a researcher can collect all project files in a single, structured directory and save this directory as a ``Project" \cite{rstudiousingprojects}. \textit{RStudio} ``Projects" allow easy integration with version control tools (\textit{git}) and online platforms for sharing a directory under version control (\textit{gitHub}, \textit{gitLab}). 
 While a ``Project" can have any internal
 structure, a common structure can be enforced across multiple research projects
 through the creation of a new ``Project" template, which defines the required
@@ -301,20 +301,20 @@ structured 'Project' directory for storing and tracking research project files",
 an \textit{Implementation} module on ``Creating 'Project' templates", and an
 \textit{Example} module called ``Example: Creating a 'Project' template" (Table \ref*{tab:content_one}).
 
-\textbf{4. Implementing version control.} As a research project progresses, a typical practice in many laboratory-based research groups is to save new, renamed versions of each file (e.g., ``draft1.doc", ``draft2.doc") \cite{bryan2018excuse}, so that the researchers can revert to earlier versions of a file. However, this practice leads to an explosion of files, and it becomes hard to track which files represent the ``current" state of a project. Version control---which tracks and documents changes to any files that the user chooses to track in a directory---allows researchers to edit and change research project files more cleanly, keeping a single copy of each file in the directory rather than multiple versions, while maintaining the power to backtrack to previous versions. Further, with version control, ``commit messages" are required to explain changes, making both the changes and the reasoning behind them transparent. The use of the version control software \textit{Git} has been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2018excuse, lowndes2017our, cetinkaya2017infrastructure}. Once a researcher has learned to use \textit{git} on their own computer for local version control, they can begin using version control 
-platforms (e.g., \textit{GitLab}, \textit{GitHub}) to collaborate with others in their research
-group while keeping the project under version control \cite{bryan2018excuse, shade2015computing}. Platforms like \textit{GitHub} and \textit{GitLab} allow
+\textbf{4. Implementing version control.} As a research project progresses, a typical practice in many laboratory-based research groups is to save new, renamed versions of each file (e.g., ``draft1.doc", ``draft2.doc") \cite{bryan2018excuse}, so that the researchers can revert to earlier versions of a file. However, this practice leads to an explosion of files, and it becomes hard to track which files represent the ``current" state of a project. Version control---which tracks and documents changes to any files that the user chooses to track in a directory---allows researchers to edit and change research project files more cleanly, keeping a single copy of each file in the directory rather than multiple versions, while maintaining the power to backtrack to previous versions. Further, with version control, ``commit messages" are required to explain changes, making both the changes and the reasoning behind them transparent. The use of the version control software \textit{git} has been encouraged as a tool to enable reproducible research \cite{piccolo2016tools, ram2013git, bryan2018excuse, lowndes2017our, cetinkaya2017infrastructure}. Once a researcher has learned to use \textit{git} on their own computer for local version control, they can begin using version control 
+platforms (e.g., \textit{gitLab}, \textit{gitHub}) to collaborate with others in their research
+group while keeping the project under version control \cite{bryan2018excuse, shade2015computing}. Platforms like \textit{gitHub} and \textit{gitLab} allow
 all collaborators to share a current version of a project directory 
 (similar to Dropbox), but in a way that allows easy use of version control 
 and that is more efficient for exploring (and, when necessary, undoing) the changes 
-each team member has made to project files \cite{bryan2018excuse}. For many years, using \textit{Git} version control required use of the command line,
+each team member has made to project files \cite{bryan2018excuse}. For many years, using \textit{git} version control required use of the command line,
 limiting its accessibility to researchers with limited programming experience.
 Graphical interfaces, however, have removed this barrier, and \textit{RStudio} has 
-particularly user-friendly tools for implementing version control. At Colorado State University, we have found that \textit{git} and \textit{GitHub} can be quickly taught  to researchers in their first programming course, when using the \textit{RStudio} / \textit{GitHub} interfaces, so that they can successfully use \textit{GitHub} to submit class assignments; others have reported similar success at other institutions \cite{bryan2018excuse}. These
+particularly user-friendly tools for implementing version control. At Colorado State University, we have found that \textit{git} and \textit{gitHub} can be quickly taught  to researchers in their first programming course, when using the \textit{RStudio} / \textit{gitHub} interfaces, so that they can successfully use \textit{gitHub} to submit class assignments; others have reported similar success at other institutions \cite{bryan2018excuse}. These
 topics will be covered in two \textit{Principles} modules called ``Harnessing
 version control for transparent data recording" and ``Enhance the
 reproducibility of collaborative research with version control platforms" as
-well as an \textit{Implementation} module on ``Using \textit{git} and \textit{GitLab} to implement
+well as an \textit{Implementation} module on ``Using \textit{git} and \textit{gitLab} to implement
 version control" (Table \ref*{tab:content_one}). 
 
 \underline{\textbf{Sequence 2: Improving the Reproducibility of Experimental Data
@@ -337,7 +337,7 @@ Statisticians have clearly stated that, to ensure research is reproducible and t
 A code script, like an R script, provides this ``explicit and exact recipe". Scripted pre-processing can also help reduce the temptation to manually edit data during pre-processing, including manually changing file formats, which prevents reproducibility and impedes transparency \cite{pernet2015improving}. While many of the pre-processing tasks required for biomedical experimental data are complex (e.g., feature identification, gating), R has package extensions that can be used for these tasks, many hosted on Bioconductor \cite{huber2015orchestrating}. 
 Open-source scriptable
 software tools bring other key advantages compared to proprietary software in terms of data
-pre-processing, including that open-source choices are transparent and often more robust and easier to extend \cite{cetinkaya2017infrastructure, huber2015orchestrating,
+pre-processing, including that open source choices are transparent and often more robust and easier to extend \cite{cetinkaya2017infrastructure, huber2015orchestrating,
 brown2014reproducible, piccolo2016tools, baumer2018lessons}. 
 These topics will be covered in one
 \textit{Principles} module on ``Principles and benefits of scripted
@@ -345,13 +345,13 @@ pre-processing of experimental data" and two \textit{Implementation} modules
 called ``Introduction to scripted data pre-processing in R" and ``Simplify
 scripted pre-processing through R's \textit{tidyverse} tools" (Table \ref*{tab:content_two}).
 
-\textbf{2. Working with complex data types during pre-processing.} Many R functions output data in a format that is ``untidy" \cite{robinson2014broom}, in the sense that it does not comply with the structured ``tidy" format required by R's \textit{tidyverse} tools \cite{wickham2014tidy}. This is particularly true for raw data from many biomedical experiments, especially machine-generated data (e.g., output from a flow cytometer or mass spectrometer). Further, Bioconductor, which hosts many R packages useful for pre-processing and analyzing experimental biomedical data, relies heavily on an object-oriented framework \cite{gentleman2004bioconductor}.  This aids interoperability among Bioconductor packages and helps contain different types of data from an experiment (expression measurements, phenotypes, and administrative data) \cite{gentleman2004bioconductor}. While these formats are well-justified within open-source software for pre-processing complex biomedical data, they add a critical barrier for researchers wishing
+\textbf{2. Working with complex data types during pre-processing.} Many R functions output data in a format that is ``untidy" \cite{robinson2014broom}, in the sense that it does not comply with the structured ``tidy" format required by R's \textit{tidyverse} tools \cite{wickham2014tidy}. This is particularly true for raw data from many biomedical experiments, especially machine-generated data (e.g., output from a flow cytometer or mass spectrometer). Further, Bioconductor, which hosts many R packages useful for pre-processing and analyzing experimental biomedical data, relies heavily on an object-oriented framework \cite{gentleman2004bioconductor}.  This aids interoperability among Bioconductor packages and helps contain different types of data from an experiment (expression measurements, phenotypes, and administrative data) \cite{gentleman2004bioconductor}. While these formats are well-justified within open source software for pre-processing complex biomedical data, they add a critical barrier for researchers wishing
 to implement reproducibility tools \cite{robinson2014broom}. This hurdle can be surmounted by skilled R programmers, less so for researchers new to scripting tools \cite{robinson2014broom}, and it can reduce transparency of analysis by requiring obscure, lengthy code to extract and tidy data from the complex data object \cite{robinson2014broom}. Very recently, the \textit{broom} and \textit{biobroom} R packages have been developed 
 to extract a ``tidy" dataset from many common complex data formats that are output by R functions \cite{robinson2014broom, biobroom}.
 The \textit{biobroom} package, in particular, can ``tidy" data within many popular Bioconductor data formats, including \textit{ExpressionSet} objects \cite{biobroom}. These topics will be covered in a \textit{Principles} module on ``Complex data types in
 experimental data pre-processing", a \textit{Implementation} module on ``Complex
 data types in R and Bioconductor", and an \textit{Example} module called
-``Example: Converting from complex to 'tidy' data formats" (Table \ref*{tab:content_two}).
+``Example: Converting from complex to ``tidy'' data formats" (Table \ref*{tab:content_two}).
 
 \textbf{3. Reproducible data pre-processing protocols.} Pre-processing software requires many parameter choices, which can lead to an explosion of possible combinations of ways to pre-process experimental biomedical data \cite{munafo2017manifesto, shade2015computing, pernet2015improving}. To ensure transparent and high-quality biomedical research, it is important to be thoughtful in selecting these parameter values and to keep a detailed record of which parameter values were selected and why. Ideally, a research group should maintain ``protocols" describing this pre-processing that are as detailed and reproducible as their experimental protocols  \cite{gentleman2004bioconductor}. Creating and maintaining such \textit{data pre-processing protocols} helps make it easier and clearer for laboratory-based researchers to share their pre-processing ``recipe" with collaborators and to publish journal articles that meet reproducibility guidelines. It also helps ensure continuity in methods for a research group, ensuring that the same pre-processing is maintained as researchers join and leave the group \cite{shade2015computing}.
 Reproducibility tools can be used to create \textit{reproducible data pre-processing protocols}---documents that combine code and text in a ``knitted" document, which can be re-used across experiments and research projects. \textit{RMarkdown} can be used to combine code and text to create these reproducible data pre-processing protocols. These topics will be covered in a \textit{Principles} module called ``Introduction to reproducible data pre-processing protocols", an \textit{Implementation} module on ``RMarkdown
@@ -369,7 +369,7 @@ implementations. However, few researchers are interested in learning every tool,
 and instead would prefer to learn one set of tools that ``just work", and presenting a single set of tools improves the chance of trainees mastering the tools \cite{brown2018ten}. 
 
 We have therefore chosen for the \textit{Implementation} 
-modules to focus on tools from the open-source R programming language ecosystem. R can be
+modules to focus on tools from the open source R programming language ecosystem. R can be
 freely, quickly, and easily downloaded and installed to a user's computer,
 allowing new users to get started quickly, a critical consideration for usable
 scientific software \cite{list2017ten}. R has been maintained for over a decade
@@ -381,8 +381,8 @@ well-developed environment for creating new tools that extend the core language
 \cite{xie2015dynamic, xie2016bookdown}. R's status as a common tool among statisticians and biostatisticians means that its use in early stages of
 experimental data recording and pre-processing can help foster closer
 collaborations between laboratory-based scientists and statisticians throughout
-the research process. \textit{RStudio} is a free, open-source Integrated Development Environment (IDE) for the R programming language. It is actively developed by a team of some of the best R programmers worldwide, including the creators of the \textit{tidyverse} (Hadley Wickham) and \textit{RMarkdown} (Yihui Xie). Some
-of the implementation tools---\textit{git} and \textit{GitLab}, for example---are separate from R
+the research process. \textit{RStudio} is a free, open source Integrated Development Environment (IDE) for the R programming language. It is actively developed by a team of some of the best R programmers worldwide, including the creators of the \textit{tidyverse} (Hadley Wickham) and \textit{RMarkdown} (Yihui Xie). Some
+of the implementation tools---\textit{git} and \textit{gitLab}, for example---are separate from R
 but can be mastered much more easily if trainees are taught to use them through
 \textit{RStudio}'s user-friendly interfaces rather than using the command line or other
 alternative interfaces. 
@@ -401,7 +401,7 @@ the \textit{Implementation} modules are conceptually focused on tools that an R
 programmer would use, several of the modules could be appreciated and used to
 improve reproducibility without a mastery of R. For example, \textit{RStudio} and its
 ``Projects" functionality can be used to help manage research project files,
-keep them under version control, and interface with \textit{GitLab} without using any R code within the project. Similarly, while
+keep them under version control, and interface with \textit{gitLab} without using any R code within the project. Similarly, while
 the ``tidy" data format is currently an important implementation common within R
 for structuring data, understanding its principles and characteristics does not
 require any knowledge of R. In our table of example ``tracks" (Table \ref*{tab:tracks}), the track we give for an example Principal Investigator is one example
@@ -431,21 +431,21 @@ The book will
 include a link for the trainee to download a copy as a PDF or EPUB file to use
 as a future reference offline if desired. The format also includes buttons that
 can be used to share the link to the online book with others through Twitter and
-other platforms, as well as a link to the book's \textit{GitHub} repository, to allow
+other platforms, as well as a link to the book's \textit{gitHub} repository, to allow
 early users of the in-development materials to provide feedback on typos, broken
 links, unclear materials, and other issues as we develop the
 materials. 
-We will use \textit{GitHub Pages} \cite{gitpages} to
+We will use \textit{gitHub Pages} \cite{gitpages} to
 freely post this book online. Dr. Anderson (PI) has previously created two
 \textit{bookdown}-based books, \textit{R Programming for Research} \cite{andersoncoursebook} and
 \textit{Mastering Software Development in R} \cite{andersonmastering}, and has posted and maintained
-\textit{R Programming for Research} online through \textit{GitHub Pages} continuously since Fall 2016, providing evidence of the robustness of this method of dissemination.  
+\textit{R Programming for Research} online through \textit{gitHub Pages} continuously since Fall 2016, providing evidence of the robustness of this method of dissemination.  
 
 \textbf{Video lectures.} 
 Since videos can engage online learners better than some other types of learning materials \cite{searls2012ten}, each chapter will include a video lecture that covers
 the module's material, with the approximate length of each lecture listed in
 Tables \ref*{tab:content_one} and \ref*{tab:content_two}. We will record these
-video lectures in CSU's Computer Assisted Teaching Support laboratory (see
+video lectures in Colorado State University's Computer Assisted Teaching Support laboratory (see
 letter from Dr. Andrew West), which includes equipment and staff for creating
 professional-quality video lectures. We will use YouTube \cite{youtube} to freely host these
 videos, which will allow us to embed the video within the text of the module's chapter in the
@@ -468,7 +468,7 @@ additional materials. While not a substitute for in-person interactions, these v
 and audio discussions help mimic the detailed
 walk-throughs and discussions that we would do after a student attempted these
 materials if we were teaching these materials in person. As with the video lectures, we will tape this video
-and audio content in CSU's Computer Assisted Teaching Support laboratory. We will host the video content through YouTube \cite{youtube} and the
+and audio content in Colorado State University's Computer Assisted Teaching Support laboratory. We will host the video content through YouTube \cite{youtube} and the
 audio content through SoundCloud \cite{soundcloud}. We will use Google Forms \cite{googleforms} as a free and unlimited way
 to create the quizzes and embed them in the online book.
 
@@ -522,8 +522,8 @@ support.
 \input{tables/team_roles.tex}
 
 The Principal Investigator and all four Co-Investigators will collaborate to 
-develop the materials in the training modules. We have designed a plan (Table \ref*{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the \textbf{primary authors} of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the \textbf{first tester} of the module and will evaluate and test all module material, providing detailed feedback to the two authors of the module to allow them to refine the material. The training materials for the module will then be tested in an in-person CSU pilot testing session (sessions will occur twice per year over the project period, with each session testing the content for approximately five modules), and further refined based on that feedback, as well as on feedback from the two Co-Investigators who did not have roles of author or first tester for that module, and any feedback from early online users. After this refinement based on early feedback, Dr. Anderson will film the video lecture for the module.  
-Throughout the module development period (first two years of the project), Dr. Anderson and the undergraduate student will transfer the developed training content into the online book format and publish it online, and Dr. Anderson will be in charge of maintaining and updating the online material during the third project year. Dr. Anderson will lead the planning and implementation of the CSU pilot testing sessions and other activities related to pilot testing and refinement of the training modules. Dr. Maertens will assist Dr. Anderson at points throughout the project period to develop materials for evaluation, including feedback surveys to use with CSU pilot testers, survey questions to include in the online book for evaluation purposes, and brief training on how to best elicit qualitative feedback from pilot testers during the biannual CSU pilot testing sessions. The four co-investigators will play key roles in disseminating the training materials to our key audience, as they are all well-connected within the microbiology and immunology research communities. Throughout the project period, Dr. Anderson, the four co-investigators, Dr. Maertens, and the student hourly will meet as a group at least four times per project year to check in on progress on the project. 
+develop the materials in the training modules. We have designed a plan (Table \ref*{tab:roles}) in which, for each module, Dr. Anderson and one of the Co-Investigators will collaborate as the \textbf{primary authors} of the written text, lecture slides, and additional education materials (quiz, discussion questions, or applied exercise). A second co-investigator will serve as the \textbf{first tester} of the module and will evaluate and test all module material, providing detailed feedback to the two authors of the module to allow them to refine the material. The training materials for the module will then be tested in an in-person Colorado State University pilot testing session (sessions will occur twice per year over the project period, with each session testing the content for approximately five modules), and further refined based on that feedback, as well as on feedback from the two Co-Investigators who did not have roles of author or first tester for that module, and any feedback from early online users. After this refinement based on early feedback, Dr. Anderson will film the video lecture for the module.  
+Throughout the module development period (first two years of the project), Dr. Anderson and the undergraduate student will transfer the developed training content into the online book format and publish it online, and Dr. Anderson will be in charge of maintaining and updating the online material during the third project year. Dr. Anderson will lead the planning and implementation of the Colorado State University pilot testing sessions and other activities related to pilot testing and refinement of the training modules. Dr. Maertens will assist Dr. Anderson at points throughout the project period to develop materials for evaluation, including feedback surveys to use with Colorado State University pilot testers, survey questions to include in the online book for evaluation purposes, and brief training on how to best elicit qualitative feedback from pilot testers during the bi-annual Colorado State University pilot testing sessions. The four co-investigators will play key roles in disseminating the training materials to our key audience, as they are all well-connected within the microbiology and immunology research communities. Throughout the project period, Dr. Anderson, the four co-investigators, Dr. Maertens, and the student hourly will meet as a group at least four times per project year to check in on progress on the project. 
 
 Our plan of content development and publishing is ambitious, but we are
 confident we can meet it. Dr. Anderson previously developed the online content,
@@ -543,14 +543,14 @@ co-investigators develop into the formatted online book.
 
 \subsection{Institutional Environment and Commitment}
 
-Colorado State University is a Research I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's land-grant university, CSU has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community and strongly values its history and continuing commitment to sharing cutting-edge scientific knowledge through outreach education activities. Colorado State University is very supportive of improving the reproducibility of
+Colorado State University is a Research I institution, with vibrant research programs in a variety of scientific, engineering, and health-related fields. As Colorado's land-grant university, Colorado State University has a 100-year-old extension program to help researchers disseminate their research results to members of the wider community and strongly values its history and continuing commitment to sharing cutting-edge scientific knowledge through outreach education activities. Colorado State University is very supportive of improving the reproducibility of
 research, and it offers ample resources that will help us ensure the success of
 the proposed project. \textbf{Our institution has clearly expressed its support
 for our proposed effort to create, refine, evaluate, and disseminate these
 training materials} in institutional letters of support from Dr. Jac Nickoloff
-(Chair of the Department of Environmental \& Radiological Health Sciences, CSU),
+(Chair of the Department of Environmental \& Radiological Health Sciences, Colorado State University),
 Dr. Gregg Dean (Chair of the Department of Microbiology, Immunology, \&
-Pathology, CSU), and Dr. Alan Rudolph (Vice President for Research, CSU). As
+Pathology, Colorado State University), and Dr. Alan Rudolph (Vice President for Research, Colorado State University). As
 expressed in the letter of support from Dr. Nickoloff, Dr. Anderson's teaching
 expectations during the project period are capped at three courses every two
 years, allowing adequate time for her to complete the tasks required by this
@@ -566,19 +566,19 @@ development for infectious diseases. We will \textbf{take advantage of this
 environment} to help us pilot test and refine the training materials, to ensure
 they are clear, relevant, and useful to our target population of
 laboratory-based biomedical researchers. We have received statements of support
-from relevant programs---including the director of the CSU Interdisciplinary
+from relevant programs---including the director of the Colorado State University Interdisciplinary
 Graduate Program in Cell \& Molecular Biology and the Associate Director of the
 Interdisciplinary NSF-NRT GAUSSI training program in Computational Biology---to
 help disseminate our materials to pilot testers and early users of our training
-materials on-campus at CSU (see letters from Drs. Gregg Dean, Carol Wilusz, and Jeff
+materials on-campus at Colorado State University (see letters from Drs. Gregg Dean, Carol Wilusz, and Jeff
 Wilusz). 
 
-CSU provides meeting rooms
-that we can reserve free-of-charge to use for the CSU-based user testing sessions. The
-Computer Assisted Teaching Support (CATS) laboratory at CSU's Academy for
+Colorado State University provides meeting rooms
+that we can reserve free-of-charge to use for the Colorado State University-based user testing sessions. The
+Computer Assisted Teaching Support (CATS) laboratory at Colorado State University's Academy for
 Teaching and Learning has professional-grade recording equipment that we will
 use to record the video lectures within each module (see letter from Dr. Andrew
-West), and CSU's Science, Technology, Engineering, and Math (STEM) Center will provide help in evaluating the training modules,
+West), and Colorado State University's Science, Technology, Engineering, and Math (STEM) Center will provide help in evaluating the training modules,
 including through the budgeted involvement of Dr. Julie Maertens, a senior
 evaluator at the center. 
 
@@ -586,18 +586,18 @@ evaluator at the center.
 
 \textbf{Pilot testing}
 
-\textbf{We will pilot test the training materials using three methods: (1) biannual on-campus  day-long pilot testing at Colorado State University (two sessions per project year, six total over the project); (2) a workshop at the American Society for Microbiology Conference in year 2 of the project; and (3) early online users of the training materials.} We expect that these different methods will allow us to collect different sets of 
+\textbf{We will pilot test the training materials using three methods: (1) bi-annual on-campus  day-long pilot testing at Colorado State University (two sessions per project year, six total over the project); (2) a workshop at the American Society for Microbiology Conference in year 2 of the project; and (3) early online users of the training materials.} We expect that these different methods will allow us to collect different sets of 
 feedback on the frequency of use and usefulness of the training materials (Table \ref*{tab:evaluation}), providing a rich collection of ideas for refining the materials. For each of the modules, we have outlined learning objectives will help us evaluate if the training modules are useful in achieving their educational goals (Tables \ref*{tab:content_one} and \ref*{tab:content_two}).
 
 \input{tables/evaluation.tex}
 
 \textbf{Biannual Colorado State University pilot testing sessions.}
-We will conduct two day-long pilot testing sessions at CSU in each year of the
-project. The CSU pilot testing participants will include current and future
+We will conduct two day-long pilot testing sessions at Colorado State University in each year of the
+project. The Colorado State University pilot testing participants will include current and future
 laboratory-based biomedical researchers. We will recruit trainees with a variety
 of research roles, including undergraduate students, graduate students,
 postdoctoral fellows, research associates, and principal investigators. We have
-informed several CSU biomedical researchers about these proposed testing
+informed several Colorado State University biomedical researchers about these proposed testing
 sessions and received their support in encouraging researchers within their
 groups and departments to participate (see letters from Drs. Gregg Dean, Carol Wilusz, and Jeff Wilusz). 
 
@@ -615,7 +615,7 @@ materials. In the last year of the project, these sessions will revisit the mate
 in modules that proved problematic in their first round of pilot testing, allowing us
 to re-test approximately ten of the modules (five tested per session in project year 3).
 To solicit specific feedback from these sessions, we will survey the participants during the sessions (for examples of the types of feedback we will collect through these surveys, see Table \ref*{tab:evaluation}). Six months after each pilot testing session, we will send participants a follow-up survey, to help evaluate longer-term success of the training in improving the reproducibility of data recording and pre-processing. Dr. Anderson (PI) has experience in productively conducting these kinds of user
-testing sessions at CSU. She has run several two-hour user testing sessions with
+testing sessions at Colorado State University. She has run several two-hour user testing sessions with
 students from various departments of Colorado State University prior to
 releasing R software packages \cite{futureheatwaves, countyweather}. Further, in
 April 2016, she led a longer, two-day user testing session through a Weather
@@ -628,7 +628,7 @@ since led to development and publication of open source software
 0.6\textwidth]{figures/csu_hackathon.png} \caption{Some of the approximately 15
 undergraduate students, graduate students, postdoctoral fellows, and professors
 who participated in a two-day Weather Data Hackathon at Colorado State
-University in April 2016 led by Dr. Anderson. Around 15 people participated, including from CSU's Departments of
+University in April 2016 led by Dr. Anderson. Around 15 people participated, including from Colorado State University's Departments of
 Atmospheric Sciences, Civil \& Environmental Engineering, Microbiology, and
 Statistics. } \label{csu-r-hackathon}
 \end{SCfigure}
@@ -636,16 +636,16 @@ Statistics. } \label{csu-r-hackathon}
 \textbf{American Society for Microbiology pre-conference workshop.}
 The American Society for Microbiology presents pre-conference workshops at its annual 
 conference, for which scientists can submit proposals. We will submit a proposal 
-to lead a day-long workshop at the ASM conference in year 2 of the project. This 
+to lead a day-long workshop at the American Society for Microbiology conference in year 2 of the project. This 
 workshop will cover the content of most of the training modules listed in Tables
 \ref*{tab:content_one} and \ref*{tab:content_two}. It will include live lectures of the 
 materials from the online video lectures, as well as directed work through the 
-additional educational materials for each module. As with the CSU pilot testing sessions, we will use surveys to get immediate and follow-up (six months after, to evaluate longer-term outcomes) feedback from 
+additional educational materials for each module. As with the Colorado State University pilot testing sessions, we will use surveys to get immediate and follow-up (six months after, to evaluate longer-term outcomes) feedback from 
 the participants of this workshop.
 
 \textbf{Early online users.}  We will develop the book openly online from the start of 
-the project, including posting all underlying code online at \textit{GitHub} and 
-posting the current version of the online book through \textit{GitHub Pages}, using 
+the project, including posting all underlying code online at \textit{gitHub} and 
+posting the current version of the online book through \textit{gitHub Pages}, using 
 \textit{Travis Continuous Integration} to rebuild the book each time we commit 
 changes to its underlying code. Dr. Anderson has used a similar development process
 with an online coursebook \cite{andersoncoursebook}; this open development process
@@ -663,7 +663,7 @@ We will use Google Forms \cite{googleforms} to create voluntary surveys within t
 
 \textbf{External program evaluation}
 
-An external evaluation of the proposed training modules program will be conducted by Julie Maertens in the Colorado State University STEM Center, which facilitates collaborations among STEM-related education and outreach projects within and outside CSU. Dr. Maertens has conducted several large-scale, multi-site youth program evaluations in conjunction with the State of Colorado, and also regularly works with researchers in- and outside of Colorado to implement STEM education and outreach evaluations. She currently leads the evaluation of three federally funded projects designed to: (1) Create a pre-service secondary teacher program that integrates the requirements for traditional engineering undergraduate degree programs; (2) Improve recruitment and persistence of women in the geosciences using a deliberate mentorship approach, and (3) Improve recruitment and retention of underrepresented minorities in computational biology and genomics by creating and conducting week-long workshops in Todos Santos, Mexico.
+An external evaluation of the proposed training modules program will be conducted by Julie Maertens in the Colorado State University STEM Center, which facilitates collaborations among STEM-related education and outreach projects within and outside Colorado State University. Dr. Maertens has conducted several large-scale, multi-site youth program evaluations in conjunction with the State of Colorado, and also regularly works with researchers in- and outside of Colorado to implement STEM education and outreach evaluations. She currently leads the evaluation of three federally funded projects designed to: (1) Create a pre-service secondary teacher program that integrates the requirements for traditional engineering undergraduate degree programs; (2) Improve recruitment and persistence of women in the geosciences using a deliberate mentorship approach, and (3) Improve recruitment and retention of underrepresented minorities in computational biology and genomics by creating and conducting week-long workshops in Todos Santos, Mexico.
 
 The conceptual framework for the evaluation will be organized using the CIPP model, which is designed to guide project decision-making based on assessment of a program’s context, input, process and product \cite{stufflebeam2004cipp}. The operational framework will use observable data to conduct both formative [F] and summative [S] evaluation of the program, and will focus on 2 main areas of the conceptual evaluation model to determine: (1) How well the program is implemented (\textit{process}), and (2) How well the proposed modules and training activities meet the program objectives (\textit{product}).
 
@@ -678,7 +678,7 @@ Evaluation data will include baseline program metrics as well as measures to gau
 \item Project team implementation surveys
 \end{itemize}
 
-In addition to the proposed data collection, Dr. Maertens will train the project team to collect qualitative data among test users during the day-long user testing sessions (on-campus at CSU and at the ASM workshop), and how to use a qualitative content analysis process to extract ‘themes’ related to feedback (e.g., strengths, weaknesses) about the modules. These themes may be used, along with the evaluation survey data, to make iterative improvements to the modules each year.
+In addition to the proposed data collection, Dr. Maertens will train the project team to collect qualitative data among test users during the day-long user testing sessions (on-campus at Colorado State University and at the American Society for Microbiology workshop), and how to use a qualitative content analysis process to extract ‘themes’ related to feedback (e.g., strengths, weaknesses) about the modules. These themes may be used, along with the evaluation survey data, to make iterative improvements to the modules each year.
 
 Survey results will be presented annually via written report, and will summarize all findings and iterative program changes and provide recommendations for future programming. See Table \ref*{tab:external_evaluation} for evaluation questions and methods.
 
@@ -686,9 +686,9 @@ Survey results will be presented annually via written report, and will summarize
 
 \subsection{Dissemination Plan}
 
-Using \textit{GitHub Pages} \cite{gitpages}, we will publish the book freely online, with all materials published under the Creative Commons Attribution-ShareAlike 4.0 International License, \textbf{making all materials freely accessible, both nationally and internationally}. From the beginning of the project, we will publish the book online as it develops, and we will promote this material through social media (e.g., Twitter) and through our network of colleagues in biomedical research and the R programming community (for example, see letters from Drs. Roger Peng and Jorge Henao-Mejia). Since this book will be hosted online, it will be easy to link to from the National Institute of General Medical Sciences' \textit{Clearinghouse for Training Modules to Enhance Data Reproducibility} \cite{clearinghouse}. There will be no paywall or other restriction on accessing any of the training materials, and source code for the book and exercises will be published on \textit{GitHub}. All video and audio content will be published online in free formats through YouTube \cite{youtube} and SoundCloud \cite{soundcloud}, with the content embedded in the online book (see Figure \ref*{fig:prototype}). At the end of project years 2 and 3, we will also post a static version of the book to the website \textit{bookdown.org}, where people can go to find free online books published using the \textit{bookdown} format and which invites direct submissions from authors that have used these framework. 
+Using \textit{gitHub Pages} \cite{gitpages}, we will publish the book freely online, with all materials published under the Creative Commons Attribution-ShareAlike 4.0 International License, \textbf{making all materials freely accessible, both nationally and internationally}. From the beginning of the project, we will publish the book online as it develops, and we will promote this material through social media (e.g., Twitter) and through our network of colleagues in biomedical research and the R programming community (for example, see letters from Drs. Roger Peng and Jorge Henao-Mejia). Since this book will be hosted online, it will be easy to link to from the National Institute of General Medical Sciences' \textit{Clearinghouse for Training Modules to Enhance Data Reproducibility} \cite{clearinghouse}. There will be no paywall or other restriction on accessing any of the training materials, and source code for the book and exercises will be published on \textit{gitHub}. All video and audio content will be published online in free formats through YouTube \cite{youtube} and SoundCloud \cite{soundcloud}, with the content embedded in the online book (see Figure \ref*{fig:prototype}). At the end of project years 2 and 3, we will also post a static version of the book to the website \textit{bookdown.org}, where people can go to find free online books published using the \textit{bookdown} format and which invites direct submissions from authors that have used these framework. 
 
-In addition to these methods of disseminating the training materials to a general audience, \textbf{we will also take specific steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials.} We will apply to present posters or oral presentations in years 2 and 3 of the project at three national and international conferences (American Society for Microbiology Conference, American Association of Immunologists Meeting, and International Society for the Advancement of Cytometry) to help get out the news among our target audience that these materials are freely available. We will also invite colleagues (and their research group members) at and outside of CSU to serve as early online users of the our materials (see letters from Drs. Gregg Dean, Carol Wilusz, Jeffrey Wilusz, and Jorge Henao-Mejia). In addition to providing us with feedback to help refine our materials, this will help us disseminate the materials. Finally, we will write and submit a paper describing these training materials and highlighting their content in a biomedical journal relevant to our target audience.
+In addition to these methods of disseminating the training materials to a general audience, \textbf{we will also take specific steps to make sure that our target audience---laboratory-based biomedical scientists---are aware of these training materials.} We will apply to present posters or oral presentations in years 2 and 3 of the project at three national and international conferences (American Society for Microbiology Conference, American Association of Immunologists Meeting, and International Society for the Advancement of Cytometry) to help get out the news among our target audience that these materials are freely available. We will also invite colleagues (and their research group members) at and outside of Colorado State University to serve as early online users of the our materials (see letters from Drs. Gregg Dean, Carol Wilusz, Jeffrey Wilusz, and Jorge Henao-Mejia). In addition to providing us with feedback to help refine our materials, this will help us disseminate the materials. Finally, we will write and submit a paper describing these training materials and highlighting their content in a biomedical journal relevant to our target audience.
 
 The PI has previously had substantial success in disseminating online training materials. She is the co-instructor of a five-course specialization on \textit{Mastering Software Development in R} through the Massive Open Online Course platform Coursera. This series has had over 50,000 participants since it was opened in Fall 2016, and an accompanying online book on the LeanPub platform has been downloaded by over 14,000 people.
 
@@ -698,7 +698,7 @@ Here we propose to develop training modules that are freely available nationally
 
 \subsection{Potential Pitfalls and Alternative Plans}
 
-We have high confidence that we will be able to successfully develop, test, refine, and disseminate the training materials as outlined in this proposal, based on our previous success with similar projects \cite{andersonmastering, andersoncoursebook}. However, we have considered alternative plans in case there are complications. Specifically, if there are any problems in disseminating the full collection of training materials using the \textit{bookdown} format and with free web hosting through \textit{Git Pages}, we will explore using the \textit{DataCamp} platform \cite{datacamp} to host the training materials. This is a well-developed online learning platform, and it allows academics to develop and post their own training materials through ``Course Editor". Content that is created and published through the ``Community" section of DataCamp are freely accessible to anyone \cite{authoringdatacamp}.  
+We have high confidence that we will be able to successfully develop, test, refine, and disseminate the training materials as outlined in this proposal, based on our previous success with similar projects \cite{andersonmastering, andersoncoursebook}. However, we have considered alternative plans in case there are complications. Specifically, if there are any problems in disseminating the full collection of training materials using the \textit{bookdown} format and with free web hosting through \textit{git Pages}, we will explore using the \textit{DataCamp} platform \cite{datacamp} to host the training materials. This is a well-developed online learning platform, and it allows academics to develop and post their own training materials through ``Course Editor". Content that is created and published through the ``Community" section of DataCamp are freely accessible to anyone \cite{authoringdatacamp}.  
 
 \clearpage
 
