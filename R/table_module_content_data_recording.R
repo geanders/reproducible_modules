@@ -12,8 +12,7 @@ my_table <- tribble(
     "Many biomedical laboratories currently use spreadsheets, with embedded macros, 
       to both record and analyze experimental data. This practice impedes the transparency
       and reproducibility of both data recording and data analysis. In this module, we 
-      will describe this common practice and explain how it impedes the transparency and
-      reproducibility of data recording and analysis. We will then outline alternative
+      will describe this common practice and will outline alternative
       approaches that separate the steps of data recording and data analysis and explain
       how these alternative approaches can improve the reproducibility of biomedical 
       research.", 
@@ -59,7 +58,7 @@ my_table <- tribble(
 # Module 3
   "The 'tidy' data format: an implementation of a structured data format", "Implementation",
   "The 'tidy' data format is one implementation of a structured data format that
-  was introduced in a 2014 paper and has since quickly 
+  was introduced in a 2014 paper \\cite{wickham2014tidy} and has since quickly 
   gained popularity among statisticians and data scientists. By consistently 
   using this data format, researchers have found they can employ combinations 
   of simple, generalizable tools to perform complex tasks in data processing, 
