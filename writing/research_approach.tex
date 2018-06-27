@@ -60,16 +60,15 @@ from relatively small sets of measurements, such as animal body weights and bact
 cell counts that may be recorded by hand, to thousands or millions of instrument-generated 
 data points from various imaging, -omic, and flow cytometry experiments. In either case, 
 there is a generally common workflow that proceeds 
-from measurement, to data recording, pre-processing, analysis, and interpretation.  \textbf{However, in practice the distinct actions of data recording, data pre-processing, and analysis 
+from measurement, to data recording, pre-processing, analysis, and interpretation.  However, in practice the distinct actions of data recording, data pre-processing, and analysis 
 are often merged or combined as a single entity by the researcher using commercial or open 
 source spreadsheets, or as part of an often proprietary experimental measurement 
-system / software combination (Figure \ref{fig:workflow}), resulting in key failure points for reproducibility at the stages of data recording and pre-processing.}  
+system / software combination (Figure \ref{fig:workflow}), \textbf{resulting in key failure points for reproducibility at the stages of data recording and pre-processing.}  
 
 It is widely 
 known and discussed among data scientists, mathematical modelers, and statisticians 
-\cite{broman2018data, krishnan2016towards}, that there is a frequent need to discard, 
-transform, and reformat various elements of the data shared with them by laboratory-based researchers, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting the data to apply more advanced computational methods
-and to integrate the data with other analysis and visualization platforms. Instead, a critical need for reproducibility is for the transparent and clear sharing across research teams of: (1) raw data, directly from hand-recording or directly output from experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data) and saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
+\cite{broman2018data, krishnan2016towards} that there is frequently a need to discard, 
+transform, and reformat various elements of the data shared with them by laboratory-based researchers, and that data is often shared in an unstructured format, increasing the risks of introducing errors through reformatting the data before applying more advanced computational methods. Instead, a critical need for reproducibility is for the transparent and clear sharing across research teams of: (1) raw data, directly from hand-recording or directly output from experimental equipment; (2) data that has been pre-processed as necessary (e.g., gating for flow cytometry data, feature identification for metabolomics data) and saved in a consistent, structured format, and (3) a clear and repeatable description of how the pre-processed data was generated from the raw data \cite{broman2018data, ellis2018share}.
 
 \begin{figure}[h] 
 \centering
@@ -84,28 +83,20 @@ requires some change in the conventional understanding and use of spreadsheets a
 biomedical researchers that recent advances in computer programming languages, especially the 
 R programming language, provide user-friendly and accessible tools and concepts that can be 
 used to extend a transparent and reproducible data workflow to data recording and pre-processing. 
-To meet this need, we propose to develop two sequences of modules, \textbf{Improving the
-Reproducibility of Experimental Data Recording} and \textbf{Improving the
-Reproducibility of Experimental Data Pre-Processing}. Our team has worked
-together to create a curriculum of training modules that we believe will help
-fill an important training gap for laboratory-based biomedical researchers
-(Tables \ref{tab:content_one} and \ref{tab:content_two}). The first sequence,
-``Improving the Reproducibility of Experimental Data Recording" (Table
-\ref{tab:content_one}), will explore the pitfalls of combining experimental data
-recording and analysis within formula-enabled spreadsheets, explain the power of
-structured data formats for recording data, describe how reproducibility can be
-improved by using a single structured directory to store all research project
-files, and demonstrate the use of version control to maintain single, current
-versions of all files while saving a history of all file changes. The second
-sequence, ``Improving the Reproducibility of Experimental Data
-Pre-Processing" (Table \ref{tab:content_two}), will focus on improving the
-reproducibility of experimental data pre-processing steps, like gating for flow
-cytometry data and feature extraction / quantification for mass spectrometry data.
-Training materials will explain how the use of code scripts for these pre-processing steps
-dramatically improves reproducibility compared to using vendor-supplied
-point-and-click software and will introduce trainees to popular R software for
-this pre-processing. This sequence will also include advice on the use of reproducible data
-pre-processing protocols and how to create these protocols using literate programming tools (\textit{Rmarkdown}).
+Among our team, we have
+found that there are many common existing practices---including use of
+spreadsheets with embedded formulas that concurrently record and analyze
+experimental data, problematic management of project files,
+and reliance on proprietary, vendor-supplied point-and-click software for data
+pre-processing---that can interfere with the transparency, reproducibility, and
+efficiency of laboratory-based biomedical research projects. These problems have also been 
+identified by others as key barriers to research reproducibility 
+\cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
+Our team has worked together to craft a list of
+specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we will address in training modules, choosing topics that tackle barriers to reproducibility that have
+straightforward, easy-to-teach solutions, but which are still very common in
+biomedical laboratory-based research programs, including those at Colorado
+State University.
 
 As a wholesale adoption of these concepts and software tools may be disruptive to established 
 laboratory procedures, our 
@@ -129,7 +120,7 @@ small scale biomedical science projects.
 innovative \textit{bookdown} framework \cite{xie2016bookdown} to structure and
 publish all of our training materials as a free and open online book, with embedded video lectures and additional educational materials to help these training modules reach a global audience of biomedical researchers}. The
 \textit{bookdown} framework has been available for a little over two years and
-extends the principles of \textit{Rmarkdown} \cite{xie2015dynamic} to allow authors to create attractive
+extends the principles of literate programming from \textit{Rmarkdown} \cite{xie2015dynamic} to allow authors to create attractive
 online books that integrate programming code and text. With this format, code examples and related
 output do not need to be copied and pasted into a document, but instead are
 automatically generated. Through this innovative framework, we
@@ -137,7 +128,7 @@ will create a searchable online book that weaves R code into the text
 and includes embedded video lectures, active web links to online
 references, and computationally reproducible examples and exercises
 (Figure \ref{fig:prototype}). Further, trainees will be able to
-download the book as either a PDF or EPUB file, to use as a reference as they
+download the book as either a PDF or EPUB file to use as a reference as they
 continue learning to implement reproducibility tools in their research projects. Though this framework is new, it has proven
 itself reliable and effective---it serves as the framework for several 
 popular and highly-accessed books on R programming, including the extremely popular book \textit{R for Data
@@ -172,7 +163,7 @@ over 14,000 people from LeanPub (see letter from Dr. Peng).
 
 \section{Approach---Proposed Research Education Program}
 
-\subsubsection*{Project goals and objectives.} 
+\subsubsection*{Training modules.} 
 
 \textbf{Through this project, we aim to create training modules that will teach laboratory-based biomedical
 researchers how simple computational reproducibility principles can improve
@@ -223,20 +214,7 @@ biomedical research, and yet we are also able to recognize that there are key ba
 implementing these tools in this setting, as well as in training
 laboratory-based researchers how to use these tools. 
 
-Among our team, we have
-found that there are many common existing practices---including use of
-spreadsheets with embedded formulas that concurrently record and analyze
-experimental data, problematic management of project files,
-and reliance on proprietary, vendor-supplied point-and-click software for data
-pre-processing---that can interfere with the transparency, reproducibility, and
-efficiency of laboratory-based biomedical research projects. These problems have also been 
-identified by others as key barriers to research reproducibility 
-\cite{broman2018data, bryan2018excuse, ellis2018share, marwick2018packaging}.
-Our team has worked together to craft a list of
-specific topics (Tables \ref{tab:content_one} and \ref{tab:content_two}) we will address in these training modules, choosing topics that tackle barriers to reproducibility that have
-straightforward, easy-to-teach solutions, but which are still very common in
-biomedical laboratory-based research programs, including those at Colorado
-State University. Our project's \textbf{primary goal} is to develop
+Our project's \textbf{primary goal} is to develop
 training modules that address the needs of laboratory-based biomedical
 researchers seeking to improve reproducibility, especially of experimental data
 recording and pre-processing, in their research projects. The \textbf{expected result} of
@@ -247,10 +225,11 @@ these training materials be clear, relevant, and useful to a key audience of
 biomedical scientists whose primary research activities focus on laboratory
 research, rather than data analysts or statisticians. 
 
-\subsubsection*{Proposed training modules}
-
+To meet this need, we propose to develop two sequences of modules, \textbf{Improving the
+Reproducibility of Experimental Data Recording} and \textbf{Improving the
+Reproducibility of Experimental Data Pre-Processing}. 
 Each module will fall into one of three categories for teaching reproducibility:
-(1) \textit{Principals}; (2) \textit{Implementation}; and (3) \textit{Examples}. \textit{Principals}
+(1) \textit{Principles}; (2) \textit{Implementation}; and (3) \textit{Examples}. \textit{Principles}
 modules will be programming-language agnostic, while \textit{Implementation} modules
 will focus on tools available through the popular open source R software and its
 \textit{RStudio} interface. \textit{Examples} modules will provide materials that can be used as a template for implementing R-based tools, but can also provide a top-level overview for non-programmers of how these tools can improve real biomedical research projects, and will be based on existing, NIH-funded research groups within our research team, for which we already have the data in hand, and in which we have been working to improve reproducibility. By co-authoring the modules with the biomedical laboratory-based co-investigators
@@ -272,7 +251,7 @@ Recording}}
 The first sequence will provide principles and tools for improving
 computational reproducibility at the stage of experimental data recording. This sequence will include eleven modules covering four main topics: 
 
-\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between spreadsheet cells---to jointly record, visualize, and analyze experimental data \cite{broman2018data}. This practice impedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template with embedded formulas, it leads to a data recording / analysis process that can become extraordinarily opaque and complex. To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining recorded experimental data as ``read-only" files, separating data recording from any data pre-processing or data analysis steps \cite{broman2018data, marwick2018packaging}. Statisticians have outlined specific methods that a laboratory-based scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros or embedded formulas, using a separate Excel file for each dataset, recording descriptions of variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding splitting or merging cells \cite{ellis2018share, broman2018data}. These topics will covered in a \textit{Principles} module on ``Separating data
+\textbf{1. Separating data recording and analysis.} Many biomedical laboratories currently use spreadsheets---with formulas creating underlying connections between spreadsheet cells---to jointly record, visualize, and analyze experimental data (Sequence 1 in Figure \ref{fig:workflow}) \cite{broman2018data}. This practice impedes the transparency and reproducibility of both data recording and data analysis. When a research group develops and uses an evolving spreadsheet template with embedded formulas, it leads to a data recording / analysis process that can become extraordinarily opaque and complex. To improve the computational reproducibility of a research project, it is critical for biomedical researchers to learn the importance of maintaining recorded experimental data as ``read-only" files, separating data recording from any data pre-processing or data analysis steps \cite{broman2018data, marwick2018packaging}. Statisticians have outlined specific methods that a laboratory-based scientist can take to ensure that data shared in an Excel spreadsheet are shared in a reliable and reproducible way, including avoiding macros or embedded formulas, using a separate Excel file for each dataset, recording descriptions of variables in a separate code book rather than in the Excel file, avoiding the use of color of the cells to encode information, using ``NA" to code missing values, avoiding spaces in column headers, and avoiding splitting or merging cells \cite{ellis2018share, broman2018data}. These topics will covered in a \textit{Principles} module on ``Separating data
 recording and analysis" (Table \ref{tab:content_one}). 
 
 \textbf{2. Using a structured data format to record data.} Every extra step of data
@@ -312,7 +291,7 @@ Reproducibility can also be improved, starting at the data recording stage, by u
 project. This ``project" framework of structured and thoughtful file management has recently been encouraged by a number of
 researchers as a way to enable computationally reproducible research, especially
 for research conducted by teams \cite{marwick2018packaging,
-parker2017opinionated, lowndes2017our}. If a consistent structure is used for these directories across different research projects, it can substantially increase the efficiency of, and reduce errors in, data pre-processing and analysis, as code scripts can be created that can be re-used across different project directories with few required changes \cite{marwick2018packaging}. This practice also improves the efficiency and effectiveness of collaborations with statisticians, as it allows the researchers to share critical research project files---raw data, processed data, and code scripts for extracting the processed data from the raw data \cite{ellis2018share, shade2015computing}---in a single file. Further, some have suggested that if researchers learn better practices for managing ``clean" project files, it will help increase they willingness to share those files and so meet standards of reproducibility \cite{marwick2018packaging}. 
+parker2017opinionated, lowndes2017our}. If a consistent structure is used for these directories across different research projects, it can substantially increase the efficiency of, and reduce errors in, data pre-processing and analysis, as code scripts can be created that can be re-used across different project directories with few required changes \cite{marwick2018packaging}. This practice also improves the efficiency and effectiveness of collaborations with data scientists, mathematical modelers, and statisticians, as it allows the researchers to share critical research project files---raw data, processed data, and code scripts for extracting the processed data from the raw data \cite{ellis2018share, shade2015computing}---in a single file. Further, some have suggested that if researchers learn better practices for managing ``clean" project files, it will help increase their willingness to share those files and so meet standards of reproducibility \cite{marwick2018packaging}. 
 
 One implementation of this practice is as an \textit{RStudio} ``Project". In \textit{RStudio}, a researcher can collect all project files in a single, structured directory and save this directory as a ``Project" \cite{rstudiousingprojects}. \textit{RStudio} ``Projects" allow easy integration with version control tools (\textit{git}) and online platforms for sharing a directory under version control (\textit{GitHub}, \textit{GitLab}). 
 While a ``Project" can have any internal
@@ -337,7 +316,7 @@ and that is more efficient for exploring (and, when necessary, undoing) the chan
 each team member has made to project files \cite{bryan2018excuse}. For many years, using \textit{Git} version control required use of the command line,
 limiting its accessibility to researchers with limited programming experience.
 Graphical interfaces, however, have removed this barrier, and \textit{RStudio} has 
-particularly user-friendly tools for implementing version control. At Colorado State University, we have found that \textit{git} and \textit{GitHub} can be quickly taught  to researchers in their first programming course, when using the \textit{RStudio} / \textit{GitHub} interfaces, so that they can successfully use \textit{GitHub} to submit class assignments; others have reported similar success at other institution \cite{bryan2018excuse}. These
+particularly user-friendly tools for implementing version control. At Colorado State University, we have found that \textit{git} and \textit{GitHub} can be quickly taught  to researchers in their first programming course, when using the \textit{RStudio} / \textit{GitHub} interfaces, so that they can successfully use \textit{GitHub} to submit class assignments; others have reported similar success at other institutions \cite{bryan2018excuse}. These
 topics will be covered in two \textit{Principles} modules called ``Harnessing
 version control for transparent data recording" and ``Enhance the
 reproducibility of collaborative research with version control platforms" as
@@ -349,9 +328,9 @@ Pre-Processing}}
 
 The second sequence will provide principles and tools for improving
 computational reproducibility as
-experimental data is pre-processed. By ``pre-processing", we mean the steps 
+experimental data is pre-processed. \textbf{By ``pre-processing", we mean the steps 
 taken to convert data from the raw data---either collected by hand or output
-by laboratory equipment---into a format ready for data analysis. We will focus
+by laboratory equipment---into a format ready for data analysis.} We will focus
 particularly on improving reproducibility of pre-processing the complex 
 raw data output by laboratory equipment---for example feature identification 
 and quantification in mass spectrometry data and gating in flow cytometry data---as well
@@ -416,17 +395,6 @@ but can be mastered much more easily if trainees are taught to use them through
 \textit{RStudio}'s user-friendly interfaces rather than using the command line or other
 alternative interfaces. 
 
-% We have also selected to focus on this set of tools for
-% the \textit{Implementation} modules because two members of our team (Anderson
-% and Lyons) use R daily for their own research and so are able to provide much
-% better instruction and details on using this set of tools than alternative tools
-% for the same tasks. Dr. Anderson also regularly teaches students in her
-% department how to use this set of tools through a graduate-level course and has
-% developed techniques for helping students new to programming to master R using
-% the RStudio interface, including using RStudio's interface to use RMarkdown,
-% track a project under git version control, and connect to version control
-% platforms to improve collaborative work. 
-
 We appreciate that many laboratory-based biomedical researchers do not know the R language, and
 some of them may want to learn more about improving reproducibility without
 needing to learn a new programming language. 
@@ -436,7 +404,7 @@ all biology Ph.D. students \cite{list2017ten}, expertise
 with a scripting language is not universal across biomedical researchers. For this reason, we have
 deliberately separated the \textit{Principles} and \textit{Examples} content in our modules
 from the \textit{Implementation} modules, so that a researcher can select a track of
-our modules that does not require programming knowledge. Further, while all of
+our modules that does not require programming knowledge. The code examples themselves will follow literate programming principles with small, modular, well-described code that trainees can use as templates in their own research projects. Further, while all of
 the \textit{Implementation} modules are conceptually focused on tools that an R
 programmer would use, several of the modules could be appreciated and used to
 improve reproducibility without a mastery of R. For example, \textit{RStudio} and its
