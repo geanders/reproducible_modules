@@ -29,7 +29,7 @@ my_table <- tribble(
   "\\tabitem Was the module useful enough that the trainee would recommend it to other scientists?", "Yes", "Yes", "Yes",
   "\\tabitem Which elements of the training modules (video lecture, written text, additional educational materials) did the trainee find most useful?", "Yes", "Yes", "No",
   "\\tabitem For each module video, are there spots where it is common for trainees to stop watching?", "No", "No", "Yes",
-  "\\tabitem How did the trainee chose which modules to use?", "Yes", "Yes", "No",
+  "\\tabitem How did the trainee choose which modules to use?", "Yes", "Yes", "No",
   "\\tabitem For the modules taken, what content did the trainee wish had been covered but was not?", "Yes", "Yes", "No"
 ) %>% 
   mutate(`CSU pilot testers` = cell_spec(`CSU pilot testers`, format = "latex",
