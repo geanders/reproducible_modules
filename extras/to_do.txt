@@ -5,7 +5,6 @@ Mike's:
 - Take a look at Human Subjects
 - try something with git
 
-
 Brooke's: 
 
 - LOS: Other group's LOS
@@ -26,3 +25,4 @@ Brooke's:
 - Make repo public (and move to GitHub?)
 - Fill out assignment request form
 - Spell check
+- Fill out RICRO form
