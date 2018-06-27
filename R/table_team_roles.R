@@ -57,9 +57,9 @@ my_table <- tribble(
                               align = 'c'),
         caption = "\\label{tab:roles} Roles of our team of investigators in developing the proposed training materials.") %>% 
   kable_styling(latex_options = c("hold_position", "repeat_header", "scale_down"), 
-                font_size = 8) %>% 
+                font_size = 10) %>% 
   row_spec(0) %>% 
-  column_spec(1, width = "33em") %>% 
+  column_spec(1, width = "25em") %>% 
   group_rows("Improving the Reproducibility of Experimental Data Recording", 1, 11, latex_align = 'l') %>% 
   group_rows("Improving the Reproducibility of Experimental Data Pre-Processing", 12, 20) 
 
