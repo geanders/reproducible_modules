@@ -6,7 +6,6 @@
 *.synctex.gz
 *.aux
 *.bbl
-*.pdf
 biosketches/*
 extras/*
 letters_of_support/*
