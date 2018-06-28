@@ -4,5 +4,5 @@ submitted in June 2018.
 
 The final, submitted files are all in the `pdf` directory. The heart of the proposal is the "research_approach" in that directory. All these pdfs were 
 generated from LaTex and R code via the makefile. The phenomenal [kableExtra](https://haozhu233.github.io/kableExtra/) package
-was used to create all the tables in the proposal from R.
+was used to create all the tables in the proposal from R. Be sure to look for the cameo from [Puppet Roger Peng](https://twitter.com/puppetpeng?lang=en)!
 
